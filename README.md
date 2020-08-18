@@ -4,5 +4,5 @@
 
 准备期间暂时Private
 
-拿到过得去的Offer再公开吧不然没有什么必要Public了OTZ
+拿到过得去的Offer再公开吧OTZ
 
