@@ -1,3 +1,18 @@
 site_name: Android Interview
 theme:
   name: material
+  palette:
+    scheme: default
+    primary: green
+  font:
+    text: Noto Serif SC
+  icon:
+    logo: material/android
+  favicon: images/logo.png
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/hishark
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/hishark777
+repo_url: https://github.com/hishark/android-interview

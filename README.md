@@ -4,7 +4,7 @@
 
 这里是777的2021年校招准备仓库，准备期间还不太完善，明年6月希望能比较丰满啦！
 
-使用Mkdocs-Material生成了一个[静态网站](hishark777.com/android-interview)，方便查看。
+使用Mkdocs-Material生成了一个[静态网站](https://hishark777.com/android-interview)，方便查看。
 
 ## 时间节点
 本人是ECNU2019级软件工程专硕，学制2.5年，秋招时间是2021年6月-10月。

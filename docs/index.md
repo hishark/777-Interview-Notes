@@ -30,3 +30,6 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ## 开库目的
 准备了一遭校招总要留下点什么，自己复盘也好，给想要找安卓岗的兄弟们一个参考也好，总会创造点价值哒。
+
+## TODO
+- Mkdocs默认不支持中文搜索 谷歌了一下发现解决方案还是很多的 之后抽空来搞一下
