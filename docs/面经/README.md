@@ -1,22 +1,16 @@
-# 面经汇总
+# README
 
 全是从牛客网扒拉下来的，可能存在链接失效的情况，会定期清理。
 
-每个面筋都要自己过一遍，不要看一遍脑内过一下就结束了，每个题目单独拎出来做成一个问卷然后自己打字回答一下，主要目的是查漏补缺。
+每个面经都要自己过一遍，不要看一遍脑内过一下就结束了，[每个题目单独拎出来做成一个问卷](http://127.0.0.1:8000/%E9%9D%A2%E7%BB%8F/%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95/Interview%201/)然后自己打字回答一下，主要目的是查漏补缺。
 
-## 安卓面筋汇总
+- [安卓工程师精选面经汇总](https://www.nowcoder.com/discuss/experience?tagId=642)
+- [字节跳动面经汇总](https://www.nowcoder.com/community/665)
+- [字节安卓面经汇总](https://www.nowcoder.com/discuss/tag/665?type=2&expTag=4)
 
-[安卓工程师精选面经汇总_校招实习社招_牛客网_牛客网](https://www.nowcoder.com/discuss/experience?tagId=642)
+## Android面经收集
 
-## 字节面筋汇总
-
-[字节跳动内推招聘_字节跳动是做什么的_字节跳动校园招聘/面试经验/笔试题目/社招内推_公司信息_牛客网](https://www.nowcoder.com/community/665)
-
-## 字节安卓面筋汇总
-
-[字节跳动内推招聘_字节跳动是做什么的_字节跳动校园招聘/面试经验/笔试题目/社招内推_公司信息_牛客网](https://www.nowcoder.com/discuss/tag/665?type=2&expTag=4)
-
-## 安卓面筋收集
+### 字节跳动part
 
 [字节提前批校招一面Android工程师2020[已挂]](https://www.nowcoder.com/discuss/441197)
 
@@ -60,3 +54,4 @@
 [字节客户端 一、二面面经，许愿三面~](https://www.nowcoder.com/discuss/424853)
 
 [字节客户端三~四面面经，已oc（更新：已邮件）](https://www.nowcoder.com/discuss/432053)
+

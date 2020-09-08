@@ -5,6 +5,7 @@ tags:
 - 递归
 - 分治
 - 二进制
+- 位运算
 - leetcode
 - lcof
 - java
@@ -42,6 +43,9 @@ categories: 算法笔记
 
 ## 2. 解法 - 分治 递归
 n 的范围是[−2^31, 2^31 − 1]，当 n = -2^31 时，执行 -n 操作会导致越界，所以需要将 n 转换成 long 类型来计算。
+
+>可以用右移运算符代替除以2，用位与运算符代替求余符号（%）来判断一个数是奇数还是偶数，位运算的效率比乘除法及求余运算的效率要高很多。
+
 
 ### 2.1 Java
 ```java
@@ -166,7 +170,7 @@ class Solution {
             // x每一轮循环都要通过累乘来增加
             x *= x; // 假设 x 的初始值为3，那么x的值为：3^(2^0), 3^(2^1), 3^(2^2) ...
             // 解决完当前二进制位，将 N/2 继续求下一位
-            N /= 2;
+            N /= 2; // 这里也可以用右移来代替：N >>= 1;
         }
         return ans;
     }
@@ -207,7 +211,7 @@ class Solution {
             // x每一轮循环都要通过累乘来增加
             x *= x // 假设 x 的初始值为3，那么x的值为：3^(2^0), 3^(2^1), 3^(2^2) ...
             // 解决完当前二进制位，将 N/2 继续求下一位
-            N /= 2
+            N /= 2 // 这里也可以用右移来代替：N >>= 1
         }
         return ans
     }
@@ -217,3 +221,4 @@ class Solution {
 ## 4. 参考
 - [https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof](https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof)
 - [https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/solution/di-gui-xie-fa-fen-zhi-si-xiang-yu-fei-di-gui-xie-f/](https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/solution/di-gui-xie-fa-fen-zhi-si-xiang-yu-fei-di-gui-xie-f/)
+- [《剑指Offer（第2版）》](https://book.douban.com/subject/27008702/)

@@ -15,3 +15,8 @@
 
 ## 开库目的
 准备了一遭校招总要留下点什么，自己复盘也好，给想要找安卓岗的兄弟们一个参考也好，总会创造点价值哒。
+
+## 复习资料
+
+[Cyc2018 - 面试复习资料汇总](https://www.nowcoder.com/discuss/148929?type=post&order=time&pos=&page=2&channel=1009&source_id=search_post)
+
