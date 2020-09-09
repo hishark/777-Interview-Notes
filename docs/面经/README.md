@@ -34,14 +34,9 @@
 
 [[21届秋招] 字节--安卓开发实习生 面经_笔经面经_牛客网](https://www.nowcoder.com/discuss/442244)
 
-- 在浏览器中输入url回车后发生了什么，这个问题也太好玩了把哈哈哈哈哈
-
 [字节跳动客户端开发一面_笔经面经_牛客网](https://www.nowcoder.com/discuss/413434?type=2&order=0&pos=7&page=1&channel=666&source_id=discuss_tag)
 
 [字节跳动 三次失败的一面_笔经面经_牛客网](https://www.nowcoder.com/discuss/363141?type=2&order=0&pos=9&page=1&channel=666&source_id=discuss_tag)
-
-- 注册登录的实现细节 这个之后一定要抠一下
-- hashmap是如何实现的
 
 [字节北京抖音客户端一面二面面经_笔经面经_牛客网](https://www.nowcoder.com/discuss/447803)
 

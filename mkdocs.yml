@@ -1,5 +1,6 @@
 site_name: Android Interview
 theme:
+  language: zh
   name: material
   palette:
     scheme: default
