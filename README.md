@@ -4,7 +4,7 @@
 
 这里是777的2021年校招准备仓库，准备期间还不太完善，明年6月希望能比较丰满啦！
 
-使用Mkdocs-Material生成了一个[静态网站](https://hishark777.com/android-interview)，方便查看。
+使用Mkdocs-Material生成了一个[静态网站](https://hishark777.com/Android-Interview)，方便查看。
 
 ## 时间节点
 
