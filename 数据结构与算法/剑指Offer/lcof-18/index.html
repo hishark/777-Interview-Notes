@@ -10,18 +10,18 @@
       
       
       
-      <link rel="shortcut icon" href="images/logo.png">
+      <link rel="shortcut icon" href="../../../images/logo.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
     
     
       
-        <title>Android Interview</title>
+        <title>LCOF 18. 删除链表的节点</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.fe0cca5b.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.fe0cca5b.min.css">
       
-        <link rel="stylesheet" href="assets/stylesheets/palette.a46bcfb3.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.a46bcfb3.min.css">
       
       
         
@@ -58,7 +58,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#1" class="md-skip">
           跳转至
         </a>
       
@@ -69,7 +69,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="." title="Android Interview" class="md-header-nav__button md-logo" aria-label="Android Interview">
+    <a href="../../.." title="Android Interview" class="md-header-nav__button md-logo" aria-label="Android Interview">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.61 15.15c-.46 0-.84-.37-.84-.83s.38-.82.84-.82c.46 0 .84.36.84.82 0 .46-.38.83-.84.83m-9.2 0c-.46 0-.84-.37-.84-.83 0-.46.38-.82.84-.82.46 0 .83.36.83.82 0 .46-.37.83-.83.83m9.5-5.01l1.67-2.88c.09-.17.03-.38-.13-.47-.17-.1-.38-.04-.45.13l-1.71 2.91A10.15 10.15 0 0012 8.91c-1.53 0-3 .33-4.27.91L6.04 6.91a.334.334 0 00-.47-.13c-.17.09-.22.3-.13.47l1.66 2.88C4.25 11.69 2.29 14.58 2 18h20c-.28-3.41-2.23-6.3-5.09-7.86z"/></svg>
@@ -86,7 +86,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              本站简介
+              LCOF 18. 删除链表的节点
             
           </span>
         </div>
@@ -156,7 +156,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Android Interview" class="md-nav__button md-logo" aria-label="Android Interview">
+    <a href="../../.." title="Android Interview" class="md-nav__button md-logo" aria-label="Android Interview">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.61 15.15c-.46 0-.84-.37-.84-.83s.38-.82.84-.82c.46 0 .84.36.84.82 0 .46-.38.83-.84.83m-9.2 0c-.46 0-.84-.37-.84-.83 0-.46.38-.82.84-.82.46 0 .83.36.83.82 0 .46-.37.83-.83.83m9.5-5.01l1.67-2.88c.09-.17.03-.38-.13-.47-.17-.1-.38-.04-.45.13l-1.71 2.91A10.15 10.15 0 0012 8.91c-1.53 0-3 .33-4.27.91L6.04 6.91a.334.334 0 00-.47-.13c-.17.09-.22.3-.13.47l1.66 2.88C4.25 11.69 2.29 14.58 2 18h20c-.28-3.41-2.23-6.3-5.09-7.86z"/></svg>
@@ -184,74 +184,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        本站简介
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
-      </label>
-    
-    <a href="." title="本站简介" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../.." title="本站简介" class="md-nav__link">
       本站简介
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    时间节点
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    意向岗位
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    开库目的
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    复习资料
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -286,7 +223,7 @@
 
 
   <li class="md-nav__item">
-    <a href="Android/" title="README" class="md-nav__link">
+    <a href="../../../Android/" title="README" class="md-nav__link">
       README
     </a>
   </li>
@@ -328,7 +265,7 @@
 
 
   <li class="md-nav__item">
-    <a href="Java/" title="README" class="md-nav__link">
+    <a href="../../../Java/" title="README" class="md-nav__link">
       README
     </a>
   </li>
@@ -370,7 +307,7 @@
 
 
   <li class="md-nav__item">
-    <a href="Kotlin/" title="README" class="md-nav__link">
+    <a href="../../../Kotlin/" title="README" class="md-nav__link">
       README
     </a>
   </li>
@@ -412,7 +349,7 @@
 
 
   <li class="md-nav__item">
-    <a href="%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="README" class="md-nav__link">
+    <a href="../../../%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="README" class="md-nav__link">
       README
     </a>
   </li>
@@ -454,7 +391,7 @@
 
 
   <li class="md-nav__item">
-    <a href="%E6%95%B0%E6%8D%AE%E5%BA%93/" title="README" class="md-nav__link">
+    <a href="../../../%E6%95%B0%E6%8D%AE%E5%BA%93/" title="README" class="md-nav__link">
       README
     </a>
   </li>
@@ -469,10 +406,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
     
     <label class="md-nav__link" for="nav-7">
       数据结构与算法
@@ -496,7 +435,7 @@
 
 
   <li class="md-nav__item">
-    <a href="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" title="README" class="md-nav__link">
+    <a href="../../" title="README" class="md-nav__link">
       README
     </a>
   </li>
@@ -506,10 +445,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7-2" type="checkbox" id="nav-7-2">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7-2" type="checkbox" id="nav-7-2" checked>
     
     <label class="md-nav__link" for="nav-7-2">
       剑指Offer
@@ -533,7 +474,7 @@
 
 
   <li class="md-nav__item">
-    <a href="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%89%91%E6%8C%87Offer/lcof-03/" title="LCOF 03. 数组中重复的数字" class="md-nav__link">
+    <a href="../lcof-03/" title="LCOF 03. 数组中重复的数字" class="md-nav__link">
       LCOF 03. 数组中重复的数字
     </a>
   </li>
@@ -545,7 +486,7 @@
 
 
   <li class="md-nav__item">
-    <a href="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%89%91%E6%8C%87Offer/lcof-04/" title="LCOF 04. 二维数组中的查找" class="md-nav__link">
+    <a href="../lcof-04/" title="LCOF 04. 二维数组中的查找" class="md-nav__link">
       LCOF 04. 二维数组中的查找
     </a>
   </li>
@@ -557,7 +498,7 @@
 
 
   <li class="md-nav__item">
-    <a href="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%89%91%E6%8C%87Offer/lcof-05/" title="LCOF 05. 替换空格" class="md-nav__link">
+    <a href="../lcof-05/" title="LCOF 05. 替换空格" class="md-nav__link">
       LCOF 05. 替换空格
     </a>
   </li>
@@ -569,7 +510,7 @@
 
 
   <li class="md-nav__item">
-    <a href="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%89%91%E6%8C%87Offer/lcof-06/" title="LCOF 06. 从尾到头打印链表" class="md-nav__link">
+    <a href="../lcof-06/" title="LCOF 06. 从尾到头打印链表" class="md-nav__link">
       LCOF 06. 从尾到头打印链表
     </a>
   </li>
@@ -581,7 +522,7 @@
 
 
   <li class="md-nav__item">
-    <a href="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%89%91%E6%8C%87Offer/lcof-07/" title="LCOF 07. 重建二叉树" class="md-nav__link">
+    <a href="../lcof-07/" title="LCOF 07. 重建二叉树" class="md-nav__link">
       LCOF 07. 重建二叉树
     </a>
   </li>
@@ -593,7 +534,7 @@
 
 
   <li class="md-nav__item">
-    <a href="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%89%91%E6%8C%87Offer/lcof-09/" title="LCOF 09. 用两个栈实现队列" class="md-nav__link">
+    <a href="../lcof-09/" title="LCOF 09. 用两个栈实现队列" class="md-nav__link">
       LCOF 09. 用两个栈实现队列
     </a>
   </li>
@@ -605,7 +546,7 @@
 
 
   <li class="md-nav__item">
-    <a href="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%89%91%E6%8C%87Offer/lcof-10-1/" title="LCOF 10-I. 斐波那契数列" class="md-nav__link">
+    <a href="../lcof-10-1/" title="LCOF 10-I. 斐波那契数列" class="md-nav__link">
       LCOF 10-I. 斐波那契数列
     </a>
   </li>
@@ -617,7 +558,7 @@
 
 
   <li class="md-nav__item">
-    <a href="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%89%91%E6%8C%87Offer/lcof-10-2/" title="LCOF 10-II. 青蛙跳台阶问题" class="md-nav__link">
+    <a href="../lcof-10-2/" title="LCOF 10-II. 青蛙跳台阶问题" class="md-nav__link">
       LCOF 10-II. 青蛙跳台阶问题
     </a>
   </li>
@@ -629,7 +570,7 @@
 
 
   <li class="md-nav__item">
-    <a href="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%89%91%E6%8C%87Offer/lcof-11/" title="LCOF 11. 旋转数组的最小数字" class="md-nav__link">
+    <a href="../lcof-11/" title="LCOF 11. 旋转数组的最小数字" class="md-nav__link">
       LCOF 11. 旋转数组的最小数字
     </a>
   </li>
@@ -641,7 +582,7 @@
 
 
   <li class="md-nav__item">
-    <a href="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%89%91%E6%8C%87Offer/lcof-12/" title="LCOF 12. 矩阵中的路径" class="md-nav__link">
+    <a href="../lcof-12/" title="LCOF 12. 矩阵中的路径" class="md-nav__link">
       LCOF 12. 矩阵中的路径
     </a>
   </li>
@@ -653,7 +594,7 @@
 
 
   <li class="md-nav__item">
-    <a href="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%89%91%E6%8C%87Offer/lcof-13/" title="LCOF 13. 机器人的运动范围" class="md-nav__link">
+    <a href="../lcof-13/" title="LCOF 13. 机器人的运动范围" class="md-nav__link">
       LCOF 13. 机器人的运动范围
     </a>
   </li>
@@ -665,7 +606,7 @@
 
 
   <li class="md-nav__item">
-    <a href="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%89%91%E6%8C%87Offer/lcof-14-2/" title="LCOF 14-II. 剪绳子 II" class="md-nav__link">
+    <a href="../lcof-14-2/" title="LCOF 14-II. 剪绳子 II" class="md-nav__link">
       LCOF 14-II. 剪绳子 II
     </a>
   </li>
@@ -677,7 +618,7 @@
 
 
   <li class="md-nav__item">
-    <a href="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%89%91%E6%8C%87Offer/lcof-14/" title="LCOF 14-I. 剪绳子" class="md-nav__link">
+    <a href="../lcof-14/" title="LCOF 14-I. 剪绳子" class="md-nav__link">
       LCOF 14-I. 剪绳子
     </a>
   </li>
@@ -689,7 +630,7 @@
 
 
   <li class="md-nav__item">
-    <a href="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%89%91%E6%8C%87Offer/lcof-15/" title="LCOF 15. 二进制中1的个数" class="md-nav__link">
+    <a href="../lcof-15/" title="LCOF 15. 二进制中1的个数" class="md-nav__link">
       LCOF 15. 二进制中1的个数
     </a>
   </li>
@@ -701,7 +642,7 @@
 
 
   <li class="md-nav__item">
-    <a href="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%89%91%E6%8C%87Offer/lcof-16/" title="LCOF 16. 数值的整数次方" class="md-nav__link">
+    <a href="../lcof-16/" title="LCOF 16. 数值的整数次方" class="md-nav__link">
       LCOF 16. 数值的整数次方
     </a>
   </li>
@@ -713,7 +654,7 @@
 
 
   <li class="md-nav__item">
-    <a href="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%89%91%E6%8C%87Offer/lcof-17/" title="LCOF 17. 打印从1到最大的n位数" class="md-nav__link">
+    <a href="../lcof-17/" title="LCOF 17. 打印从1到最大的n位数" class="md-nav__link">
       LCOF 17. 打印从1到最大的n位数
     </a>
   </li>
@@ -723,11 +664,83 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%89%91%E6%8C%87Offer/lcof-18/" title="LCOF 18. 删除链表的节点" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        LCOF 18. 删除链表的节点
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="LCOF 18. 删除链表的节点" class="md-nav__link md-nav__link--active">
       LCOF 18. 删除链表的节点
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1. 问题
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2. 解法
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 解法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-java" class="md-nav__link">
+    2.1 Java
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-kotlin" class="md-nav__link">
+    2.2 Kotlin
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3. 参考
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -737,7 +750,7 @@
 
 
   <li class="md-nav__item">
-    <a href="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%89%91%E6%8C%87Offer/lcof-19/" title="LCOF 19. 正则表达式匹配" class="md-nav__link">
+    <a href="../lcof-19/" title="LCOF 19. 正则表达式匹配" class="md-nav__link">
       LCOF 19. 正则表达式匹配
     </a>
   </li>
@@ -749,7 +762,7 @@
 
 
   <li class="md-nav__item">
-    <a href="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%89%91%E6%8C%87Offer/lcof-29/" title="LCOF 29. 顺时针打印矩阵" class="md-nav__link">
+    <a href="../lcof-29/" title="LCOF 29. 顺时针打印矩阵" class="md-nav__link">
       LCOF 29. 顺时针打印矩阵
     </a>
   </li>
@@ -761,7 +774,7 @@
 
 
   <li class="md-nav__item">
-    <a href="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%89%91%E6%8C%87Offer/lcof-46/" title="LCOF 46. 把数字翻译成字符串" class="md-nav__link">
+    <a href="../lcof-46/" title="LCOF 46. 把数字翻译成字符串" class="md-nav__link">
       LCOF 46. 把数字翻译成字符串
     </a>
   </li>
@@ -773,7 +786,7 @@
 
 
   <li class="md-nav__item">
-    <a href="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%89%91%E6%8C%87Offer/lcof-54/" title="LCOF 54. 二叉搜索树的第k大节点" class="md-nav__link">
+    <a href="../lcof-54/" title="LCOF 54. 二叉搜索树的第k大节点" class="md-nav__link">
       LCOF 54. 二叉搜索树的第k大节点
     </a>
   </li>
@@ -820,7 +833,7 @@
 
 
   <li class="md-nav__item">
-    <a href="%E7%AE%80%E5%8E%86/" title="README" class="md-nav__link">
+    <a href="../../../%E7%AE%80%E5%8E%86/" title="README" class="md-nav__link">
       README
     </a>
   </li>
@@ -862,7 +875,7 @@
 
 
   <li class="md-nav__item">
-    <a href="%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" title="README" class="md-nav__link">
+    <a href="../../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" title="README" class="md-nav__link">
       README
     </a>
   </li>
@@ -874,7 +887,7 @@
 
 
   <li class="md-nav__item">
-    <a href="%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/1.%20%E7%BB%BC%E8%BF%B0/" title="1. 综述" class="md-nav__link">
+    <a href="../../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/1.%20%E7%BB%BC%E8%BF%B0/" title="1. 综述" class="md-nav__link">
       1. 综述
     </a>
   </li>
@@ -886,7 +899,7 @@
 
 
   <li class="md-nav__item">
-    <a href="%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/2.%20%E7%89%A9%E7%90%86%E5%B1%82/" title="2. 物理层" class="md-nav__link">
+    <a href="../../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/2.%20%E7%89%A9%E7%90%86%E5%B1%82/" title="2. 物理层" class="md-nav__link">
       2. 物理层
     </a>
   </li>
@@ -898,7 +911,7 @@
 
 
   <li class="md-nav__item">
-    <a href="%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/3.%20%E9%93%BE%E8%B7%AF%E5%B1%82/" title="3. 链路层" class="md-nav__link">
+    <a href="../../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/3.%20%E9%93%BE%E8%B7%AF%E5%B1%82/" title="3. 链路层" class="md-nav__link">
       3. 链路层
     </a>
   </li>
@@ -910,7 +923,7 @@
 
 
   <li class="md-nav__item">
-    <a href="%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/4.%20%E7%BD%91%E7%BB%9C%E5%B1%82/" title="4. 网络层" class="md-nav__link">
+    <a href="../../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/4.%20%E7%BD%91%E7%BB%9C%E5%B1%82/" title="4. 网络层" class="md-nav__link">
       4. 网络层
     </a>
   </li>
@@ -922,7 +935,7 @@
 
 
   <li class="md-nav__item">
-    <a href="%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/5.%20%E4%BC%A0%E8%BE%93%E5%B1%82/" title="5. 传输层" class="md-nav__link">
+    <a href="../../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/5.%20%E4%BC%A0%E8%BE%93%E5%B1%82/" title="5. 传输层" class="md-nav__link">
       5. 传输层
     </a>
   </li>
@@ -934,7 +947,7 @@
 
 
   <li class="md-nav__item">
-    <a href="%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/6.%20%E5%BA%94%E7%94%A8%E5%B1%82/" title="6. 应用层" class="md-nav__link">
+    <a href="../../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/6.%20%E5%BA%94%E7%94%A8%E5%B1%82/" title="6. 应用层" class="md-nav__link">
       6. 应用层
     </a>
   </li>
@@ -976,7 +989,7 @@
 
 
   <li class="md-nav__item">
-    <a href="%E9%9D%A2%E7%BB%8F/" title="README" class="md-nav__link">
+    <a href="../../../%E9%9D%A2%E7%BB%8F/" title="README" class="md-nav__link">
       README
     </a>
   </li>
@@ -1013,7 +1026,7 @@
 
 
   <li class="md-nav__item">
-    <a href="%E9%9D%A2%E7%BB%8F/%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95/Interview%201/" title="Interview 1" class="md-nav__link">
+    <a href="../../../%E9%9D%A2%E7%BB%8F/%E6%A8%A1%E6%8B%9F%E9%9D%A2%E8%AF%95/Interview%201/" title="Interview 1" class="md-nav__link">
       Interview 1
     </a>
   </li>
@@ -1043,8 +1056,6 @@
 <nav class="md-nav md-nav--secondary" aria-label="目录">
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon">
@@ -1055,29 +1066,42 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    时间节点
+  <a href="#1" class="md-nav__link">
+    1. 问题
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    意向岗位
+  <a href="#2" class="md-nav__link">
+    2. 解法
   </a>
+  
+    <nav class="md-nav" aria-label="2. 解法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-java" class="md-nav__link">
+    2.1 Java
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-kotlin" class="md-nav__link">
+    2.2 Kotlin
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    开库目的
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    复习资料
+  <a href="#3" class="md-nav__link">
+    3. 参考
   </a>
   
 </li>
@@ -1094,7 +1118,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/hishark/android-interview/edit/master/docs/index.md" title="编辑此页" class="md-content__button md-icon">
+                  <a href="https://github.com/hishark/android-interview/edit/master/docs/数据结构与算法/剑指Offer/lcof-18.md" title="编辑此页" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -1102,21 +1126,102 @@
                   
                 
                 
-                <h1 id="_1">本站简介<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p>仓库启动时间：2020年6月29日</p>
-<p>这里是777的2021年校招准备仓库，准备期间还不太完善，明年6月希望能比较丰满啦！</p>
-<p>使用Mkdocs-Material生成了一个<a href="https://hishark777.com/Android-Interview">静态网站</a>，方便查看。</p>
-<h2 id="_2">时间节点<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>本人是ECNU2019级软件工程专硕，学制2.5年，秋招时间是2021年6月-10月。
-字节跳动等互联网厂子的提前批6月中旬就会开始，持续一到两个月，理想情况是提前批直接上岸然后就不用去刚秋招了（梦想总是要有的T.T</p>
-<h2 id="_3">意向岗位<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>本科学过Android也挺喜欢，大四找实习本来想找Android开发，顺手投了个Android测开，面试过了就去实习了，体验半年过后还是想做纯开发。算法岗神仙打架我学也学不来，于是就愉快地决定做Android开发啦！希望明年顺利上岸然后开始租房养小狗🐶</p>
-<h2 id="_4">开库目的<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<p>准备了一遭校招总要留下点什么，给自己复盘也好，给想要找Android岗的兄弟们一个参考也好，总会创造点价值哒。</p>
-<h2 id="_5">复习资料<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<p><a href="https://teachyourselfcs.com/">Teach Yourself Computer Science</a></p>
-<p><a href="https://github.com/keithnull/TeachYourselfCS-CN/blob/master/TeachYourselfCS-CN.md">Teach Yourself Computer Science - zh</a></p>
-<p><a href="https://www.nowcoder.com/discuss/148929?type=post&amp;order=time&amp;pos=&amp;page=2&amp;channel=1009&amp;source_id=search_post">Cyc2018</a></p>
+                  <h1>LCOF 18. 删除链表的节点</h1>
+                
+                <h2 id="1">1. <a href="https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof">问题</a><a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<p>给定单向链表的头指针和一个要删除的节点的值，定义一个函数删除该节点。</p>
+<p>返回删除后的链表的头节点。</p>
+<p>注意：此题对比原题有改动</p>
+<!--more-->
+
+<p>示例 1:
+<div class="highlight"><pre><span></span><code>输入: head = [4,5,1,9], val = 5
+输出: [4,1,9]
+解释: 给定你链表中值为 5 的第二个节点，那么在调用了你的函数之后，该链表应变为 4 -&gt; 1 -&gt; 9.
+</code></pre></div></p>
+<p>示例 2:
+<div class="highlight"><pre><span></span><code>输入: head = [4,5,1,9], val = 1
+输出: [4,5,9]
+解释: 给定你链表中值为 1 的第三个节点，那么在调用了你的函数之后，该链表应变为 4 -&gt; 5 -&gt; 9.
+</code></pre></div></p>
+<p>说明：
+- 题目保证链表中节点的值互不相同
+- 若使用 C 或 C++ 语言，你不需要 free 或 delete 被删除的节点</p>
+<h2 id="2">2. 解法<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="21-java">2.1 Java<a class="headerlink" href="#21-java" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="cm">/**</span>
+<span class="cm"> * Definition for singly-linked list.</span>
+<span class="cm"> * public class ListNode {</span>
+<span class="cm"> *     int val;</span>
+<span class="cm"> *     ListNode next;</span>
+<span class="cm"> *     ListNode(int x) { val = x; }</span>
+<span class="cm"> * }</span>
+<span class="cm"> */</span>
+<span class="kd">class</span> <span class="nc">Solution</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="n">ListNode</span> <span class="nf">deleteNode</span><span class="p">(</span><span class="n">ListNode</span> <span class="n">head</span><span class="p">,</span> <span class="kt">int</span> <span class="n">val</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// 如果要删除头结点，直接返回next即可</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">head</span><span class="p">.</span><span class="na">val</span> <span class="o">==</span> <span class="n">val</span><span class="p">)</span> 
+            <span class="k">return</span> <span class="n">head</span><span class="p">.</span><span class="na">next</span><span class="p">;</span>
+
+        <span class="c1">// 当前结点cur，从head开始遍历</span>
+        <span class="n">ListNode</span> <span class="n">cur</span> <span class="o">=</span> <span class="n">head</span><span class="p">;</span>
+        <span class="c1">// cur的上一个结点</span>
+        <span class="n">ListNode</span> <span class="n">pre</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+
+        <span class="c1">// 当前结点值不等于要删除的结点值，就一直往下一个节点移动</span>
+        <span class="k">while</span><span class="p">(</span><span class="n">cur</span><span class="p">.</span><span class="na">val</span> <span class="o">!=</span> <span class="n">val</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">pre</span> <span class="o">=</span> <span class="n">cur</span><span class="p">;</span>
+            <span class="n">cur</span> <span class="o">=</span> <span class="n">cur</span><span class="p">.</span><span class="na">next</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="c1">// 退出循环的时候，cur就是要删除的结点，把pre的next指向cur的next就好啦 </span>
+        <span class="n">pre</span><span class="p">.</span><span class="na">next</span> <span class="o">=</span> <span class="n">cur</span><span class="p">.</span><span class="na">next</span><span class="p">;</span>
+        <span class="c1">// 返回头结点</span>
+        <span class="k">return</span> <span class="n">head</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<h3 id="22-kotlin">2.2 Kotlin<a class="headerlink" href="#22-kotlin" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="cm">/**</span>
+<span class="cm"> * Definition for singly-linked list.</span>
+<span class="cm"> * public class ListNode {</span>
+<span class="cm"> * int val;</span>
+<span class="cm"> * ListNode next;</span>
+<span class="cm"> * ListNode(int x) { val = x; }</span>
+<span class="cm"> * }</span>
+<span class="cm"> */</span>
+<span class="k">internal</span> <span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
+    <span class="k">fun</span> <span class="nf">deleteNode</span><span class="p">(</span><span class="n">head</span><span class="p">:</span> <span class="n">ListNode</span><span class="p">,</span> <span class="n">`val`</span><span class="p">:</span> <span class="n">Int</span><span class="p">):</span> <span class="n">ListNode</span> <span class="p">{</span>
+        <span class="c1">// 如果要删除头结点，直接返回next即可</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">head</span><span class="p">.</span><span class="n">`val`</span> <span class="p">===</span> <span class="n">`val`</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">head</span><span class="p">.</span><span class="n">next</span>
+
+        <span class="c1">// 当前结点cur，从head开始遍历</span>
+        <span class="k">var</span> <span class="py">cur</span> <span class="p">=</span> <span class="n">head</span>
+        <span class="c1">// cur的上一个结点</span>
+        <span class="k">var</span> <span class="py">pre</span><span class="p">:</span> <span class="n">ListNode</span><span class="p">?</span> <span class="p">=</span> <span class="k">null</span>
+
+        <span class="c1">// 当前结点值不等于要删除的结点值，就一直往下一个节点移动</span>
+        <span class="k">while</span> <span class="p">(</span><span class="n">cur</span><span class="p">.</span><span class="n">`val`</span> <span class="p">!==</span> <span class="n">`val`</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">pre</span> <span class="p">=</span> <span class="n">cur</span>
+            <span class="n">cur</span> <span class="p">=</span> <span class="n">cur</span><span class="p">.</span><span class="n">next</span>
+        <span class="p">}</span>
+
+        <span class="c1">// 退出循环的时候，cur就是要删除的结点，把pre的next指向cur的next就好啦 </span>
+        <span class="n">pre</span><span class="o">!!</span><span class="p">.</span><span class="n">next</span> <span class="p">=</span> <span class="n">cur</span><span class="p">.</span><span class="n">next</span>
+        <span class="c1">// 返回头结点</span>
+        <span class="k">return</span> <span class="n">head</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<h2 id="3">3. 参考<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof">https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof</a></li>
+</ul>
+                
+                  
                 
               
               
@@ -1135,14 +1240,28 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
+          <a href="../lcof-17/" title="LCOF 17. 打印从1到最大的n位数" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  上一页
+                </span>
+                LCOF 17. 打印从1到最大的n位数
+              </div>
+            </div>
+          </a>
         
-          <a href="Android/" title="README" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+        
+          <a href="../lcof-19/" title="LCOF 19. 正则表达式匹配" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   下一页
                 </span>
-                README
+                LCOF 19. 正则表达式匹配
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -1191,15 +1310,15 @@
       
     </div>
     
-      <script src="assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c"}</script>
+      <script src="../../../assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c"}</script>
       
       <script>
         app = initialize({
-          base: ".",
+          base: "../../..",
           features: [],
           search: Object.assign({
-            worker: "assets/javascripts/worker/search.a68abb33.min.js"
+            worker: "../../../assets/javascripts/worker/search.a68abb33.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
