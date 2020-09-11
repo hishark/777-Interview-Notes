@@ -25,5 +25,5 @@
 
 [Teach Yourself Computer Science - ZH](https://github.com/keithnull/TeachYourselfCS-CN/blob/master/TeachYourselfCS-CN.md)
 
-[Cyc2018 - 面试复习资料汇总](https://www.nowcoder.com/discuss/148929?type=post&order=time&pos=&page=2&channel=1009&source_id=search_post)
+[Cyc2018](https://www.nowcoder.com/discuss/148929?type=post&order=time&pos=&page=2&channel=1009&source_id=search_post)
 
