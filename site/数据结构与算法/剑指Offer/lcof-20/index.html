@@ -15,7 +15,7 @@
     
     
       
-        <title>LCOF 29. 顺时针打印矩阵</title>
+        <title>LCOF 20. 表示数值的字符串</title>
       
     
     
@@ -86,7 +86,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              LCOF 29. 顺时针打印矩阵
+              LCOF 20. 表示数值的字符串
             
           </span>
         </div>
@@ -688,30 +688,6 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="../lcof-20/" title="LCOF 20. 表示数值的字符串" class="md-nav__link">
-      LCOF 20. 表示数值的字符串
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../lcof-21/" title="LCOF 21. 调整数组顺序使奇数位于偶数前面" class="md-nav__link">
-      LCOF 21. 调整数组顺序使奇数位于偶数前面
-    </a>
-  </li>
-
-        
-          
-          
-          
-
   
 
 
@@ -721,14 +697,14 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        LCOF 29. 顺时针打印矩阵
+        LCOF 20. 表示数值的字符串
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
         </span>
       </label>
     
-    <a href="./" title="LCOF 29. 顺时针打印矩阵" class="md-nav__link md-nav__link--active">
-      LCOF 29. 顺时针打印矩阵
+    <a href="./" title="LCOF 20. 表示数值的字符串" class="md-nav__link md-nav__link--active">
+      LCOF 20. 表示数值的字符串
     </a>
     
       
@@ -785,17 +761,34 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    4. 学习草稿
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../lcof-21/" title="LCOF 21. 调整数组顺序使奇数位于偶数前面" class="md-nav__link">
+      LCOF 21. 调整数组顺序使奇数位于偶数前面
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../lcof-29/" title="LCOF 29. 顺时针打印矩阵" class="md-nav__link">
+      LCOF 29. 顺时针打印矩阵
+    </a>
   </li>
 
         
@@ -1137,13 +1130,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    4. 学习草稿
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1156,7 +1142,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/hishark/android-interview/edit/master/docs/数据结构与算法/剑指Offer/lcof-29.md" title="编辑此页" class="md-content__button md-icon">
+                  <a href="https://github.com/hishark/android-interview/edit/master/docs/数据结构与算法/剑指Offer/lcof-20.md" title="编辑此页" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -1164,154 +1150,187 @@
                   
                 
                 
-                  <h1>LCOF 29. 顺时针打印矩阵</h1>
+                  <h1>LCOF 20. 表示数值的字符串</h1>
                 
-                <h2 id="1"><a href="https://leetcode-cn.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/">1. 问题</a><a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
-<p>输入一个矩阵，按照从外向里以顺时针的顺序依次打印出每一个数字。</p>
-<p>示例 1：</p>
-<blockquote>
-<p>输入：matrix = [[1,2,3],[4,5,6],[7,8,9]]
-输出：[1,2,3,6,9,8,7,4,5]
+                <h2 id="1">1. <a href="https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/">问题</a><a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<p>请实现一个函数用来判断字符串是否表示数值（包括整数和小数）。例如，字符串"+100"、"5e2"、"-123"、"3.1416"、"-1E-16"、"0123"都表示数值，但"12e"、"1a3.14"、"1.2.3"、"+-5"及"12e+5.4"都不是。</p>
 <!--more-->
-示例 2：</p>
-<p>输入：matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
-输出：[1,2,3,4,8,12,11,10,9,5,6,7]</p>
-</blockquote>
-<p>限制：
-- 0 &lt;= matrix.length &lt;= 100
-- 0 &lt;= matrix[i].length &lt;= 100</p>
+
 <h2 id="2">2. 解法<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <h3 id="21-java">2.1 Java<a class="headerlink" href="#21-java" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="kd">class</span> <span class="nc">Solution</span> <span class="p">{</span>
-    <span class="kd">public</span> <span class="kt">int</span><span class="o">[]</span> <span class="nf">spiralOrder</span><span class="p">(</span><span class="kt">int</span><span class="o">[][]</span> <span class="n">matrix</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">// 空值处理</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">matrix</span><span class="p">.</span><span class="na">length</span><span class="o">==</span><span class="mi">0</span><span class="p">)</span> 
-            <span class="k">return</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">;</span>
+    <span class="c1">// 全局索引</span>
+    <span class="kd">public</span> <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 
-        <span class="c1">// 初始化边界和结果数组</span>
-        <span class="kt">int</span> <span class="n">left</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">right</span> <span class="o">=</span> <span class="n">matrix</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
-        <span class="kt">int</span> <span class="n">top</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">bottom</span> <span class="o">=</span> <span class="n">matrix</span><span class="p">.</span><span class="na">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
-        <span class="kt">int</span><span class="o">[]</span> <span class="n">res</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">matrix</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">length</span> <span class="o">*</span> <span class="n">matrix</span><span class="p">.</span><span class="na">length</span><span class="o">]</span><span class="p">;</span>
+    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">isNumber</span><span class="p">(</span><span class="n">String</span> <span class="n">s</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// 假设字符串的形式为A.BeC或者A.BEC</span>
+        <span class="c1">// A为整数部分，B为小数部分，C为指数部分，按顺序判断是否包含这三个部分</span>
+        <span class="c1">//  1. 在字符串最后添加结束标记</span>
+        <span class="c1">//  2. 使用全局索引index遍历字符串</span>
+        <span class="c1">//  3. scanInteger扫描有符号整数，用于匹配A和C</span>
+        <span class="c1">//  4. scanUnsignedInteger扫描无符号整数，用于匹配B</span>
+        <span class="c1">// 另外需要注意字符串首尾若有空格是合法的</span>
 
-                <span class="c1">// 结果数组下标</span>
-        <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-        <span class="c1">// 按照方向进行打印</span>
-        <span class="k">while</span> <span class="p">(</span><span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
-            <span class="c1">// 从左到右</span>
-            <span class="c1">// 1. 按照边界打印</span>
-            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="n">left</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">right</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-                <span class="n">res</span><span class="o">[</span><span class="n">index</span><span class="o">++]</span> <span class="o">=</span> <span class="n">matrix</span><span class="o">[</span><span class="n">top</span><span class="o">][</span><span class="n">i</span><span class="o">]</span><span class="p">;</span>
-            <span class="c1">// 2. 上边界收缩（下移）</span>
-            <span class="n">top</span><span class="o">++</span><span class="p">;</span>
-            <span class="c1">// 3. 判断收缩后的上边界和下边界是否相遇</span>
-            <span class="k">if</span> <span class="p">(</span><span class="n">top</span> <span class="o">&gt;</span> <span class="n">bottom</span><span class="p">)</span>
-                <span class="k">break</span><span class="p">;</span>
+        <span class="c1">// 特判</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">s</span> <span class="o">==</span> <span class="kc">null</span> <span class="o">||</span> <span class="n">s</span><span class="p">.</span><span class="na">length</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> 
+            <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
 
-            <span class="c1">// 从上到下</span>
-            <span class="c1">// 1. 按照边界打印</span>
-            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="n">top</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">bottom</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
-                <span class="n">res</span><span class="o">[</span><span class="n">index</span><span class="o">++]</span> <span class="o">=</span> <span class="n">matrix</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">right</span><span class="o">]</span><span class="p">;</span>
-            <span class="c1">// 2. 右边界收缩（左移）</span>
-            <span class="n">right</span><span class="o">--</span><span class="p">;</span>
-            <span class="c1">// 3. 判断收缩后的右边界和左边界是否相遇</span>
-            <span class="k">if</span> <span class="p">(</span><span class="n">left</span> <span class="o">&gt;</span> <span class="n">right</span><span class="p">)</span>
-                <span class="k">break</span><span class="p">;</span>
+        <span class="c1">// 字符串s是否是一个数字</span>
+        <span class="kt">boolean</span> <span class="n">isNum</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
 
-            <span class="c1">// 从右到左</span>
-            <span class="c1">// 1. 按照边界打印</span>
-            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="n">right</span><span class="p">;</span><span class="n">i</span><span class="o">&gt;=</span><span class="n">left</span><span class="p">;</span><span class="n">i</span><span class="o">--</span><span class="p">)</span>
-                <span class="n">res</span><span class="o">[</span><span class="n">index</span><span class="o">++]</span> <span class="o">=</span> <span class="n">matrix</span><span class="o">[</span><span class="n">bottom</span><span class="o">][</span><span class="n">i</span><span class="o">]</span><span class="p">;</span>
-            <span class="c1">// 2. 下边界收缩（上移)</span>
-            <span class="n">bottom</span><span class="o">--</span><span class="p">;</span>
-            <span class="c1">// 3. 判断收缩后的下边界和上边界是否相遇</span>
-            <span class="k">if</span> <span class="p">(</span><span class="n">top</span> <span class="o">&gt;</span> <span class="n">bottom</span><span class="p">)</span>
-                <span class="k">break</span><span class="p">;</span>
+        <span class="c1">// Step1: 添加结束标志</span>
+        <span class="n">s</span> <span class="o">+=</span> <span class="sc">&#39;*&#39;</span><span class="p">;</span>
 
-            <span class="c1">// 从下到上</span>
-            <span class="c1">// 1. 按照边界打印</span>
-            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="n">bottom</span><span class="p">;</span><span class="n">i</span><span class="o">&gt;=</span><span class="n">top</span><span class="p">;</span><span class="n">i</span><span class="o">--</span><span class="p">)</span>
-                <span class="n">res</span><span class="o">[</span><span class="n">index</span><span class="o">++]</span> <span class="o">=</span> <span class="n">matrix</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">left</span><span class="o">]</span><span class="p">;</span>
-            <span class="c1">// 2. 左边界收缩（右移）</span>
-            <span class="n">left</span><span class="o">++</span><span class="p">;</span>
-            <span class="c1">// 3. 判断收缩后的左边界和右边界是否相遇</span>
-            <span class="k">if</span><span class="p">(</span><span class="n">left</span> <span class="o">&gt;</span> <span class="n">right</span><span class="p">)</span> 
-                <span class="k">break</span><span class="p">;</span>
+        <span class="c1">// Step2: 跳过字符串首部的所有空格（如果存在的话）</span>
+        <span class="k">while</span> <span class="p">(</span><span class="n">s</span><span class="p">.</span><span class="na">charAt</span><span class="p">(</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="sc">&#39; &#39;</span><span class="p">)</span>
+            <span class="n">index</span><span class="o">++</span><span class="p">;</span>
+
+        <span class="c1">// Step3: 整数部分</span>
+        <span class="n">isNum</span> <span class="o">=</span> <span class="n">scanInteger</span><span class="p">(</span><span class="n">s</span><span class="p">);</span>
+
+        <span class="c1">// Step4. 小数部分（如果存在小数点的话）</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">s</span><span class="p">.</span><span class="na">charAt</span><span class="p">(</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="sc">&#39;.&#39;</span><span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// 跳过小数点</span>
+            <span class="n">index</span><span class="o">++</span><span class="p">;</span>
+            <span class="c1">// 处理小数部分，小数点左右两边只要有一边有数字就合法，所以使用「 || 」</span>
+            <span class="n">isNum</span> <span class="o">=</span> <span class="n">scanUnsignedInteger</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">||</span> <span class="n">isNum</span><span class="p">;</span>
         <span class="p">}</span>
-        <span class="k">return</span> <span class="n">res</span><span class="p">;</span>
+
+        <span class="c1">// Step5. 指数部分（如果存在e或E的话）</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">s</span><span class="p">.</span><span class="na">charAt</span><span class="p">(</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="sc">&#39;E&#39;</span> <span class="o">||</span> <span class="n">s</span><span class="p">.</span><span class="na">charAt</span><span class="p">(</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="sc">&#39;e&#39;</span><span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// 跳过E或e</span>
+            <span class="n">index</span><span class="o">++</span><span class="p">;</span>
+            <span class="c1">// 处理指数部分，e或E的两边都必须有数字，所以使用「 &amp;&amp; 」</span>
+            <span class="n">isNum</span> <span class="o">=</span> <span class="n">scanInteger</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="n">isNum</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="c1">// Step6. 跳过字符串尾部的所有空格（如果存在的话）</span>
+        <span class="k">while</span> <span class="p">(</span><span class="n">s</span><span class="p">.</span><span class="na">charAt</span><span class="p">(</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="sc">&#39; &#39;</span><span class="p">)</span> 
+            <span class="n">index</span><span class="o">++</span><span class="p">;</span>
+
+        <span class="c1">// Step7. 看是否遍历到了字符串最后，如果没有到最后的话，一定不是一个数字</span>
+        <span class="c1">// 如果遍历到了最后且isNum为true，那么s就是一个数字</span>
+        <span class="n">isNum</span> <span class="o">=</span> <span class="n">isNum</span> <span class="o">&amp;&amp;</span> <span class="n">s</span><span class="p">.</span><span class="na">charAt</span><span class="p">(</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="sc">&#39;*&#39;</span><span class="p">;</span>
+
+        <span class="k">return</span> <span class="n">isNum</span><span class="p">;</span>
 
     <span class="p">}</span>
+
+    <span class="c1">// 扫描无符号整数，用于匹配B（小数部分）</span>
+    <span class="c1">// 判断字符串内是否包含无符号数</span>
+    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">scanUnsignedInteger</span><span class="p">(</span><span class="n">String</span> <span class="n">str</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// 记下最开始的位置</span>
+        <span class="kt">int</span> <span class="n">start</span> <span class="o">=</span> <span class="n">index</span><span class="p">;</span>
+        <span class="c1">// 是数字就一直遍历下去</span>
+        <span class="k">while</span><span class="p">(</span><span class="n">str</span><span class="p">.</span><span class="na">charAt</span><span class="p">(</span><span class="n">index</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="sc">&#39;0&#39;</span> <span class="o">&amp;&amp;</span> <span class="n">str</span><span class="p">.</span><span class="na">charAt</span><span class="p">(</span><span class="n">index</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="sc">&#39;9&#39;</span><span class="p">)</span>
+            <span class="n">index</span><span class="o">++</span><span class="p">;</span>
+        <span class="c1">// 若index&gt;start说明发现了无符号整数，否则说明不包含无符号整数</span>
+        <span class="k">return</span> <span class="n">index</span> <span class="o">&gt;</span> <span class="n">start</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// 扫描有符号整数，用于匹配A（整数部分）和C（指数部分）</span>
+    <span class="c1">// 判断字符串内是否包含有符号整数</span>
+    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">scanInteger</span><span class="p">(</span><span class="n">String</span> <span class="n">str</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// 如果是有符号的，跳过这个符号，然后把后面的字符串交给scanUnsignedInteger处理</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">str</span><span class="p">.</span><span class="na">charAt</span><span class="p">(</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="sc">&#39;+&#39;</span> <span class="o">||</span> <span class="n">str</span><span class="p">.</span><span class="na">charAt</span><span class="p">(</span><span class="n">index</span><span class="p">)</span> <span class="o">==</span> <span class="sc">&#39;-&#39;</span><span class="p">)</span>
+            <span class="n">index</span><span class="o">++</span><span class="p">;</span>
+        <span class="k">return</span> <span class="n">scanUnsignedInteger</span><span class="p">(</span><span class="n">str</span><span class="p">);</span>        
+    <span class="p">}</span>   
 <span class="p">}</span>
 </code></pre></div>
 
 <h3 id="22-kotlin">2.2 Kotlin<a class="headerlink" href="#22-kotlin" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Solution</span> <span class="p">{</span>
-    <span class="k">fun</span> <span class="nf">spiralOrder</span><span class="p">(</span><span class="n">matrix</span><span class="p">:</span> <span class="n">Array</span><span class="p">&lt;</span><span class="n">IntArray</span><span class="p">&gt;):</span> <span class="n">IntArray</span> <span class="p">{</span>
-        <span class="c1">// 空值处理</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">matrix</span><span class="p">.</span><span class="n">size</span><span class="p">==</span><span class="m">0</span><span class="p">)</span> 
-            <span class="k">return</span> <span class="n">IntArray</span><span class="p">(</span><span class="m">0</span><span class="p">)</span>
+    <span class="c1">// 全局索引</span>
+    <span class="k">var</span> <span class="py">index</span> <span class="p">=</span> <span class="m">0</span>
 
-        <span class="c1">// 初始化边界和结果数组</span>
-        <span class="k">var</span> <span class="py">left</span> <span class="p">=</span> <span class="m">0</span>
-        <span class="k">var</span> <span class="py">right</span> <span class="p">=</span> <span class="n">matrix</span><span class="p">[</span><span class="m">0</span><span class="p">].</span><span class="n">size</span> <span class="p">-</span> <span class="m">1</span>
-        <span class="k">var</span> <span class="py">top</span> <span class="p">=</span> <span class="m">0</span>
-        <span class="k">var</span> <span class="py">bottom</span> <span class="p">=</span> <span class="n">matrix</span><span class="p">.</span><span class="n">size</span> <span class="p">-</span> <span class="m">1</span>
-        <span class="k">var</span> <span class="py">res</span> <span class="p">=</span> <span class="n">IntArray</span><span class="p">(</span><span class="n">matrix</span><span class="p">[</span><span class="m">0</span><span class="p">].</span><span class="n">size</span> <span class="p">*</span> <span class="n">matrix</span><span class="p">.</span><span class="n">size</span><span class="p">)</span>
+    <span class="k">fun</span> <span class="nf">isNumber</span><span class="p">(</span><span class="n">s</span><span class="p">:</span> <span class="n">String</span><span class="p">?):</span> <span class="n">Boolean</span> <span class="p">{</span>
+        <span class="k">var</span> <span class="py">s</span> <span class="p">=</span> <span class="n">s</span>
+        <span class="c1">// 假设字符串的形式为A.BeC或者A.BEC</span>
+        <span class="c1">// A为整数部分，B为小数部分，C为指数部分，按顺序判断是否包含这三个部分</span>
+        <span class="c1">//  1. 在字符串最后添加结束标记</span>
+        <span class="c1">//  2. 使用全局索引index遍历字符串</span>
+        <span class="c1">//  3. scanInteger扫描有符号整数，用于匹配A和C</span>
+        <span class="c1">//  4. scanUnsignedInteger扫描无符号整数，用于匹配B</span>
+        <span class="c1">// 另外需要注意字符串首尾若有空格是合法的</span>
 
-        <span class="c1">// 结果数组下标</span>
-        <span class="k">var</span> <span class="py">index</span> <span class="p">=</span> <span class="m">0</span>
-        <span class="k">while</span> <span class="p">(</span><span class="k">true</span><span class="p">)</span> <span class="p">{</span>
-            <span class="c1">// 从左到右</span>
-            <span class="c1">// 1. 按照边界打印</span>
-            <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="k">in</span> <span class="n">left</span><span class="p">..</span><span class="n">right</span><span class="p">)</span>
-                <span class="n">res</span><span class="p">[</span><span class="n">index</span><span class="p">++]</span> <span class="p">=</span> <span class="n">matrix</span><span class="p">[</span><span class="n">top</span><span class="p">][</span><span class="n">i</span><span class="p">]</span>
-            <span class="c1">// 2. 上边界收缩（下移）</span>
-            <span class="n">top</span><span class="p">++</span>
-            <span class="c1">// 3. 判断收缩后的上边界和下边界是否相遇</span>
-            <span class="k">if</span> <span class="p">(</span><span class="n">top</span> <span class="p">&gt;</span> <span class="n">bottom</span><span class="p">)</span>
-                <span class="k">break</span>
+        <span class="c1">// 特判</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">s</span> <span class="p">==</span> <span class="k">null</span> <span class="p">||</span> <span class="n">s</span><span class="p">.</span><span class="n">length</span> <span class="p">==</span> <span class="m">0</span><span class="p">)</span>
+            <span class="k">return</span> <span class="k">false</span>
 
-            <span class="c1">// 从上到下</span>
-            <span class="c1">// 1. 按照边界打印</span>
-            <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="k">in</span> <span class="n">top</span><span class="p">..</span><span class="n">bottom</span><span class="p">)</span>
-                <span class="n">res</span><span class="p">[</span><span class="n">index</span><span class="p">++]</span> <span class="p">=</span> <span class="n">matrix</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">right</span><span class="p">];</span>
-            <span class="c1">// 2. 右边界收缩（左移）</span>
-            <span class="n">right</span><span class="p">--</span>
-            <span class="c1">// 3. 判断收缩后的右边界和左边界是否相遇</span>
-            <span class="k">if</span> <span class="p">(</span><span class="n">left</span> <span class="p">&gt;</span> <span class="n">right</span><span class="p">)</span>
-                <span class="k">break</span>
+        <span class="c1">// 字符串s是否是一个数字</span>
+        <span class="k">var</span> <span class="py">isNum</span> <span class="p">=</span> <span class="k">false</span>
 
-            <span class="c1">// 从右到左</span>
-            <span class="c1">// 1. 按照边界打印</span>
-            <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="k">in</span> <span class="n">right</span> <span class="n">downTo</span> <span class="n">left</span><span class="p">)</span>
-                <span class="n">res</span><span class="p">[</span><span class="n">index</span><span class="p">++]</span> <span class="p">=</span> <span class="n">matrix</span><span class="p">[</span><span class="n">bottom</span><span class="p">][</span><span class="n">i</span><span class="p">]</span>
-            <span class="c1">// 2. 下边界收缩（上移)</span>
-            <span class="n">bottom</span><span class="p">--</span>
-            <span class="c1">// 3. 判断收缩后的下边界和上边界是否相遇</span>
-            <span class="k">if</span> <span class="p">(</span><span class="n">top</span> <span class="p">&gt;</span> <span class="n">bottom</span><span class="p">)</span>
-                <span class="k">break</span>
+        <span class="c1">// Step1: 添加结束标志</span>
+        <span class="n">s</span> <span class="p">+=</span> <span class="sc">&#39;*&#39;</span><span class="p">.</span><span class="n">toString</span><span class="p">()</span>
 
-            <span class="c1">// 从下到上</span>
-            <span class="c1">// 1. 按照边界打印</span>
-            <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="k">in</span> <span class="n">bottom</span> <span class="n">downTo</span> <span class="n">top</span><span class="p">)</span>
-                <span class="n">res</span><span class="p">[</span><span class="n">index</span><span class="p">++]</span> <span class="p">=</span> <span class="n">matrix</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">left</span><span class="p">]</span>
-            <span class="c1">// 2. 左边界收缩（右移）</span>
-            <span class="n">left</span><span class="p">++</span>
-            <span class="c1">// 3. 判断收缩后的左边界和右边界是否相遇</span>
-            <span class="k">if</span><span class="p">(</span><span class="n">left</span> <span class="p">&gt;</span> <span class="n">right</span><span class="p">)</span> 
-                <span class="k">break</span>
+        <span class="c1">// Step2: 跳过字符串首部的所有空格（如果存在的话）</span>
+        <span class="k">while</span> <span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="p">==</span> <span class="sc">&#39; &#39;</span><span class="p">)</span>
+            <span class="n">index</span><span class="p">++</span>
+
+        <span class="c1">// Step3: 整数部分</span>
+        <span class="n">isNum</span> <span class="p">=</span> <span class="n">scanInteger</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+
+        <span class="c1">// Step4. 小数部分（如果存在小数点的话）</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="p">==</span> <span class="sc">&#39;.&#39;</span><span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// 跳过小数点</span>
+            <span class="n">index</span><span class="p">++</span>
+            <span class="c1">// 处理小数部分，小数点左右两边只要有一边有数字就合法，所以使用「 || 」</span>
+            <span class="n">isNum</span> <span class="p">=</span> <span class="n">scanUnsignedInteger</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="p">||</span> <span class="n">isNum</span>
         <span class="p">}</span>
-        <span class="k">return</span> <span class="n">res</span>
+
+        <span class="c1">// Step5. 指数部分（如果存在e或E的话）</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="p">==</span> <span class="sc">&#39;E&#39;</span> <span class="p">||</span> <span class="n">s</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="p">==</span> <span class="sc">&#39;e&#39;</span><span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// 跳过E或e</span>
+            <span class="n">index</span><span class="p">++</span>
+            <span class="c1">// 处理指数部分，e或E的两边都必须有数字，所以使用「 &amp;&amp; 」</span>
+            <span class="n">isNum</span> <span class="p">=</span> <span class="n">scanInteger</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="p">&amp;&amp;</span> <span class="n">isNum</span>
+        <span class="p">}</span>
+
+        <span class="c1">// Step6. 跳过字符串尾部的所有空格（如果存在的话）</span>
+        <span class="k">while</span> <span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="p">==</span> <span class="sc">&#39; &#39;</span><span class="p">)</span>
+            <span class="n">index</span><span class="p">++</span>
+
+        <span class="c1">// Step7. 看是否遍历到了字符串最后，如果没有到最后的话，一定不是一个数字</span>
+        <span class="c1">// 如果遍历到了最后且isNum为true，那么s就是一个数字</span>
+        <span class="n">isNum</span> <span class="p">=</span> <span class="n">isNum</span> <span class="p">&amp;&amp;</span> <span class="n">s</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="p">==</span> <span class="sc">&#39;*&#39;</span>
+
+        <span class="k">return</span> <span class="n">isNum</span>
+
+    <span class="p">}</span>
+
+    <span class="c1">// 扫描无符号整数，用于匹配B（小数部分）</span>
+    <span class="c1">// 判断字符串内是否包含无符号数</span>
+    <span class="k">fun</span> <span class="nf">scanUnsignedInteger</span><span class="p">(</span><span class="n">str</span><span class="p">:</span> <span class="n">String</span><span class="p">):</span> <span class="n">Boolean</span> <span class="p">{</span>
+        <span class="c1">// 记下最开始的位置</span>
+        <span class="k">val</span> <span class="py">start</span> <span class="p">=</span> <span class="n">index</span>
+        <span class="c1">// 是数字就一直遍历下去</span>
+        <span class="k">while</span> <span class="p">(</span><span class="n">str</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="p">&gt;=</span> <span class="sc">&#39;0&#39;</span> <span class="p">&amp;&amp;</span> <span class="n">str</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="p">&lt;=</span> <span class="sc">&#39;9&#39;</span><span class="p">)</span>
+            <span class="n">index</span><span class="p">++</span>
+        <span class="c1">// 若index&gt;start说明发现了无符号整数，否则说明不包含无符号整数</span>
+        <span class="k">return</span> <span class="n">index</span> <span class="p">&gt;</span> <span class="n">start</span>
+    <span class="p">}</span>
+
+    <span class="c1">// 扫描有符号整数，用于匹配A（整数部分）和C（指数部分）</span>
+    <span class="c1">// 判断字符串内是否包含有符号整数</span>
+    <span class="k">fun</span> <span class="nf">scanInteger</span><span class="p">(</span><span class="n">str</span><span class="p">:</span> <span class="n">String</span><span class="p">):</span> <span class="n">Boolean</span> <span class="p">{</span>
+        <span class="c1">// 如果是有符号的，跳过这个符号，然后把后面的字符串交给scanUnsignedInteger处理</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">str</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="p">==</span> <span class="sc">&#39;+&#39;</span> <span class="p">||</span> <span class="n">str</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="p">==</span> <span class="sc">&#39;-&#39;</span><span class="p">)</span>
+            <span class="n">index</span><span class="p">++</span>
+        <span class="k">return</span> <span class="n">scanUnsignedInteger</span><span class="p">(</span><span class="n">str</span><span class="p">)</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
 
+<blockquote>
+<p>还有个解法是用有限状态自动机来做的，直接看<a href="https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/solution/mian-shi-ti-20-biao-shi-shu-zhi-de-zi-fu-chuan-y-2/">K佬的题解</a>吧，我看着就不想做OTZ。#TODO</p>
+</blockquote>
 <h2 id="3">3. 参考<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://leetcode-cn.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof">《剑指 Offer（第 2 版）》：面试题29. 顺时针打印矩阵</a></li>
-<li><a href="https://leetcode-cn.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/solution/mian-shi-ti-29-shun-shi-zhen-da-yin-ju-zhen-she-di/">Krahets：面试题29. 顺时针打印矩阵（模拟、设定边界，清晰图解）</a></li>
+<li><a href="https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/">https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/</a></li>
+<li><a href="https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/solution/mian-shi-ti-20-biao-shi-shu-zhi-de-zi-fu-chuan-y-2/">https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/solution/mian-shi-ti-20-biao-shi-shu-zhi-de-zi-fu-chuan-y-2/</a> // 还没看</li>
+<li><a href="https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/solution/zui-jian-dan-si-lu-xiang-xi-zhu-shi-zheng-shu-xiao/">https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/solution/zui-jian-dan-si-lu-xiang-xi-zhu-shi-zheng-shu-xiao/</a></li>
 </ul>
-<h2 id="4">4. 学习草稿<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
-<p><img alt="" src="https://777blog.oss-cn-shanghai.aliyuncs.com/blog%20pic/IMG_4304.JPG" /></p>
                 
                   
                 
@@ -1332,7 +1351,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../lcof-21/" title="LCOF 21. 调整数组顺序使奇数位于偶数前面" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../lcof-19/" title="LCOF 19. 正则表达式匹配" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1341,19 +1360,19 @@
                 <span class="md-footer-nav__direction">
                   上一页
                 </span>
-                LCOF 21. 调整数组顺序使奇数位于偶数前面
+                LCOF 19. 正则表达式匹配
               </div>
             </div>
           </a>
         
         
-          <a href="../lcof-46/" title="LCOF 46. 把数字翻译成字符串" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../lcof-21/" title="LCOF 21. 调整数组顺序使奇数位于偶数前面" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   下一页
                 </span>
-                LCOF 46. 把数字翻译成字符串
+                LCOF 21. 调整数组顺序使奇数位于偶数前面
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
