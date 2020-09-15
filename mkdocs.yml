@@ -10,6 +10,7 @@ theme:
   icon:
     logo: material/android
   favicon: images/logo.png
+
 extra:
   social:
     - icon: fontawesome/brands/github-alt
