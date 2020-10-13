@@ -1,5 +1,5 @@
 ---
-title: LCOF 54. 二叉搜索树的第k大节点
+title: 54. 二叉搜索树的第k大节点
 date: 2020-08-06 15:13:14
 tags:
 - 树
@@ -10,6 +10,7 @@ tags:
 categories: 算法笔记
 notshow: true
 ---
+# 54. 二叉搜索树的第k大节点
 ## 1. [问题](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/)
 给定一棵二叉搜索树，请找出其中第k大的节点。
 <!--more-->
@@ -39,7 +40,8 @@ notshow: true
 ```
 
 限制：
-1 ≤ k ≤ 二叉搜索树元素个数
+
+- 1 ≤ k ≤ 二叉搜索树元素个数
 
 
 

@@ -1,6 +1,7 @@
 # README
 
 ## 参考教材
+[现代操作系统（原书第4版）](https://book.douban.com/subject/27096665/)
 
 ## 参考仓库
 

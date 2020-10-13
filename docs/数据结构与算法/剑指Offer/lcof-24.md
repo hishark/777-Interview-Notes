@@ -1,5 +1,5 @@
 ---
-title: LCOF 24. 反转链表
+title: 24. 反转链表
 date: 2020-09-15 11:01:09
 tags: 
 - leetcode
@@ -10,6 +10,7 @@ tags:
 - 双指针
 categories: 算法笔记
 ---
+# 24. 反转链表
 ## 1. [问题](https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof)
 定义一个函数，输入一个链表的头节点，反转该链表并输出反转后链表的头节点。
 
@@ -22,6 +23,7 @@ categories: 算法笔记
 ```
 
 限制：
+
 - 0 <= 节点个数 <= 5000
 
 ## 2. 解法 - 递归

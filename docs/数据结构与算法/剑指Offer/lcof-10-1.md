@@ -1,5 +1,5 @@
 ---
-title: LCOF 10-I. 斐波那契数列
+title: 10-I. 斐波那契数列
 date: 2020-08-27 20:32:05
 tags:
 - 递归
@@ -9,6 +9,7 @@ tags:
 - kotlin
 categories: 算法笔记
 ---
+# 10-I. 斐波那契数列
 ## 1. [问题](https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/)
 写一个函数，输入 n ，求斐波那契（Fibonacci）数列的第 n 项。斐波那契数列的定义如下：
 
@@ -32,6 +33,7 @@ F(N) = F(N - 1) + F(N - 2), 其中 N > 1.
 ```
 
 提示：
+
 - 0 <= n <= 100
 
 ## 2. 解法

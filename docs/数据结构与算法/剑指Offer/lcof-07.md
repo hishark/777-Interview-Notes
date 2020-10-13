@@ -1,5 +1,5 @@
 ---
-title: LCOF 07. 重建二叉树
+title: 07. 重建二叉树
 date: 2020-08-19 12:57:37
 tags: 
 - java
@@ -8,6 +8,7 @@ tags:
 - 递归
 categories: 算法笔记
 ---
+# 07. 重建二叉树
 ## 1. [问题](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/)
 输入某二叉树的前序遍历和中序遍历的结果，请重建该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。
 
@@ -26,6 +27,7 @@ categories: 算法笔记
 ```
 
 限制：
+
 - 0 <= 节点个数 <= 5000
 
 <!--more-->

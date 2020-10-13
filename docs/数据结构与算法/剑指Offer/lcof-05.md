@@ -1,5 +1,5 @@
 ---
-title: LCOF 05. 替换空格
+title: 05. 替换空格
 date: 2020-08-12 12:57:28
 tags: 
 - kotlin
@@ -9,6 +9,7 @@ tags:
 - 字符串
 categories: 算法笔记
 ---
+# 05. 替换空格
 ## 1. [问题](https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/)
 请实现一个函数，把字符串 s 中的每个空格替换成"%20"。
 
@@ -19,6 +20,7 @@ categories: 算法笔记
 ```
 
 限制：
+
 - 0 <= s 的长度 <= 10000
 
 <!--more-->

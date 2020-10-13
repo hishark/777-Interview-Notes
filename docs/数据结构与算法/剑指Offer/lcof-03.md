@@ -1,5 +1,5 @@
 ---
-title: LCOF 03. 数组中重复的数字
+title: 03. 数组中重复的数字
 date: 2020-08-10 23:21:04
 tags:
 - 数组
@@ -11,6 +11,7 @@ tags:
 categories: 算法笔记
 notshow: true
 ---
+# 03. 数组中重复的数字
 ## 1. [问题](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/)
 找出数组中重复的数字。
 
@@ -24,7 +25,8 @@ notshow: true
 ```
 
 限制：
-2 <= n <= 100000
+
+- 2 <= n <= 100000
 
 <!--more-->
 
@@ -166,5 +168,7 @@ class Solution {
 ![](https://777blog.oss-cn-shanghai.aliyuncs.com/leetcode/lcof-03-1.jpg)
 ![](https://777blog.oss-cn-shanghai.aliyuncs.com/leetcode/lcof-03-2.jpg)
 
-
+## 7. 关键词
+- 数组
+- 哈希表
 

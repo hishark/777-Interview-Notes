@@ -1,5 +1,5 @@
 ---
-title: LCOF 25. 合并两个排序的链表
+title: 25. 合并两个排序的链表
 date: 2020-09-16 18:54:51
 tags: 
 - leetcode
@@ -10,6 +10,7 @@ tags:
 - 递归
 categories: 算法笔记
 ---
+# 25. 合并两个排序的链表
 ## 1. [问题](https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof)
 输入两个递增排序的链表，合并这两个链表并使新链表中的节点仍然是递增排序的。
 
@@ -22,6 +23,7 @@ categories: 算法笔记
 ```
 
 限制：
+
 - 0 <= 链表长度 <= 1000
 
 ## 2. 解法 - 递归

@@ -1,5 +1,5 @@
 ---
-title: LCOF 18. 删除链表的节点
+title: 18. 删除链表的节点
 date: 2020-09-09 10:21:06
 tags:
 - 链表
@@ -9,6 +9,7 @@ tags:
 - kotlin
 categories: 算法笔记
 ---
+# 18. 删除链表的节点
 ## 1. [问题](https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof)
 给定单向链表的头指针和一个要删除的节点的值，定义一个函数删除该节点。
 
@@ -33,6 +34,7 @@ categories: 算法笔记
 ```
 
 说明：
+
 - 题目保证链表中节点的值互不相同
 - 若使用 C 或 C++ 语言，你不需要 free 或 delete 被删除的节点
 

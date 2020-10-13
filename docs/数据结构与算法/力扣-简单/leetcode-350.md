@@ -10,6 +10,7 @@ tags:
 categories: 算法笔记
 notshow: true
 ---
+# 350. 两个数组的交集 II
 ## 1. [问题](https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/)
 给定两个数组，编写一个函数来计算它们的交集。
 

@@ -1,5 +1,5 @@
 ---
-title: LCOF 06. 从尾到头打印链表
+title: 06. 从尾到头打印链表
 date: 2020-08-14 12:57:33
 tags: 
 - kotlin
@@ -10,6 +10,7 @@ tags:
 - 递归
 categories: 算法笔记
 ---
+# 06. 从尾到头打印链表
 ## 1. [问题](https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/)
 
 输入一个链表的头节点，从尾到头反过来返回每个节点的值（用数组返回）。
@@ -22,6 +23,7 @@ categories: 算法笔记
 ```
 
 限制：
+
 - 0 <= 链表长度 <= 10000
 
 <!--more-->

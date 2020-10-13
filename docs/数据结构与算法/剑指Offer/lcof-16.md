@@ -1,5 +1,5 @@
 ---
-title: LCOF 16. 数值的整数次方
+title: 16. 数值的整数次方
 date: 2020-09-04 18:49:46
 tags:
 - 递归
@@ -12,6 +12,7 @@ tags:
 - kotlin
 categories: 算法笔记
 ---
+# 16. 数值的整数次方
 ## 1. [问题](https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof)
 实现函数double Power(double base, int exponent)，求base的exponent次方。不得使用库函数，同时不需要考虑大数问题。
 
@@ -37,6 +38,7 @@ categories: 算法笔记
 ```
 
 说明:
+
 - -100.0 < x < 100.0
 - n 是 32 位有符号整数，其数值范围是 [−2^31, 2^31 − 1]。
 

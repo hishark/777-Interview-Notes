@@ -1,5 +1,5 @@
 ---
-title: LCOF 27. 二叉树的镜像
+title: 27. 二叉树的镜像
 date: 2020-09-25 23:39:32
 tags: 
 - leetcode
@@ -10,6 +10,7 @@ tags:
 - 简单
 categories: 算法笔记
 ---
+# 27. 二叉树的镜像
 ## 1. [问题](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/)
 请完成一个函数，输入一个二叉树，该函数输出它的镜像。
 
@@ -40,6 +41,7 @@ categories: 算法笔记
 ```
 
 限制：
+
 - 0 <= 节点个数 <= 1000
 
 

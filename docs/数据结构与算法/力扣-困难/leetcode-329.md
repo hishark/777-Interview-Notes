@@ -10,6 +10,7 @@ tags:
 categories: 算法笔记
 notshow: true
 ---
+# 329. 矩阵中的最长递增路径
 ## 1. [问题](https://leetcode-cn.com/problems/longest-increasing-path-in-a-matrix)
 给定一个整数矩阵，找出最长递增路径的长度。
 
