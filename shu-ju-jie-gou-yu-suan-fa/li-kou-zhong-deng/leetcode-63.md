@@ -10,7 +10,7 @@ categories: 算法笔记
 notshow: true
 ---
 
-# leetcode-63
+# 63. 不同路径 II
 
 ## 1. [问题](https://leetcode-cn.com/problems/unique-paths-ii/)
 
@@ -20,7 +20,7 @@ notshow: true
 
 现在考虑网格中有障碍物。那么从左上角到右下角将会有多少条不同的路径？
 
-![](https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/10/22/robot_maze.png)
+![](../../.gitbook/assets/image.png)
 
 网格中的障碍物和空位置分别用 1 和 0 来表示。
 
