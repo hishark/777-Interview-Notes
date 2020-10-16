@@ -1,11 +1,11 @@
 # Table of contents
 
-* [README](README.md)
+* [这是一个什么库？](README.md)
 
-## 数据结构与算法（更新中） <a id="algorithm"></a>
+## 数据结构与算法 <a id="algorithm"></a>
 
-* [README](algorithm/readme.md)
-* [剑指Offer](algorithm/lcof/README.md)
+* [简介](algorithm/readme.md)
+* [剑指Offer（更新中）](algorithm/lcof/README.md)
   * [03. 数组中重复的数字](algorithm/lcof/lcof-03.md)
   * [04. 二维数组中的查找](algorithm/lcof/lcof-04.md)
   * [05. 替换空格](algorithm/lcof/lcof-05.md)
@@ -40,6 +40,7 @@
   * [32 - III. 从上到下打印二叉树 III](algorithm/lcof/lcof-32-3.md)
   * [33. 二叉搜索树的后序遍历序列](algorithm/lcof/lcof-33.md)
   * [34. 二叉树中和为某一值的路径](algorithm/lcof/lcof-34.md)
+  * [35. 复杂链表的复制](algorithm/lcof/35.-fu-za-lian-biao-de-fu-zhi.md)
   * [46. 把数字翻译成字符串](algorithm/lcof/lcof-46.md)
   * [54. 二叉搜索树的第k大节点](algorithm/lcof/lcof-54.md)
 * [力扣-简单](algorithm/li-kou-jian-dan/README.md)
@@ -79,7 +80,7 @@
 
 ## 计算机网络 <a id="computer-network"></a>
 
-* [README](computer-network/readme.md)
+* [简介](computer-network/readme.md)
 * [1. 综述](computer-network/1.-zong-shu.md)
 * [2. 物理层](computer-network/2.-wu-li-ceng.md)
 * [3. 链路层](computer-network/3.-lian-lu-ceng.md)
@@ -89,27 +90,27 @@
 
 ## 操作系统 <a id="os"></a>
 
-* [README](os/readme.md)
+* [简介](os/readme.md)
 
 ## Android
 
-* [README](android/readme.md)
+* [简介](android/readme.md)
 
 ## 数据库 <a id="database"></a>
 
-* [README](database/readme.md)
+* [简介](database/readme.md)
 
 ## Kotlin
 
-* [README](kotlin/readme.md)
+* [简介](kotlin/readme.md)
 
 ## 简历 <a id="resume"></a>
 
-* [README](resume/readme.md)
+* [简介](resume/readme.md)
 
 ## 面经 <a id="interview"></a>
 
-* [README](interview/readme.md)
+* [简介](interview/readme.md)
 * [模拟面试](interview/simulation/README.md)
   * [Interview 1](interview/simulation/interview-1.md)
 

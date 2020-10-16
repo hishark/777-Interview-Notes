@@ -177,7 +177,7 @@ class Solution {
 
 ![](https://777blog.oss-cn-shanghai.aliyuncs.com/leetcode/lcof-03-1.jpg) ![](https://777blog.oss-cn-shanghai.aliyuncs.com/leetcode/lcof-03-2.jpg)
 
-## 7. 关键词
+## 7. 标签
 
 * 数组
 * 哈希表
