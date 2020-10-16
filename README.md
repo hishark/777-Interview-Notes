@@ -1,11 +1,14 @@
-# Android-Interview
+---
+description: 本站简介
+---
 
+# Android-Interview
 
 仓库启动时间：2020年6月29日
 
 这里是777的2021年校招准备仓库，准备期间还不太完善，明年6月希望能比较丰满啦！
 
-使用 Gitbook 生成了一个[静态网站](https://hishark777.gitbook.io/android-interview/)，方便查看。
+使用Gitbook生成了该[静态网站](https://hishark777.gitbook.io/android-interview/)，方便查看。
 
 ## 时间节点
 
