@@ -1,6 +1,6 @@
 ---
 title: 9. 回文数
-date: 2020-06-10T13:13:29.000Z
+date: '2020-06-10T13:13:29.000Z'
 tags:
   - leetcode
   - java
