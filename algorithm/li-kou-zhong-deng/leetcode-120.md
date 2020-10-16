@@ -10,7 +10,7 @@ categories: 算法笔记
 notshow: true
 ---
 
-# leetcode-120
+# 120. 三角形最小路径和
 
 ## 1. [问题](https://leetcode-cn.com/problems/triangle)
 

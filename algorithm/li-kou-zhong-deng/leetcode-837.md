@@ -10,7 +10,7 @@ categories: 算法笔记
 notshow: true
 ---
 
-# leetcode-837
+# 837. 新21点
 
 ## [1. 问题](https://leetcode-cn.com/problems/new-21-game/)
 

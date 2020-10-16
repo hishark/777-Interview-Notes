@@ -12,7 +12,7 @@ categories: 算法笔记
 notshow: true
 ---
 
-# leetcode-785
+# 785. 判断二分图
 
 ## 1. [问题](https://leetcode-cn.com/problems/is-graph-bipartite)
 

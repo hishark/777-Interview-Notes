@@ -10,7 +10,7 @@ categories: 算法笔记
 notshow: true
 ---
 
-# leetcode-1014
+# 1014. 最佳观光组合
 
 ## [1. 问题](https://leetcode-cn.com/problems/best-sightseeing-pair/)
 

@@ -10,7 +10,7 @@ categories: 算法笔记
 notshow: true
 ---
 
-# leetcode-343
+# 343. 整数拆分
 
 ## 1. [问题](https://leetcode-cn.com/problems/integer-break)
 

@@ -12,7 +12,7 @@ categories: 算法笔记
 notshow: true
 ---
 
-# leetcode-95
+# 95. 不同的二叉搜索树 II
 
 ## 1. [问题](https://leetcode-cn.com/problems/unique-binary-search-trees-ii/)
 
