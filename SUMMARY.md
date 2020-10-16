@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Android-Interview](README.md)
+* [README](README.md)
 
 ## 数据结构与算法（更新中） <a id="algorithm"></a>
 
@@ -77,39 +77,39 @@
   * [174. 地下城游戏](algorithm/li-kou-kun-nan/leetcode-174.md)
   * [329. 矩阵中的最长递增路径](algorithm/li-kou-kun-nan/leetcode-329.md)
 
-## 计算机网络 <a id="ji-suan-ji-wang-luo-1"></a>
+## 计算机网络 <a id="computer-network"></a>
 
-* [README](ji-suan-ji-wang-luo-1/readme.md)
-* [1. 综述](ji-suan-ji-wang-luo-1/1.-zong-shu.md)
-* [2. 物理层](ji-suan-ji-wang-luo-1/2.-wu-li-ceng.md)
-* [3. 链路层](ji-suan-ji-wang-luo-1/3.-lian-lu-ceng.md)
-* [4. 网络层](ji-suan-ji-wang-luo-1/4.-wang-luo-ceng.md)
-* [5. 传输层](ji-suan-ji-wang-luo-1/5.-chuan-shu-ceng.md)
-* [6. 应用层](ji-suan-ji-wang-luo-1/6.-ying-yong-ceng.md)
+* [README](computer-network/readme.md)
+* [1. 综述](computer-network/1.-zong-shu.md)
+* [2. 物理层](computer-network/2.-wu-li-ceng.md)
+* [3. 链路层](computer-network/3.-lian-lu-ceng.md)
+* [4. 网络层](computer-network/4.-wang-luo-ceng.md)
+* [5. 传输层](computer-network/5.-chuan-shu-ceng.md)
+* [6. 应用层](computer-network/6.-ying-yong-ceng.md)
 
-## 操作系统
+## 操作系统 <a id="os"></a>
 
-* [README](cao-zuo-xi-tong/readme.md)
+* [README](os/readme.md)
 
-## Android <a id="android-1"></a>
+## Android
 
-* [README](android-1/readme.md)
+* [README](android/readme.md)
 
-## 数据库
+## 数据库 <a id="database"></a>
 
-* [README](shu-ju-ku/readme.md)
+* [README](database/readme.md)
 
-## Kotlin <a id="kotlin-1"></a>
+## Kotlin
 
-* [README](kotlin-1/readme.md)
+* [README](kotlin/readme.md)
 
-## 简历
+## 简历 <a id="resume"></a>
 
-* [README](jian-li/readme.md)
+* [README](resume/readme.md)
 
-## 面经
+## 面经 <a id="interview"></a>
 
-* [README](mian-jing/readme.md)
-* [模拟面试](mian-jing/simulation/README.md)
-  * [Interview 1](mian-jing/simulation/interview-1.md)
+* [README](interview/readme.md)
+* [模拟面试](interview/simulation/README.md)
+  * [Interview 1](interview/simulation/interview-1.md)
 
