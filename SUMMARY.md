@@ -40,7 +40,7 @@
   * [32 - III. 从上到下打印二叉树 III](algorithm/lcof/lcof-32-3.md)
   * [33. 二叉搜索树的后序遍历序列](algorithm/lcof/lcof-33.md)
   * [34. 二叉树中和为某一值的路径](algorithm/lcof/lcof-34.md)
-  * [35. 复杂链表的复制](algorithm/lcof/35.-fu-za-lian-biao-de-fu-zhi.md)
+  * [35. 复杂链表的复制](algorithm/lcof/35.-copy-linkedlist.md)
   * [46. 把数字翻译成字符串](algorithm/lcof/lcof-46.md)
   * [54. 二叉搜索树的第k大节点](algorithm/lcof/lcof-54.md)
 * [力扣-简单](algorithm/li-kou-jian-dan/README.md)
