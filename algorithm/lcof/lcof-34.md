@@ -47,8 +47,6 @@ categories: 算法笔记
 ### 2.1 Java
 
 ```java
-import java.util.LinkedList;
-
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
