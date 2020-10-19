@@ -93,8 +93,8 @@
 * [2. 物理层](computer-network/cn-physical-layer.md)
 * [3. 链路层](computer-network/cn-link-layer.md)
 * [4. 网络层](computer-network/cn-network-layer.md)
-* [5. 传输层](computer-network/5.-chuan-shu-ceng.md)
-* [6. 应用层](computer-network/6.-ying-yong-ceng.md)
+* [5. 传输层](computer-network/cn-transport-layer.md)
+* [6. 应用层](computer-network/cn-application-layer.md)
 
 ## 操作系统 <a id="os"></a>
 
