@@ -175,7 +175,11 @@ class Solution {
 
 ## 6. 笔记
 
-![](https://777blog.oss-cn-shanghai.aliyuncs.com/leetcode/lcof-03-1.jpg) ![](https://777blog.oss-cn-shanghai.aliyuncs.com/leetcode/lcof-03-2.jpg)
+ 
+
+![](https://777blog.oss-cn-shanghai.aliyuncs.com/leetcode/lcof-03-1.jpg)
+
+![](https://777blog.oss-cn-shanghai.aliyuncs.com/leetcode/lcof-03-2.jpg)
 
 ## 7. 标签
 
