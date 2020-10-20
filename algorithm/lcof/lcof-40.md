@@ -33,7 +33,17 @@
 ### 3.1 Java
 
 ```java
-
+// 会挨打，别这么做，我就先随便一提交OTZ
+class Solution {
+    public int[] getLeastNumbers(int[] arr, int k) {
+        Arrays.sort(arr);
+        int[] res = new int[k];
+        for (int i=0;i<k;i++) {
+            res[i] = arr[i];
+        }
+        return res;
+    }
+}
 ```
 
 ### 3.2 Kotlin
