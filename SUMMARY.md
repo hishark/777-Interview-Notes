@@ -43,7 +43,7 @@
   * [35. 复杂链表的复制](algorithm/lcof/35.-copy-linkedlist.md)
   * [36. 二叉搜索树与双向链表](algorithm/lcof/36.-er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao.md)
   * [37. 序列化二叉树](algorithm/lcof/37.-xu-lie-hua-er-cha-shu.md)
-  * [38. 字符串的排列\#TODO](algorithm/lcof/38.-zi-fu-chuan-de-pai-lie-todo.md)
+  * [38. 字符串的排列](algorithm/lcof/38.-zi-fu-chuan-de-pai-lie-todo.md)
   * [39. 数组中出现次数超过一半的数字](algorithm/lcof/39.-shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi.md)
   * [40. 最小的k个数\#TODO](algorithm/lcof/lcof-40.md)
   * [46. 把数字翻译成字符串](algorithm/lcof/lcof-46.md)
