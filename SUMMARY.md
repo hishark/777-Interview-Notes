@@ -45,7 +45,7 @@
   * [37. 序列化二叉树](algorithm/lcof/37.-xu-lie-hua-er-cha-shu.md)
   * [38. 字符串的排列](algorithm/lcof/38.-zi-fu-chuan-de-pai-lie-todo.md)
   * [39. 数组中出现次数超过一半的数字](algorithm/lcof/39.-shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi.md)
-  * [40. 最小的k个数\#TODO](algorithm/lcof/lcof-40.md)
+  * [40. 最小的k个数](algorithm/lcof/lcof-40.md)
   * [46. 把数字翻译成字符串](algorithm/lcof/lcof-46.md)
   * [53 - I. 在排序数组中查找数字 I](algorithm/lcof/53-i.-zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-i.md)
   * [54. 二叉搜索树的第k大节点](algorithm/lcof/lcof-54.md)
