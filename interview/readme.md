@@ -14,6 +14,8 @@
 
 [字节跳动的校招面试精髓](https://www.nowcoder.com/discuss/373163?type=post&order=time&pos=&page=2&channel=1009&source_id=search_post)
 
+[字节提前批移动端面经（1-3面）已拿意向书](https://www.nowcoder.com/discuss/486381?type=post&order=time&pos=&page=1&channel=1009&source_id=search_post)
+
 [字节提前批校招一面Android工程师2020\[已挂\]](https://www.nowcoder.com/discuss/441197)
 
 [移动客户端开发（抖音）面经_笔经面经_牛客网](https://www.nowcoder.com/discuss/439455)
@@ -52,7 +54,9 @@
 
 [字节客户端三~四面面经，已oc（更新：已邮件）](https://www.nowcoder.com/discuss/432053)
 
+### 其他
 
+[https://www.nowcoder.com/discuss/183405?type=post&order=time&pos=&page=1&channel=1009&source\_id=search\_post](https://www.nowcoder.com/discuss/183405?type=post&order=time&pos=&page=1&channel=1009&source_id=search_post)
 
 ## 面试题
 
