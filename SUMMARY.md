@@ -13,6 +13,7 @@
     * [LCOF 19. 正则表达式匹配](algorithm/fen-lei-shua-ti/dong-tai-gui-hua/lcof-19.-zheng-ze-biao-da-shi-pi-pei.md)
     * [LCOF 42. 连续子数组的最大和](algorithm/fen-lei-shua-ti/dong-tai-gui-hua/lcof-42.-lian-xu-zi-shu-zu-de-zui-da-he.md)
     * [LCOF 46. 把数字翻译成字符串](algorithm/fen-lei-shua-ti/dong-tai-gui-hua/lcof-46.-ba-shu-zi-fan-yi-cheng-zi-fu-chuan.md)
+    * [LCOF 47. 礼物的最大价值\#TODO](algorithm/fen-lei-shua-ti/dong-tai-gui-hua/lcof-47.-li-wu-de-zui-da-jia-zhi-todo.md)
   * [贪心](algorithm/fen-lei-shua-ti/tan-xin/README.md)
     * [LCOF 14-I. 剪绳子](algorithm/fen-lei-shua-ti/tan-xin/lcof-14i.-jian-sheng-zi.md)
     * [LCOF 14-II. 剪绳子 II](algorithm/fen-lei-shua-ti/tan-xin/lcof-14ii.-jian-sheng-zi-ii.md)
