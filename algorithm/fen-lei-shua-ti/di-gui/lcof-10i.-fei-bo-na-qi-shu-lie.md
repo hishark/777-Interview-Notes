@@ -1,16 +1,4 @@
----
-title: 10-I. 斐波那契数列
-date: '2020-08-27T20:32:05.000Z'
-tags:
-  - 递归
-  - leetcode
-  - lcof
-  - java
-  - kotlin
-categories: 算法笔记
----
-
-# 10-I. 斐波那契数列
+# LCOF 10-I. 斐波那契数列
 
 ## 1. [问题](https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/)
 

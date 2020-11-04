@@ -1,17 +1,4 @@
----
-title: 27. 二叉树的镜像
-date: '2020-09-25T23:39:32.000Z'
-tags:
-  - leetcode
-  - java
-  - kotlin
-  - lcof
-  - 树
-  - 简单
-categories: 算法笔记
----
-
-# 27. 二叉树的镜像
+# LCOF 27. 二叉树的镜像
 
 ## 1. [问题](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/)
 
