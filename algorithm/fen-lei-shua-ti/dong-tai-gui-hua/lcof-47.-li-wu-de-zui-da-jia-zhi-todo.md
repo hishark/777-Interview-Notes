@@ -1,4 +1,4 @@
-# LCOF 47. 礼物的最大价值\#TODO
+# LCOF 47. 礼物的最大价值
 
 ## 1. [问题](https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof/)
 
@@ -104,8 +104,8 @@ class Solution {
 
 ### 3.3 复杂度分析
 
-* 时间复杂度 `O()` ：
-* 空间复杂度 `O()` ：
+* 时间复杂度 `O(MN)` ：其中 M 和 N 分别为矩阵的行列数，动态规划需要遍历整个矩阵。
+* 空间复杂度 `O(MN)` ：dp 数组占用了 `O(MN)` 大小的额外存储空间。
 
 ## 4. 参考
 
