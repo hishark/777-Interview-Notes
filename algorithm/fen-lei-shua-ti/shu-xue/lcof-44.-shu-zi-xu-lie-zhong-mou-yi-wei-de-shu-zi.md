@@ -1,4 +1,4 @@
-# 44. 数字序列中某一位的数字
+# LCOF 44. 数字序列中某一位的数字
 
 ## 1. [问题](https://leetcode-cn.com/problems/shu-zi-xu-lie-zhong-mou-yi-wei-de-shu-zi-lcof/)
 

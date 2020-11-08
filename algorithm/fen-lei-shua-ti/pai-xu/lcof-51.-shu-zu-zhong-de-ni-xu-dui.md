@@ -1,4 +1,4 @@
-# 51. 数组中的逆序对
+# LCOF 51. 数组中的逆序对
 
 ## 1. [问题](https://leetcode-cn.com/problems/shu-zu-zhong-de-ni-xu-dui-lcof/)
 

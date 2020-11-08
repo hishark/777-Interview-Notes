@@ -1,4 +1,4 @@
-# 59 - II. 队列的最大值
+# LCOF 59 - II. 队列的最大值
 
 ## 1. [问题](https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/)
 

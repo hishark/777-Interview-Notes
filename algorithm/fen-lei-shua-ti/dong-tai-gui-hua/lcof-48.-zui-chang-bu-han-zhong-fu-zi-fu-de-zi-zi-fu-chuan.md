@@ -1,4 +1,4 @@
-# 48. 最长不含重复字符的子字符串
+# LCOF 48. 最长不含重复字符的子字符串
 
 ## 1. [问题](https://leetcode-cn.com/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/)
 
