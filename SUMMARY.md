@@ -256,12 +256,12 @@
 ## 计算机网络 <a id="computer-network"></a>
 
 * [简介](computer-network/readme.md)
-* [1. 综述](computer-network/cn-summary.md)
-* [2. 物理层](computer-network/cn-physical-layer.md)
-* [3. 链路层](computer-network/cn-link-layer.md)
-* [4. 网络层](computer-network/cn-network-layer.md)
-* [5. 传输层](computer-network/cn-transport-layer.md)
-* [6. 应用层](computer-network/cn-application-layer.md)
+* [综述](computer-network/cn-summary.md)
+* [物理层](computer-network/cn-physical-layer.md)
+* [链路层](computer-network/cn-link-layer.md)
+* [网络层](computer-network/cn-network-layer.md)
+* [传输层](computer-network/cn-transport-layer.md)
+* [应用层](computer-network/cn-application-layer.md)
 
 ## 操作系统 <a id="os"></a>
 
