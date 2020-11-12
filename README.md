@@ -4,7 +4,7 @@
 
 这里是777的2021年校招准备仓库，准备期间还不太完善，明年6月希望能比较丰满啦！
 
-使用 Gitbook 生成了该[静态网站](https://hishark777.gitbook.io/android-interview/)，方便查看。
+使用 Gitbook 生成了该[静态网站](https://hishark777.gitbook.io/777-interview-notes/)，方便查看。
 
 ## 时间节点
 
@@ -16,6 +16,8 @@
 
 准备了一遭校招总要留下点什么，给自己之后用来复盘也好，给同样想要找安卓岗的朋友们一个参考也好，开源总能创造点价值吧~
 
+
+
 ## 复习资料
 
 [Teach Yourself Computer Science](https://teachyourselfcs.com/)
@@ -23,8 +25,6 @@
 [Teach Yourself Computer Science - ZH](https://github.com/keithnull/TeachYourselfCS-CN/blob/master/TeachYourselfCS-CN.md)
 
 [Cyc2018](https://www.nowcoder.com/discuss/148929?type=post&order=time&pos=&page=2&channel=1009&source_id=search_post)
-
-
 
 ## 帮忙捉虫
 
