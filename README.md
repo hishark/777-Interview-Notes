@@ -16,8 +16,6 @@
 
 准备了一遭校招总要留下点什么，给自己之后用来复盘也好，给同样想要找安卓岗的朋友们一个参考也好，开源总能创造点价值吧~
 
-
-
 ## 复习资料
 
 [Teach Yourself Computer Science](https://teachyourselfcs.com/)
