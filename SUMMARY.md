@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Hello, I'm 777](README.md)
+* [ᐕ\)୨](README.md)
 
 ## 数据结构与算法 <a id="algorithm"></a>
 
