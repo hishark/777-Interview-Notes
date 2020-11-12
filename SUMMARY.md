@@ -208,7 +208,7 @@
   * [58 - II. 左旋转字符串](algorithm/lcof/58-ii.-zuo-xuan-zhuan-zi-fu-chuan.md)
   * [59 - I. 滑动窗口的最大值](algorithm/lcof/59-i.-hua-dong-chuang-kou-de-zui-da-zhi-todo.md)
   * [59 - II. 队列的最大值](algorithm/lcof/59-ii.-dui-lie-de-zui-da-zhi-todo.md)
-  * [60. n个骰子的点数\#TODO](algorithm/lcof/60.nge-tou-zi-de-dian-shu-todo.md)
+  * [60. n个骰子的点数](algorithm/lcof/60.nge-tou-zi-de-dian-shu-todo.md)
   * [61. 扑克牌中的顺子](algorithm/lcof/61.-pu-ke-pai-zhong-de-shun-zi-todo.md)
   * [62. 圆圈中最后剩下的数字](algorithm/lcof/62.-yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-todo.md)
   * [63. 股票的最大利润](algorithm/lcof/63.-gu-piao-de-zui-da-li-run-todo.md)
