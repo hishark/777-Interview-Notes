@@ -1,4 +1,4 @@
-# LEETCODE 852. 山脉数组的峰顶索引
+# 852. 山脉数组的峰顶索引
 
 ## 1. [问题](https://leetcode-cn.com/problems/peak-index-in-a-mountain-array/)
 
@@ -40,7 +40,10 @@
 ```java
 class Solution {
     public int peakIndexInMountainArray(int[] arr) {
-
+        /**
+         * 将山脉数组中所有满足 A[i] < A[i+1]的 i 点标记为 True 不满足的标记为 False 那么一个山脉数组可以标记为 [True,
+         * True, ... , True, False , ... , False]
+         */
         int left = 0;
         int right = arr.length - 1;
         
@@ -67,7 +70,10 @@ class Solution {
 ```kotlin
 class Solution {
     fun peakIndexInMountainArray(arr: IntArray): Int {
-
+        /**
+         * 将山脉数组中所有满足 A[i] < A[i+1]的 i 点标记为 True 不满足的标记为 False 那么一个山脉数组可以标记为 [True,
+         * True, ... , True, False , ... , False]
+         */
         var left = 0
         var right = arr.size - 1
 
