@@ -21,6 +21,7 @@
     * [LCOF 14-I. 剪绳子](algorithm/tag/tan-xin/lcof-14i.-jian-sheng-zi.md)
     * [LCOF 14-II. 剪绳子 II](algorithm/tag/tan-xin/lcof-14ii.-jian-sheng-zi-ii.md)
   * [双指针](algorithm/tag/shuang-zhi-zhen/README.md)
+    * [LEETCODE 4. 寻找两个正序数组的中位数](algorithm/tag/shuang-zhi-zhen/leetcode-4.-xun-zhao-liang-ge-zheng-xu-shu-zu-de-zhong-wei-shu.md)
     * [LCOF 04. 二维数组中的查找](algorithm/tag/shuang-zhi-zhen/untitled.md)
     * [LCOF 21. 调整数组顺序使奇数位于偶数前面](algorithm/tag/shuang-zhi-zhen/lcof-21.-tiao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian.md)
     * [LCOF 24. 反转链表](algorithm/tag/shuang-zhi-zhen/lcof-24.-fan-zhuan-lian-biao.md)
@@ -80,6 +81,8 @@
     * [LCOF 58 - II. 左旋转字符串](algorithm/tag/zi-fu-chuan/lcof-58-ii.-zuo-xuan-zhuan-zi-fu-chuan.md)
     * [LCOF 67. 把字符串转换成整数](algorithm/tag/zi-fu-chuan/lcof-67.-ba-zi-fu-chuan-zhuan-huan-cheng-zheng-shu.md)
   * [二分查找](algorithm/tag/er-fen-cha-zhao/README.md)
+    * [LEETCODE 4. 寻找两个正序数组的中位数](algorithm/tag/er-fen-cha-zhao/leetcode-4.-xun-zhao-liang-ge-zheng-xu-shu-zu-de-zhong-wei-shu.md)
+    * [LEETCODE 33. 搜索旋转排序数组](algorithm/tag/er-fen-cha-zhao/leetcode-33.-sou-suo-xuan-zhuan-pai-xu-shu-zu.md)
     * [LEETCODE 278. 第一个错误的版本](algorithm/tag/er-fen-cha-zhao/leetcode-278.-di-yi-ge-cuo-wu-de-ban-ben.md)
     * [LEETCODE 704. 二分查找](algorithm/tag/er-fen-cha-zhao/leetcode-704.-er-fen-cha-zhao.md)
     * [LEETCODE 744. 寻找比目标字母大的最小字母](algorithm/tag/er-fen-cha-zhao/leetcode-744.-xun-zhao-bi-mu-biao-zi-mu-da-de-zui-xiao-zi-mu.md)
@@ -236,6 +239,7 @@
 * [力扣-中等](algorithm/leetcode-medium/README.md)
   * [2. 两数相加](algorithm/leetcode-medium/leetcode-2.md)
   * [16. 最接近的三数之和](algorithm/leetcode-medium/leetcode-16.md)
+  * [33. 搜索旋转排序数组](algorithm/leetcode-medium/33.-sou-suo-xuan-zhuan-pai-xu-shu-zu.md)
   * [63. 不同路径 II](algorithm/leetcode-medium/leetcode-63.md)
   * [64. 最小路径和](algorithm/leetcode-medium/leetcode-64.md)
   * [96. 不同的二叉搜索树](algorithm/leetcode-medium/leetcode-96.md)
@@ -253,7 +257,9 @@
   * [837. 新21点](algorithm/leetcode-medium/leetcode-837.md)
   * [990. 等式方程的可满足性](algorithm/leetcode-medium/leetcode-990.md)
   * [1014. 最佳观光组合](algorithm/leetcode-medium/leetcode-1014.md)
+  * [Untitled](algorithm/leetcode-medium/untitled.md)
 * [力扣-困难](algorithm/leetcode-hard/README.md)
+  * [4. 寻找两个正序数组的中位数](algorithm/leetcode-hard/4.-xun-zhao-liang-ge-zheng-xu-shu-zu-de-zhong-wei-shu.md)
   * [32. 最长有效括号](algorithm/leetcode-hard/leetcode-32.md)
   * [44. 通配符匹配](algorithm/leetcode-hard/leetcode-44.md)
   * [97. 交错字符串](algorithm/leetcode-hard/leetcode-97.md)
@@ -261,6 +267,7 @@
   * [154. 寻找旋转排序数组中的最小值 II](algorithm/leetcode-hard/leetcode-154.md)
   * [174. 地下城游戏](algorithm/leetcode-hard/leetcode-174.md)
   * [329. 矩阵中的最长递增路径](algorithm/leetcode-hard/leetcode-329.md)
+  * [Untitled](algorithm/leetcode-hard/untitled.md)
 
 ## 计算机网络 <a id="computer-network"></a>
 
