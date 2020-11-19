@@ -198,7 +198,7 @@ Virtual Private Network
 
 分组转发结构由三个部分组成：交换结构、一组输入端口和一组输出端口。
 
-![&#x56FE;&#x6E90;&#xFF1A;&#x300A;&#x8BA1;&#x7B97;&#x673A;&#x7F51;&#x7EDC;&#x300B;&#x8C22;&#x5E0C;&#x4EC1;](../.gitbook/assets/image%20%2846%29.png)
+![&#x56FE;&#x6E90;&#xFF1A;&#x300A;&#x8BA1;&#x7B97;&#x673A;&#x7F51;&#x7EDC;&#x300B;&#x8C22;&#x5E0C;&#x4EC1;](../.gitbook/assets/image%20%2847%29.png)
 
 ## 路由器分组转发流程
 
@@ -209,7 +209,7 @@ Virtual Private Network
 * 若路由表中有一个默认路由，则把数据报传送给路由表中所指明的默认路由器；
 * 报告转发分组出错。
 
-![](../.gitbook/assets/image%20%2847%29.png)
+![](../.gitbook/assets/image%20%2848%29.png)
 
 ## 路由选择协议
 
@@ -226,8 +226,8 @@ Virtual Private Network
 
 总之，使用分层次的路由选择方法，可将因特网的路由选择协议划分为：
 
-* 内部网关协议IGP：具体的协议有多种，如RIP和OSPF等。
-* 外部网关协议EGP：目前使用的协议就是BGP。
+* 内部网关协议 **IGP**：具体的协议有多种，如RIP和OSPF等。
+* 外部网关协议 **EGP**：目前使用的协议就是BGP。
 
 ### 1. 路由信息协议 RIP
 
@@ -261,5 +261,19 @@ OSPF 具有以下特点：
 
 所有路由器都具有全网的拓扑结构图，并且是一致的。相比于 RIP，OSPF 的更新过程收敛的很快。
 
-### 3. 外部网关协议 BGP
+### 3. 边界网关协议 BGP
+
+BGP（Border Gateway Protocol，边界网关协议）
+
+AS 之间的路由选择很困难，主要是由于：
+
+* 互联网规模很大；
+* 各个 AS 内部使用不同的路由选择协议，无法准确定义路径的度量；
+* AS 之间的路由选择必须考虑有关的策略，比如有些 AS 不愿意让其它 AS 经过。
+
+BGP 只能寻找一条比较好的路由，而不是最佳路由。
+
+每个 AS 都必须配置 BGP 发言人，通过在两个相邻 BGP 发言人之间建立 TCP 连接来交换路由信息。
+
+![&#x56FE;&#x6E90;&#xFF1A;&#x300A;&#x8BA1;&#x7B97;&#x673A;&#x7F51;&#x7EDC;&#x300B;&#x8C22;&#x5E0C;&#x4EC1;](../.gitbook/assets/image%20%2846%29.png)
 
