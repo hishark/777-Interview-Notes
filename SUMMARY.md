@@ -240,6 +240,7 @@
   * [2. 两数相加](algorithm/leetcode-medium/leetcode-2.md)
   * [16. 最接近的三数之和](algorithm/leetcode-medium/leetcode-16.md)
   * [33. 搜索旋转排序数组](algorithm/leetcode-medium/33.-sou-suo-xuan-zhuan-pai-xu-shu-zu.md)
+  * [34. 在排序数组中查找元素的第一个和最后一个位置](algorithm/leetcode-medium/34.-zai-pai-xu-shu-zu-zhong-cha-zhao-yuan-su-de-di-yi-ge-he-zui-hou-yi-ge-wei-zhi.md)
   * [63. 不同路径 II](algorithm/leetcode-medium/leetcode-63.md)
   * [64. 最小路径和](algorithm/leetcode-medium/leetcode-64.md)
   * [96. 不同的二叉搜索树](algorithm/leetcode-medium/leetcode-96.md)
