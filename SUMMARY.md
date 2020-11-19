@@ -83,6 +83,7 @@
   * [二分查找](algorithm/tag/er-fen-cha-zhao/README.md)
     * [LEETCODE 4. 寻找两个正序数组的中位数](algorithm/tag/er-fen-cha-zhao/leetcode-4.-xun-zhao-liang-ge-zheng-xu-shu-zu-de-zhong-wei-shu.md)
     * [LEETCODE 33. 搜索旋转排序数组](algorithm/tag/er-fen-cha-zhao/leetcode-33.-sou-suo-xuan-zhuan-pai-xu-shu-zu.md)
+    * [LEETCODE 34. 在排序数组中查找元素的第一个和最后一个位置](algorithm/tag/er-fen-cha-zhao/leetcode-34.-zai-pai-xu-shu-zu-zhong-cha-zhao-yuan-su-de-di-yi-ge-he-zui-hou-yi-ge-wei-zhi.md)
     * [LEETCODE 278. 第一个错误的版本](algorithm/tag/er-fen-cha-zhao/leetcode-278.-di-yi-ge-cuo-wu-de-ban-ben.md)
     * [LEETCODE 704. 二分查找](algorithm/tag/er-fen-cha-zhao/leetcode-704.-er-fen-cha-zhao.md)
     * [LEETCODE 744. 寻找比目标字母大的最小字母](algorithm/tag/er-fen-cha-zhao/leetcode-744.-xun-zhao-bi-mu-biao-zi-mu-da-de-zui-xiao-zi-mu.md)
