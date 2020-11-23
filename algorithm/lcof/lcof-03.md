@@ -132,7 +132,6 @@ class Solution {
                     int tmp = nums[cur];
                     nums[cur] = nums[i];
                     nums[i] = tmp;
-                    cur = nums[i];
                 }
             }
         }
@@ -164,7 +163,6 @@ class Solution {
                     val tmp = nums[cur]
                     nums[cur] = nums[i]
                     nums[i] = tmp
-                    cur = nums[i]
                 }
             }
         }

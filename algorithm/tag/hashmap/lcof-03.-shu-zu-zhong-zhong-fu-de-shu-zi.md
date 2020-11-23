@@ -25,7 +25,9 @@
 ```java
 class Solution {
     public int findRepeatNumber(int[] nums) {
+        // 先对数组进行排序
         Arrays.sort(nums);
+        // 排序之后只要碰到了连续相同的数字，返回即可
         for (int i=0;i<nums.length;i++) {
             if (nums[i] == nums[i+1])
                 return nums[i];
@@ -40,7 +42,9 @@ class Solution {
 ```kotlin
 class Solution {
     fun findRepeatNumber(nums: IntArray): Int {
+        // 先对数组进行排序
         Arrays.sort(nums)
+        // 排序之后只要碰到了连续相同的数字，返回即可
         for (i in nums.indices) {
             if (nums[i] == nums[i + 1])
                 return nums[i]
@@ -58,6 +62,7 @@ class Solution {
 class Solution {
     public int findRepeatNumber(int[] nums) {
         Map<Integer, Integer> map = new HashMap<>();
+        // 一边添加一边判断
         for(int num: nums){
             if(map.containsKey(num)){
                 return num;
@@ -76,6 +81,7 @@ class Solution {
 class Solution {
     fun findRepeatNumber(nums: IntArray): Int {
         val map = HashMap<Int, Int>()
+        // 一边添加一边判断
         for (num in nums) {
             if (map.containsKey(num)) {
                 return num
@@ -112,7 +118,6 @@ class Solution {
                     int tmp = nums[cur];
                     nums[cur] = nums[i];
                     nums[i] = tmp;
-                    cur = nums[i];
                 }
             }
         }
@@ -144,7 +149,6 @@ class Solution {
                     val tmp = nums[cur]
                     nums[cur] = nums[i]
                     nums[i] = tmp
-                    cur = nums[i]
                 }
             }
         }
@@ -160,8 +164,6 @@ class Solution {
 * [《剑指Offer（第2版）》](https://book.douban.com/subject/27008702/)
 
 ## 6. 笔记
-
- 
 
 ![](https://777blog.oss-cn-shanghai.aliyuncs.com/leetcode/lcof-03-1.jpg)
 
