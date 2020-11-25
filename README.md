@@ -6,7 +6,7 @@
 
 这里是777的2021年校招准备仓库，准备期间还不太完善，明年6月希望能比较丰满啦！
 
-[点击此处在线阅读 Gitbook](https://hishark777.gitbook.io/777-interview-notes/)
+[点击此处在线阅读校招笔记](https://hishark777.gitbook.io/777-interview-notes/)
 
 ## 时间节点
 
