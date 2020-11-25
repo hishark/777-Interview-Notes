@@ -1,4 +1,4 @@
-# LCOF 41. 数据流中的中位数
+# lcof-41.-shu-ju-liu-zhong-de-zhong-wei-shu
 
 ## 1. [问题](https://leetcode-cn.com/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof/)
 
@@ -12,9 +12,9 @@
 
 设计一个支持以下两种操作的数据结构：
 
-void addNum\(int num\) - 从数据流中添加一个整数到数据结构中。 
+void addNum\(int num\) - 从数据流中添加一个整数到数据结构中。
 
-double findMedian\(\) - 返回目前所有元素的中位数。 
+double findMedian\(\) - 返回目前所有元素的中位数。
 
 **示例 1：**
 
@@ -66,7 +66,7 @@ class MedianFinder {
         //     }
         // });
     }
-    
+
     public void addNum(int num) {
         // 需要保持两个堆的平衡，最大堆的大小要始终等于最小堆的大小，或者等于最小堆的大小 + 1
         // 首先向最大堆中插入元素
@@ -77,7 +77,7 @@ class MedianFinder {
         if (minHeap.size() > maxHeap.size()) 
             maxHeap.offer(minHeap.poll());
     }
-    
+
     public double findMedian() {
         // 如果两个堆的大小相等，就取出两个堆的堆顶元素求平均值
         if (maxHeap.size() == minHeap.size()) 
@@ -127,7 +127,7 @@ class MedianFinder {
         // 若两个堆的大小相等，就取出两个堆的堆顶元素求平均值
         // 若两个堆的大小不相等，直接取出最大堆的堆顶元素即可
         return if (maxHeap.size == minHeap.size) (maxHeap.peek() + minHeap.peek()) * 0.5 else maxHeap.peek().toDouble()
-        
+
     }
 }
 

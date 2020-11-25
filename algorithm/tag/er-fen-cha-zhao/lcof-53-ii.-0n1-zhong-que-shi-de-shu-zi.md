@@ -1,4 +1,4 @@
-# LCOF 53 - II. 0～n-1中缺失的数字
+# lcof-53-ii.-0n1-zhong-que-shi-de-shu-zi
 
 ## 1. [问题](https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/)
 

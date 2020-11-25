@@ -1,4 +1,4 @@
-# LCOF 24. 反转链表
+# lcof-24.-fan-zhuan-lian-biao
 
 ## 1. [问题](https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof)
 

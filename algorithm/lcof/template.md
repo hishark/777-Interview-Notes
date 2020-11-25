@@ -2,7 +2,7 @@
 description: 方便我复制- -
 ---
 
-# 题解模板
+# Template
 
 ## 1. 问题
 
@@ -34,6 +34,4 @@ description: 方便我复制- -
 
 * 1
 * 2
-
-
 

@@ -1,4 +1,4 @@
-# LCOF 20. 表示数值的字符串
+# lcof-20.-biao-shi-shu-zhi-de-zi-fu-chuan
 
 ## 1. [问题](https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/)
 

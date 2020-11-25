@@ -1,4 +1,4 @@
-# LCOF 28. 对称的二叉树
+# lcof-28.-dui-cheng-de-er-cha-shu
 
 ## 1. [问题](https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof)
 

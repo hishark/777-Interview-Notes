@@ -10,7 +10,7 @@ categories: 算法笔记
 notshow: true
 ---
 
-# leetcode-215
+# 215. 数组中的第K个最大元素
 
 ## [1. 问题](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)
 
@@ -26,7 +26,7 @@ notshow: true
 
 **说明:**
 
-你可以假设 k 总是有效的，且 1 ≤ k ≤ 数组的长度。 
+你可以假设 k 总是有效的，且 1 ≤ k ≤ 数组的长度。
 
 ## 2. 解法
 

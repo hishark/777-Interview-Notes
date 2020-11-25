@@ -1,4 +1,4 @@
-# LCOF 35. 复杂链表的复制
+# lcof-35.-fu-za-lian-biao-de-fu-zhi
 
 ## 1. [问题](https://leetcode-cn.com/problems/fu-za-lian-biao-de-fu-zhi-lcof/)
 
@@ -73,7 +73,7 @@ class Solution {
     public Node copyRandomList(Node head) {
         // 利用哈希表进行链表复制
         HashMap<Node, Node> map = new HashMap<>();
-        
+
         // 使用工具人 cur 指向头结点 head，用于做复制操作
         Node cur = head;
 

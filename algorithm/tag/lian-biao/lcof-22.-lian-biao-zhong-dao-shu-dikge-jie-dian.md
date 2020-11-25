@@ -1,4 +1,4 @@
-# LCOF 22. 链表中倒数第k个节点
+# lcof-22.-lian-biao-zhong-dao-shu-dikge-jie-dian
 
 ## 1. [问题](https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/)
 

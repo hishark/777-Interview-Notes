@@ -1,4 +1,4 @@
-# LCOF 68 - II. 二叉树的最近公共祖先
+# lcof-68-ii.-er-cha-shu-de-zui-jin-gong-gong-zu-xian
 
 ## 1. [问题](https://leetcode-cn.com/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/) <a id="1-wen-ti"></a>
 

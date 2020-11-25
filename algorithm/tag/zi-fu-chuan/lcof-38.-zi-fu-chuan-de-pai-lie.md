@@ -1,4 +1,4 @@
-# LCOF 38. 字符串的排列
+# lcof-38.-zi-fu-chuan-de-pai-lie
 
 ## 1. [问题](https://leetcode-cn.com/problems/zi-fu-chuan-de-pai-lie-lcof/)
 

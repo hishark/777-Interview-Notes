@@ -1,4 +1,4 @@
-# LEETCODE 278. 第一个错误的版本
+# leetcode-278.-di-yi-ge-cuo-wu-de-ban-ben
 
 ## 1. [问题](https://leetcode-cn.com/problems/first-bad-version/)
 

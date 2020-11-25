@@ -1,4 +1,4 @@
-# LCOF 36. 二叉搜索树与双向链表
+# lcof-36.-er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao
 
 ## 1. [问题](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof)
 
@@ -65,7 +65,7 @@ class Solution {
         // dfs 结束时，head 指向链表中的头结点，pre 指向尾结点，互相指向即可
         head.left = pre;
         pre.right = head;
-        
+
         return head;
     }
 

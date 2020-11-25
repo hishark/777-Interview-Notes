@@ -1,4 +1,4 @@
-# LCOF 58 - II. 左旋转字符串
+# lcof-58-ii.-zuo-xuan-zhuan-zi-fu-chuan
 
 ## 1. [问题](https://leetcode-cn.com/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/)
 

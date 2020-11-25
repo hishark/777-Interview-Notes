@@ -1,4 +1,4 @@
-# LCOF 35. 复杂链表的复制
+# lcof-35.-fu-za-lian-biao-de-fu-zhi
 
 ## 1. [问题](https://leetcode-cn.com/problems/fu-za-lian-biao-de-fu-zhi-lcof/)
 

@@ -1,4 +1,4 @@
-# LCOF 59 - I. 滑动窗口的最大值
+# lcof-59-i.-hua-dong-chuang-kou-de-zui-da-zhi
 
 ## 1. [问题](https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/)
 

@@ -1,4 +1,4 @@
-# LEETCODE 4. 寻找两个正序数组的中位数
+# leetcode-4.-xun-zhao-liang-ge-zheng-xu-shu-zu-de-zhong-wei-shu
 
 ## 1. [问题](https://leetcode-cn.com/problems/median-of-two-sorted-arrays/)
 

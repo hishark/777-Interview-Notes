@@ -139,7 +139,7 @@ class Solution {
 >
 >   class Solution {
 >
->    public TreeNode mirrorTree\(TreeNode root\) {
+>   public TreeNode mirrorTree\(TreeNode root\) {
 >
 >   ```text
 >    // 特判，根为空直接返回空

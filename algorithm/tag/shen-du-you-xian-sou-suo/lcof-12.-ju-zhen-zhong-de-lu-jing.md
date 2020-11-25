@@ -1,4 +1,4 @@
-# LCOF 12. 矩阵中的路径
+# lcof-12.-ju-zhen-zhong-de-lu-jing
 
 ## 1. [问题](https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof/)
 

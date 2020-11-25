@@ -1,4 +1,4 @@
-# LCOF 41. 数据流中的中位数
+# lcof-41.-shu-ju-liu-zhong-de-zhong-wei-shu
 
 ## 1. [问题](https://leetcode-cn.com/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof/)
 

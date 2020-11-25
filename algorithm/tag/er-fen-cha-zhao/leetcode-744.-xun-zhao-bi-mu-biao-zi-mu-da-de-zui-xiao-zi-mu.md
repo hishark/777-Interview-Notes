@@ -1,4 +1,4 @@
-# LEETCODE 744. 寻找比目标字母大的最小字母
+# leetcode-744.-xun-zhao-bi-mu-biao-zi-mu-da-de-zui-xiao-zi-mu
 
 ## 1. [问题](https://leetcode-cn.com/problems/find-smallest-letter-greater-than-target/)
 

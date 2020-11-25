@@ -1,4 +1,4 @@
-# LCOF 45. 把数组排成最小的数
+# lcof-45.-ba-shu-zu-pai-cheng-zui-xiao-de-shu
 
 ## 1. [问题](https://leetcode-cn.com/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/)
 
@@ -53,7 +53,7 @@ class Solution {
          *  2. x + y > y + x 时表示 x > y，x 排在 y 之后
          */
         Arrays.sort(strs, (x, y) -> (x + y).compareTo(y + x));
-        
+
         // 把排序后的字符串数组拼接成结果字符串
         StringBuilder res = new StringBuilder();
         for (String str: strs) {

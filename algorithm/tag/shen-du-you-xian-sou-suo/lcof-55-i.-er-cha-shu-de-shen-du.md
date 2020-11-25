@@ -1,4 +1,4 @@
-# LCOF 55 - I. 二叉树的深度
+# lcof-55-i.-er-cha-shu-de-shen-du
 
 ## 1. [问题](https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/)
 
@@ -97,16 +97,16 @@ class Solution {
         // 判空
         if (root == null)
             return 0;
-        
+
         // 使用队列存储节点
         Queue<TreeNode> queue = new LinkedList<>();
-        
+
         // 初始化，先令根节点入队
         queue.offer(root);
-        
+
         // 二叉树深度，最后要返回的结果
         int depth = 0;
-        
+
         while (!queue.isEmpty()) {
             // 当前层次的节点数目
             int curSize = queue.size();
@@ -123,9 +123,9 @@ class Solution {
             }
             // 遍历完一个层次，就将深度++
             depth++;
-            
+
         }
-        
+
         return depth;
     }
 }

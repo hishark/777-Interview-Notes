@@ -1,4 +1,4 @@
-# LCOF 59 - II. 队列的最大值
+# lcof-59-ii.-dui-lie-de-zui-da-zhi
 
 ## 1. [问题](https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/)
 
@@ -12,7 +12,7 @@
 输入: 
 ["MaxQueue","push_back","push_back","max_value","pop_front","max_value"]
 [[],[1],[2],[],[],[]]
-输出: [null,null,null,2,1,2]
+输出: [null,null,null,2,1,2]
 ```
 
 **示例 2：**
@@ -49,7 +49,7 @@ class MaxQueue {
         deque = new LinkedList<Integer>();
         queue = new LinkedList<Integer>();
     }
-    
+
     // 求最大值
     public int max_value() {
         // 队列为空，返回 -1
@@ -58,27 +58,27 @@ class MaxQueue {
         // 返回队头元素，即双端队列中的最大值
         return deque.peekFirst();
     }
-    
+
     // 插入
     public void push_back(int value) {
         // 当双端队列不为空，且队尾取出的值比 value 小的时候，不停的让队尾元素出队
         // 由于有辅助队列的存在，所以不用担心丢失这些比 value 小的元素
         while(!deque.isEmpty() && deque.peekLast() < value) 
             deque.pollLast();
-        
+
         // 让双端队列中所有比 value 小的元素出队后，就将 value 插入队尾
         // 由此来保持双端队列的单调递减
         deque.offerLast(value);
         // 使用辅助队列来记录所有被插入的值
         queue.offer(value);
     }
-   
+
     // 删除
     public int pop_front() {
         // 如果队列为空，返回 -1
         if (queue.isEmpty())
             return -1;
-        
+
         // 取出辅助队列的队头元素
         int ans = queue.poll();
         // 如果该元素等于双端队列的最大值，也同时取出双端队列中的队头元素

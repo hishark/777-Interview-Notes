@@ -1,4 +1,4 @@
-# LCOF 64. 求1+2+…+n
+# lcof-64.-qiu-1+2++n
 
 ## 1. [问题](https://leetcode-cn.com/problems/qiu-12n-lcof/)
 

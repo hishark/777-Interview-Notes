@@ -1,4 +1,4 @@
-# LCOF 40. 最小的k个数
+# lcof-40.-zui-xiao-dekge-shu
 
 ## 1. [问题](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/)
 

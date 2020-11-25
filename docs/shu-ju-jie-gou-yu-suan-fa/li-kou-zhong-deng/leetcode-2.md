@@ -23,7 +23,7 @@ notshow: true
 
 示例：
 
-> 输入：\(2 -&gt; 4 -&gt; 3\) + \(5 -&gt; 6 -&gt; 4\) 输出：7 -&gt; 0 -&gt; 8 原因：342 + 465 = 807 
+> 输入：\(2 -&gt; 4 -&gt; 3\) + \(5 -&gt; 6 -&gt; 4\) 输出：7 -&gt; 0 -&gt; 8 原因：342 + 465 = 807
 >
 > ## 2. 解法
 >
@@ -42,7 +42,7 @@ notshow: true
 >
 >   class Solution {
 >
->    public ListNode addTwoNumbers\(ListNode l1, ListNode l2\) {
+>   public ListNode addTwoNumbers\(ListNode l1, ListNode l2\) {
 >
 >   ```text
 >    // 初始化

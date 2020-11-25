@@ -1,2 +1,2 @@
-# 力扣-中等
+# Li Kou Zhong Deng
 

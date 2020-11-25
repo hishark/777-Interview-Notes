@@ -1,4 +1,4 @@
-# LCOF 18. 删除链表的节点
+# lcof-18.-shan-chu-lian-biao-de-jie-dian
 
 ## 1. [问题](https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof)
 

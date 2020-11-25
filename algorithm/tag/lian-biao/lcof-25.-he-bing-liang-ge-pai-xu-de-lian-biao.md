@@ -1,4 +1,4 @@
-# LCOF 25. 合并两个排序的链表
+# lcof-25.-he-bing-liang-ge-pai-xu-de-lian-biao
 
 ## 1. [问题](https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof)
 

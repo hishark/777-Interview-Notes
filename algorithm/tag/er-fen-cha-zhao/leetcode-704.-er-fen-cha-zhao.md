@@ -1,4 +1,4 @@
-# LEETCODE 704. 二分查找
+# leetcode-704.-er-fen-cha-zhao
 
 ## 1. [问题](https://leetcode-cn.com/problems/binary-search/)
 

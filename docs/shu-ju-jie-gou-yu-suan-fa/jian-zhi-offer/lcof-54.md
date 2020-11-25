@@ -15,7 +15,7 @@ notshow: true
 
 ## 1. [问题](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/)
 
-给定一棵二叉搜索树，请找出其中第k大的节点。 
+给定一棵二叉搜索树，请找出其中第k大的节点。
 
 示例 1:
 

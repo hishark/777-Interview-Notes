@@ -1,2 +1,2 @@
-# 力扣-困难
+# Li Kou Kun Nan
 

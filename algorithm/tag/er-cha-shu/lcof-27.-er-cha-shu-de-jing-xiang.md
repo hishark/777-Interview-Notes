@@ -1,4 +1,4 @@
-# LCOF 27. 二叉树的镜像
+# lcof-27.-er-cha-shu-de-jing-xiang
 
 ## 1. [问题](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/)
 
@@ -135,7 +135,7 @@ class Solution {
             // 如果当前节点的右结点不为空，就把右节点加入到辅助栈中
             if(curNode.right != null) 
                 stack.add(curNode.right);
-            
+
             // 交换当前结点的左右结点
             TreeNode tmp = curNode.left;
             curNode.left = curNode.right;

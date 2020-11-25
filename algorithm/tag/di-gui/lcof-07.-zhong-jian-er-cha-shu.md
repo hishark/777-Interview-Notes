@@ -1,4 +1,4 @@
-# LCOF 07. 重建二叉树
+# lcof-07.-zhong-jian-er-cha-shu
 
 ## 1. [问题](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/)
 

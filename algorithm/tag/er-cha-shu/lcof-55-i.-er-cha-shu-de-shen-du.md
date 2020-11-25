@@ -1,4 +1,4 @@
-# LCOF 55 - I. 二叉树的深度
+# lcof-55-i.-er-cha-shu-de-shen-du
 
 ## 1. [问题](https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/)
 

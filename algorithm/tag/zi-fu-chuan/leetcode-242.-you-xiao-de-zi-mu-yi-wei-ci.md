@@ -1,4 +1,4 @@
-# LEETCODE 242. 有效的字母异位词
+# leetcode-242.-you-xiao-de-zi-mu-yi-wei-ci
 
 ## 1. [问题](https://leetcode-cn.com/problems/valid-anagram/)
 
@@ -126,7 +126,7 @@ class Solution {
             if (count[t.charAt(i) - 'a'] < 0)
                 return false;
         }
- 
+
         // 遍历完字符串 t 没出现小于零的情况就直接返回 true 啦
         return true;
     }

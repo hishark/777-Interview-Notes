@@ -10,7 +10,7 @@ categories: 算法笔记
 notshow: true
 ---
 
-# leetcode-343
+# 343. 整数拆分
 
 ## 1. [问题](https://leetcode-cn.com/problems/integer-break)
 
@@ -32,7 +32,7 @@ notshow: true
 解释: 10 = 3 + 3 + 4, 3 × 3 × 4 = 36。
 ```
 
-说明: 你可以假设 n 不小于 2 且不大于 58。 
+说明: 你可以假设 n 不小于 2 且不大于 58。
 
 ## 2. 解法 - 动态规划
 

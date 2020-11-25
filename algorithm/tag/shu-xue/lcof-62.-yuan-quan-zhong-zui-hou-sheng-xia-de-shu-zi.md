@@ -1,4 +1,4 @@
-# LCOF 62. 圆圈中最后剩下的数字
+# lcof-62.-yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi
 
 ## 1. [问题](https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/)
 

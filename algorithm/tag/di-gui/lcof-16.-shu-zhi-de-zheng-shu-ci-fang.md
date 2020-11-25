@@ -1,4 +1,4 @@
-# LCOF 16. 数值的整数次方
+# lcof-16.-shu-zhi-de-zheng-shu-ci-fang
 
 ## 1. [问题](https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof)
 

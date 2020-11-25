@@ -1,4 +1,4 @@
-# LCOF 61. 扑克牌中的顺子
+# lcof-61.-pu-ke-pai-zhong-de-shun-zi
 
 ## 1. [问题](https://leetcode-cn.com/problems/bu-ke-pai-zhong-de-shun-zi-lcof/)
 

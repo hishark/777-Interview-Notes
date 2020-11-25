@@ -1,4 +1,4 @@
-# LCOF 52. 两个链表的第一个公共节点
+# lcof-52.-liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian
 
 ## 1. [问题](https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/)
 
@@ -28,7 +28,7 @@
 ![](../../../.gitbook/assets/image%20%2815%29.png)
 
 ```text
-输入：intersectVal = 2, listA = [0,9,1,2,4], listB = [3,2,4], skipA = 3, skipB = 1
+输入：intersectVal = 2, listA = [0,9,1,2,4], listB = [3,2,4], skipA = 3, skipB = 1
 输出：Reference of the node with value = 2
 输入解释：
 相交节点的值为 2 （注意，如果两个列表相交则不能为 0）。

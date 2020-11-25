@@ -1,4 +1,4 @@
-# LCOF 13. 机器人的运动范围
+# lcof-13.-ji-qi-ren-de-yun-dong-fan-wei
 
 ## 1. [问题](https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/)
 

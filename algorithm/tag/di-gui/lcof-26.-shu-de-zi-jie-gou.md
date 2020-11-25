@@ -1,4 +1,4 @@
-# LCOF 26. 树的子结构
+# lcof-26.-shu-de-zi-jie-gou
 
 ## 1. [问题](https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/)
 

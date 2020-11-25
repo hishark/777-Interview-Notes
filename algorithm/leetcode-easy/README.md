@@ -1,2 +1,2 @@
-# 力扣-简单
+# Leetcode Easy
 

@@ -1,4 +1,4 @@
-# LCOF 55 - II. 平衡二叉树
+# lcof-55-ii.-ping-heng-er-cha-shu
 
 ## 1. [问题](https://leetcode-cn.com/problems/ping-heng-er-cha-shu-lcof/)
 

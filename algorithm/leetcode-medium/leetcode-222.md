@@ -1,4 +1,4 @@
-# 222. 完全二叉树的节点个数
+# Leetcode 222
 
 ## 1. [问题](https://leetcode-cn.com/problems/count-complete-tree-nodes/)
 
