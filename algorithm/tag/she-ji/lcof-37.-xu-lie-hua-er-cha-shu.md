@@ -1,4 +1,4 @@
-# lcof-37.-xu-lie-hua-er-cha-shu
+# LCOF 37. 序列化二叉树
 
 ## 1. [问题](https://leetcode-cn.com/problems/xu-lie-hua-er-cha-shu-lcof/)
 

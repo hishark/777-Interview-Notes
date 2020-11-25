@@ -1,4 +1,4 @@
-# lcof-11.-xuan-zhuan-shu-zu-de-zui-xiao-shu-zi
+# LCOF 11. 旋转数组的最小数字
 
 ## 1. [问题](https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/)
 

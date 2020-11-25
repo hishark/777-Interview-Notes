@@ -1,4 +1,4 @@
-# lcof-67.-ba-zi-fu-chuan-zhuan-huan-cheng-zheng-shu
+# LCOF 67. 把字符串转换成整数
 
 ## 1. [问题](https://leetcode-cn.com/problems/ba-zi-fu-chuan-zhuan-huan-cheng-zheng-shu-lcof/)
 

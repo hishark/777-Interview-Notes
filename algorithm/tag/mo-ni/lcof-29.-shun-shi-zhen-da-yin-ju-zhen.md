@@ -1,4 +1,4 @@
-# lcof-29.-shun-shi-zhen-da-yin-ju-zhen
+# LCOF 29. 顺时针打印矩阵
 
 ## 1. [问题](https://leetcode-cn.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/)
 

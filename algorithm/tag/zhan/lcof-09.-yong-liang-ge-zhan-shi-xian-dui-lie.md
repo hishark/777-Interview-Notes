@@ -1,4 +1,4 @@
-# lcof-09.-yong-liang-ge-zhan-shi-xian-dui-lie
+# LCOF 09. 用两个栈实现队列
 
 ## [1. 问题](https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)
 

@@ -1,2 +1,0 @@
-# Li Kou Kun Nan
-

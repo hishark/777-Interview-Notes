@@ -1,4 +1,4 @@
-# lcof-05.-ti-huan-kong-ge
+# LCOF 05. 替换空格
 
 ## 1. [问题](https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/)
 

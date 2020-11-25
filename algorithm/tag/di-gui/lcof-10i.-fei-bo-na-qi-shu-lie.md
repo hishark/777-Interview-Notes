@@ -1,4 +1,4 @@
-# lcof-10i.-fei-bo-na-qi-shu-lie
+# LCOF 10-I. 斐波那契数列
 
 ## 1. [问题](https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/)
 

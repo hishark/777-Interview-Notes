@@ -1,2 +1,0 @@
-# Li Kou Jian Dan
-

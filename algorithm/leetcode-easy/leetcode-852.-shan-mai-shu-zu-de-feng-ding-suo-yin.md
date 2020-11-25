@@ -1,4 +1,4 @@
-# leetcode-852.-shan-mai-shu-zu-de-feng-ding-suo-yin
+# 852. 山脉数组的峰顶索引
 
 ## 1. [问题](https://leetcode-cn.com/problems/peak-index-in-a-mountain-array/)
 

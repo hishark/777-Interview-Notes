@@ -1,4 +1,4 @@
-# lcof-14ii.-jian-sheng-zi-ii
+# LCOF 14-II. 剪绳子 II
 
 ## 1. [问题](https://leetcode-cn.com/problems/jian-sheng-zi-ii-lcof/)
 

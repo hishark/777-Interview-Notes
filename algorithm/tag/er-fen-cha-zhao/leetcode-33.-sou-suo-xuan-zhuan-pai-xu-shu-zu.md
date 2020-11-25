@@ -1,4 +1,4 @@
-# leetcode-33.-sou-suo-xuan-zhuan-pai-xu-shu-zu
+# LEETCODE 33. 搜索旋转排序数组
 
 ## 1. [问题](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)
 

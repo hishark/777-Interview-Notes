@@ -1,2 +1,0 @@
-# Li Kou Zhong Deng
-

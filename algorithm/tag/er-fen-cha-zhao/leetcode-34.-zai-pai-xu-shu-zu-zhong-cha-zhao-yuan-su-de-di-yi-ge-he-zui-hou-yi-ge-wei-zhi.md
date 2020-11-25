@@ -1,4 +1,4 @@
-# leetcode-34.-zai-pai-xu-shu-zu-zhong-cha-zhao-yuan-su-de-di-yi-ge-he-zui-hou-yi-ge-wei-zhi
+# LEETCODE 34. 在排序数组中查找元素的第一个和最后一个位置
 
 ## 1. [问题](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
 

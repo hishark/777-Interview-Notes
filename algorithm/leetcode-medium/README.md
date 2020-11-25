@@ -1,2 +1,2 @@
-# Leetcode Medium
+# 力扣-中等
 

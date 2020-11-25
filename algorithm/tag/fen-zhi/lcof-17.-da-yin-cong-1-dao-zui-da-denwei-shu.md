@@ -1,4 +1,4 @@
-# lcof-17.-da-yin-cong-1-dao-zui-da-denwei-shu
+# LCOF 17. 打印从1到最大的n位数
 
 ## 1. [问题](https://leetcode-cn.com/problems/da-yin-cong-1dao-zui-da-de-nwei-shu-lcof/)
 

@@ -1,4 +1,4 @@
-# lcof-53-i.-zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-i
+# LCOF 53 - I. 在排序数组中查找数字 I
 
 ## 1. [问题](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)
 

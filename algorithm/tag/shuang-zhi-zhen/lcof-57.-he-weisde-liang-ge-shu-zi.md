@@ -1,4 +1,4 @@
-# lcof-57.-he-weisde-liang-ge-shu-zi
+# LCOF 57. 和为s的两个数字
 
 ## 1. [问题](https://leetcode-cn.com/problems/he-wei-sde-liang-ge-shu-zi-lcof/)
 

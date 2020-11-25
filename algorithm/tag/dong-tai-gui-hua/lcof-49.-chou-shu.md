@@ -1,4 +1,4 @@
-# lcof-49.-chou-shu
+# LCOF 49. 丑数
 
 ## 1. [问题](https://leetcode-cn.com/problems/chou-shu-lcof/)
 

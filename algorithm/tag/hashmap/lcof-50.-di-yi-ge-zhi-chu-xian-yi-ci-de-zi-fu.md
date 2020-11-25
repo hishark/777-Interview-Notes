@@ -1,4 +1,4 @@
-# lcof-50.-di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu
+# LCOF 50. 第一个只出现一次的字符
 
 ## 1. [问题](https://leetcode-cn.com/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/)
 

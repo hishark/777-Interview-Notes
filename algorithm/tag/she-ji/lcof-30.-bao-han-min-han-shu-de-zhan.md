@@ -1,4 +1,4 @@
-# lcof-30.-bao-han-min-han-shu-de-zhan
+# LCOF 30. 包含min函数的栈
 
 ## 1. [问题](https://leetcode-cn.com/problems/bao-han-minhan-shu-de-zhan-lcof/)
 

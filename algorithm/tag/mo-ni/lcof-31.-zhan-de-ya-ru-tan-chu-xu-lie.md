@@ -1,4 +1,4 @@
-# lcof-31.-zhan-de-ya-ru-tan-chu-xu-lie
+# LCOF 31. 栈的压入、弹出序列
 
 ## 1. [问题](https://leetcode-cn.com/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof)
 

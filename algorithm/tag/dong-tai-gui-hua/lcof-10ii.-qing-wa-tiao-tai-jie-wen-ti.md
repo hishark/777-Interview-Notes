@@ -1,4 +1,4 @@
-# lcof-10ii.-qing-wa-tiao-tai-jie-wen-ti
+# LCOF 10-II. 青蛙跳台阶问题
 
 ## 1. [问题](https://leetcode-cn.com/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/)
 

@@ -1,4 +1,4 @@
-# lcof-54.-er-cha-sou-suo-shu-de-dikda-jie-dian
+# LCOF 54. 二叉搜索树的第k大节点
 
 ## 1. [问题](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/)
 

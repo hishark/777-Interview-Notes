@@ -1,4 +1,4 @@
-# lcof-45.-ba-shu-zu-pai-cheng-zui-xiao-de-shu
+# LCOF 45. 把数组排成最小的数
 
 ## 1. [问题](https://leetcode-cn.com/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/)
 

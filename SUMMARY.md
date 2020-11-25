@@ -4,7 +4,7 @@
 
 ## 数据结构与算法 <a id="algorithm"></a>
 
-* [简介](algorithm/readme.md)
+* [简介](algorithm/jian-jie.md)
 * [题型](algorithm/tag/README.md)
   * [动态规划](algorithm/tag/dong-tai-gui-hua/README.md)
     * [LEETCODE 32. 最长有效括号](algorithm/tag/dong-tai-gui-hua/32.-zui-chang-you-xiao-kuo-hao.md)
@@ -277,7 +277,7 @@
 
 ## 计算机网络 <a id="computer-network"></a>
 
-* [简介](computer-network/readme.md)
+* [简介](computer-network/jian-jie.md)
 * [综述](computer-network/cn-summary.md)
 * [物理层](computer-network/cn-physical-layer.md)
 * [链路层](computer-network/cn-link-layer.md)
@@ -287,28 +287,28 @@
 
 ## 操作系统 <a id="os"></a>
 
-* [简介](os/readme.md)
+* [简介](os/jian-jie.md)
 
 ## Android
 
-* [简介](android/readme.md)
+* [简介](android/jian-jie.md)
 * [Untitled](android/untitled.md)
 
 ## 数据库 <a id="database"></a>
 
-* [简介](database/readme.md)
+* [简介](database/jian-jie.md)
 
 ## Kotlin
 
-* [简介](kotlin/readme.md)
+* [简介](kotlin/jian-jie.md)
 
 ## 简历 <a id="resume"></a>
 
-* [简介](resume/readme.md)
+* [简介](resume/jian-jie.md)
 
 ## 面经 <a id="interview"></a>
 
-* [简介](interview/readme.md)
+* [简介](interview/jian-jie.md)
 * [面经题目汇总](interview/mian-jing-ti-mu-hui-zong/README.md)
   * [字节跳动的校招面试精髓（提前批免笔试）](interview/mian-jing-ti-mu-hui-zong/zi-jie-tiao-dong-de-xiao-zhao-mian-shi-jing-sui-ti-qian-pi-mian-bi-shi.md)
   * [字节提前批移动端面经（1-3面）已拿意向书](interview/mian-jing-ti-mu-hui-zong/zi-jie-ti-qian-pi-yi-dong-duan-mian-jing-13-mian-yi-na-yi-xiang-shu.md)
