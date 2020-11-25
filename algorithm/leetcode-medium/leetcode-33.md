@@ -1,6 +1,6 @@
 # 33. 搜索旋转排序数组
 
-## 1. [问题](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)
+### 1. [问题](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)
 
 给你一个整数数组 nums ，和一个整数 target 。
 
@@ -37,16 +37,16 @@
 * nums 肯定会在某个点上旋转 
 * -10^4 &lt;= target &lt;= 10^4
 
-## 2. 标签
+### 2. 标签
 
 * 数组
 * 二分查找
 
-## 3. 解法 - 二分查找
+### 3. 解法 - 二分查找
 
 > 二分查找的等号我吐啦
 
-### 3.1 Java
+#### 3.1 Java
 
 ```java
 // ref: https://leetcode-cn.com/problems/search-in-rotated-sorted-array/solution/sou-suo-xuan-zhuan-pai-xu-shu-zu-by-leetcode-solut/
@@ -110,7 +110,7 @@ class Solution {
 }
 ```
 
-### 3.2 Kotlin
+#### 3.2 Kotlin
 
 ```kotlin
 class Solution {
@@ -173,12 +173,12 @@ class Solution {
 }
 ```
 
-### 3.3 复杂度分析
+#### 3.3 复杂度分析
 
 * 时间复杂度 `O(logn)` ：搜索空间每次循环都会减少一半，二分查找的时间复杂度为对数级别。
 * 空间复杂度 `O(1)` ：变量仅占用了常数大小的额外存储空间。
 
-## 4. 参考
+### 4. 参考
 
 * [https://leetcode-cn.com/problems/search-in-rotated-sorted-array/](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)
 * [https://leetcode-cn.com/problems/search-in-rotated-sorted-array/solution/sou-suo-xuan-zhuan-pai-xu-shu-zu-by-leetcode-solut/](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/solution/sou-suo-xuan-zhuan-pai-xu-shu-zu-by-leetcode-solut/)
