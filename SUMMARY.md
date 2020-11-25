@@ -4,7 +4,7 @@
 
 ## 数据结构与算法 <a id="algorithm"></a>
 
-* [简介](algorithm/jian-jie.md)
+* [简介](algorithm/readme.md)
 * [题型](algorithm/tag/README.md)
   * [动态规划](algorithm/tag/dong-tai-gui-hua/README.md)
     * [LEETCODE 32. 最长有效括号](algorithm/tag/dong-tai-gui-hua/32.-zui-chang-you-xiao-kuo-hao.md)
