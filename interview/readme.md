@@ -4,9 +4,7 @@
 
 以目标公司的面经为纲，来完善所有知识点。
 
-下面这个网站是根据牛客网等来源的面经整理出的各大公司高频考察的算法题，可以按照意向公司多刷刷，争取可以全部掌握。
+{% page-ref page="interview-collect/" %}
 
-{% embed url="https://leetcode-cn.top/" %}
-
-
+{% page-ref page="bytedance-collect/" %}
 

@@ -280,21 +280,27 @@
 * [字节跳动面经汇总](interview/interview-collect/README.md)
   * [实习](interview/interview-collect/intern.md)
   * [提前批](interview/interview-collect/before/README.md)
-    * [【类似综述】字节提前批移动端面经（1-3面）已拿意向书](interview/interview-collect/before/zi-jie-ti-qian-pi-yi-dong-duan-mian-jing-13-mian-yi-na-yi-xiang-shu.md)
+    * [字节提前批移动端面经（1-3面）已拿意向书](interview/interview-collect/before/zi-jie-ti-qian-pi-yi-dong-duan-mian-jing-13-mian-yi-na-yi-xiang-shu.md)
     * [字节跳动的校招面试精髓（提前批免笔试）](interview/interview-collect/before/zi-jie-tiao-dong-de-xiao-zhao-mian-shi-jing-sui-ti-qian-pi-mian-bi-shi.md)
     * [字节跳动客户端开发两次一轮游（21 届秋招）](interview/interview-collect/before/zi-jie-tiao-dong-ke-hu-duan-kai-fa-liang-ci-yi-lun-you-21-jie-qiu-zhao.md)
   * [秋招](interview/interview-collect/official/README.md)
     * [2020年字节跳动秋招面经（抖音全栈已oc）](interview/interview-collect/official/2020-nian-zi-jie-tiao-dong-qiu-zhao-mian-jing-dou-yin-quan-zhan-yi-oc.md)
+* [字节面经知识点整理](interview/bytedance-collect/README.md)
+  * [计算机网络](interview/bytedance-collect/computer-network.md)
+  * [操作系统](interview/bytedance-collect/os.md)
+  * [数据库](interview/bytedance-collect/database.md)
+  * [算法题](interview/bytedance-collect/algorithm.md)
 
 ## 计算机网络 <a id="computer-network"></a>
 
 * [简介](computer-network/readme.md)
-* [综述](computer-network/cn-summary.md)
-* [物理层](computer-network/cn-physical-layer.md)
-* [链路层](computer-network/cn-link-layer.md)
-* [网络层](computer-network/cn-network-layer.md)
-* [传输层](computer-network/cn-transport-layer.md)
-* [应用层](computer-network/cn-application-layer.md)
+* [基础知识](computer-network/ji-chu-zhi-shi/README.md)
+  * [综述](computer-network/ji-chu-zhi-shi/cn-summary.md)
+  * [物理层](computer-network/ji-chu-zhi-shi/cn-physical-layer.md)
+  * [链路层](computer-network/ji-chu-zhi-shi/cn-link-layer.md)
+  * [网络层](computer-network/ji-chu-zhi-shi/cn-network-layer.md)
+  * [传输层](computer-network/ji-chu-zhi-shi/cn-transport-layer.md)
+  * [应用层](computer-network/ji-chu-zhi-shi/cn-application-layer.md)
 
 ## 操作系统 <a id="os"></a>
 
@@ -303,7 +309,9 @@
 ## Android
 
 * [简介](android/readme.md)
-* [Untitled](android/untitled.md)
+* [基础知识](android/ji-chu-zhi-shi/README.md)
+  * [Activity](android/ji-chu-zhi-shi/untitled.md)
+  * [UI](android/ji-chu-zhi-shi/ui.md)
 
 ## 数据库 <a id="database"></a>
 
