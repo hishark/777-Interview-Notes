@@ -20,5 +20,5 @@
 
 ## 帮忙捉虫
 
-如果发现了什么错误麻烦[提个issue](https://github.com/hishark/Android-Interview/issues/new)哦~ 🥳
+如果发现了什么错误麻烦[提个issue](https://github.com/hishark/Android-Interview/issues/new)哦，阿里嘎多~ 🥳
 

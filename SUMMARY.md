@@ -274,6 +274,18 @@
   * [329. 矩阵中的最长递增路径](algorithm/leetcode-hard/leetcode-329.md)
   * [Untitled](algorithm/leetcode-hard/untitled.md)
 
+## 面经 <a id="interview"></a>
+
+* [简介](interview/readme.md)
+* [字节跳动面经汇总](interview/interview-collect/README.md)
+  * [实习](interview/interview-collect/intern.md)
+  * [提前批](interview/interview-collect/before/README.md)
+    * [【类似综述】字节提前批移动端面经（1-3面）已拿意向书](interview/interview-collect/before/zi-jie-ti-qian-pi-yi-dong-duan-mian-jing-13-mian-yi-na-yi-xiang-shu.md)
+    * [字节跳动的校招面试精髓（提前批免笔试）](interview/interview-collect/before/zi-jie-tiao-dong-de-xiao-zhao-mian-shi-jing-sui-ti-qian-pi-mian-bi-shi.md)
+    * [字节跳动客户端开发两次一轮游（21 届秋招）](interview/interview-collect/before/zi-jie-tiao-dong-ke-hu-duan-kai-fa-liang-ci-yi-lun-you-21-jie-qiu-zhao.md)
+  * [秋招](interview/interview-collect/official/README.md)
+    * [2020年字节跳动秋招面经（抖音全栈已oc）](interview/interview-collect/official/2020-nian-zi-jie-tiao-dong-qiu-zhao-mian-jing-dou-yin-quan-zhan-yi-oc.md)
+
 ## 计算机网络 <a id="computer-network"></a>
 
 * [简介](computer-network/readme.md)
@@ -304,11 +316,4 @@
 ## 简历 <a id="resume"></a>
 
 * [简介](resume/readme.md)
-
-## 面经 <a id="interview"></a>
-
-* [简介](interview/readme.md)
-* [字节跳动面经汇总](interview/mian-jing-ti-mu-hui-zong/README.md)
-  * [字节跳动的校招面试精髓（提前批免笔试）](interview/mian-jing-ti-mu-hui-zong/zi-jie-tiao-dong-de-xiao-zhao-mian-shi-jing-sui-ti-qian-pi-mian-bi-shi.md)
-  * [字节提前批移动端面经（1-3面）已拿意向书](interview/mian-jing-ti-mu-hui-zong/zi-jie-ti-qian-pi-yi-dong-duan-mian-jing-13-mian-yi-na-yi-xiang-shu.md)
 
