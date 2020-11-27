@@ -348,9 +348,10 @@
   * [操作系统](interview/bytedance-collect/os.md)
   * [数据库](interview/bytedance-collect/database.md)
   * [算法题](interview/bytedance-collect/algorithm.md)
-  * [安卓](interview/bytedance-collect/an-zhuo.md)
+  * [Android](interview/bytedance-collect/android.md)
   * [Java](interview/bytedance-collect/java.md)
-  * [其他](interview/bytedance-collect/qi-ta.md)
+  * [项目](interview/bytedance-collect/xiang-mu.md)
+  * [其他](interview/bytedance-collect/other.md)
 
 ## 计算机网络 <a id="computer-network"></a>
 

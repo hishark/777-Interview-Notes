@@ -10,7 +10,7 @@
 
 3. Handler机制，Looper.loop会不会阻塞线程，为什么？
 
-[答案](../../bytedance-collect/an-zhuo.md#handler-ji-zhi-looperloop-hui-bu-hui-zu-sai-xian-cheng-wei-shen-me)
+[答案](../../bytedance-collect/android.md#handler-ji-zhi-looperloop-hui-bu-hui-zu-sai-xian-cheng-wei-shen-me)
 
 4. gc算法，收集器，stop the world
 
