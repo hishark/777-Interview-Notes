@@ -1,6 +1,6 @@
 # 字节面经知识点整理
 
-这里把我收集来的面经中问过的题目分了个类。
+这一块是对上一块面经汇总的具体知识点整理，按需阅读。
 
 {% page-ref page="computer-network.md" %}
 
@@ -10,5 +10,12 @@
 
 {% page-ref page="algorithm.md" %}
 
+{% page-ref page="an-zhuo.md" %}
 
+{% page-ref page="java.md" %}
+
+## 碎碎念
+
+1. 注意看一些场景题
+2. 看面经发现有时候二三面会去问一面问过的问题，所以不管面的怎么样，面完记得及时复盘，更新自己的知识库。
 

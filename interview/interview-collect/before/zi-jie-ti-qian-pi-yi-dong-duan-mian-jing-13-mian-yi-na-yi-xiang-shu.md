@@ -1,4 +1,4 @@
-# 字节提前批移动端面经（1-3面）已拿意向书
+# 字节跳动的校招面试精髓（提前批免笔试）
 
 {% embed url="https://www.nowcoder.com/discuss/373163?type=post&order=time&pos=&page=2&channel=1009&source\_id=search\_post" %}
 

@@ -1,0 +1,66 @@
+# 字节跳动客户端一面面经
+
+作者：夜阑hhhhh
+
+链接：https://www.nowcoder.com/discuss/562544?type=post&order=create&pos=&page=1&channel=1009&source\_id=search\_post&subType=2
+
+来源：牛客网
+
+
+
+代码写好久，好菜。
+
+准备了很久的C++，一点没问到。
+
+开篇雷击：
+
+1. 我有一个电影资源，很大，我怎么才能把它快速下载下来？
+
+（这题被问懵了，就扯了一些，说分布式下载）
+
+
+
+[网络层](https://hishark777.gitbook.io/777-interview-notes/computer-network/ji-chu-zhi-shi/cn-network-layer#ip-di-zhi-de-bian-zhi-fang-shi)
+
+
+
+实习经历：
+
+1. 在上海做了什么？
+
+2. 你说到接口自动化，详细聊一下。
+
+
+
+数据结构：
+
+1. B树
+
+
+
+操作系统：
+
+1. 虚拟内存和物理内存的区别
+
+2. 计算机寻址的方式？
+
+3. 直接寻址和间接寻址谁更安全？为什么
+
+
+
+计网：
+
+1. http和https的区别
+
+2. https是如何加密的，详细说下加密算法
+
+3. http1.0和http2.0的区别
+
+
+
+算法题：
+
+回文数出二维数组
+
+（写了一小时，楼主太菜太菜）
+
