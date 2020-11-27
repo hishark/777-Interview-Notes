@@ -10,6 +10,8 @@
 
 3. Handler机制，Looper.loop会不会阻塞线程，为什么？
 
+[答案](../../bytedance-collect/an-zhuo.md#handler-ji-zhi-looperloop-hui-bu-hui-zu-sai-xian-cheng-wei-shen-me)
+
 4. gc算法，收集器，stop the world
 
 5. jvm内存区域，为什么要有jvm，我答的是为了隔离物理存储，方便移植，面试官又问会不会影响效率，答会影响，接着问怎么优化 😂，我枯了

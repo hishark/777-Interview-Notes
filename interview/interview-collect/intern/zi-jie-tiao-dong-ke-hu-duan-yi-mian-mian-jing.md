@@ -20,10 +20,6 @@
 
 
 
-[网络层](https://hishark777.gitbook.io/777-interview-notes/computer-network/ji-chu-zhi-shi/cn-network-layer#ip-di-zhi-de-bian-zhi-fang-shi)
-
-
-
 实习经历：
 
 1. 在上海做了什么？
