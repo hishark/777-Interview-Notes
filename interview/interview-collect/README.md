@@ -1,8 +1,10 @@
 ---
-description: 在这里汇总以方便查看面试题目，目前共计x篇面经
+description: 在这里汇总以方便查看面试题目，目前共计 62 篇面经
 ---
 
 # 字节跳动面经汇总
+
+{% embed url="https://www.nowcoder.com/discuss/experience?tagId=642&order=3&companyId=665&phaseId=2" %}
 
 由于我的目标岗位是 Android 客户端，面经收集比较费时，精力有限所以面经就只有客户端岗位的啦～🎯
 

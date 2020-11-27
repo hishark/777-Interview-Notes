@@ -1,5 +1,5 @@
 ---
-description: 目前共计x篇面经
+description: 目前共计 34 篇面经
 ---
 
 # 实习

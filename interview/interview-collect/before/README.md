@@ -1,5 +1,5 @@
 ---
-description: 目前共计x篇面经
+description: 目前共计 12 篇面经
 ---
 
 # 提前批
