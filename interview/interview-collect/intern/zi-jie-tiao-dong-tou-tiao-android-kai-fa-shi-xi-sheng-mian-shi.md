@@ -4,24 +4,24 @@
 
 #### 简单的介绍
 
-本人末流211计算机专业大三本科生，于2020年6月20日在[字节跳动](/jump/super-jump/word?word=%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8)的官网上投递了广州的Android开发实习生。
+本人末流211计算机专业大三本科生，于2020年6月20日在字节跳动的官网上投递了广州的Android开发实习生。
 
-[字节跳动](/jump/super-jump/word?word=%E5%AD%97%E8%8A%82%E8%B7%B3%E5%8A%A8)的面试官真的很nice，特别有耐心。
+字节跳动的面试官真的很nice，特别有耐心。
 
 #### 一面（6月24日 104min）
 
 * 自我介绍。
 * 线程和进程的区别。
-* 线程安全。我回答了sychronized关键字（关于锁，wait，notify参考我的一篇博客---[Java 多线程](https://www.jianshu.com/p/76c6b75efcc5)）。面试官追问是否了解volite关键字，我忘了没回答出来。面试官追问是否了解自旋锁，乐观锁，悲观锁等，我回答了解但是没用过。
+* 线程安全。我回答了sychronized关键字（关于锁，wait，notify参考我的一篇博客---Java 多线程）。面试官追问是否了解volite关键字，我忘了没回答出来。面试官追问是否了解自旋锁，乐观锁，悲观锁等，我回答了解但是没用过。
 * http是用什么实现的。
 * TCP和UDP的区别。
-* TCP为什么是可靠的。注意拥塞机制涉及的[算法](/jump/super-jump/word?word=%E7%AE%97%E6%B3%95)（慢开始，拥塞避难，快重传，快恢复）。
+* TCP为什么是可靠的。注意拥塞机制涉及的算法（慢开始，拥塞避难，快重传，快恢复）。
 * Get请求和Post请求的区别。注意Get请求比Post请求效率高，Post请求需要服务器返回100再发送数据处理，Get请求直接是通过URL。面试官追问是否知道其他请求方式，Put，Delete，Head。
-* [项目](/jump/super-jump/word?word=%E9%A1%B9%E7%9B%AE)中询问一个 A Activity 跳到一个 B Activity中，生命周期的走动，点击Back返回呢。如果一个 A Activity是透明的呢？如果 B Activity是一个Dialog呢？面试官追问横竖屏切换生命周期走动，以及是否了解onConfigurationChanged。
-* HashMap的[源码](/jump/super-jump/word?word=%E6%BA%90%E7%A0%81)，扩容的条件。
-* [算法](/jump/super-jump/word?word=%E7%AE%97%E6%B3%95)两道，一道是和并两个有序[链表](/jump/super-jump/word?word=%E9%93%BE%E8%A1%A8)，我用的归并[排序](/jump/super-jump/word?word=%E6%8E%92%E5%BA%8F)合并过程的思路写的（长时间用IDE，好多错误，但是面试官很有耐心帮我纠错）。一道是思路，将一段文本中的单词逆序输出，主要考察数据结构的知识，用到了栈和队列。
+* 项目中询问一个 A Activity 跳到一个 B Activity中，生命周期的走动，点击Back返回呢。如果一个 A Activity是透明的呢？如果 B Activity是一个Dialog呢？面试官追问横竖屏切换生命周期走动，以及是否了解onConfigurationChanged。
+* HashMap的源码，扩容的条件。
+* 算法两道，一道是和并两个有序链表，我用的归并排序合并过程的思路写的（长时间用IDE，好多错误，但是面试官很有耐心帮我纠错）。一道是思路，将一段文本中的单词逆序输出，主要考察数据结构的知识，用到了栈和队列。
 * 询问我的基本情况，实习时间等。
-* 反问环节：其实没问，面试官建议我对常见的知识做深一步的理解，多看[源码](/jump/super-jump/word?word=%E6%BA%90%E7%A0%81)，多用记事本写代码，多看看基本的数据结构和[算法](/jump/super-jump/word?word=%E7%AE%97%E6%B3%95)。
+* 反问环节：其实没问，面试官建议我对常见的知识做深一步的理解，多看源码，多用记事本写代码，多看看基本的数据结构和算法。
 
 #### 二面（7月1日 57min）
 
@@ -33,23 +33,23 @@
 * 说说自旋锁，内部实现。
 * 问了线程同步，我又说了sychroized，还是参考那篇博客。
 * 是否了解Java的atomic，以及好多很底层的东西，记不清了，大部分都没有回答出来。
-* [算法题](/jump/super-jump/word?word=%E7%AE%97%E6%B3%95%E9%A2%98)：求解矩形起点到终点的最短路径，只能向右或者向下走，这是一道简单的[动态规划](/jump/super-jump/word?word=%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92)题。
+* 算法题：求解矩形起点到终点的最短路径，只能向右或者向下走，这是一道简单的动态规划题。
 * 询问我的基本情况，实习时间等。
-* 反问环节：询问自己想要加入还需要提升那部分的知识，面试官建议多参加实际的[项目](/jump/super-jump/word?word=%E9%A1%B9%E7%9B%AE)。
+* 反问环节：询问自己想要加入还需要提升那部分的知识，面试官建议多参加实际的项目。
 
 #### 三面（7月3日 40min）
 
 * 自我介绍。
-* [项目](/jump/super-jump/word?word=%E9%A1%B9%E7%9B%AE)中出现的难处以及解决。我说的是我使用addView达到弹出框的效果，但是耗时长。后来了解Fragment，使用Fragment代替addView。面试官追问你能分析为什么这么慢吗，我就说了Android的Activity-&gt;PhoneWindow-&gt;DecorView-&gt;ContentView-&gt;WindowManager-&gt;RootViewImpl的绘制流程。面试官继续追问ANR出现的类型，原因以及排查的方式。面试官继续追问Fragment和Activity的区别以及Fragment的优点。
+* 项目中出现的难处以及解决。我说的是我使用addView达到弹出框的效果，但是耗时长。后来了解Fragment，使用Fragment代替addView。面试官追问你能分析为什么这么慢吗，我就说了Android的Activity-&gt;PhoneWindow-&gt;DecorView-&gt;ContentView-&gt;WindowManager-&gt;RootViewImpl的绘制流程。面试官继续追问ANR出现的类型，原因以及排查的方式。面试官继续追问Fragment和Activity的区别以及Fragment的优点。
 * 说一下Android中多线程使用方式。面试官追问如何停止一个线程。
 * Handler的原理。Looper，MessageQueue，Message。面试官追问在一个Handler中给另一个Handler发送消息，我没太理解其实。
-* Java内存，回收的搜索[算法](/jump/super-jump/word?word=%E7%AE%97%E6%B3%95)：引用计数和根搜索[算法](/jump/super-jump/word?word=%E7%AE%97%E6%B3%95)。
-* [算法题](/jump/super-jump/word?word=%E7%AE%97%E6%B3%95%E9%A2%98)：将一个32位的int型整数逆序，我用的取整加取余获取每一位保存在[链表](/jump/super-jump/word?word=%E9%93%BE%E8%A1%A8)中，然后[反转链表](/jump/super-jump/word?word=%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8)。
-* 询问我的基本情况，实习时间，[职业规划](/jump/super-jump/word?word=%E8%81%8C%E4%B8%9A%E8%A7%84%E5%88%92)等。
+* Java内存，回收的搜索算法：引用计数和根搜索算法。
+* 算法题：将一个32位的int型整数逆序，我用的取整加取余获取每一位保存在链表中，然后反转链表。
+* 询问我的基本情况，实习时间，职业规划等。
 
 #### Hr面（7月3日 20min）
 
 * 自我介绍。
-* 询问我的基本情况，实习时间，[职业规划](/jump/super-jump/word?word=%E8%81%8C%E4%B8%9A%E8%A7%84%E5%88%92)等。
+* 询问我的基本情况，实习时间，职业规划等。
 * 给了口头Offer。
 
