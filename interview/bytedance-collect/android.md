@@ -20,7 +20,7 @@ handler内存泄漏，内存泄漏的引用链是啥？（looper—&gt;messagequ
 
 Recyclerview缓存机制
 
- fragment生命周期
+fragment生命周期
 
 binder机制（跳过）
 
