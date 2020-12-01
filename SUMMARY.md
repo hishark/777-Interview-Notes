@@ -286,7 +286,7 @@
       * [字节实习面筋](interview/interview-collect/intern/android/zi-jie-shi-xi-mian-jin.md)
       * [移动客户端开发（抖音）面经](interview/interview-collect/intern/android/yi-dong-ke-hu-duan-kai-fa-dou-yin-mian-jing.md)
       * [\[21届秋招\] 字节——安卓开发实习生 面经](interview/interview-collect/intern/android/21-jie-qiu-zhao-zi-jie-an-zhuo-kai-fa-shi-xi-sheng-mian-jing.md)
-      * [字节跳动-头条Android开发实习生面试](interview/interview-collect/intern/android/zi-jie-tiao-dong-tou-tiao-android-kai-fa-shi-xi-sheng-mian-shi.md)
+      * [➡️字节跳动-头条Android开发实习生面试](interview/interview-collect/intern/android/zi-jie-tiao-dong-tou-tiao-android-kai-fa-shi-xi-sheng-mian-shi.md)
       * [字节 安卓一面面经](interview/interview-collect/intern/android/zi-jie-an-zhuo-yi-mian-mian-jing.md)
       * [字节跳动安卓客户端面经](interview/interview-collect/intern/android/zi-jie-tiao-dong-an-zhuo-ke-hu-duan-mian-jing.md)
       * [字节跳动安卓日常实习生凉经](interview/interview-collect/intern/android/zi-jie-tiao-dong-an-zhuo-ri-chang-shi-xi-sheng-liang-jing.md)
