@@ -10,7 +10,7 @@ description: 在这里汇总以方便查看面试题目，目前共计 62 篇面
 
 实习、提前批、秋招的难度应该是逐级递增的，面试的问题可能会有点不同，所以我把牛客网收集到的面经按照这三个阶段分成了三个部分。
 
-{% page-ref page="shi-xi/intern/" %}
+{% page-ref page="intern/" %}
 
 {% page-ref page="before/" %}
 
