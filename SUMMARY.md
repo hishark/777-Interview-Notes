@@ -338,6 +338,7 @@
       * [字节跳动iOS客户端实习生面经](interview/interview-collect/intern/ios/zi-jie-tiao-dong-ios-ke-hu-duan-shi-xi-sheng-mian-jing.md)
       * [抖音iOS 暑期实习 过经（问了安卓）](interview/interview-collect/intern/ios/dou-yin-ios-shu-qi-shi-xi-guo-jing-wen-le-an-zhuo.md)
       * [字节跳动 IOS开发实习 面经 （内附投递经验与总结！）](interview/interview-collect/intern/ios/zi-jie-tiao-dong-ios-kai-fa-shi-xi-mian-jing-nei-fu-tou-di-jing-yan-yu-zong-jie.md)
+      * [字节三面问题整理](interview/interview-collect/intern/ios/zi-jie-san-mian-wen-ti-zheng-li.md)
   * [提前批](interview/interview-collect/before/README.md)
     * [字节跳动的校招面试精髓（提前批免笔试）](interview/interview-collect/before/zi-jie-ti-qian-pi-yi-dong-duan-mian-jing-13-mian-yi-na-yi-xiang-shu.md)
     * [字节提前批移动端面经（1-3面）已拿意向书](interview/interview-collect/before/zi-jie-tiao-dong-de-xiao-zhao-mian-shi-jing-sui-ti-qian-pi-mian-bi-shi.md)
