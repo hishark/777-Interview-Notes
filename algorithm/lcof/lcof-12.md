@@ -14,7 +14,7 @@ categories: 算法笔记
 
 ## 1. [问题](https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof/)
 
-请设计一个函数，用来判断在一个矩阵中是否存在一条包含某字符串所有字符的路径。路径可以从矩阵中的任意一格开始，每一步可以在矩阵中向左、右、上、下移动一格。如果一条路径经过了矩阵的某一格，那么该路径不能再次进入该格子。例如，在下面的3×4的矩阵中包含一条字符串“bfce”的路径（路径中的字母用加粗标出）。 
+请设计一个函数，用来判断在一个矩阵中是否存在一条包含某字符串所有字符的路径。路径可以从矩阵中的任意一格开始，每一步可以在矩阵中向左、右、上、下移动一格。如果一条路径经过了矩阵的某一格，那么该路径不能再次进入该格子。例如，在下面的 3 × 4 的矩阵中包含一条字符串“bfce”的路径（路径中的字母用加粗标出）。 
 
 \[\["a","b","c","e"\], \["s","f","c","s"\], \["a","d","e","e"\]\]
 
@@ -39,9 +39,14 @@ categories: 算法笔记
 * 1 &lt;= board.length &lt;= 200
 * 1 &lt;= board\[i\].length &lt;= 200
 
-## 2. 解法
+## 2. 标签
 
-### 2.1 Java
+* DFS
+* 剪枝
+
+## 3. 解法
+
+### 3.1 Java
 
 ```java
 class Solution {
@@ -51,6 +56,8 @@ class Solution {
         // 遍历所有字符，找到为止，没找到就返回false
         for(int i=0;i<board.length;i++){
             for(int j=0;j<board[0].length;j++){
+                // 起点为[i, j]
+                // 最后一个参数为字符串开始判断的位置，从 0 开始判断，一直到最后都合法就成啦
                 if(dfs(board, words, i, j, 0))
                     return true;
             }
@@ -60,10 +67,12 @@ class Solution {
 
     public boolean dfs(char[][] board, char[] word, int i, int j, int index) {
         // 越界，矩阵当前字符不等于字符串当前字符，不合法，返回false
+        // （这里就是在剪枝）
         if (i < 0 || i >= board.length || j < 0 || j >= board[0].length || board[i][j] != word[index])
             return false;
 
-        // 矩阵当前字符=字符串当前字符，且已经是字符串最后一个字符，合法，返回true
+        // 矩阵当前字符 = 字符串当前字符，且已经判断到了字符串的最后一个字符
+        // 说明字符串已经全部匹配，合法，返回true
         if (index == word.length - 1)
             return true;
 
@@ -85,7 +94,7 @@ class Solution {
 }
 ```
 
-### 2.2 Kotlin
+### 3.2 Kotlin
 
 ```kotlin
 class Solution {
@@ -129,7 +138,15 @@ class Solution {
 }
 ```
 
-## 3. 参考
+### 3.3 复杂度分析
+
+其中 M 和 N 分别为矩阵行列大小，K 为字符串 word 的长度。
+
+* 时间复杂度 `O((3^K)MN)` ：最差情况下，需要遍历矩阵中所有长度为 K 的字符串，时间复杂度将达到 `O(3^K)`，矩阵汇总共有 MN 个起点，时间复杂度为 `O(MN)`。
+  * 方案数计算：设字符串长度为 KK ，搜索中每个字符有上、下、左、右四个方向可以选择，舍弃回头（上个字符）的方向，剩下 33 种选择，因此方案数的复杂度为 O\(3^K\)O\(3 K \) 。
+* 空间复杂度 `O(K)` ：搜索的过程中，递归深度不超过 K，因此栈空间占用 `O(K)`，最坏情况下 K=MN，递归深度将达到 MN，因此需要使用 O\(MN\) 的额外存储空间。
+
+## 4. 参考
 
 * [https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof/](https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof/)
 * [https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof/solution/mian-shi-ti-12-ju-zhen-zhong-de-lu-jing-shen-du-yo/](https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof/solution/mian-shi-ti-12-ju-zhen-zhong-de-lu-jing-shen-du-yo/)
