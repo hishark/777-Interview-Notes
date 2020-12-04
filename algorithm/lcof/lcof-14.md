@@ -16,7 +16,7 @@ categories: 算法笔记
 
 ## 1. [问题](https://leetcode-cn.com/problems/jian-sheng-zi-lcof/)
 
-给你一根长度为 n 的绳子，请把绳子剪成整数长度的 m 段（m、n都是整数，n&gt;1并且m&gt;1），每段绳子的长度记为 k\[0\],k\[1\]...k\[m-1\] 。请问 k\[0\]_k\[1\]_...\*k\[m-1\] 可能的最大乘积是多少？例如，当绳子的长度是8时，我们把它剪成长度分别为2、3、3的三段，此时得到的最大乘积是18。 
+给你一根长度为 n 的绳子，请把绳子剪成整数长度的 m 段（m、n都是整数，n&gt;1并且m&gt;1），每段绳子的长度记为 k\[0\],k\[1\]...k\[m-1\] 。请问 k\[0\]k\[1\]...k\[m-1\] 可能的最大乘积是多少？例如，当绳子的长度是8时，我们把它剪成长度分别为2、3、3的三段，此时得到的最大乘积是18。 
 
 示例 1：
 
@@ -49,7 +49,7 @@ class Solution {
     public int cuttingRope(int n) {
         // 边界值
         if (n < 2)
-            return 0;
+            return 0; // return n;
         else if (n == 2)
             return 1;
         else if (n == 3)
@@ -84,7 +84,7 @@ class Solution {
                     maxValue = product;                
             }
             // 把最大值存入dp数组
-            dp[i] = maxValue;
+            dp[i] = f;
         }
 
         // 返回结果
@@ -165,7 +165,7 @@ class Solution {
 
         // 几个边界值
         if (n < 2)
-            return 0;
+            return 0;// return n;
         if (n == 2)
             return 1;
         if (n == 3)
@@ -175,7 +175,7 @@ class Solution {
         // numOf3 是绳子段长度为3的绳子数量
         int numOf3 = n / 3;
 
-        // 当绳子最后剩下的程度为4的时候，不能再剪去长度为3的绳子段
+        // 当绳子最后剩下的长度为4的时候，不能再剪去长度为3的绳子段
         // 此时更好的方法是剪成两段长度为2的绳子，因为2x2 > 3x1
         // 如果n减去所有的3剩下了1，说明有一个3可以和这个1加起来等于4，这个4可以拆成2和2，于是3的数量就减一。
         if (n - 3 * numOf3 == 1)

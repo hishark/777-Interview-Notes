@@ -20,6 +20,8 @@ categories: 算法笔记
 
 ## 2. 解法
 
+> 这个方法还是不太行，去看看 LEETCODE 08，那一题会做就行了，题解看甜姨的。
+
 ### 2.1 Java
 
 ```java
@@ -189,11 +191,71 @@ class Solution {
 }
 ```
 
-> 还有个解法是用有限状态自动机来做的，直接看[K佬的题解](https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/solution/mian-shi-ti-20-biao-shi-shu-zhi-de-zi-fu-chuan-y-2/)吧，我看着就不想做OTZ。\#TODO
+> 还有个解法是用有限状态自动机来做的，直接看[K佬的题解](https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/solution/mian-shi-ti-20-biao-shi-shu-zhi-de-zi-fu-chuan-y-2/)吧，我看着就头晕OTZ。\#就是不想做
+
+### 2.3 LEETCODE-08解法
+
+> res \* 10 + num &gt; Integer.MAX\_VALUE 需要注意，直接这么写会越界的，稍微移动一下就不会出现越界的情况了。
+
+```java
+class Solution {
+    public int myAtoi(String str) {
+        //先去除前置的所有空格
+        int index = 0;
+        int length = str.length();
+        char[] ch = str.toCharArray();
+        while(index<length && ch[index]==' '){
+            index++;
+        }
+
+        //去除空格后如果到了末尾，直接返回0
+        if(index==length){
+            return 0;
+        }
+
+        //判断是否为负数
+        boolean isNeg = false;
+        if(ch[index]=='-'){
+            isNeg = true;
+            index++;
+        }else if(ch[index]=='+'){
+            index++;
+        }
+
+        // 最终结果
+        int res = 0;
+
+        //当字符为数字时进行累加
+        while(index<length && isNum(ch[index])){
+            int num = ch[index] - '0';
+            // 为了防止越界，将 res * 10 + num > Integer.MAX_VALUE 不等式移动了一下
+            // 如果已经比最大值还要大了，就看是负数还是正数
+            // 负数返回Integer.MIN_VALUE，正数返回Integer.MAX_VALUE
+            if(res > (Integer.MAX_VALUE - num) / 10){
+                return isNeg ? Integer.MIN_VALUE : Integer.MAX_VALUE;
+            }
+            // 累加
+            res = res*10+num;
+            // 索引右移
+            index++;
+        }
+        // 返回结果
+        return isNeg ? -res : res;
+    }
+
+    public boolean isNum(char c){
+        if(c>='0'&&c<='9'){
+            return true;
+        }else{
+            return false;
+        }
+    }
+}
+```
 
 ## 3. 参考
 
 * [https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/](https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/)
-* [https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/solution/mian-shi-ti-20-biao-shi-shu-zhi-de-zi-fu-chuan-y-2/](https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/solution/mian-shi-ti-20-biao-shi-shu-zhi-de-zi-fu-chuan-y-2/) // 还没看
+* [https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/solution/mian-shi-ti-20-biao-shi-shu-zhi-de-zi-fu-chuan-y-2/](https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/solution/mian-shi-ti-20-biao-shi-shu-zhi-de-zi-fu-chuan-y-2/) // 还没看 就不看
 * [https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/solution/zui-jian-dan-si-lu-xiang-xi-zhu-shi-zheng-shu-xiao/](https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/solution/zui-jian-dan-si-lu-xiang-xi-zhu-shi-zheng-shu-xiao/)
 

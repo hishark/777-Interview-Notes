@@ -52,7 +52,9 @@
 
 1. 我简历里有个安卓，他首先问了下中间肯定用到了ListView，问一下这个怎么用。（Adapter）
 
-2. 为什么要用Adapter （我先回答buffer，然后他问还有么，我想了想说感觉用Adapter更oop一些，问他是不是想听到这个答案，他说是...）
+2. 为什么要用Adapter （我先回答buffer，然后他问还有么，我想了想说感觉用Adapter更**oop**一些，问他是不是想听到这个答案，他说是...）
+
+> OOP Object Oriented Programming 面向对象编程
 
 3. 有没有用到Java多线程，线程安全的问题，我说没有用到过，他说没关系
 

@@ -42,6 +42,12 @@ categories: 算法笔记
 
 ## 2. 解法① - 逐位判断
 
+Java 移位运算符
+
+1. **&lt;&lt;**：左移运算符，左移几位就补几个0。
+2. **&gt;&gt;**：右移运算符（算术右移），如果数字为正数时，移位后在前面补0，为负数时，则在前面补1。
+3. **&gt;&gt;&gt;**：无符号右移运算符（逻辑右移），忽略符号，空位补0即可。
+
 ### 2.1 Java
 
 ```java
@@ -50,7 +56,7 @@ public class Solution {
         /**
          * 根据位运算的定义：
          *  1. 如果n&1=0，那么n二进制的最右位是0
-         *  2. 如果n&1=1，那么n二进制的最左位是1
+         *  2. 如果n&1=1，那么n二进制的最右位是1
          */
 
         // n二进制中1的个数
@@ -112,4 +118,5 @@ public class Solution {
 
 * [https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/](https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/)
 * [https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/solution/mian-shi-ti-15-er-jin-zhi-zhong-1de-ge-shu-wei-yun/](https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/solution/mian-shi-ti-15-er-jin-zhi-zhong-1de-ge-shu-wei-yun/)
+* [https://juejin.cn/post/6844903752915222535](https://juejin.cn/post/6844903752915222535)
 
