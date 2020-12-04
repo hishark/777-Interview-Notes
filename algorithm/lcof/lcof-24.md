@@ -53,6 +53,7 @@ class Solution {
          */
         ListNode cur = reverseList(head.next);
         // 此时的head是4，下面这个操作就是让5指向4，完成一次反转
+        // 这里别写成cur.next=head啦，cur就是5，head每层递归中都不一样
         head.next.next = head;
         // 4的next本来是5，现在置为空，防止产生循环
         head.next = null;
