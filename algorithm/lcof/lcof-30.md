@@ -14,7 +14,7 @@ categories: 算法笔记
 
 ## 1. [问题](https://leetcode-cn.com/problems/bao-han-minhan-shu-de-zhan-lcof/)
 
-定义栈的数据结构，请在该类型中实现一个能够得到栈的最小元素的 min 函数在该栈中，调用 min、push 及 pop 的时间复杂度都是 O\(1\)。
+定义栈的数据结构，请在该类型中实现一个能够得到栈的最小元素的 min 函数。在该栈中，调用 min、push 及 pop 的时间复杂度都是 O\(1\)。
 
 示例:
 
@@ -33,7 +33,7 @@ minStack.min();   --> 返回 -2.
 
 * 各函数的调用总次数不超过 20000 次
 
-## 2. 解法
+## 2. 解法 - 辅助栈
 
 ### 2.1 Java
 
@@ -54,6 +54,7 @@ class MinStack {
     public void push(int x) {
         stackA.push(x);
         // 如果B为空，或者x比B的栈顶元素小，就把x压入B栈
+        // 注意是小于等于哦！等于的时候也要压入，不然会漏
         if (stackB.empty() || x <= stackB.peek())
             stackB.push(x);
     }

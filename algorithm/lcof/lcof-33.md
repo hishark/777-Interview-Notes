@@ -63,7 +63,7 @@ class Solution {
 
     // 判断后序遍历 postorder[i, j] 是否满足二叉搜索树的定义
     boolean recursion(int[] postorder, int i, int j) {
-        // 递归终止条件，此时树种结点数量 <= 1，无需判断正确性，直接返回 true
+        // 递归终止条件，此时树中结点数量 <= 1，无需判断正确性，直接返回 true
         if (i >= j)
             return true;
 
@@ -95,6 +95,7 @@ class Solution {
             p++;
 
         // 递归判断当前树的左子树和右子树是否满足二叉搜索树的定义
+        // 切记右子树的右边界是 j-1 不是 j。
         return p == j && recursion(postorder, i, m - 1) && recursion(postorder, m, j - 1);
     }
 }

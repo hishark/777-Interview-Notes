@@ -51,7 +51,7 @@ class Solution {
         int top = 0, bottom = matrix.length - 1;
         int[] res = new int[matrix[0].length * matrix.length];
 
-                // 结果数组下标
+        // 结果数组下标
         int index = 0;
         // 按照方向进行打印
         while (true) {

@@ -28,7 +28,7 @@
 * 堆
 * 分治
 
-### 3. 解法 - 大根堆
+## 3. 解法 - 大根堆
 
 ### 3.1 Java
 
@@ -133,7 +133,78 @@ class Solution {
 * 时间复杂度 `O(nlogk)` ：其中 n 是数组的长度。大根堆实时维护前 k 小的数字，插入删除操作都是 `O(logk)` 的时间复杂度，最坏情况下数组中所有的数字都要被插入堆中，所以总共是 `O(nlogk)` 的时间复杂度。
 * 空间复杂度 `O(k)` ：大根堆的大小为 k 。
 
-## 4. 参考
+## 4. 解法 - 快排
+
+> 注意找前 K 大/前 K 小问题不需要对整个数组进行 O\(NlogN\) 的排序！ 例如本题，直接通过快排切分排好第 K 小的数（下标为 K-1），那么它左边的数就是比它小的另外 K-1 个数。
+
+### 4.1 Java
+
+```java
+class Solution {
+    public int[] getLeastNumbers(int[] arr, int k) {
+        // 首先做一下判空
+        if (k == 0 || arr.length == 0) {
+            return new int[0];
+        }
+        // 通过快排切分排好第 K 小的数（下标为 K-1），那么它左边的数就是比它小的另外 K-1 个数。
+        // 最后一个参数表示我们要找的是下标为k-1的数
+        return quickSort(arr, 0, arr.length - 1, k - 1);
+    }
+
+    // 快速排序
+    private int[] quickSort(int[] nums, int left, int right, int k) {
+        // 每切分1次，找到排序后下标为pivot的元素，
+        int pivot = partition(nums, left, right);
+
+        // 如果pivot恰好等于k就返回pivot以及pivot左边所有的数。（左边的数都比pivot小）
+        if (pivot == k) {
+            return Arrays.copyOf(nums, pivot + 1);
+        }
+        // 否则根据下标pivot与k的大小关系来决定继续切分左段还是右段。
+        // pivot更大，说明k在pivot的左边，所以继续切分左边
+        // pivot更小，说明k在pivot的右边，所以继续切分右边
+        return pivot > k ? quickSort(nums, left, pivot - 1, k) : quickSort(nums, pivot + 1, right, k);
+    }
+
+    public int partition(int[] arr,int left,int right){
+		//一般设置最左边的为基准数
+		int pivotKey = arr[left];
+		//基准数的位置
+		int pivotPointer = left;
+
+		//右指针找比基准数小的，左指针找比基准数大的，然后进行交换
+		while(left<right){
+			// 先移动右指针，原因http://www.cnblogs.com/wxisme/p/5243631.html
+			while(left<right && arr[right]>=pivotKey){
+				right--;
+			}
+			//↑右指针找到了第一个比基准数小的数，就停止循环，并把小的数移动到左边
+			arr[left] = arr[right];
+
+			while(left<right && arr[left]<=pivotKey){
+				left++;
+			}
+			//↑左指针找到了第一个比基准数大的数，就停止循环，并把大的数移动到右边
+			arr[right] = arr[left];
+		}
+		//把基准值赋值给两个指针碰头的地方，也就是中间
+    // 退出上面循环的时候，left=right
+		arr[left] = pivotKey;//所以left换成right是一样的
+
+		//把这个位置返回，以给下一次划分使用，划分左半边就-1，划分右半边就+1
+		return left;//这里换成right也ok
+	}
+}
+```
+
+### 4.2 复杂度分析
+
+* 时间复杂度 `O()` ：
+* 空间复杂度 `O()` ：期望为 O\(\log n\)O\(logn\)，递归调用的期望深度为 O\(\log n\)O\(logn\)，每层需要的空间为 O\(1\)O\(1\)，只有常数个变量。
+
+  最坏情况下的空间复杂度为 O\(n\)O\(n\)。最坏情况下需要划分 n 次，递归调用最深达到 n−1 层，而每层由于需要 O\(1\) 的空间，所以一共需要 O\(n\) 的空间复杂度。
+
+## 5. 参考
 
 * [https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/solution/](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/solution/)
 * [https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/solution/zui-xiao-de-kge-shu-by-leetcode-solution/](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/solution/zui-xiao-de-kge-shu-by-leetcode-solution/)

@@ -40,7 +40,7 @@ push(5), pop() -> 5, pop() -> 3, pop() -> 2, pop() -> 1
 2. 0 &lt;= pushed\[i\], popped\[i\] &lt; 1000
 3. pushed 是 popped 的排列。
 
-## 2. 解法
+## 2. 解法 - 辅助栈
 
 ### 2.1 Java
 
@@ -51,7 +51,7 @@ class Solution {
         // 借助一个辅助栈模拟压入和弹出操作
         Stack<Integer> stack = new Stack<>();
 
-        // 工具人i
+        // 工具人i，用于遍历出栈序列
         int i = 0;
 
         // 遍历入栈序列

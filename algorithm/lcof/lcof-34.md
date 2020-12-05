@@ -42,9 +42,13 @@ categories: 算法笔记
 
 * 节点总数 &lt;= 10000
 
-## 2. 解法
+## 2. 解法 - 递归
 
 ### 2.1 Java
+
+> 值得注意的是，记录路径时若直接执行 res.add\(path\) ，则是将 path 对象加入了 res ；后续 path 改变时， res 中的 path 对象也会随之改变。
+>
+> 正确做法：res.append\(new LinkedList\(path\)\) ，相当于复制了一个 path 并加入到 res 。
 
 ```java
 /**
@@ -79,7 +83,7 @@ class Solution {
 
         // 此时需要判断一下路径和是否等于 0 且根结点不存在左右结点，若成立，把此时的路径添加到结果中
         if (sum == 0 && root.left == null & root.right == null)
-            res.add(new LinkedList(path));
+            res.add(new LinkedList(path)); //别写成path了 path是会变的
 
         // 递归左右子树
         recursion(root.left, sum);
@@ -87,6 +91,36 @@ class Solution {
 
         // 回溯，删去此时路径中的最后一个结点
         path.removeLast();
+    }
+}
+
+
+// 不用LinkedList：
+class Solution {
+
+    // LinkedList方便回溯
+    List<List<Integer>> res = new ArrayList<>();
+    List<Integer> path = new ArrayList<>();
+
+    public List<List<Integer>> pathSum(TreeNode root, int sum) {
+        recursion(root, sum);
+        return res;
+    }
+
+    public void recursion(TreeNode root, int sum) {
+        if (root == null)
+            return;
+        
+        path.add(root.val);
+        sum -= root.val;
+
+        if (sum == 0 && root.left == null && root.right == null)
+            res.add(new ArrayList(path));
+
+        recursion(root.left, sum);
+        recursion(root.right, sum);
+
+        path.remove(path.size() - 1);
     }
 }
 ```
