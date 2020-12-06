@@ -19,7 +19,11 @@ notshow: true
 
 示例 1:
 
-> 输入: 12258 输出: 5 解释: 12258有5种不同的翻译，分别是"bccfi", "bwfi", "bczi", "mcfi"和"mzi"
+```text
+输入: 12258 
+输出: 5 
+解释: 12258 有 5 种不同的翻译，分别是"bccfi", "bwfi", "bczi", "mcfi"和"mzi"
+```
 
 提示：
 
@@ -42,7 +46,7 @@ notshow: true
 
         // 边界值
         dp[1] = 1; //只有一个数字时，翻译方案显然为1
-        dp[0] = 1; //若前两个数字可以合并翻译，那么dp[2]=dp[0]+dp[1], 由于dp[1]=1所以dp[0]=0  
+        dp[0] = 1; //若前两个数字可以合并翻译，那么dp[2]=dp[0]+dp[1], 由于dp[1]=1所以dp[0]=1  
 
         // 遍历字符串
         for (int i=2;i<=n;i++) {
@@ -80,7 +84,7 @@ class Solution {
 
         // 边界值
         dp[1] = 1 //只有一个数字时，翻译方案显然为1
-        dp[0] = 1 //若前两个数字可以合并翻译，那么dp[2]=dp[0]+dp[1], 由于dp[1]=1所以dp[0]=0  
+        dp[0] = 1 //若前两个数字可以合并翻译，那么dp[2]=dp[0]+dp[1], 由于dp[1]=1所以dp[0]=1  
 
         // 遍历字符串
         for (i in 2..n) {
@@ -107,8 +111,6 @@ class Solution {
 
 * [《剑指 Offer（第 2 版）》：面试题46. 把数字翻译成字符串](https://leetcode-cn.com/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof)
 * [Krahets：面试题46. 把数字翻译成字符串（动态规划，清晰图解）](https://leetcode-cn.com/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/solution/mian-shi-ti-46-ba-shu-zi-fan-yi-cheng-zi-fu-chua-6/)
-
-## 4. 学习草稿
 
 ![](https://777blog.oss-cn-shanghai.aliyuncs.com/blog%20pic/IMG_4258.JPG)
 

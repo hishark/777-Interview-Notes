@@ -45,8 +45,9 @@ class Solution {
         /**
          * Java中默认的为小根堆，实现大根堆需要重写一下 Comparator 题目要求前 k 小的数字，所以需要使用一个容量为 k 的大根堆
          * 
-         * 遍历数组的时候，若堆的大小小于 k，就直接把数字放进去 若堆的大小已经为 k，需要判断当前数字和堆顶数字的大小： 1. 若当前数字 >=
-         * 堆顶数字，那么这个数就直接跳过 2. 若当前数字 < 堆顶数字，那么就先把堆顶数字 poll 掉，然后把当前数字放入堆中
+         * 遍历数组的时候，若堆的大小小于 k，就直接把数字放进去 若堆的大小已经为 k，需要判断当前数字和堆顶数字的大小： 
+         *  1. 若当前数字 >= 堆顶数字，那么这个数就直接跳过 
+         *  2. 若当前数字 < 堆顶数字，那么就先把堆顶数字 poll 掉，然后把当前数字放入堆中
          * 
          */
         PriorityQueue<Integer> maxHeap = new PriorityQueue<Integer>(new Comparator<Integer>() {
@@ -63,13 +64,14 @@ class Solution {
         // 接着继续遍历数组中剩下的数字
         for (int i = k; i < arr.length; i++) {
             // 如果「当前遍历的数字」 <「堆顶数字」
-            if (maxHeap.peek() > arr[i]) {
+            if (arr[i] < maxHeap.peek()) {
                 // 就把堆顶数字送出去
                 maxHeap.poll();
                 // 并把当前数字放入堆中
                 maxHeap.offer(arr[i]);
             }
             // 如果「当前遍历的数字」 >=「堆顶数字」，直接跳过即可
+            // 总之就是不断送走k个数里最大的数字，剩下的就是k个最小的数了
         }
 
         // 此时，大根堆中已经存好了前 k 小的数字们，放入结果数组即可
@@ -143,9 +145,10 @@ class Solution {
 class Solution {
     public int[] getLeastNumbers(int[] arr, int k) {
         // 首先做一下判空
-        if (k == 0 || arr.length == 0) {
+        if ((k == 0) || (arr.length == 0)) {
             return new int[0];
         }
+
         // 通过快排切分排好第 K 小的数（下标为 K-1），那么它左边的数就是比它小的另外 K-1 个数。
         // 最后一个参数表示我们要找的是下标为k-1的数
         return quickSort(arr, 0, arr.length - 1, k - 1);
@@ -160,49 +163,55 @@ class Solution {
         if (pivot == k) {
             return Arrays.copyOf(nums, pivot + 1);
         }
+
         // 否则根据下标pivot与k的大小关系来决定继续切分左段还是右段。
         // pivot更大，说明k在pivot的左边，所以继续切分左边
         // pivot更小，说明k在pivot的右边，所以继续切分右边
-        return pivot > k ? quickSort(nums, left, pivot - 1, k) : quickSort(nums, pivot + 1, right, k);
+        return (pivot > k) ? quickSort(nums, left, pivot - 1, k)
+                           : quickSort(nums, pivot + 1, right, k);
     }
 
-    public int partition(int[] arr,int left,int right){
-		//一般设置最左边的为基准数
-		int pivotKey = arr[left];
-		//基准数的位置
-		int pivotPointer = left;
+    public int partition(int[] arr, int left, int right) {
+        //一般设置最左边的为基准数
+        int pivotKey = arr[left];
 
-		//右指针找比基准数小的，左指针找比基准数大的，然后进行交换
-		while(left<right){
-			// 先移动右指针，原因http://www.cnblogs.com/wxisme/p/5243631.html
-			while(left<right && arr[right]>=pivotKey){
-				right--;
-			}
-			//↑右指针找到了第一个比基准数小的数，就停止循环，并把小的数移动到左边
-			arr[left] = arr[right];
+        //基准数的位置
+        int pivotPointer = left;
 
-			while(left<right && arr[left]<=pivotKey){
-				left++;
-			}
-			//↑左指针找到了第一个比基准数大的数，就停止循环，并把大的数移动到右边
-			arr[right] = arr[left];
-		}
-		//把基准值赋值给两个指针碰头的地方，也就是中间
-    // 退出上面循环的时候，left=right
-		arr[left] = pivotKey;//所以left换成right是一样的
+        //右指针找比基准数小的，左指针找比基准数大的，然后进行交换
+        while (left < right) {
+            // 先移动右指针，原因http://www.cnblogs.com/wxisme/p/5243631.html
+            while ((left < right) && (arr[right] >= pivotKey)) {
+                right--;
+            }
 
-		//把这个位置返回，以给下一次划分使用，划分左半边就-1，划分右半边就+1
-		return left;//这里换成right也ok
-	}
+            //↑右指针找到了第一个比基准数小的数，就停止循环，并把小的数移动到左边
+            arr[left] = arr[right];
+
+            while ((left < right) && (arr[left] <= pivotKey)) {
+                left++;
+            }
+
+            //↑左指针找到了第一个比基准数大的数，就停止循环，并把大的数移动到右边
+            arr[right] = arr[left];
+        }
+
+        //把基准值赋值给两个指针碰头的地方，也就是中间
+        // 退出上面循环的时候，left=right
+        arr[left] = pivotKey; //所以left换成right是一样的
+
+        //把这个位置返回，以给下一次划分使用，划分左半边就-1，划分右半边就+1
+        return left; //这里换成right也ok
+    }
 }
 ```
 
 ### 4.2 复杂度分析
 
-* 时间复杂度 `O()` ：
-* 空间复杂度 `O()` ：期望为 O\(\log n\)O\(logn\)，递归调用的期望深度为 O\(\log n\)O\(logn\)，每层需要的空间为 O\(1\)O\(1\)，只有常数个变量。
+> 关于复杂度：[https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/solution/3chong-jie-fa-miao-sha-topkkuai-pai-dui-er-cha-sou/296015](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/solution/3chong-jie-fa-miao-sha-topkkuai-pai-dui-er-cha-sou/296015)
 
-  最坏情况下的空间复杂度为 O\(n\)O\(n\)。最坏情况下需要划分 n 次，递归调用最深达到 n−1 层，而每层由于需要 O\(1\) 的空间，所以一共需要 O\(n\) 的空间复杂度。
+* 时间复杂度 `O(n^2)` ：期望为 O\(n\) ，最坏情况下，每次的划分点都是最大值或最小值，一共需要划分 n - 1 次，而一次划分需要线性的时间复杂度O\(n\)，所以最坏情况下时间复杂度为 O\(n^2\)。
+* 空间复杂度 `O(n)` ：期望为 O\(logn\)，递归调用的期望深度为 O\(logn\)，每层需要的空间为 O\(1\)，只有常数个变量。最坏情况下需要划分 n 次，递归调用最深达到 n−1 层，而每层由于需要 O\(1\) 的空间，所以一共需要 O\(n\) 的空间复杂度。
 
 ## 5. 参考
 
