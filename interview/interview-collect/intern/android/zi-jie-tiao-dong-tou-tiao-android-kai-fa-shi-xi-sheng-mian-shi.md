@@ -1,4 +1,4 @@
-# 【read】字节跳动-头条Android开发实习生面试
+# 字节跳动-头条Android开发实习生面试
 
 {% embed url="https://www.nowcoder.com/discuss/447139" %}
 
