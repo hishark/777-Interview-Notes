@@ -1,4 +1,4 @@
-# 【read】字节跳动安卓客户端面经
+# 字节跳动安卓客户端面经
 
 {% embed url="https://www.nowcoder.com/discuss/474864" %}
 
