@@ -2,9 +2,7 @@
 
 作者：花楼  
 链接：[https://www.nowcoder.com/discuss/450821](https://www.nowcoder.com/discuss/450821)  
-来源：牛客网  
-  
-
+来源：牛客网
 
 > 大致时间顺序：6.21通过内推投递简历→6.22HR致电约一面时间→初定7.3由于个人时间冲突改为7.6→结束两小时后收到二面通知→7.7二面→7.9中午收到电话约三面→7.12早上十点三面→7.13下午hr面→7.15收offer  
 > 给我的小破blog引个流，[完整版在这里](https://tiffanyfei.tk/posts/c54ec889/)
