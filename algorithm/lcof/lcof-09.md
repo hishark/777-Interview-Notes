@@ -68,6 +68,13 @@ class CQueue {
             }
             return stackOut.pop();
         }
+        
+        // 这样写更简洁啊
+        // if (stackOut.isEmpty()) {
+        //     while(!stackIn.isEmpty())
+        //         stackOut.push(stackIn.pop());
+        // }
+        // return stackOut.pop();
     }
 }
 ```

@@ -171,7 +171,7 @@ class Solution {
         // 利用队列实现广度优先遍历
         Queue<int[]> queue= new LinkedList<int[]>();
         // 将机器人初始点 (0,0) 加入队列 queue
-        // 四个数字分别代表：横坐标索引值，纵坐标索引值，数位之和
+        // 三个数字分别代表：横坐标索引值，纵坐标索引值，数位之和
         queue.add(new int[] { 0, 0, 0 });
         // 终止条件：queue为空，说明已经遍历完所有可达解
         while(queue.size() > 0) {

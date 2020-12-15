@@ -84,7 +84,7 @@ class Solution {
                     maxValue = product;                
             }
             // 把最大值存入dp数组
-            dp[i] = f;
+            dp[i] = maxValue;
         }
 
         // 返回结果

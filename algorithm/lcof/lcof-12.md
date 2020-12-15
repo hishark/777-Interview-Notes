@@ -44,7 +44,7 @@ categories: 算法笔记
 * DFS
 * 剪枝
 
-## 3. 解法
+## 3. 解法 - DFS
 
 ### 3.1 Java
 

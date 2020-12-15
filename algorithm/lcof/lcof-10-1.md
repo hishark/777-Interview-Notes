@@ -38,12 +38,11 @@ F\(0\) = 0, F\(1\) = 1 F\(N\) = F\(N - 1\) + F\(N - 2\), 其中 N &gt; 1. 斐波
 
 * 0 &lt;= n &lt;= 100
 
-## 2. 解法 - 递归
+## 2. 解法 - DP
 
 ### 2.1 Java
 
 ```java
-// 递归超时了
 class Solution {
     public int fib(int n) {
         if (n==0 || n==1)
@@ -61,7 +60,6 @@ class Solution {
 ### 2.2 Kotlin
 
 ```kotlin
-// 递归超时了
 class Solution {
     fun fib(n: Int): Int {
         if (n == 0 || n == 1)
