@@ -39,7 +39,7 @@ class Solution {
     public int[] printNumbers(int n) {
         int max = 0;
         while (n != 0) {
-            max = max * 10 + 9;
+            max = max * 10 + 9; // 直接 10^n-1就好啦
             n--;
         }
         int[] ans = new int[max];

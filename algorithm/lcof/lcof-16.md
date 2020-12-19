@@ -89,7 +89,7 @@ class Solution {
             return  square * square;
         } else { // 奇次幂
             // 分治 - 分
-            double square = myPow(x, (n - 1) / 2);
+            double square = myPow(x, (n - 1) / 2); // 这里改成n/2也一样的!
             // 分治 - 合
             return square * square * x;
         }
