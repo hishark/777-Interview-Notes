@@ -1,6 +1,12 @@
 # LEETCODE 958. 二叉树的完全性检验
 
-代码
+## 1. 问题
+
+## 2. 标签
+
+## 3. 解法
+
+### 3.1 Java
 
 ```java
 /**
@@ -58,7 +64,7 @@ class ANode {  // Annotated Node
 }
 ```
 
-参考
+## 4. 参考
 
 * [https://leetcode-cn.com/problems/check-completeness-of-a-binary-tree/solution/er-cha-shu-de-wan-quan-xing-jian-yan-by-leetcode/](https://leetcode-cn.com/problems/check-completeness-of-a-binary-tree/solution/er-cha-shu-de-wan-quan-xing-jian-yan-by-leetcode/)
 
