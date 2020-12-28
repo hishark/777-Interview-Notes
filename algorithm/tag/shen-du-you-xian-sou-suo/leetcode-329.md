@@ -11,7 +11,7 @@ categories: 算法笔记
 notshow: true
 ---
 
-# 329. 矩阵中的最长递增路径
+# LEETCODE 329. 矩阵中的最长递增路径
 
 ## 1. [问题](https://leetcode-cn.com/problems/longest-increasing-path-in-a-matrix)
 

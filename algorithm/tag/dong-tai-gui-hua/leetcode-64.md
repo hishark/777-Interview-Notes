@@ -10,7 +10,7 @@ categories: 算法笔记
 notshow: true
 ---
 
-# 64. 最小路径和
+# LEETCODE 64. 最小路径和
 
 ## 1. [问题](https://leetcode-cn.com/problems/minimum-path-sum)
 

@@ -9,7 +9,7 @@ categories: 算法笔记
 notshow: true
 ---
 
-# 718. 最长重复子数组
+# LEETCODE 718. 最长重复子数组
 
 ## [1. 问题](https://leetcode-cn.com/problems/maximum-length-of-repeated-subarray/)
 

@@ -10,7 +10,7 @@ categories: 算法笔记
 notshow: true
 ---
 
-# 238. 除自身以外数组的乘积
+# LEETCODE 238. 除自身以外数组的乘积
 
 ## [1. 问题](https://leetcode-cn.com/problems/product-of-array-except-self/)
 

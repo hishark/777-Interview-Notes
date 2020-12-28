@@ -11,7 +11,7 @@ categories: 算法笔记
 notshow: true
 ---
 
-# 32. 最长有效括号
+# LEETCODE 32. 最长有效括号
 
 ## [1. 问题](https://leetcode-cn.com/problems/longest-valid-parentheses/)
 

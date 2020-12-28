@@ -10,7 +10,7 @@ categories: 算法笔记
 notshow: true
 ---
 
-# 9. 回文数
+# LEETCODE 9. 回文数
 
 ## [1. 问题](https://leetcode-cn.com/problems/palindrome-number/)
 

@@ -12,7 +12,7 @@ categories: 算法笔记
 notshow: true
 ---
 
-# 112. 路径总和
+# LEETCODE 112. 路径总和
 
 ## 1. [问题](https://leetcode-cn.com/problems/path-sum/)
 

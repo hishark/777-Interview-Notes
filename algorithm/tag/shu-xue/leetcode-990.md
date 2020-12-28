@@ -11,7 +11,7 @@ categories: 算法笔记
 notshow: true
 ---
 
-# 990. 等式方程的可满足性
+# LEETCODE 990. 等式方程的可满足性
 
 ## [1. 问题](https://leetcode-cn.com/problems/satisfiability-of-equality-equations/)
 

@@ -11,7 +11,7 @@ categories: 算法笔记
 notshow: true
 ---
 
-# 128. 最长连续序列
+# LEETCODE 128. 最长连续序列
 
 ## [1. 问题](https://leetcode-cn.com/problems/longest-consecutive-sequence/)
 
