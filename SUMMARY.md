@@ -280,9 +280,9 @@
 
 * [简介](os/readme.md)
 * [基础知识](os/ji-chu-zhi-shi/README.md)
-  * [概述](os/ji-chu-zhi-shi/gai-shu.md)
-  * [进程管理](os/ji-chu-zhi-shi/jin-cheng-guan-li.md)
-* [面试问题](os/interview-q.md)
+  * [概述](os/ji-chu-zhi-shi/summary.md)
+  * [进程管理](os/ji-chu-zhi-shi/process.md)
+* [常见问题](os/interview-q.md)
 
 ## Android
 
@@ -295,9 +295,10 @@
 
 * [简介](database/readme.md)
 
-## Kotlin
+## Java
 
-* [简介](kotlin/readme.md)
+* [简介](java/readme.md)
+* [常见问题](java/chang-jian-wen-ti.md)
 
 ## 面经 <a id="interview"></a>
 
