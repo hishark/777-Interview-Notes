@@ -6,7 +6,7 @@
 
 * [简介](algorithm/readme.md)
 * [题型](algorithm/tag/README.md)
-  * [Untitled](algorithm/tag/untitled.md)
+  * [Template](algorithm/tag/template.md)
   * [动态规划](algorithm/tag/dp/README.md)
     * [LEETCODE 32. 最长有效括号](algorithm/tag/dp/32.-zui-chang-you-xiao-kuo-hao.md)
     * [LEETCODE 44. 通配符匹配](algorithm/tag/dp/leetcode-44.md)
