@@ -14,7 +14,7 @@
 
 ## **进程间通信**
 
-[📌进程通信](ji-chu-zhi-shi/process.md#jin-cheng-tong-xin)
+[📌进程通信](basic/process.md#jin-cheng-tong-xin)
 
 进程通信的**六**种方式：**管道、FIFO、消息队列、信号量、共享存储、套接字。**
 
@@ -40,7 +40,7 @@
 
 ## 进程同步
 
-[📌进程同步](ji-chu-zhi-shi/process.md#jin-cheng-tong-bu)
+[📌进程同步](basic/process.md#jin-cheng-tong-bu)
 
 * 进程同步：控制多个进程按一定顺序执行
 * 进程通信：进程间传输信息

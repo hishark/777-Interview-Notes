@@ -4,7 +4,7 @@
 
 > 目前暂时正在本地复习整理知识点，待整理完毕后再同步至本站。
 
-{% page-ref page="interview-collect/" %}
+{% page-ref page="bytedance-interview-collect/" %}
 
 {% page-ref page="bytedance-collect/" %}
 
