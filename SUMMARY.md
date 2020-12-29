@@ -264,6 +264,41 @@
   * [68 - I. 二叉搜索树的最近公共祖先](algorithm/lcof/68-i.-er-cha-sou-suo-shu-de-zui-jin-gong-gong-zu-xian.md)
   * [68 - II. 二叉树的最近公共祖先](algorithm/lcof/68-ii.-er-cha-shu-de-zui-jin-gong-gong-zu-xian-todo.md)
 
+## 计算机网络 <a id="computer-network"></a>
+
+* [简介](computer-network/readme.md)
+* [基础知识](computer-network/basic/README.md)
+  * [综述](computer-network/basic/cn-summary.md)
+  * [物理层](computer-network/basic/cn-physical-layer.md)
+  * [链路层](computer-network/basic/cn-link-layer.md)
+  * [网络层](computer-network/basic/cn-network-layer.md)
+  * [传输层](computer-network/basic/cn-transport-layer.md)
+  * [应用层](computer-network/basic/cn-application-layer/README.md)
+    * [HTTP](computer-network/basic/cn-application-layer/http.md)
+
+## 操作系统 <a id="os"></a>
+
+* [简介](os/readme.md)
+* [基础知识](os/ji-chu-zhi-shi/README.md)
+  * [概述](os/ji-chu-zhi-shi/gai-shu.md)
+  * [进程管理](os/ji-chu-zhi-shi/jin-cheng-guan-li.md)
+* [面试问题](os/interview-q.md)
+
+## Android
+
+* [简介](android/readme.md)
+* [基础知识](android/ji-chu-zhi-shi/README.md)
+  * [Activity](android/ji-chu-zhi-shi/untitled.md)
+  * [UI](android/ji-chu-zhi-shi/ui.md)
+
+## 数据库 <a id="database"></a>
+
+* [简介](database/readme.md)
+
+## Kotlin
+
+* [简介](kotlin/readme.md)
+
 ## 面经 <a id="interview"></a>
 
 * [简介](interview/readme.md)
@@ -369,40 +404,6 @@
   * [iOS](interview/bytedance-collect/ios.md)
   * [项目](interview/bytedance-collect/xiang-mu.md)
   * [其他](interview/bytedance-collect/other.md)
-
-## 计算机网络 <a id="computer-network"></a>
-
-* [简介](computer-network/readme.md)
-* [基础知识](computer-network/basic/README.md)
-  * [综述](computer-network/basic/cn-summary.md)
-  * [物理层](computer-network/basic/cn-physical-layer.md)
-  * [链路层](computer-network/basic/cn-link-layer.md)
-  * [网络层](computer-network/basic/cn-network-layer.md)
-  * [传输层](computer-network/basic/cn-transport-layer.md)
-  * [应用层](computer-network/basic/cn-application-layer/README.md)
-    * [HTTP](computer-network/basic/cn-application-layer/http.md)
-
-## 操作系统 <a id="os"></a>
-
-* [简介](os/readme.md)
-* [基础知识](os/ji-chu-zhi-shi/README.md)
-  * [概述](os/ji-chu-zhi-shi/gai-shu.md)
-  * [进程管理](os/ji-chu-zhi-shi/jin-cheng-guan-li.md)
-
-## Android
-
-* [简介](android/readme.md)
-* [基础知识](android/ji-chu-zhi-shi/README.md)
-  * [Activity](android/ji-chu-zhi-shi/untitled.md)
-  * [UI](android/ji-chu-zhi-shi/ui.md)
-
-## 数据库 <a id="database"></a>
-
-* [简介](database/readme.md)
-
-## Kotlin
-
-* [简介](kotlin/readme.md)
 
 ## 简历 <a id="resume"></a>
 
