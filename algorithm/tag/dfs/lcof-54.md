@@ -135,5 +135,5 @@ class Solution {
 
 ## 4. 笔记
 
-![](../../../.gitbook/assets/image%20%2821%29.png)
+![](../../../.gitbook/assets/image%20%2829%29.png)
 

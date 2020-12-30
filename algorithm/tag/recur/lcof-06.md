@@ -2,7 +2,7 @@
 
 ## 1. [问题](https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/)
 
-![](../../../.gitbook/assets/image%20%2823%29.png)
+![](../../../.gitbook/assets/image%20%2819%29%20%281%29.png)
 
 输入一个链表的头节点，从尾到头反过来返回每个节点的值（用数组返回）。
 
@@ -106,5 +106,5 @@ class Solution {
 
 ## 5. 笔记
 
-![](../../../.gitbook/assets/image%20%2819%29.png)
+![](../../../.gitbook/assets/image%20%2819%29%20%282%29.png)
 

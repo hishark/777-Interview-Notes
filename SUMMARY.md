@@ -4,7 +4,7 @@
 
 ## 数据结构与算法 <a id="algorithm"></a>
 
-* [简介](algorithm/readme.md)
+* [简介](algorithm/algorithm.md)
 * [题型](algorithm/tag/README.md)
   * [Template](algorithm/tag/template.md)
   * [动态规划](algorithm/tag/dp/README.md)
@@ -14,8 +14,10 @@
     * [LEETCODE 64. 最小路径和](algorithm/tag/dp/leetcode-64.md)
     * [LEETCODE 97. 交错字符串](algorithm/tag/dp/leetcode-97.md)
     * [LEETCODE 120. 三角形最小路径和](algorithm/tag/dp/leetcode-120.md)
+    * [LEETCODE 122. 买卖股票的最佳时机 II](algorithm/tag/dp/leetcode-122.md)
     * [LEETCODE 139. 单词拆分](algorithm/tag/dp/leetcode-139.md)
     * [LEETCODE 174. 地下城游戏](algorithm/tag/dp/leetcode-174.md)
+    * [LEETCODE 188. 买卖股票的最佳时机 IV](algorithm/tag/dp/leetcode-188.md)
     * [\*LEETCODE 222. 完全二叉树的节点个数](algorithm/tag/dp/leetcode-222.md)
     * [LEETCODE 309. 最佳买卖股票时机含冷冻期](algorithm/tag/dp/leetcode-309.md)
     * [LEETCODE 343. 整数拆分](algorithm/tag/dp/leetcode-343.md)
@@ -32,7 +34,12 @@
     * [LCOF 49. 丑数](algorithm/tag/dp/lcof-49.md)
     * [LCOF 63. 股票的最大利润](algorithm/tag/dp/lcof-63.md)
   * [贪心](algorithm/tag/greedy/README.md)
+    * [LEETCODE 122. 买卖股票的最佳时机 II](algorithm/tag/greedy/leetcode-122.md)
+    * [LEETCODE 316. 去除重复字母](algorithm/tag/greedy/leetcode-316.md)
     * [LEETCODE 455. 分发饼干](algorithm/tag/greedy/leetcode-455.md)
+    * [LEETCODE 605. 种花问题](algorithm/tag/greedy/leetcode-605.md)
+    * [LEETCODE 860. 柠檬水找零](algorithm/tag/greedy/leetcode-860.md)
+    * [LEETCODE 1046. 最后一块石头的重量](algorithm/tag/greedy/leetcode-1046.md)
     * [LCOF 14-I. 剪绳子](algorithm/tag/greedy/lcof-14-1.md)
     * [LCOF 14-II. 剪绳子 II](algorithm/tag/greedy/lcof-14-2.md)
   * [双指针](algorithm/tag/pointer/README.md)
@@ -71,6 +78,7 @@
   * [HashSet](algorithm/tag/hashset/README.md)
     * [LCOF 61. 扑克牌中的顺子](algorithm/tag/hashset/lcof-61.md)
   * [模拟](algorithm/tag/simulation/README.md)
+    * [LEETCODE 860. 柠檬水找零](algorithm/tag/simulation/leetcode-860.md)
     * [LCOF 29. 顺时针打印矩阵](algorithm/tag/simulation/lcof-29.md)
     * [LCOF 31. 栈的压入、弹出序列](algorithm/tag/simulation/lcof-31.md)
   * [排序](algorithm/tag/sort/README.md)
@@ -121,6 +129,7 @@
     * [LCOF 56 - I. 数组中数字出现的次数](algorithm/tag/bit/lcof-56-1.md)
     * [LCOF 56 - II. 数组中数字出现的次数 II](algorithm/tag/bit/lcof-56-2.md)
   * [链表](algorithm/tag/link/README.md)
+    * [LEETCODE 237. 删除链表中的节点](algorithm/tag/link/leetcode-237.md)
     * [LCOF 06. 从尾到头打印链表](algorithm/tag/link/lcof-06.md)
     * [LCOF 18. 删除链表的节点](algorithm/tag/link/lcof-18.md)
     * [LCOF 22. 链表中倒数第k个节点](algorithm/tag/link/lcof-22.md)
@@ -154,6 +163,7 @@
     * [LCOF 68 - II. 二叉树的最近公共祖先](algorithm/tag/binarytree/lcof-68-2.md)
   * [堆](algorithm/tag/heap/README.md)
     * [LEETCODE 215. 数组中的第K个最大元素](algorithm/tag/heap/leetcode-215.md)
+    * [LEETCODE 1046. 最后一块石头的重量](algorithm/tag/heap/leetcode-1046.md)
     * [LCOF 40. 最小的k个数](algorithm/tag/heap/lcof-40.md)
     * [LCOF 41. 数据流中的中位数](algorithm/tag/heap/lcof-41.md)
   * [栈](algorithm/tag/stack/README.md)
@@ -266,7 +276,7 @@
 
 ## 计算机网络 <a id="computer-network"></a>
 
-* [简介](computer-network/readme.md)
+* [简介](computer-network/computer-network.md)
 * [基础知识](computer-network/basic/README.md)
   * [综述](computer-network/basic/cn-summary.md)
   * [物理层](computer-network/basic/cn-physical-layer.md)
@@ -278,7 +288,7 @@
 
 ## 操作系统 <a id="os"></a>
 
-* [简介](os/readme.md)
+* [简介](os/os.md)
 * [基础知识](os/basic/README.md)
   * [概述](os/basic/summary.md)
   * [进程管理](os/basic/process.md)
@@ -286,23 +296,23 @@
 
 ## Android
 
-* [简介](android/readme.md)
+* [简介](android/android.md)
 * [基础知识](android/basic/README.md)
   * [Activity](android/basic/activity.md)
   * [UI](android/basic/ui.md)
 
 ## 数据库 <a id="database"></a>
 
-* [简介](database/readme.md)
+* [简介](database/database.md)
 
 ## Java
 
-* [简介](java/readme.md)
+* [简介](java/java.md)
 * [常见问题](java/interview-question.md)
 
 ## 面经 <a id="interview"></a>
 
-* [简介](interview/readme.md)
+* [简介](interview/interview.md)
 * [字节跳动面经汇总](interview/bytedance-interview-collect/README.md)
   * [实习](interview/bytedance-interview-collect/intern/README.md)
     * [Android](interview/bytedance-interview-collect/intern/android/README.md)
@@ -408,5 +418,5 @@
 
 ## 简历 <a id="resume"></a>
 
-* [简介](resume/readme.md)
+* [简介](resume/resume.md)
 

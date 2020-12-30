@@ -32,7 +32,7 @@
 
 数据报的分片举例：
 
-![&#x56FE;&#x6E90;&#xFF1A;&#x300A;&#x8BA1;&#x7B97;&#x673A;&#x7F51;&#x7EDC;&#x300B;&#x8C22;&#x5E0C;&#x4EC1;](../../.gitbook/assets/image%20%2841%29.png)
+![&#x56FE;&#x6E90;&#xFF1A;&#x300A;&#x8BA1;&#x7B97;&#x673A;&#x7F51;&#x7EDC;&#x300B;&#x8C22;&#x5E0C;&#x4EC1;](../../.gitbook/assets/image%20%2837%29%20%281%29.png)
 
 ## IP地址的编址方式
 
@@ -111,7 +111,7 @@ ICMP 是为了更有效地转发 IP 数据报和提高交付成功的机会。�
 
 ICMP 报文分为差错报告报文和询问报文。
 
-![&#x56FE;&#x6E90;&#xFF1A;&#x300A;&#x8BA1;&#x7B97;&#x673A;&#x7F51;&#x7EDC;&#x300B;&#x8C22;&#x5E0C;&#x4EC1;](../../.gitbook/assets/image%20%2831%29.png)
+![&#x56FE;&#x6E90;&#xFF1A;&#x300A;&#x8BA1;&#x7B97;&#x673A;&#x7F51;&#x7EDC;&#x300B;&#x8C22;&#x5E0C;&#x4EC1;](../../.gitbook/assets/image%20%2835%29.png)
 
 ### 1. Ping
 
@@ -190,7 +190,7 @@ Virtual Private Network
 
 在以前，NAT 将本地 IP 和全球 IP 一一对应，这种方式下拥有 n 个全球 IP 地址的专用网内最多只可以同时有 n 台主机接入互联网。为了更有效地利用全球 IP 地址，现在常用的 NAT 转换表把传输层的端口号也用上了，使得多个专用网内部的主机共用一个全球 IP 地址。使用端口号的 NAT 也叫做网络地址与端口转换 NAPT。
 
-![&#x56FE;&#x6E90;&#xFF1A;&#x300A;&#x8BA1;&#x7B97;&#x673A;&#x7F51;&#x7EDC;&#x300B;&#x8C22;&#x5E0C;&#x4EC1;](../../.gitbook/assets/image%20%2845%29.png)
+![&#x56FE;&#x6E90;&#xFF1A;&#x300A;&#x8BA1;&#x7B97;&#x673A;&#x7F51;&#x7EDC;&#x300B;&#x8C22;&#x5E0C;&#x4EC1;](../../.gitbook/assets/image%20%2849%29.png)
 
 ## 路由器的结构
 

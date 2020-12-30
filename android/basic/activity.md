@@ -2,7 +2,7 @@
 
 ## Activity 生命周期
 
-![](../../.gitbook/assets/image%20%287%29.png)
+![](../../.gitbook/assets/image%20%289%29.png)
 
 为了在 Activity 生命周期的各个阶段之间导航转换，Activity 类提供六个核心回调：`onCreate()`、`onStart()`、`onResume()`、`onPause()`、`onStop()` 和 `onDestroy()`。当 Activity 进入新状态时，系统会调用其中每个回调。
 
@@ -15,7 +15,7 @@
 
 稍微简洁一点的生命周期相关定义可以见《第一行代码》中「活动的生命周期」一节：
 
-![&#x56FE;&#x6E90;&#xFF1A;&#x300A;&#x7B2C;&#x4E00;&#x884C;&#x4EE3;&#x7801;&#x300B;&#x90ED;&#x9716;](../../.gitbook/assets/image%20%2810%29.png)
+![&#x56FE;&#x6E90;&#xFF1A;&#x300A;&#x7B2C;&#x4E00;&#x884C;&#x4EE3;&#x7801;&#x300B;&#x90ED;&#x9716;](../../.gitbook/assets/image%20%286%29%20%281%29.png)
 
 ## Intent 和 Intent 过滤器
 
