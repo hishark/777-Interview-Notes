@@ -1,7 +1,5 @@
 # LEETCODE 86. 分隔链表
 
-
-
 ## 1. [问题](https://leetcode-cn.com/problems/partition-list/)
 
 给你一个链表和一个特定值 x ，请你对链表进行分隔，使得所有小于 x 的节点都出现在大于或等于 x 的节点之前。
