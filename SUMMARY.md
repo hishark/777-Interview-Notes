@@ -106,6 +106,7 @@
   * [字符串](algorithm/tag/string/README.md)
     * [LEETCODE 205. 同构字符串](algorithm/tag/string/leetcode-205.md)
     * [LEETCODE 242. 有效的字母异位词](algorithm/tag/string/leetcode-242.md)
+    * [LEETCODE 830. 较大分组的位置](algorithm/tag/string/leetcode-830.md)
     * [LCOF 05. 替换空格](algorithm/tag/string/lcof-05.md)
     * [LCOF 20. 表示数值的字符串](algorithm/tag/string/lcof-20.md)
     * [LCOF 38. 字符串的排列](algorithm/tag/string/lcof-38.md)
