@@ -1,4 +1,4 @@
-# \*LEETCODE 435. 无重叠区间
+# LEETCODE 435. 无重叠区间
 
 ## 1. [问题](https://leetcode-cn.com/problems/non-overlapping-intervals/)
 
