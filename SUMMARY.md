@@ -61,6 +61,7 @@
     * [LCOF 55 - I. 二叉树的深度](algorithm/tag/bfs/lcof-55-1.md)
   * [深度优先搜索](algorithm/tag/dfs/README.md)
     * [LEETCODE 329. 矩阵中的最长递增路径](algorithm/tag/dfs/leetcode-329.md)
+    * [LEETCODE 547. 省份数量](algorithm/tag/dfs/leetcode-547.md)
     * [LEETCODE 785. 判断二分图](algorithm/tag/dfs/leetcode-785.md)
     * [LCOF 12. 矩阵中的路径](algorithm/tag/dfs/lcof-12.md)
     * [LCOF 13. 机器人的运动范围](algorithm/tag/dfs/lcof-13.md)
