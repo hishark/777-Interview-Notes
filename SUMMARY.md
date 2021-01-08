@@ -83,7 +83,7 @@
   * [HashSet](algorithm/tag/hashset/README.md)
     * [LCOF 61. 扑克牌中的顺子](algorithm/tag/hashset/lcof-61.md)
   * [数组](algorithm/tag/array/README.md)
-    * [LEETCODE 189. 旋转数组](algorithm/tag/array/leetcode-189.md)
+    * [LEETCODE 189. 旋转数组](algorithm/tag/array/leetcode-189.-xuan-zhuan-shu-zu.md)
   * [模拟](algorithm/tag/simulation/README.md)
     * [LEETCODE 860. 柠檬水找零](algorithm/tag/simulation/leetcode-860.md)
     * [LCOF 29. 顺时针打印矩阵](algorithm/tag/simulation/lcof-29.md)
