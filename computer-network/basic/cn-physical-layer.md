@@ -1,5 +1,10 @@
 # 物理层
 
+## 参考
+
+* [CYC CS-Notes 计算机网络 - 物理层](http://www.cyc2018.xyz/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%20-%20%E7%89%A9%E7%90%86%E5%B1%82.html)
+* [《计算机网络》谢希仁](https://book.douban.com/subject/26960678//)
+
 ## 通信方式
 
 根据信息在传输线上的传送方向，分为以下三种通信方式：

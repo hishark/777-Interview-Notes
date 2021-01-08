@@ -35,6 +35,7 @@
     * [LCOF 49. 丑数](algorithm/tag/dp/lcof-49.md)
     * [LCOF 63. 股票的最大利润](algorithm/tag/dp/lcof-63.md)
   * [贪心](algorithm/tag/greedy/README.md)
+    * [LEETCODE 12. 整数转罗马数字](algorithm/tag/greedy/leetcode-12.-zheng-shu-zhuan-luo-ma-shu-zi.md)
     * [LEETCODE 122. 买卖股票的最佳时机 II](algorithm/tag/greedy/leetcode-122.md)
     * [\*LEETCODE 316. 去除重复字母](algorithm/tag/greedy/leetcode-316.md)
     * [LEETCODE 435. 无重叠区间](algorithm/tag/greedy/leetcode-435.md)
@@ -83,7 +84,7 @@
   * [HashSet](algorithm/tag/hashset/README.md)
     * [LCOF 61. 扑克牌中的顺子](algorithm/tag/hashset/lcof-61.md)
   * [数组](algorithm/tag/array/README.md)
-    * [LEETCODE 189. 旋转数组](algorithm/tag/array/leetcode-189.-xuan-zhuan-shu-zu.md)
+    * [LEETCODE 189. 旋转数组](algorithm/tag/array/leetcode-189.md)
   * [模拟](algorithm/tag/simulation/README.md)
     * [LEETCODE 860. 柠檬水找零](algorithm/tag/simulation/leetcode-860.md)
     * [LCOF 29. 顺时针打印矩阵](algorithm/tag/simulation/lcof-29.md)
@@ -296,6 +297,7 @@
   * [传输层](computer-network/basic/cn-transport-layer.md)
   * [应用层](computer-network/basic/cn-application-layer/README.md)
     * [HTTP](computer-network/basic/cn-application-layer/http.md)
+* [常见问题](computer-network/interview-question.md)
 
 ## 操作系统 <a id="os"></a>
 
@@ -303,6 +305,10 @@
 * [基础知识](os/basic/README.md)
   * [概述](os/basic/summary.md)
   * [进程管理](os/basic/process.md)
+  * [死锁](os/basic/deadlock.md)
+  * [内存管理](os/basic/memory.md)
+  * [设备管理](os/basic/device.md)
+  * [链接](os/basic/link.md)
 * [常见问题](os/interview-question.md)
 
 ## Android
@@ -311,10 +317,13 @@
 * [基础知识](android/basic/README.md)
   * [Activity](android/basic/activity.md)
   * [UI](android/basic/ui.md)
+* [常见问题](android/interview-question.md)
 
 ## 数据库 <a id="database"></a>
 
 * [简介](database/database.md)
+* [基础知识](database/basic.md)
+* [常见问题](database/interview-question.md)
 
 ## Java
 
