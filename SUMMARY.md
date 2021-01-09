@@ -35,7 +35,7 @@
     * [LCOF 49. 丑数](algorithm/tag/dp/lcof-49.md)
     * [LCOF 63. 股票的最大利润](algorithm/tag/dp/lcof-63.md)
   * [贪心](algorithm/tag/greedy/README.md)
-    * [LEETCODE 12. 整数转罗马数字](algorithm/tag/greedy/leetcode-12.-zheng-shu-zhuan-luo-ma-shu-zi.md)
+    * [LEETCODE 12. 整数转罗马数字](algorithm/tag/greedy/leetcode-12.md)
     * [LEETCODE 122. 买卖股票的最佳时机 II](algorithm/tag/greedy/leetcode-122.md)
     * [\*LEETCODE 316. 去除重复字母](algorithm/tag/greedy/leetcode-316.md)
     * [LEETCODE 435. 无重叠区间](algorithm/tag/greedy/leetcode-435.md)
