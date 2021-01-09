@@ -64,23 +64,45 @@ M             1000
 
 ## 2. 标签
 
-* 1
-* 2
+* 字符串
+* 贪心
+* 数学
 
-## 3. 解法
+## 3. 解法 - 贪心
 
 ### 3.1 Java
 
 ```java
+class Solution {
+    // 从大到小遍历
+    int[] values = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};    
+    String[] symbols = {"M","CM","D","CD","C","XC","L","XL","X","IX","V","IV","I"};
 
+    public String intToRoman(int num) {
+        // 最终结果
+        StringBuilder res = new StringBuilder();
+        // 从大到小遍历每一个符号，直到 num 变成 0
+        for (int i = 0; i < values.length && num >= 0; i++) {
+            // 当前罗马数字如果小于等于 num，就从 num 中减去当前罗马数字
+            // 并且把该罗马数字加入到结果中
+            while (values[i] <= num) {
+                num -= values[i];
+                res.append(symbols[i]);
+            }
+        }
+        // 返回结果即可
+        return res.toString();
+    }
+}
 ```
 
 ### 3.2 复杂度分析
 
-* 时间复杂度 `O()` ：
-* 空间复杂度 `O()` ：
+* 时间复杂度 `O(1)` ：罗马数字数量是有限的，所以为常数时间复杂度。
+* 空间复杂度 `O(1)` ：使用的内存量不会随输入整数的大小而改变，因此是常数的。
 
 ## 4. 参考
 
 * [https://leetcode-cn.com/problems/integer-to-roman/](https://leetcode-cn.com/problems/integer-to-roman/)
-* 
+* [https://leetcode-cn.com/problems/integer-to-roman/solution/zheng-shu-zhuan-luo-ma-shu-zi-by-leetcode/](https://leetcode-cn.com/problems/integer-to-roman/solution/zheng-shu-zhuan-luo-ma-shu-zi-by-leetcode/)
+

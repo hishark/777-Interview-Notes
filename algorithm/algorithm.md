@@ -14,9 +14,10 @@
 * [力扣](https://leetcode-cn.com/)
 * [牛客](https://www.nowcoder.com/activity/oj)
 
-## 参考教材
+## 参考
 
 * [《剑指Offer》第2版](https://book.douban.com/subject/27008702/)
+* [力扣万能的题解区](https://leetcode-cn.com/)
 
 ## 注意事项
 
