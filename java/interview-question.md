@@ -27,8 +27,6 @@
 
 synchronized能保证操作的原子性，而[volatile不可以](https://blog.csdn.net/shenmegui_32/article/details/70153821)，假设线程A和线程B同时读取到变量a值，A修改a后将值更新到主内存，同时B也修改a值会覆盖A的修改操作。
 
-synchronized可修饰变量、方法和类，而volatile只能修饰变量 synchronized可能会造成线程阻塞\(因为synchronized会加锁——我自己的理解\)，而volatile不会造成线程的阻塞。
-
 ## volatile的可见性具体是如何实现的
 
 * [volatile实现可见性的原理](https://blog.csdn.net/hxcaifly/article/details/88093099)
