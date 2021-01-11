@@ -432,16 +432,6 @@
     * [pyer零基础字节跳动客户端面试](interview/bytedance-interview-collect/official/pyer-ling-ji-chu-zi-jie-tiao-dong-ke-hu-duan-mian-shi.md)
     * [字节上海抖音客户端](interview/bytedance-interview-collect/official/zi-jie-shang-hai-dou-yin-ke-hu-duan.md)
     * [字节跳动客户端开发0基础 一面凉经](interview/bytedance-interview-collect/official/untitled.md)
-* [字节面经知识点整理](interview/bytedance-collect/README.md)
-  * [计算机网络](interview/bytedance-collect/computer-network.md)
-  * [操作系统](interview/bytedance-collect/os.md)
-  * [数据库](interview/bytedance-collect/database.md)
-  * [算法题](interview/bytedance-collect/algorithm.md)
-  * [Android](interview/bytedance-collect/android.md)
-  * [Java](interview/bytedance-collect/java.md)
-  * [iOS](interview/bytedance-collect/ios.md)
-  * [项目](interview/bytedance-collect/xiang-mu.md)
-  * [其他](interview/bytedance-collect/other.md)
 
 ## 简历 <a id="resume"></a>
 
