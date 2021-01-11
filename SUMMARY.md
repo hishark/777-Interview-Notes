@@ -141,6 +141,7 @@
     * [LCOF 56 - I. 数组中数字出现的次数](algorithm/tag/bit/lcof-56-1.md)
     * [LCOF 56 - II. 数组中数字出现的次数 II](algorithm/tag/bit/lcof-56-2.md)
   * [链表](algorithm/tag/link/README.md)
+    * [LEETCODE 19. 删除链表的倒数第N个节点](algorithm/tag/link/leetcode-19.md)
     * [LEETCODE 86. 分隔链表](algorithm/tag/link/leetcode-86.md)
     * [LEETCODE 237. 删除链表中的节点](algorithm/tag/link/leetcode-237.md)
     * [LCOF 06. 从尾到头打印链表](algorithm/tag/link/lcof-06.md)
