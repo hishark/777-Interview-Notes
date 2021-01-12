@@ -6,10 +6,6 @@ description: 全是从面经里扒拉出来的面试题
 
 ## OSI 和 TCP/IP 网络模型
 
-[https://blog.csdn.net/kavensu/article/details/8020400](https://blog.csdn.net/kavensu/article/details/8020400)
-
-![](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/0fa6c237-a909-4e2a-a771-2c5485cd8ce0.png)
-
 ![](https://img-blog.csdnimg.cn/20190802001835308.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1lhbnNreTU4Njg1,size_16,color_FFFFFF,t_70)
 
 ## 路由器和交换机位于哪一层
