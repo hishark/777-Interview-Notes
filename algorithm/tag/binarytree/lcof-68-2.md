@@ -42,7 +42,7 @@
 ### 3.1 Java <a id="3-1-java"></a>
 
 ```java
-​/**
+/**
  * Definition for a binary tree node.
  * public class TreeNode {
  *     int val;
