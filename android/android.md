@@ -6,5 +6,5 @@
 
 [Android 面试QA](https://github.com/Omooo/Android_QA)
 
-《第一行代码》
+[《第一行代码》](https://book.douban.com/subject/26915433/)
 
