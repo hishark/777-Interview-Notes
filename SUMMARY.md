@@ -346,6 +346,7 @@
 ## Java
 
 * [简介](java/java.md)
+* [基础知识](java/ji-chu-zhi-shi.md)
 * [常见问题](java/interview-question.md)
 
 ## 面经 <a id="interview"></a>

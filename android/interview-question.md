@@ -4,49 +4,31 @@ description: 全是从面经里扒拉出来的面试题
 
 # 常见问题
 
-Handler
+## Handler
 
-Handler机制，Looper.loop会不会阻塞线程，为什么？
+这个问得超级频繁，必须搞清楚。
 
-handler机制 looper，message，handler，queue
+> 相关问题：
+>
+> * Handler机制，Looper.loop会不会阻塞线程，为什么？
+> * Handler 机制 looper，message，handler，queue
+> * handler内存泄漏，内存泄漏的引用链是啥？（looper—&gt;messagequeue-&gt;message-&gt;handler,所以如果队列为空就不会泄露）
+> * Handler 作用
+> * Handler的原理。Looper，MessageQueue，Message。面试官追问在一个Handler中给另一个Handler发送消息
+> * 主线程的looper.loop\(\)是谁在调用
+> * Handler的原理（Handler、Looper、MessageQueue等）
+> * Handler机制\(延时消息机制、handler泄漏原理\)
+> * 异步消息处理流程，如果发送一个延时消息，messagequeue里面怎么个顺序，messagequeue是个什么数据结构
+> * handler 如何切换线程
+> * handler 如何回调
+> * handler注意事项\(预防内存泄漏\)
+> * handler封装使用\(handlerThread IntentService\)
+> * Handler和Looper（单个Looper和多个Handler）
+> * 取出message之后怎么知道要给哪个handler分发）
+> * HandlerThread原理。
+> * Looper
 
-handler内存泄漏，内存泄漏的引用链是啥？（looper—&gt;messagequeue-&gt;message-&gt;handler,所以如果队
 
-列为空就不会泄露）
-
-handle作用
-
-Handler的原理。Looper，MessageQueue，Message。面试官追问在一个Handler中给另一个Handler发送消息
-
-主线程的looper.loop\(\)是谁在调用
-
-Handler的原理（Handler、Looper、MessageQueue等）
-
-Handler机制\(**延时消息机制、handler泄漏原理**\)
-
-异步消息处理流程，如果发送一个延时消息，messagequeue里面怎么个顺序，messagequeue是个什么数据结构
-
-handler 如何切换线程\(handler聊了挺久\)
-
-handler **如何回调**
-
-handler注意事项\(**预防内存泄漏**\)
-
-handler封装使用\(handlerThread IntentService\)
-
-Handler和Looper（单个Looper和多个Handler）
-
-Handler内存泄漏
-
-Handler原理。 （讲完后，问了一下**取出message之后怎么知道要给哪个handler分发**）
-
-HandlerThread原理。
-
-Looper。（大致就是想让回答 **Android是依靠事件驱动的，通过Looper.loop\(\)不断进行消息循环之类的**）
-
-扯到了对象池（Message类维护，每个message有next指针）
-
-怎么解决内存泄漏（声明static，弱引用包裹）
 
 有没有接触过安卓，怎么看内存占用情况
 
