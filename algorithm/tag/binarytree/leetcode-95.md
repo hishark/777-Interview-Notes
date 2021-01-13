@@ -16,6 +16,8 @@ notshow: true
 
 ## 1. [问题](https://leetcode-cn.com/problems/unique-binary-search-trees-ii/)
 
+![](../../../.gitbook/assets/image%20%2842%29.png)
+
 给定一个整数 n，生成所有由 1 ... n 为节点所组成的 二叉搜索树 。
 
 示例：

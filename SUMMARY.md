@@ -165,6 +165,7 @@
     * [LCOF 36. 二叉搜索树与双向链表](algorithm/tag/link/lcof-36.md)
     * [LCOF 52. 两个链表的第一个公共节点](algorithm/tag/link/lcof-52.md)
   * [二叉树](algorithm/tag/binarytree/README.md)
+    * [LEETCODE 94. 二叉树的中序遍历](algorithm/tag/binarytree/leetcode-94.md)
     * [LEETCODE 95. 不同的二叉搜索树 II](algorithm/tag/binarytree/leetcode-95.md)
     * [LEETCODE 96. 不同的二叉搜索树](algorithm/tag/binarytree/leetcode-96.md)
     * [LEETCODE 104. 二叉树的最大深度](algorithm/tag/binarytree/leetcode-104.md)
