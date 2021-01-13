@@ -227,3 +227,5 @@ zero-copy 与 copy-on-write\(COW\);
 
 ## 什么是写优先和读写平衡
 
+## 大小端
+
