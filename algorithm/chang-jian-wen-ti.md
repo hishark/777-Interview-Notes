@@ -6,17 +6,23 @@ description: 是从面经里扒拉出来的算法题
 
 ## 反转链表
 
-> 类似问题：
->
-> * 反转指定区间的链表
+{% page-ref page="tag/pointer/lcof-24.md" %}
 
-## 给一个链表，按照链表某个值排序
+## 单链表按照K值排序
 
-## 求二叉树叶子节点之间的最长路径
+{% embed url="https://blog.csdn.net/y396397735/article/details/51464995" %}
+
+## 二叉树叶子节点之间的最长路径
+
+## 二叉树的直径
+
+{% page-ref page="tag/binarytree/leetcode-543.md" %}
 
 ## 找树中有没有和为特定值的路径，返回 boolean
 
-## 合并两个有序链表 
+{% page-ref page="tag/binarytree/leetcode-112.md" %}
+
+## 合并两个有序链表
 
 ## 三个线程
 
@@ -37,8 +43,6 @@ description: 是从面经里扒拉出来的算法题
 > 口述一下过程
 
 ## 数据结构，10大排序挑2个讲
-
-## 求树的直径
 
 ## 给一个链表，判断链表元素是否回文
 

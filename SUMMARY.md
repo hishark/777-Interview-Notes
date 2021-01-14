@@ -172,6 +172,7 @@
     * [LEETCODE 104. 二叉树的最大深度](algorithm/tag/binarytree/leetcode-104.md)
     * [LEETCODE 108. 将有序数组转换为二叉搜索树](algorithm/tag/binarytree/leetcode-108.md)
     * [LEETCODE 112. 路径总和](algorithm/tag/binarytree/leetcode-112.md)
+    * [LEETCODE 543. 二叉树的直径](algorithm/tag/binarytree/leetcode-543.md)
     * [LEETCODE 617. 合并二叉树](algorithm/tag/binarytree/leetcode-617.md)
     * [LEETCODE 958. 二叉树的完全性检验](algorithm/tag/binarytree/leetcode-958.md)
     * [LCOF 07. 重建二叉树](algorithm/tag/binarytree/lcof-07.md)

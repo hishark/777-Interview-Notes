@@ -106,14 +106,14 @@ class Solution {
         // cur最先指向head
         ListNode cur = head;
         // tmp工具人用来保存cur的下一个结点
-        ListNode tmp = null;
+        ListNode tmp = null; // 这个别初始化成 cur.next 了，head 为空时会空指针报错
 
         // cur遍历整个链表，当cur指向空，遍历就结束了
         while (cur != null) {
             tmp = cur.next;
             cur.next = pre;
             pre = cur;
-            cur = tmp;
+            cur = tmp; // 别写成 cur.next 
         }
 
         // 别写成cur了，退出上面的循环之后cur就为空了
