@@ -430,6 +430,10 @@ int countPair\(int \[\]array\){
 
 > 追问怎么优化，有没有更好的办法
 
+{% page-ref page="lcof/lcof-58-1.md" %}
+
+
+
 ## 翻转域名
 
 > www.baidu.com ➡️ com.baidu.www
