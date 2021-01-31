@@ -109,7 +109,7 @@ class Solution {
             // 判断cur和i是否相等
             // 若相等，继续扫描下一个数
             // 若不相等，比较cur和第cur个数
-            while (cur != i) {
+            if (cur != i) {
                 if (cur == nums[cur]) {
                     // cur和第cur个数相等，说明找到了重复数，返回即可
                     return cur;
@@ -140,7 +140,7 @@ class Solution {
             // 判断cur和i是否相等
             // 若相等，继续扫描下一个数
             // 若不相等，比较cur和第cur个数
-            while (cur != i) {
+            if (cur != i) {
                 if (cur == nums[cur]) {
                     // cur和第cur个数相等，说明找到了重复数，返回即可
                     return cur
