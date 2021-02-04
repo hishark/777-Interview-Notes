@@ -37,7 +37,7 @@ description: 以下是从面经里扒拉出来的面试题
 
 ## TCP连接的三次握手，四次挥手
 
-
+\_\_[_TCP 的三次握手_](basic/cn-transport-layer.md#tcp-de-san-ci-wo-shou)\_\_
 
 > 类似问题：
 >
@@ -48,9 +48,15 @@ description: 以下是从面经里扒拉出来的面试题
 
 ## TCP 属于哪一层
 
+传输层。
+
 ## TCP 与 UDP 协议的区别
 
+\_\_[_TCP 与 UDP 的区别_](basic/cn-transport-layer.md#udp-he-tcp-de-te-dian)\_\_
+
 ## 浏览器渲染页面完成后会保持 TCP 连接吗
+
+根据请求头中的 Connection 判断，若为`keep-alive`则保持连接。
 
 ## TCP 连接和释放中的状态有哪些，以及如果日志中出现某些状态码过多如何处理
 
@@ -159,15 +165,21 @@ description: 以下是从面经里扒拉出来的面试题
 
 ## DNS缓存存在哪？有效期多少？可以设置吗？
 
-## HTTP 是用什么实现的
+## HTTP 是用什么实现的？
+
+HTTP协议定义了浏览器（即万维网客户进程）怎样向万维网服务器请求万维网文档，以及服务器怎样把文档传送给浏览器。从层次的角度看，HTTP是面向事务的\(transaction-oriented\)\[插图\]应用层协议，它是万维网上能够可靠地交换文件（包括文本、声音、图像等各种多媒体文件）的重要基础。
 
 ## GET 请求和 POST 请求的区别
+
+\_\_[_GET 和 POST_](basic/cn-application-layer/http.md#jiu-get-he-post-bi-jiao)\_\_
 
 ## GET POST请求，除了这两个还有啥
 
 > 类似问题：
 >
 > * 知道其他请求方式吗，比如Put，Delete，Head。
+
+\_\_[_HTTP方法_](basic/cn-application-layer/http.md#er-http-fang-fa)\_\_
 
 ## Socket 创建流程
 
@@ -178,6 +190,8 @@ description: 以下是从面经里扒拉出来的面试题
 ## 网络协议有了解吗
 
 ## 跨域问题如何解决
+
+[什么是跨域？](https://juejin.cn/post/6844904100035821575#heading-67)
 
 ## 什么是子网掩码，它的作用是什么
 
