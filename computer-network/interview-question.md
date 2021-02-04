@@ -1,20 +1,26 @@
 ---
-description: 是从面经里扒拉出来的面试题
+description: 以下是从面经里扒拉出来的面试题
 ---
 
 # 常见问题
 
 ## OSI 和 TCP/IP 网络模型
 
+\_\_[_计算机网络体系结构_](basic/cn-summary.md#ji-suan-ji-wang-luo-ti-xi-jie-gou)\_\_
+
 ![](https://img-blog.csdnimg.cn/20190802001835308.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1lhbnNreTU4Njg1,size_16,color_FFFFFF,t_70)
 
 ## 路由器和交换机位于哪一层
 
-* 路由器：应该是网络层
+[_网络层 - 路由器_](basic/cn-network-layer.md#lu-you-qi-de-jie-gou)\_\_
+
+\_\_[_链路层 - 交换机_](basic/cn-link-layer.md#jiao-huan-ji)\_\_
+
+* 路由器：网络层
   * 网络层负责为分组交换网上的不同主机提供通信服务。在发送数据时，网络层把运输层产生的报文段或用户数据报封装成分组或包\(packet\)进行传送。
   * 因特网主要的网络层协议是无连接的网际协议IP \(InternetProtocol\)和许多种路由选择协议，因此因特网的网络层也叫做网际层或IP层。在本书中，网络层、网际层和IP层都是同义语。
   * 综上，路由选择协议是在路由器中使用的，所以路由器应该是位于网络层的。我觉得被问问题的时候也可以这样子回答。不要直接简单的回答一句「路由器位于网络层」
-* 交换机：应该是数据链路层
+* 交换机：链路层
   * 1990年问世的交换式集线器\(switching hub\)，可明显地提高以太网的性能。交换式集线器常称为以太网交换机\(switch\)或**第二层**交换机，表明这种交换机工作在数据链路层。“交换机”并无准确的定义和明确的概念，而现在的很多交换机已混杂了网桥和路由器的功能。
 
 ## **计算机网络每层对应的协议**
@@ -30,6 +36,8 @@ description: 是从面经里扒拉出来的面试题
 ![](https://img-blog.csdnimg.cn/20190802001835308.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1lhbnNreTU4Njg1,size_16,color_FFFFFF,t_70)
 
 ## TCP连接的三次握手，四次挥手
+
+
 
 > 类似问题：
 >
