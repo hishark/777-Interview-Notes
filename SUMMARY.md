@@ -62,7 +62,7 @@
     * [LEETCODE 239. 滑动窗口最大值](algorithm/tag/slidewindow/leetcode-239.md)
     * [LEETCODE 424. 替换后的最长重复字符](algorithm/tag/slidewindow/leetcode-424.md)
     * [LEETCODE 643. 子数组最大平均数 I](algorithm/tag/slidewindow/leetcode-643.md)
-    * [LEETCODE 1208. 尽可能使字符串相等](algorithm/tag/slidewindow/leetcode-1208.-jin-ke-neng-shi-zi-fu-chuan-xiang-deng.md)
+    * [LEETCODE 1208. 尽可能使字符串相等](algorithm/tag/slidewindow/leetcode-1208.md)
     * [LCOF 59 - I. 滑动窗口的最大值](algorithm/tag/slidewindow/lcof-59-1.md)
   * [深度优先搜索](algorithm/tag/dfs/README.md)
     * [LEETCODE 207. 课程表](algorithm/tag/dfs/leetcode-207.-ke-cheng-biao.md)
