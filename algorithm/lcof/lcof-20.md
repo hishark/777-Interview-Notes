@@ -193,7 +193,9 @@ class Solution {
 
 > 还有个解法是用有限状态自动机来做的，直接看[K佬的题解](https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/solution/mian-shi-ti-20-biao-shi-shu-zhi-de-zi-fu-chuan-y-2/)吧，我看着就头晕OTZ。\#就是不想做
 
-### 2.3 LEETCODE-08解法
+### 2.3 LEETCODE-08 解法
+
+字符串转数字 🔢
 
 > res \* 10 + num &gt; Integer.MAX\_VALUE 需要注意，直接这么写会越界的，稍微移动一下就不会出现越界的情况了。
 

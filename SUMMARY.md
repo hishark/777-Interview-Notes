@@ -254,7 +254,7 @@
   * [16. 数值的整数次方](algorithm/lcof/lcof-16.md)
   * [17. 打印从1到最大的n位数](algorithm/lcof/lcof-17.md)
   * [18. 删除链表的节点](algorithm/lcof/lcof-18.md)
-  * [19. 正则表达式匹配](algorithm/lcof/lcof-19.md)
+  * [\*19. 正则表达式匹配](algorithm/lcof/lcof-19.md)
   * [20. 表示数值的字符串](algorithm/lcof/lcof-20.md)
   * [21. 调整数组顺序使奇数位于偶数前面](algorithm/lcof/lcof-21.md)
   * [22. 链表中倒数第k个节点](algorithm/lcof/lcof-22.md)
