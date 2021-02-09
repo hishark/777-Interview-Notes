@@ -25,6 +25,8 @@
 
 ## 3. 解法
 
+{% page-ref page="../tag/backtrack/leetcode-46.-quan-pai-lie.md" %}
+
 ### 3.1 Java
 
 ```java
