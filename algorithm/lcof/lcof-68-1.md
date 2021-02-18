@@ -1,4 +1,4 @@
-# 68 - I. 二叉搜索树的最近公共祖先
+# 68 - I. 二叉搜索树的最近公共祖先【迭代/递归】
 
 ## 1. [问题](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-zui-jin-gong-gong-zu-xian-lcof/)
 

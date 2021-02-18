@@ -1,4 +1,4 @@
-# 64. 求1+2+…+n
+# 64. 求1+2+…+n【短路】
 
 ## 1. [问题](https://leetcode-cn.com/problems/qiu-12n-lcof/)
 

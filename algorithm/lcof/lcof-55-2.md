@@ -1,4 +1,4 @@
-# 55 - II. 平衡二叉树
+# 55 - II. 平衡二叉树【DFS】
 
 ## 1. [问题](https://leetcode-cn.com/problems/ping-heng-er-cha-shu-lcof/)
 

@@ -10,7 +10,7 @@ categories: 算法笔记
 notshow: true
 ---
 
-# 09. 用两个栈实现队列
+# 09. 用两个栈实现队列【辅助栈】
 
 ## [1. 问题](https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/)
 

@@ -1,4 +1,4 @@
-# 60. n个骰子的点数
+# \*60. n个骰子的点数【DP】
 
 ## 1. [问题](https://leetcode-cn.com/problems/nge-tou-zi-de-dian-shu-lcof/)
 
@@ -29,6 +29,8 @@
 * 动态规划
 
 ## 3. 解法 - 动态规划
+
+> 不太想得到啊OTZ
 
 ### 3.1 Java
 

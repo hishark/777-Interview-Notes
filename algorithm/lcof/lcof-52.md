@@ -1,4 +1,4 @@
-# 52. 两个链表的第一个公共节点
+# 52. 两个链表的第一个公共节点【双指针】
 
 ## 1. [问题](https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/)
 

@@ -1,4 +1,4 @@
-# 61. 扑克牌中的顺子
+# 61. 扑克牌中的顺子【Set/排序】
 
 ## 1. [问题](https://leetcode-cn.com/problems/bu-ke-pai-zhong-de-shun-zi-lcof/)
 

@@ -1,4 +1,4 @@
-# 59 - I. 滑动窗口的最大值
+# \*59 - I. 滑动窗口的最大值【滑动窗口】
 
 ## 1. [问题](https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/)
 
@@ -48,7 +48,7 @@ class Solution {
         
         // 结果数组
         // 该数组的长度为滑动窗口的个数
-        // 也就是【数组长度 - k + 1】
+        // 也就是【数组长度 - 滑动窗口的大小 + 1】
         int[] res = new int[nums.length - k + 1];
         
         // 开始遍历所有窗口，i 为窗口的左边界，j 为窗口的右边界

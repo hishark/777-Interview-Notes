@@ -1,4 +1,4 @@
-# 62. 圆圈中最后剩下的数字
+# 62. 圆圈中最后剩下的数字【约瑟夫环】
 
 ## 1. [问题](https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/)
 

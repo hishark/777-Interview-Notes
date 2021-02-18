@@ -1,4 +1,4 @@
-# 57. 和为s的两个数字
+# 57. 和为s的两个数字【双指针/哈希表】
 
 ## 1. [问题](https://leetcode-cn.com/problems/he-wei-sde-liang-ge-shu-zi-lcof/)
 
@@ -31,7 +31,7 @@
 
 ## 3. 解法 - 双指针
 
-> 还有个方法是哈希表，解法与力扣第一题两数之和相同。
+> 还有个方法是哈希表，解法与[力扣第一题两数之和](https://leetcode-cn.com/problems/two-sum/)相同。
 
 ### 3.1 Java
 

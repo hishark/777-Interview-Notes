@@ -1,4 +1,4 @@
-# 45. 把数组排成最小的数
+# 45. 把数组排成最小的数【排序】
 
 ## 1. [问题](https://leetcode-cn.com/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/)
 
@@ -51,8 +51,8 @@ class Solution {
          * Arrays.sort默认是对元素进行从小到大的排序
          * 修改排序规则如下，仍是从小到大进行排序，但是比较的不是 x 和 y
          * 而是 x + y 和 y + x
-         *  1. x + y < y + x 时表示 x < y，x 排在 y 之前
-         *  2. x + y > y + x 时表示 x > y，x 排在 y 之后
+         *  1. x + y < y + x 时表示 x < y，x 排在 y 之前可以获得较小值
+         *  2. x + y > y + x 时表示 x > y，x 排在 y 之后可以获得较小值
          */
         Arrays.sort(strs, (x, y) -> (x + y).compareTo(y + x));
         

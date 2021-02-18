@@ -1,4 +1,4 @@
-# 56 - I. 数组中数字出现的次数
+# 56 - I. 数组中数字出现的次数【位运算】
 
 ## 1. [问题](https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/)
 

@@ -1,4 +1,4 @@
-# 66. 构建乘积数组
+# \*66. 构建乘积数组【DP】
 
 ## 1. [问题](https://leetcode-cn.com/problems/gou-jian-cheng-ji-shu-zu-lcof/)
 
@@ -41,12 +41,12 @@ class Solution {
         // 工具人 tmp
         int tmp = 1;
         /**
-         * 去看K佬画的表格 第一个循环是在计算「下三角」部分的值
+         * 去看K佬画的表格 第一个循环是在计算「下三角」部分的值，也就是 a[i] 之前的所有数的乘积
          */
         for (int i = 1; i < a.length; i++) {
             b[i] = b[i - 1] * a[i - 1];
         }
-        // 第二个循环是在计算「上三角」部分的值
+        // 第二个循环是在计算「上三角」部分的值，也就是 a[i] 之后的所有数的乘积
         for (int i = a.length - 2; i >= 0; i--) {
             tmp *= a[i + 1];
             b[i] *= tmp;

@@ -11,7 +11,7 @@ categories: 算法笔记
 notshow: true
 ---
 
-# 46. 把数字翻译成字符串
+# 46. 把数字翻译成字符串【DP】
 
 ## [1. 问题](https://leetcode-cn.com/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/)
 

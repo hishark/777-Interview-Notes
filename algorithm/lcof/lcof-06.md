@@ -11,7 +11,7 @@ tags:
 categories: 算法笔记
 ---
 
-# 06. 从尾到头打印链表
+# 06. 从尾到头打印链表【栈/递归】
 
 ## 1. [问题](https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/)
 

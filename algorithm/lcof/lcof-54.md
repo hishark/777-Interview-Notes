@@ -11,7 +11,7 @@ categories: 算法笔记
 notshow: true
 ---
 
-# 54. 二叉搜索树的第k大节点
+# 54. 二叉搜索树的第k大节点【中序遍历】
 
 ## 1. [问题](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/)
 
@@ -72,9 +72,10 @@ class Solution {
         return ans;
     }
 
-    // 中序遍历的遍历：右根左
+    // 求 “二叉搜索树第 k 大的节点” 可转化为求 “此树的中序遍历倒序的第 k 个节点”。
+    // 中序遍历倒序的遍历：右根左
     public void dfs(TreeNode root) {
-        if (root ==  null)
+        if (root == null)
             return;
 
         // 右

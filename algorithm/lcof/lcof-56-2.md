@@ -1,4 +1,4 @@
-# 56 - II. 数组中数字出现的次数 II
+# 56 - II. 数组中数字出现的次数 II【位运算】
 
 ## 1. [问题](https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-ii-lcof/)
 
@@ -27,7 +27,7 @@
 
 * 位运算
 
-## 3. 解法
+## 3. 解法 - 位运算
 
 ### 3.1 Java
 

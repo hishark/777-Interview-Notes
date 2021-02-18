@@ -1,4 +1,4 @@
-# 58 - I. 翻转单词顺序
+# 58 - I. 翻转单词顺序【双指针】
 
 ## 1. [问题](https://leetcode-cn.com/problems/fan-zhuan-dan-ci-shun-xu-lcof/)
 
@@ -39,6 +39,8 @@
 * 双指针
 
 ## 3. 解法 - 双指针
+
+> 这一题类似于翻转域名，如把 `www.baidu.com` 变成 `com.baidu.com` ，是一个解题思路。
 
 ### 3.1 Java 
 

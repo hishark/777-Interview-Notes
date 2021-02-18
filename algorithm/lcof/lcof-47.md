@@ -1,4 +1,4 @@
-# 47. 礼物的最大价值
+# 47. 礼物的最大价值【DP】
 
 ## 1. [问题](https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof/)
 

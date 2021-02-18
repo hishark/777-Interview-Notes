@@ -1,4 +1,4 @@
-# 68 - II. 二叉树的最近公共祖先
+# 68 - II. 二叉树的最近公共祖先【递归】
 
 ## 1. [问题](https://leetcode-cn.com/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/) <a id="1-wen-ti"></a>
 
@@ -37,7 +37,7 @@
 * DFS
 * 递归
 
-## 3. 解法 <a id="3-jie-fa"></a>
+## 3. 解法 - 递归 <a id="3-jie-fa"></a>
 
 ### 3.1 Java <a id="3-1-java"></a>
 
