@@ -339,25 +339,28 @@
   * [链接](os/basic/link.md)
 * [常见问题](os/interview-question.md)
 
-## Android
+## Java
 
-* [简介](android/android.md)
-* [基础知识](android/basic/README.md)
-  * [Activity](android/basic/activity.md)
-  * [UI](android/basic/ui.md)
-* [常见问题](android/interview-question.md)
+* [简介](java/java.md)
+* [基础知识](java/ji-chu-zhi-shi/README.md)
+  * [Java 基础](java/ji-chu-zhi-shi/java-ji-chu.md)
+* [常见问题](java/interview-question.md)
 
 ## 数据库 <a id="database"></a>
 
 * [简介](database/database.md)
-* [基础知识](database/basic.md)
+* [基础知识](database/basic/README.md)
+  * [SQL 语法](database/basic/sql.md)
+  * [数据库系统基础](database/basic/database-basics.md)
 * [常见问题](database/interview-question.md)
 
-## Java
+## Android
 
-* [简介](java/java.md)
-* [基础知识](java/ji-chu-zhi-shi.md)
-* [常见问题](java/interview-question.md)
+* [简介](android/android.md)
+* [基础知识](android/basic/README.md)
+  * [四大组件](android/basic/four.md)
+* [常见问题](android/interview-question/README.md)
+  * [question draft](android/interview-question/question-draft.md)
 
 ## 面经 <a id="interview"></a>
 
