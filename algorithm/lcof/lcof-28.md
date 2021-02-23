@@ -11,7 +11,7 @@ tags:
 categories: 算法笔记
 ---
 
-# 28. 对称的二叉树
+# 28. 对称的二叉树【递归】
 
 ## 1. [问题](https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof)
 

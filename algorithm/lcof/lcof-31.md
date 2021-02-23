@@ -10,7 +10,7 @@ tags:
 categories: 算法笔记
 ---
 
-# 31. 栈的压入、弹出序列
+# 31. 栈的压入、弹出序列【辅助栈】
 
 ## 1. [问题](https://leetcode-cn.com/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof)
 

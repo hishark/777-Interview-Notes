@@ -10,7 +10,7 @@ tags:
 categories: 算法笔记
 ---
 
-# 10-I. 斐波那契数列
+# 10-I. 斐波那契数列【DP】
 
 ## 1. [问题](https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/)
 

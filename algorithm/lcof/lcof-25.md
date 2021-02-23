@@ -11,7 +11,7 @@ tags:
 categories: 算法笔记
 ---
 
-# 25. 合并两个排序的链表
+# 25. 合并两个排序的链表【递归】
 
 ## 1. [问题](https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof)
 

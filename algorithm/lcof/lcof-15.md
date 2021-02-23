@@ -10,7 +10,7 @@ tags:
 categories: 算法笔记
 ---
 
-# 15. 二进制中1的个数
+# 15. 二进制中1的个数【位运算】
 
 ## 1. [问题](https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/)
 

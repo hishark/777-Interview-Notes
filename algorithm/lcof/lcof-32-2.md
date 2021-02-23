@@ -11,7 +11,7 @@ tags:
 categories: 算法笔记
 ---
 
-# 32 - II. 从上到下打印二叉树 II
+# 32 - II. 从上到下打印二叉树 II【BFS】
 
 ## 1. [问题](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/)
 

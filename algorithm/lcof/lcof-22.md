@@ -11,7 +11,7 @@ tags:
 categories: 算法笔记
 ---
 
-# 22. 链表中倒数第k个节点
+# 22. 链表中倒数第k个节点【快慢指针】
 
 ## 1. [问题](https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/)
 

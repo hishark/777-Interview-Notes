@@ -10,7 +10,7 @@ tags:
 categories: 算法笔记
 ---
 
-# 12. 矩阵中的路径
+# 12. 矩阵中的路径【DFS】
 
 ## 1. [问题](https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof/)
 

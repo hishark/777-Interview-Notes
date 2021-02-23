@@ -11,7 +11,7 @@ tags:
 categories: 算法笔记
 ---
 
-# 27. 二叉树的镜像
+# 27. 二叉树的镜像【递归/辅助栈】
 
 ## 1. [问题](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/)
 

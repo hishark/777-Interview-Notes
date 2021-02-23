@@ -1,4 +1,4 @@
-# \*39. 数组中出现次数超过一半的数字
+# \*39. 数组中出现次数超过一半的数字【哈希/摩尔投票】
 
 ## 1. [问题](https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/)
 
@@ -32,7 +32,7 @@
 // ref: https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/solution/mian-shi-ti-39-shu-zu-zhong-chu-xian-ci-shu-chao-3/
 class Solution {
     public int majorityElement(int[] nums) {
-        // 众数（本题的众数定义为数组中出现次数超过一般的数，并不是传统意义的众数）
+        // 众数（本题的众数定义为数组中出现次数超过一半的数，并不是传统意义的众数）
         int mode = 0;
         // 票数和
         int votes = 0;

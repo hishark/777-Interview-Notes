@@ -13,7 +13,7 @@ tags:
 categories: 算法笔记
 ---
 
-# 16. 数值的整数次方
+# 16. 数值的整数次方【分治】
 
 ## 1. [问题](https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof)
 

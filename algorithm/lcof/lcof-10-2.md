@@ -10,7 +10,7 @@ tags:
 categories: 算法笔记
 ---
 
-# 10-II. 青蛙跳台阶问题
+# 10-II. 青蛙跳台阶问题【DP】
 
 ## 1. [问题](https://leetcode-cn.com/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/)
 

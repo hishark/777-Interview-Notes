@@ -12,7 +12,7 @@ tags:
 categories: 算法笔记
 ---
 
-# 14-I. 剪绳子
+# 14-I. 剪绳子【DP/贪心】
 
 ## 1. [问题](https://leetcode-cn.com/problems/jian-sheng-zi-lcof/)
 

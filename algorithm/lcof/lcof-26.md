@@ -11,7 +11,7 @@ tags:
 categories: 算法笔记
 ---
 
-# 26. 树的子结构
+# 26. 树的子结构【递归】
 
 ## 1. [问题](https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/)
 

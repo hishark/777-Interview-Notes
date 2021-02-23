@@ -10,7 +10,7 @@ tags:
 categories: 算法笔记
 ---
 
-# 30. 包含min函数的栈
+# 30. 包含min函数的栈【辅助栈】
 
 ## 1. [问题](https://leetcode-cn.com/problems/bao-han-minhan-shu-de-zhan-lcof/)
 

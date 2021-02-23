@@ -11,7 +11,7 @@ tags:
 categories: 算法笔记
 ---
 
-# 24. 反转链表
+# 24. 反转链表【递归/双指针】
 
 ## 1. [问题](https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof)
 

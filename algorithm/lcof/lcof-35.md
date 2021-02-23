@@ -1,4 +1,4 @@
-# 35. 复杂链表的复制
+# \*35. 复杂链表的复制【哈希表】
 
 ## 1. [问题](https://leetcode-cn.com/problems/fu-za-lian-biao-de-fu-zhi-lcof/)
 

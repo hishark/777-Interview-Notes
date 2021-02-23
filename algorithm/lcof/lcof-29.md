@@ -10,7 +10,7 @@ tags:
 categories: 算法笔记
 ---
 
-# 29. 顺时针打印矩阵
+# 29. 顺时针打印矩阵【模拟】
 
 ## 1. [问题](https://leetcode-cn.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/)
 

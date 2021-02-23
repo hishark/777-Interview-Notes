@@ -11,7 +11,7 @@ tags:
 categories: 算法笔记
 ---
 
-# 14-II. 剪绳子 II
+# 14-II. 剪绳子 II【贪心】
 
 ## 1. [问题](https://leetcode-cn.com/problems/jian-sheng-zi-ii-lcof/)
 

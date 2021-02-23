@@ -1,4 +1,4 @@
-# 37. 序列化二叉树
+# 37. 序列化二叉树【BFS】
 
 ## 1. [问题](https://leetcode-cn.com/problems/xu-lie-hua-er-cha-shu-lcof/)
 
@@ -25,7 +25,7 @@
 * 层序遍历
 * 队列
 
-## 3. 解法
+## 3. 解法 - BFS
 
 ### 3.1 Java
 
