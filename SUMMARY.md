@@ -210,7 +210,7 @@
     * [LCOF 27. 二叉树的镜像](algorithm/tag/stack/lcof-27.md)
   * [大数](algorithm/tag/bignum.md)
   * [数学](algorithm/tag/math/README.md)
-    * [LEETCODE 16. 最接近的三数之和](algorithm/tag/math/leetcode-2-1.md)
+    * [LEETCODE 16. 最接近的三数之和](algorithm/tag/math/leetcode-16.md)
     * [LEETCODE 9. 回文数](algorithm/tag/math/leetcode-9.md)
     * [LEETCODE 238. 除自身以外数组的乘积](algorithm/tag/math/leetcode-238.md)
     * [LEETCODE 990. 等式方程的可满足性](algorithm/tag/math/leetcode-990.md)

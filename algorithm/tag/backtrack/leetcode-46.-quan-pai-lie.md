@@ -72,7 +72,7 @@ class Solution {
                 // 填完了一个排列之后，开始回溯
                 // 把当前数字标记为未访问
                 visited[i] = false;
-                // 把当前数组从当前排列中移除
+                // 把当前数字从当前排列中移除
                 temp.remove(temp.size()-1);
             }
             
