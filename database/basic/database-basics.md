@@ -487,7 +487,7 @@ Entity-Relationship，有三个组成部分：实体、属性、联系。
 
 ![](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/ac929ea3-daca-40ec-9e95-4b2fa6678243.png)
 
-![](../../.gitbook/assets/image%20%2863%29.png)
+![](../../.gitbook/assets/image%20%2865%29.png)
 
 ### 联系的多向性
 
@@ -513,7 +513,7 @@ Entity-Relationship，有三个组成部分：实体、属性、联系。
 
 例如，假设在Student表的Sno列上建立了一个索引（Sno为索引项或索引关键字），则在索引部分就有指向每个学号对应的学生的存储位置的信息，如下图所示。
 
-![](../../.gitbook/assets/image%20%2862%29.png)
+![](../../.gitbook/assets/image%20%2863%29.png)
 
 当数据库管理系统执行一个在Student表上根据指定的Sno查找该学生信息的语句时，它能够识别该表上的索引列（Sno），并首先在索引部分（按学号有序存储）查找该学号，然后根据找到的学号指向的数据的存储位置，直接检索出需要的信息。
 
@@ -531,7 +531,7 @@ Entity-Relationship，有三个组成部分：实体、属性、联系。
 
 第二，节省存储空间。当数据量非常大时，重复存储数据是非常耗费空间的。视图可以从一个基本表中提取数据，也可以从多个基本表中提取数据，甚至还可以从其他视图中提取数据，构成新的视图。但不管怎样，对视图数据的操作最终都会转换为对基本表的操作。下图为视图与基本表的关系示意图。
 
-![](../../.gitbook/assets/image%20%2865%29.png)
+![](../../.gitbook/assets/image%20%2867%29.png)
 
 [点击查看如何使用SQL语句创建视图](sql.md#shi-qi-shi-tu-view)
 

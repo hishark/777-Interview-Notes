@@ -35,8 +35,6 @@ notshow: true
 
 ### 2.1 Java
 
-> 我感觉越界判断让可读性降低了，可以把第一行和第一列的处理单独提出来。
-
 ```java
 class Solution {
     public int minPathSum(int[][] grid) {

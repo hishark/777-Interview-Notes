@@ -210,7 +210,7 @@
     * [LCOF 27. 二叉树的镜像](algorithm/tag/stack/lcof-27.md)
   * [大数](algorithm/tag/bignum.md)
   * [数学](algorithm/tag/math/README.md)
-    * [LEETCODE 16. 最接近的三数之和](algorithm/tag/math/leetcode-16.md)
+    * [LEETCODE 16. 最接近的三数之和](algorithm/tag/math/leetcode-2-1.md)
     * [LEETCODE 9. 回文数](algorithm/tag/math/leetcode-9.md)
     * [LEETCODE 238. 除自身以外数组的乘积](algorithm/tag/math/leetcode-238.md)
     * [LEETCODE 990. 等式方程的可满足性](algorithm/tag/math/leetcode-990.md)
@@ -344,6 +344,10 @@
 * [简介](java/java.md)
 * [基础知识](java/ji-chu-zhi-shi/README.md)
   * [Java 基础](java/ji-chu-zhi-shi/java-ji-chu.md)
+  * [Java 容器](java/ji-chu-zhi-shi/java-rong-qi.md)
+  * [Java 并发](java/ji-chu-zhi-shi/java-bing-fa.md)
+  * [Java 虚拟机](java/ji-chu-zhi-shi/java-xu-ni-ji.md)
+  * [Java I/O](java/ji-chu-zhi-shi/java-i-o.md)
 * [常见问题](java/interview-question.md)
 
 ## 数据库 <a id="database"></a>
@@ -359,8 +363,7 @@
 * [简介](android/android.md)
 * [基础知识](android/basic/README.md)
   * [四大组件](android/basic/four.md)
-* [常见问题](android/interview-question/README.md)
-  * [question draft](android/interview-question/question-draft.md)
+* [常见问题](android/interview-question.md)
 
 ## 面经 <a id="interview"></a>
 

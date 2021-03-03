@@ -2,7 +2,7 @@
 
 ## 参考
 
-* [Cyc CS-Notes Java](http://www.cyc2018.xyz/#java)
+* [CS-Notes Java](http://www.cyc2018.xyz/#java)
 * [Java Guide](https://snailclimb.gitee.io/javaguide/#/)
 
 ## 一、数据类型

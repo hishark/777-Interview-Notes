@@ -16,7 +16,7 @@
 
 数据库的三级模式结构是指数据库的外模式、模式和内模式。
 
-![](../../.gitbook/assets/image%20%2860%29.png)
+![](../../.gitbook/assets/image%20%2861%29.png)
 
 ### SQL 语句
 
