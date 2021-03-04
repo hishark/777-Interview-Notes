@@ -368,6 +368,10 @@
 ## 面经 <a id="interview"></a>
 
 * [简介](interview/interview.md)
+* [腾讯面经汇总](interview/teng-xun-mian-jing-hui-zong/README.md)
+  * [实习](interview/teng-xun-mian-jing-hui-zong/shi-xi.md)
+  * [提前批](interview/teng-xun-mian-jing-hui-zong/ti-qian-pi.md)
+  * [校招](interview/teng-xun-mian-jing-hui-zong/xiao-zhao.md)
 * [字节跳动面经汇总](interview/bytedance-interview-collect/README.md)
   * [实习](interview/bytedance-interview-collect/intern/README.md)
     * [Android](interview/bytedance-interview-collect/intern/android/README.md)
@@ -463,5 +467,8 @@
 
 ## 简历 <a id="resume"></a>
 
-* [简介](resume/resume.md)
+## 杂
+
+* [简历](za/resume.md)
+* [Git](za/git.md)
 
