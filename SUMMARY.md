@@ -368,10 +368,10 @@
 ## 面经 <a id="interview"></a>
 
 * [简介](interview/interview.md)
-* [腾讯面经汇总](interview/teng-xun-mian-jing-hui-zong/README.md)
-  * [实习](interview/teng-xun-mian-jing-hui-zong/shi-xi.md)
-  * [提前批](interview/teng-xun-mian-jing-hui-zong/ti-qian-pi.md)
-  * [校招](interview/teng-xun-mian-jing-hui-zong/xiao-zhao.md)
+* [腾讯面经汇总](interview/tencent/README.md)
+  * [实习](interview/tencent/intern.md)
+  * [提前批](interview/tencent/before.md)
+  * [秋招](interview/tencent/official.md)
 * [字节跳动面经汇总](interview/bytedance-interview-collect/README.md)
   * [实习](interview/bytedance-interview-collect/intern/README.md)
     * [Android](interview/bytedance-interview-collect/intern/android/README.md)
@@ -465,10 +465,8 @@
     * [字节上海抖音客户端](interview/bytedance-interview-collect/official/zi-jie-shang-hai-dou-yin-ke-hu-duan.md)
     * [字节跳动客户端开发0基础 一面凉经](interview/bytedance-interview-collect/official/untitled.md)
 
-## 简历 <a id="resume"></a>
-
 ## 杂
 
-* [简历](za/resume.md)
 * [Git](za/git.md)
+* [简历](za/resume.md)
 

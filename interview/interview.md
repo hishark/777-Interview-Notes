@@ -2,7 +2,11 @@
 
 知己知彼，百战不殆。以目标公司的面经为纲，来完善所有知识点。
 
-由于我的目标厂子是字节所以目前只收集了字节的面经哈～之后有空可能也会扒拉扒拉其他公司的面经看看，牛客网上每个公司都有面经专区的，很方便！
+由于我的目标岗位是客户端研发，精力有限所以面经就只有客户端岗位的啦～🎯
+
+{% embed url="https://www.nowcoder.com/discuss/experience?tagId=642&order=3&companyId=665&phaseId=2" %}
+
+{% page-ref page="tencent/" %}
 
 {% page-ref page="bytedance-interview-collect/" %}
 
