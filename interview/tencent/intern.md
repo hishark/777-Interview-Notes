@@ -8,11 +8,11 @@ description: 目前共计 39 篇面经
 
 {% embed url="https://www.nowcoder.com/discuss/591217?source\_id=discuss\_experience\_nctrack&channel=-1" caption="2021-01-25" %}
 
-{% embed url="https://www.nowcoder.com/discuss/578027?source\_id=discuss\_experience\_nctrack&channel=-1" caption="2020-12-20" %}
+{% embed url="https://www.nowcoder.com/discuss/578027?source\_id=discuss\_experience\_nctrack&channel=-1" caption="2020-12-20 TEG要四面 问得比较细" %}
 
 {% embed url="https://www.nowcoder.com/discuss/436432?source\_id=discuss\_experience\_nctrack&channel=-1" caption="2020-06-05" %}
 
-{% embed url="https://www.nowcoder.com/discuss/435561?source\_id=discuss\_experience\_nctrack&channel=-1" %}
+{% embed url="https://www.nowcoder.com/discuss/435561?source\_id=discuss\_experience\_nctrack&channel=-1" caption="2020-06-03" %}
 
 {% embed url="https://www.nowcoder.com/discuss/428031?source\_id=discuss\_experience\_nctrack&channel=-1" caption="2020-05-16" %}
 

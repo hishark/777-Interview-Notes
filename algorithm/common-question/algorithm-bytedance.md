@@ -2,11 +2,11 @@
 description: 是从面经里扒拉出来的算法题
 ---
 
-# 常见问题
+# 字节常见问题
 
 ## 反转链表
 
-{% page-ref page="tag/pointer/lcof-24.md" %}
+{% page-ref page="../tag/pointer/lcof-24.md" %}
 
 ## 单链表按照K值排序
 
@@ -16,11 +16,11 @@ description: 是从面经里扒拉出来的算法题
 
 ## 二叉树的直径
 
-{% page-ref page="tag/binarytree/leetcode-543.md" %}
+{% page-ref page="../tag/binarytree/leetcode-543.md" %}
 
 ## 找树中有没有和为特定值的路径，返回 boolean
 
-{% page-ref page="tag/binarytree/leetcode-112.md" %}
+{% page-ref page="../tag/binarytree/leetcode-112.md" %}
 
 ## 合并两个有序链表
 
@@ -430,7 +430,7 @@ int countPair\(int \[\]array\){
 
 > 追问怎么优化，有没有更好的办法
 
-{% page-ref page="lcof/lcof-58-1.md" %}
+{% page-ref page="../lcof/lcof-58-1.md" %}
 
 
 

@@ -312,7 +312,9 @@
   * [67. 把字符串转换成整数](algorithm/lcof/lcof-67.md)
   * [68 - I. 二叉搜索树的最近公共祖先【迭代/递归】](algorithm/lcof/lcof-68-1.md)
   * [68 - II. 二叉树的最近公共祖先【递归】](algorithm/lcof/lcof-68-2.md)
-* [常见问题](algorithm/chang-jian-wen-ti.md)
+* [常见问题](algorithm/common-question/README.md)
+  * [字节常见问题](algorithm/common-question/algorithm-bytedance.md)
+  * [腾讯常见问题](algorithm/common-question/algorithm-tencent.md)
 
 ## 计算机网络 <a id="computer-network"></a>
 
@@ -339,6 +341,14 @@
   * [链接](os/basic/link.md)
 * [常见问题](os/interview-question.md)
 
+## 数据库 <a id="database"></a>
+
+* [简介](database/database.md)
+* [基础知识](database/basic/README.md)
+  * [SQL 语法](database/basic/sql.md)
+  * [数据库系统基础](database/basic/database-basics.md)
+* [常见问题](database/interview-question.md)
+
 ## Java
 
 * [简介](java/java.md)
@@ -349,14 +359,6 @@
   * [Java 虚拟机](java/ji-chu-zhi-shi/java-xu-ni-ji.md)
   * [Java I/O](java/ji-chu-zhi-shi/java-i-o.md)
 * [常见问题](java/interview-question.md)
-
-## 数据库 <a id="database"></a>
-
-* [简介](database/database.md)
-* [基础知识](database/basic/README.md)
-  * [SQL 语法](database/basic/sql.md)
-  * [数据库系统基础](database/basic/database-basics.md)
-* [常见问题](database/interview-question.md)
 
 ## Android
 
@@ -468,5 +470,6 @@
 ## 杂
 
 * [Git](za/git.md)
+* [设计模式](za/design-patterns.md)
 * [简历](za/resume.md)
 
