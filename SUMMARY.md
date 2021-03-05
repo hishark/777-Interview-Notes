@@ -105,6 +105,7 @@
     * [LEETCODE 75. 颜色分类](algorithm/tag/array/leetcode-75.md)
     * [LEETCODE 189. 旋转数组](algorithm/tag/array/leetcode-189.md)
     * [LEETCODE 228. 汇总区间](algorithm/tag/array/leetcode-228.md)
+    * [LEETCODE 442. 数组中重复的数据](algorithm/tag/array/leetcode-442.-shu-zu-zhong-zhong-fu-de-shu-ju.md)
     * [LEETCODE 448. 找到所有数组中消失的数字](algorithm/tag/array/leetcode-448.md)
     * [LEETCODE 560. 和为K的子数组](algorithm/tag/array/leetcode-560.md)
   * [模拟](algorithm/tag/simulation/README.md)
@@ -163,6 +164,7 @@
   * [链表](algorithm/tag/link/README.md)
     * [LEETCODE 19. 删除链表的倒数第N个节点](algorithm/tag/link/leetcode-19.md)
     * [LEETCODE 86. 分隔链表](algorithm/tag/link/leetcode-86.md)
+    * [\# LEETCODE 234. 回文链表](algorithm/tag/link/leetcode-234.-hui-wen-lian-biao.md)
     * [LEETCODE 237. 删除链表中的节点](algorithm/tag/link/leetcode-237.md)
     * [LCOF 06. 从尾到头打印链表](algorithm/tag/link/lcof-06.md)
     * [LCOF 18. 删除链表的节点](algorithm/tag/link/lcof-18.md)
@@ -176,9 +178,11 @@
     * [LEETCODE 94. 二叉树的中序遍历](algorithm/tag/binarytree/leetcode-94.md)
     * [LEETCODE 95. 不同的二叉搜索树 II](algorithm/tag/binarytree/leetcode-95.md)
     * [LEETCODE 96. 不同的二叉搜索树](algorithm/tag/binarytree/leetcode-96.md)
+    * [\# LEETCODE 98. 验证二叉搜索树](algorithm/tag/binarytree/leetcode-98.-yan-zheng-er-cha-sou-suo-shu.md)
     * [LEETCODE 104. 二叉树的最大深度](algorithm/tag/binarytree/leetcode-104.md)
     * [LEETCODE 108. 将有序数组转换为二叉搜索树](algorithm/tag/binarytree/leetcode-108.md)
     * [LEETCODE 112. 路径总和](algorithm/tag/binarytree/leetcode-112.md)
+    * [\# LEETCODE 144. 二叉树的前序遍历](algorithm/tag/binarytree/leetcode-144.-er-cha-shu-de-qian-xu-bian-li.md)
     * [LEETCODE 543. 二叉树的直径](algorithm/tag/binarytree/leetcode-543.md)
     * [LEETCODE 617. 合并二叉树](algorithm/tag/binarytree/leetcode-617.md)
     * [LEETCODE 958. 二叉树的完全性检验](algorithm/tag/binarytree/leetcode-958.md)
@@ -313,8 +317,8 @@
   * [68 - I. 二叉搜索树的最近公共祖先【迭代/递归】](algorithm/lcof/lcof-68-1.md)
   * [68 - II. 二叉树的最近公共祖先【递归】](algorithm/lcof/lcof-68-2.md)
 * [常见问题](algorithm/common-question/README.md)
-  * [字节常见问题](algorithm/common-question/algorithm-bytedance.md)
   * [腾讯常见问题](algorithm/common-question/algorithm-tencent.md)
+  * [字节常见问题](algorithm/common-question/algorithm-bytedance.md)
 
 ## 计算机网络 <a id="computer-network"></a>
 

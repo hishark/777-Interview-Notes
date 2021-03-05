@@ -1,10 +1,14 @@
 ---
-description: 目前共计 39 篇面经
+description: 目前共计 40 篇面经
 ---
 
 # 实习
 
  [安卓工程师面经汇总 - 腾讯实习](https://www.nowcoder.com/discuss/experience?tagId=642&order=3&companyId=138&phaseId=2)
+
+
+
+{% embed url="https://www.nowcoder.com/discuss/605011?type=all&order=time&pos=&page=0&channel=-1&source\_id=search\_all\_nctrack" caption="2021-03-04" %}
 
 {% embed url="https://www.nowcoder.com/discuss/591217?source\_id=discuss\_experience\_nctrack&channel=-1" caption="2021-01-25" %}
 
