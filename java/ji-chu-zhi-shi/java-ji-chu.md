@@ -163,7 +163,7 @@ value 数组被声明为 final，这意味着 value 数组初始化之后就不�
 
 **1. 可以缓存 hash 值**
 
-因为 String 的 hash 值经常被使用，例如 String 用做 HashMap 的 key。不可变的特性可以使得 hash 值也不可变，因此只需要进行一次计算。
+因为 String 的 hash 值经常被使用，例如 String 用做 [HashMap](java-rong-qi.md#hashmap) 的 key。不可变的特性可以使得 hash 值也不可变，因此只需要进行一次计算。
 
 **2. String Pool 的需要**
 
