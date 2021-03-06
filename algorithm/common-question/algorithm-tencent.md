@@ -4,7 +4,9 @@
 >
 > 喜欢问一些智力题、数学题。
 >
-> 海量数据问题✅
+> 海量数据问题
+>
+> 问红黑树
 
 数组中重复的数据 // [leetcode442](https://leetcode-cn.com/problems/find-all-duplicates-in-an-array/)
 
@@ -42,9 +44,9 @@
 
 一大段文章，怎么找到想要的字符串 kmp 算法
 
-红黑树的查找复杂度
+[红黑树](https://zh.wikipedia.org/wiki/%E7%BA%A2%E9%BB%91%E6%A0%91)的查找复杂度// `logn`
 
-红黑树插入复杂度
+红黑树插入复杂度 // `logn`  查找、插入、删除的时间复杂度都是 `logn`
 
 数组和链表的区别 // √
 

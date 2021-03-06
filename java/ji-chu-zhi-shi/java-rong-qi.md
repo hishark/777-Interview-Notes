@@ -9,7 +9,7 @@
 
 容器主要包括 Collection 和 Map 两种，Collection 存储着对象的集合，而 Map 存储着键值对（两个对象）的映射表。
 
-### Collection
+### Collection 集合
 
 > 存储对象的集合：Set、List、Queue。
 
@@ -38,14 +38,14 @@
 
 ![](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/image-20191208224757855.png)
 
-* TreeMap：基于红黑树实现。
+* TreeMap：基于[红黑树](java-rong-qi.md#hong-hei-shu)实现。
 * HashMap：基于哈希表实现。
-* HashTable：和 HashMap 类似，但它是线程安全的，这意味着同一时刻多个线程同时写入 HashTable 不会导致数据不一致。它是遗留类，不应该去使用它，而是使用 ConcurrentHashMap 来支持线程安全，ConcurrentHashMap 的效率会更高，因为 ConcurrentHashMap 引入了分段锁。
-* LinkedHashMap：使用双向链表来维护元素的顺序，顺序为插入顺序或者最近最少使用（LRU）顺序。
+* ~~HashTable~~：和 HashMap 类似，但它是线程安全的，这意味着同一时刻多个线程同时写入 HashTable 不会导致数据不一致。它是遗留类，不应该去使用它，应该使用 ConcurrentHashMap 来支持线程安全，ConcurrentHashMap 的效率会更高，因为 ConcurrentHashMap 引入了分段锁。
+* LinkedHashMap：使用双向链表来维护元素的顺序，顺序为插入顺序或者最近最少使用顺序（LRU）。
 
 ## 二、容器中的设计模式
 
-> 理解即可，面试不怎么问。
+> 理解即可，面试没怎么看到问这个。
 
 ### 迭代器模式
 
@@ -321,7 +321,7 @@ public Vector() {
 
 #### 4. 替代方案
 
-可以使用 `Collections.synchronizedList();` 得到一个线程安全的 ArrayList。
+可以使用 `Collections.synchronizedList();` 得到一个线程安全的 ArrayList。// 也就是上面说的由程序员自己控制同步。
 
 ```java
 List<String> list = new ArrayList<>();
@@ -335,6 +335,8 @@ List<String> list = new CopyOnWriteArrayList<>();
 ```
 
 ### CopyOnWriteArrayList
+
+> 没咋看到问过这个的。
 
 #### 1. 读写分离
 
@@ -421,7 +423,9 @@ ArrayList 基于动态数组实现，LinkedList 基于双向链表实现。Array
 
 #### 1. 存储结构
 
-内部包含了一个 Entry 类型的数组 table。Entry 存储着键值对。它包含了四个字段，从 next 字段我们可以看出 Entry 是一个链表。即数组中的每个位置被当成一个桶，一个桶存放一个链表。HashMap 使用拉链法来解决冲突，同一个链表中存放哈希值和散列桶取模运算结果相同的 Entry。
+内部包含了一个 Entry 类型的数组 table。Entry 存储着键值对。它包含了四个字段，从 next 字段我们可以看出 Entry 是一个链表。即数组中的每个位置被当成一个桶，一个桶存放一个链表。
+
+HashMap 使用拉链法来解决冲突，同一个链表中存放哈希值和散列桶取模运算结果相同的 Entry。
 
 ![](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/image-20191208234948205.png)
 
@@ -536,7 +540,9 @@ public V put(K key, V value) {
 }
 ```
 
-HashMap 允许插入键为 null 的键值对。但是因为无法调用 null 的 hashCode\(\) 方法，也就无法确定该键值对的桶下标，只能通过强制指定一个桶下标来存放。HashMap 使用第 0 个桶存放键为 null 的键值对。
+HashMap 允许插入键为 null 的键值对。但是因为无法调用 null 的 hashCode\(\) 方法，也就无法确定该键值对的桶下标，只能通过强制指定一个桶下标来存放。
+
+HashMap 使用第 0 个桶存放键为 null 的键值对。
 
 ```java
 private V putForNullKey(V value) {
@@ -933,7 +939,7 @@ JDK 1.8 使用了 CAS 操作来支持更高的并发度，在 CAS 操作失败�
 public class LinkedHashMap<K,V> extends HashMap<K,V> implements Map<K,V>
 ```
 
-内部维护了一个双向链表，用来维护插入顺序或者 LRU 顺序。
+内部维护了一个双向链表，用来维护插入顺序或者 LRU （最近最少使用）顺序。
 
 ```java
 /**
@@ -1110,4 +1116,20 @@ public final class ConcurrentCache<K, V> {
     }
 }
 ```
+
+## 附
+
+### 红黑树
+
+红黑树是每个节点都带有颜色属性的[二叉查找树](https://zh.wikipedia.org/wiki/%E4%BA%8C%E5%85%83%E6%90%9C%E5%B0%8B%E6%A8%B9)，颜色为红色或黑色。在二叉查找树强制一般要求以外，对于任何有效的红黑树我们增加了如下的额外要求：
+
+1. 节点是红色或黑色。
+2. 根是黑色。
+3. 所有叶子都是黑色（叶子是NIL节点）。
+4. 每个红色节点必须有两个黑色的子节点。（从每个叶子到根的所有路径上不能有两个连续的红色节点。）
+5. 从任一节点到其每个叶子的所有[简单路径](https://zh.wikipedia.org/wiki/%E9%81%93%E8%B7%AF_%28%E5%9B%BE%E8%AE%BA%29)都包含相同数目的黑色节点。
+
+下面是一个具体的红黑树的图例：
+
+![An example of a red-black tree](https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Red-black_tree_example.svg/450px-Red-black_tree_example.svg.png)
 
