@@ -4,7 +4,7 @@
 
 ## 数据结构与算法 <a id="algorithm"></a>
 
-* [简介](algorithm/algorithm.md)
+* [简介](algorithm/readme.md)
 * [题型](algorithm/tag/README.md)
   * [Template](algorithm/tag/template.md)
   * [动态规划](algorithm/tag/dp/README.md)
@@ -322,7 +322,7 @@
 
 ## 计算机网络 <a id="computer-network"></a>
 
-* [简介](computer-network/computer-network.md)
+* [简介](computer-network/readme.md)
 * [基础知识](computer-network/basic/README.md)
   * [综述](computer-network/basic/cn-summary.md)
   * [物理层](computer-network/basic/cn-physical-layer.md)
@@ -335,7 +335,7 @@
 
 ## 操作系统 <a id="os"></a>
 
-* [简介](os/os.md)
+* [简介](os/readme.md)
 * [基础知识](os/basic/README.md)
   * [概述](os/basic/summary.md)
   * [进程管理](os/basic/process.md)
@@ -347,7 +347,7 @@
 
 ## 数据库 <a id="database"></a>
 
-* [简介](database/database.md)
+* [简介](database/readme.md)
 * [基础知识](database/basic/README.md)
   * [SQL 语法](database/basic/sql.md)
   * [数据库系统基础](database/basic/database-basics.md)
@@ -355,25 +355,25 @@
 
 ## Java
 
-* [简介](java/java.md)
-* [基础知识](java/ji-chu-zhi-shi/README.md)
-  * [Java 基础](java/ji-chu-zhi-shi/java-ji-chu.md)
-  * [Java 容器](java/ji-chu-zhi-shi/java-rong-qi.md)
-  * [Java 并发](java/ji-chu-zhi-shi/java-bing-fa.md)
-  * [Java 虚拟机](java/ji-chu-zhi-shi/java-xu-ni-ji.md)
-  * [Java I/O](java/ji-chu-zhi-shi/java-i-o.md)
+* [简介](java/readme.md)
+* [基础知识](java/basics/README.md)
+  * [Java 基础](java/basics/basic.md)
+  * [Java 容器](java/basics/container.md)
+  * [Java 并发](java/basics/concurrence.md)
+  * [Java 虚拟机](java/basics/jvm.md)
+  * [Java I/O](java/basics/io.md)
 * [常见问题](java/interview-question.md)
 
 ## Android
 
-* [简介](android/android.md)
+* [简介](android/readme.md)
 * [基础知识](android/basic/README.md)
   * [四大组件](android/basic/four.md)
 * [常见问题](android/interview-question.md)
 
 ## 面经 <a id="interview"></a>
 
-* [简介](interview/interview.md)
+* [简介](interview/readme.md)
 * [腾讯面经汇总](interview/tencent/README.md)
   * [实习](interview/tencent/intern.md)
   * [提前批](interview/tencent/before.md)
@@ -471,9 +471,9 @@
     * [字节上海抖音客户端](interview/bytedance-interview-collect/official/zi-jie-shang-hai-dou-yin-ke-hu-duan.md)
     * [字节跳动客户端开发0基础 一面凉经](interview/bytedance-interview-collect/official/untitled.md)
 
-## 杂
+## 杂 <a id="other"></a>
 
-* [Git](za/git.md)
-* [设计模式](za/design-patterns.md)
-* [简历](za/resume.md)
+* [Git](other/git.md)
+* [设计模式](other/design-patterns.md)
+* [简历](other/resume.md)
 

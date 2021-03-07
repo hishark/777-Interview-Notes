@@ -2,11 +2,13 @@
 
 知己知彼，百战不殆。以目标公司的面经为纲，来完善所有知识点。
 
-> 目前暂时正在本地复习整理知识点，待整理完毕后再同步至本站。
+由于我的目标岗位是客户端研发，精力有限所以面经就只有客户端岗位的啦～🎯
+
+{% embed url="https://www.nowcoder.com/discuss/experience?tagId=642&order=3&companyId=665&phaseId=2" %}
+
+{% page-ref page="tencent/" %}
 
 {% page-ref page="bytedance-interview-collect/" %}
-
-{% page-ref page="bytedance-collect/" %}
 
 ## 复习方法
 
