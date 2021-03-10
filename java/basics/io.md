@@ -200,7 +200,7 @@ private static class A implements Serializable {
 
 transient 关键字可以使一些属性不会被序列化。
 
-ArrayList 中存储数据的数组 elementData 是用 transient 修饰的，因为这个数组是动态扩展的，并不是所有的空间都被使用，因此就不需要所有的内容都被序列化。
+比如 ArrayList 中存储数据的数组 elementData 是用 transient 修饰的，因为这个数组是动态扩展的，并不是所有的空间都被使用，因此就不需要所有的内容都被序列化。
 
 通过重写序列化和反序列化方法，使得可以只序列化数组中有内容的那部分数据。
 
@@ -255,9 +255,9 @@ public static void main(String[] args) throws IOException {
 
 ### Sockets
 
-* ServerSocket：服务器端类
+* ServerSocket：服务端类
 * Socket：客户端类
-* 服务器和客户端通过 InputStream 和 OutputStream 进行输入输出。
+* 服务端和客户端通过 InputStream 和 OutputStream 进行输入输出。
 
 ![](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/1e6affc4-18e5-4596-96ef-fb84c63bf88a.png)
 
