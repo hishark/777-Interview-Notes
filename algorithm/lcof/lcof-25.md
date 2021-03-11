@@ -43,14 +43,19 @@ categories: 算法笔记
  */
 class Solution {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+        // 判空
         if (l1 == null)
             return l2;
         if (l2 == null)
             return l1;
+            
+        // 比较大小
         if (l1.val <= l2.val) {
+            // l1更小，就将l1.next和l2合并，再放到l1后面
             l1.next = mergeTwoLists(l1.next, l2);
             return l1;
         } else {
+            // l2更小，就将l2.next和l1合并，再放到l2后面
             l2.next = mergeTwoLists(l2.next, l1);
             return l2;
         }

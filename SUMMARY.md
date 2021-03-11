@@ -134,6 +134,7 @@
     * [\*LEETCODE 165. 比较版本号](algorithm/tag/string/leetcode-165.md)
     * [LEETCODE 205. 同构字符串](algorithm/tag/string/leetcode-205.md)
     * [LEETCODE 242. 有效的字母异位词](algorithm/tag/string/leetcode-242.md)
+    * [LEETCODE 678. 有效的括号字符串](algorithm/tag/string/leetcode-678.-you-xiao-de-kuo-hao-zi-fu-chuan.md)
     * [LEETCODE 830. 较大分组的位置](algorithm/tag/string/leetcode-830.md)
     * [LCOF 05. 替换空格](algorithm/tag/string/lcof-05.md)
     * [LCOF 20. 表示数值的字符串](algorithm/tag/string/lcof-20.md)

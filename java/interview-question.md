@@ -12,6 +12,8 @@ Java的三种代理模式：[https://www.cnblogs.com/leeego-123/p/10995975.html]
 
 ## **JVM**
 
+[Java 虚拟机](basics/jvm.md)
+
 jvm内存区域，为什么要有jvm // java guide
 
 > [https://zhuanlan.zhihu.com/p/76327745](https://zhuanlan.zhihu.com/p/76327745)
@@ -32,7 +34,7 @@ JVM内存管理相关问题
 
 说说JVM的内存吧，他们都是干啥的？对象怎么创建？
 
-每个区域都会发生怎样的异常啊，谁会发生OOM？
+每个区域都会发生怎样的异常，谁会发生OOM？
 
 内存分配方式？
 

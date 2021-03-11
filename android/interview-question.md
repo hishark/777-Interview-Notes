@@ -7,6 +7,8 @@
 
 ## APP/APK
 
+[https://www.jianshu.com/p/c8ccf7ffa79e](https://www.jianshu.com/p/c8ccf7ffa79e)
+
 一个APP完整的打包流程
 
 讲讲APP的启动流程

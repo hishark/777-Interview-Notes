@@ -20,7 +20,7 @@ description: 目前共计 40 篇面经
 
 {% embed url="https://www.nowcoder.com/discuss/428031?source\_id=discuss\_experience\_nctrack&channel=-1" caption="2020-05-16" %}
 
-{% embed url="https://www.nowcoder.com/discuss/426526?source\_id=discuss\_experience\_nctrack&channel=-1" caption="2020-05-13" %}
+{% embed url="https://www.nowcoder.com/discuss/426526?source\_id=discuss\_experience\_nctrack&channel=-1" caption="2020-05-13 IEG" %}
 
 {% embed url="https://www.nowcoder.com/discuss/414219?source\_id=discuss\_experience\_nctrack&channel=-1" caption="2020-04-22" %}
 
