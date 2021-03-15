@@ -64,6 +64,48 @@ class Solution {
         return ans;
     }
 }
+
+
+class Solution {
+    public String longestPalindrome(String s) {
+        int n = s.length();
+        // dp[i][j] s[i,j] is huiwen?
+        boolean[][] dp = new boolean[n][n];
+        
+        String res = "";
+        
+        // 长度为len的字符串
+        for(int len=1;len<=n;len++) {
+            // 遍历左端点
+            for (int left=0;left+len-1<n;left++) {
+                // 找到右端点
+                int right = left + len - 1;
+                
+                // 开始判断是否为回文字符串
+                if (len == 1) {
+                    dp[left][right] = true;
+                } else if (len == 2) {
+                    if (s.charAt(left) == s.charAt(right)) {
+                        dp[left][right] = true;
+                    } else {
+                        dp[left][right] = false;
+                    }
+                } else {
+                    if (s.charAt(left) == s.charAt(right)) {
+                        dp[left][right] = dp[left+1][right-1];
+                    } else {
+                        dp[left][right] = false;
+                    }
+                } 
+                
+                if (dp[left][right] == true && len > res.length()) {
+                    res = s.substring(left, right+1);
+                }
+            }
+        }
+        return res;
+    }
+}
 ```
 
 ### 3.2 复杂度分析
