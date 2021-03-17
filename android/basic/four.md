@@ -1,6 +1,10 @@
 # 四大组件
 
-## Activity 生命周期
+> Android四大组件：Activity、BroadcastReceiver、Service、ContentProvider。
+
+## Activity
+
+### 生命周期
 
 ![](../../.gitbook/assets/image%20%289%29.png)
 
@@ -17,7 +21,13 @@
 
 ![&#x56FE;&#x6E90;&#xFF1A;&#x300A;&#x7B2C;&#x4E00;&#x884C;&#x4EE3;&#x7801;&#x300B;&#x90ED;&#x9716;](../../.gitbook/assets/image%20%286%29%20%281%29.png)
 
-## Intent 和 Intent 过滤器
+## Service
 
-[https://developer.android.com/guide/components/intents-filters?hl=zh-cn\#Types](https://developer.android.com/guide/components/intents-filters?hl=zh-cn#Types)
+### 生命周期
+
+## BroadcastReceiver
+
+## ContentProvider
+
+
 
