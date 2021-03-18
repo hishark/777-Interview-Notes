@@ -579,6 +579,8 @@ Java可以自动管理内存，为什么会有**OOM**【可达性[算法](https:
 
 内存泄漏？OOM？什么情况会OOM？
 
+{% embed url="https://cloud.tencent.com/developer/article/1179625" %}
+
 ## **LRU**
 
 LRU[算法](https:///jump/super-jump/word?word=%E7%AE%97%E6%B3%95)的`get`时间复杂度是多少，为什么【只知道是干什么的但不了解】（不知道属不属于java

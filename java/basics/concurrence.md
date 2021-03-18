@@ -399,6 +399,10 @@ public synchronized static void fun() {
 
 作用于整个类。
 
+> 看到一个面试题：[static synchronized 和 synchronized 之间的区别](https://www.cnblogs.com/eternityz/p/12238802.html)
+>
+> [https://zhuanlan.zhihu.com/p/94545324](https://zhuanlan.zhihu.com/p/94545324)
+
 ### ReentrantLock
 
 ReentrantLock 是 java.util.concurrent（J.U.C）包中的锁。
