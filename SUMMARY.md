@@ -230,6 +230,7 @@
     * [LCOF 34. 二叉树中和为某一值的路径](algorithm/tag/backtrack/lcof-34.md)
     * [LCOF 38. 字符串的排列](algorithm/tag/backtrack/lcof-38.md)
   * [设计](algorithm/tag/design/README.md)
+    * [LEETCODE 146. LRU缓存机制](algorithm/tag/design/leetcode-146.-lru-huan-cun-ji-zhi.md)
     * [LCOF 30. 包含min函数的栈](algorithm/tag/design/lcof-30.md)
     * [LCOF 37. 序列化二叉树](algorithm/tag/design/lcof-37.md)
     * [LCOF 41. 数据流中的中位数](algorithm/tag/design/lcof-41.md)
