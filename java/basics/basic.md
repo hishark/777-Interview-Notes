@@ -103,9 +103,9 @@ static {
 编译器会在自动装箱过程调用 valueOf\(\) 方法，因此多个值相同且值在缓存池范围内的 Integer 实例使用自动装箱来创建，那么就会引用相同的对象。
 
 ```java
-Integer m = 123; // 相当于 Integer m = Integer.valueOf(123);
-Integer n = 123; // 相当于 Integer n = Integer.valueOf(123);
-System.out.println(m == n); // true
+Integer m = 123; // 相当于 Integer m = Integer.valueOf(123); 自动装箱
+Integer n = 123; // 相当于 Integer n = Integer.valueOf(123); 自动装箱
+System.out.println(m == n); // true 所以会引用相同的对象
 ```
 
 基本类型对应的缓冲池如下：
@@ -130,7 +130,7 @@ Java 基本类型的包装类的大部分都实现了缓存池技术，即 Byte,
 
 ### 概览
 
-String 被声明为 final，因此它不可被继承。（Integer 等包装类也不能被继承）
+String 被声明为 `final`，因此它不可被继承。（Integer 等包装类也不能被继承）
 
 在 Java 8 中，String 内部使用 char 数组存储数据。
 
@@ -169,7 +169,7 @@ value 数组被声明为 final，这意味着 value 数组初始化之后就不�
 
 **2. String Pool 的需要**
 
-> 字符串常量池。
+> 字符串常量池
 
 如果一个 String 对象已经被创建过了，那么就会从 String Pool 中取得引用。只有 String 是不可变的，才可能使用 String Pool。
 
@@ -234,7 +234,7 @@ System.out.println(s5 == s6);  // true
 
 使用这种方式一共会创建两个字符串对象（前提是 String Pool 中还没有 "abc" 字符串对象）。
 
-* "abc" 属于字符串字面量，因此编译时期会在 String Pool 中创建一个字符串对象，指向这个 "abc" 字符串字面量；
+* "abc" 属于字符串字面量，因此编译时期会在 String Pool 中创建一个字符串对象，指向这个 "abc" 字符串字面量。
 * 而使用 new 的方式会在堆中创建一个字符串对象。
 
 创建一个测试类，其 main 方法中使用这种方式来创建字符串对象。
@@ -290,7 +290,7 @@ public String(String original) {
 
 Java 的参数是以值传递的形式传入方法中，而不是引用传递。
 
-以下代码中 Dog dog 的 dog 是一个指针，存储的是对象的地址。在将一个参数传入一个方法时，本质上是将对象的地址以值的方式传递到形参中。
+以下代码中 `Dog dog` 的 `dog` 是一个指针，存储的是对象的地址。在将一个参数传入一个方法时，本质上是将对象的地址以值的方式传递到形参中。
 
 ```java
 public class Dog {
@@ -458,7 +458,7 @@ private 方法会隐式地被指定为 final，如果在子类中定义的方法
 
 ### static
 
-**1. 静态变量**
+**1. 静态变量（类变量）**
 
 * 静态变量：又称为类变量，也就是说这个变量属于类的，类所有的实例都共享静态变量，可以直接通过类名来访问它。静态变量在内存中只存在一份。
 * 实例变量：每创建一个实例就会产生一个实例变量，它与该实例同生共死。
@@ -473,12 +473,12 @@ public class A {
         // int x = A.x;  // Non-static field 'x' cannot be referenced from a static context
         A a = new A();
         int x = a.x;
-        int y = A.y;
+        int y = A.y; // 直接通过类名访问静态变量
     }
 }
 ```
 
-**2. 静态方法**
+**2. 静态方法（类方法）**
 
 静态方法在类加载的时候就存在了，它不依赖于任何实例。所以静态方法必须有实现，也就是说它不能是抽象方法。
 
@@ -531,6 +531,8 @@ public class A {
 
 非静态内部类依赖于外部类的实例，也就是说需要先创建外部类实例，才能用这个实例去创建非静态内部类。
 
+> 所以非静态内部类会持有外部类的引用，很容易造成内存泄漏。
+
 而静态内部类不需要，直接创建静态内部类的实例即可。
 
 ```java
@@ -557,7 +559,7 @@ public class OuterClass {
 
 在使用静态变量和方法时不用再指明 ClassName，从而简化代码，但可读性大大降低。
 
-> 不建议
+> 一般不建议
 
 ```java
 import static com.xxx.ClassName.*
@@ -603,6 +605,17 @@ public InitialOrderTest() {
 * 父类（构造函数）
 * 子类（实例变量、普通语句块）
 * 子类（构造函数）
+
+> [初始化的顺序](https://blog.csdn.net/weixin_44736603/article/details/109984047)：
+>
+> * 类中静态的成员只会在类第一次加载的时候初始化一次，而非静态成员和构造器执行的次数在于实例化对象的个数，实例化多少个对象就执行多少次。
+> * 各个成员执行的顺序：由静态到非静态，由父类到子类，静态之间按代码书写顺序，非静态之间按代码书写顺序，构造器排在非静态之后
+>
+> Java 的变量类型：
+>
+> * 静态变量（类变量）
+> * 实例变量
+> * 局部变量
 
 ## 五、Object 通用方法
 
@@ -983,6 +996,14 @@ System.out.println(e2.get(2)); // 2
 ### 访问权限
 
 > [private、protected、public和default的区别](https://www.cnblogs.com/ldq2016/p/10692512.html)
+>
+> public： 具有最大的访问权限，可以访问任何一个在classpath下的类、接口、异常等。它往往用于对外的情况，也就是对象或类对外的一种接口的形式。
+>
+> protected： 主要的作用就是用来保护子类的。它的含义在于子类可以用它修饰的成员，其他的不可以，它相当于传递给子类的一种继承的东西
+>
+> default： 有时候也称为friendly，它是针对本包访问而设计的，任何处于本包下的类、接口、异常等，都可以相互访问，即使是父类没有用protected修饰的成员也可以。
+>
+> private： 访问权限仅限于类的内部，是一种封装的体现，例如，大多数成员变量都是修饰符为private的，它们不希望被其他任何外部的类访问。
 
 Java 中有三个访问权限修饰符：private、protected 以及 public，如果不加访问修饰符，表示包级可见。
 
@@ -1128,8 +1149,8 @@ System.out.println(InterfaceExample.x);
 
 * 从设计层面上看，抽象类提供了一种 IS-A 关系，需要满足里式替换原则，即子类对象必须能够替换掉所有父类对象。而接口更像是一种 LIKE-A 关系，它只是提供一种方法实现契约，并不要求接口和实现接口的类具有 IS-A 关系。
 * 从使用上来看，一个类可以实现多个接口，但是不能继承多个抽象类。
-* 接口的字段只能是 static 和 final 类型的，而抽象类的字段没有这种限制。
-* 接口的成员只能是 public 的，而抽象类的成员可以有多种访问权限。
+* 接口的字段默认是 static 和 final 类型的，而抽象类的字段没有这种限制。
+* 接口的成员默认是 public 的，而抽象类的成员可以有多种访问权限。
 
 **4. 使用选择**
 
@@ -1330,8 +1351,8 @@ public static void main(String[] args) {
 
 Class 和 java.lang.reflect 一起对反射提供了支持，java.lang.reflect 类库主要包含了以下三个类：
 
-* **Field**  ：可以使用 get\(\) 和 set\(\) 方法读取和修改 Field 对象关联的字段；
-* **Method**  ：可以使用 invoke\(\) 方法调用与 Method 对象关联的方法；
+* **Field**  ：可以使用 get\(\) 和 set\(\) 方法读取和修改 Field 对象关联的字段。
+* **Method**  ：可以使用 invoke\(\) 方法调用与 Method 对象关联的方法。
 * **Constructor**  ：可以用 Constructor 的 newInstance\(\) 创建新的对象。
 
 **反射的优点：**
@@ -1365,6 +1386,8 @@ Throwable 可以用来表示任何可以作为异常抛出的类，分为两种�
 ## 九、泛型
 
 泛型的本质是为了参数化类型。
+
+Java 在编译期间，所有的泛型信息都会被擦掉，这也就是通常所说的类型擦除。
 
 ```java
 public class Box<T> {
@@ -1436,4 +1459,147 @@ Java 注解是附加在代码中的一些元信息，用于一些工具在编译
 ## 十二、枚举
 
 {% embed url="https://www.liaoxuefeng.com/wiki/1252599548343744/1260473188087424" %}
+
+## 十三、面向对象与面向过程
+
+## 十四、面向对象的三大特性
+
+> 封装、继承、多态。
+
+### 封装
+
+利用抽象数据类型将数据和基于数据的操作封装在一起，使其构成一个不可分割的独立实体。数据被保护在抽象数据类型的内部，尽可能地隐藏内部的细节，只保留一些对外的接口使其与外部发生联系。用户无需关心对象内部的细节，但可以通过对象对外提供的接口来访问该对象。
+
+优点：
+
+* 减少耦合：可以独立地开发、测试、优化、使用、理解和修改
+* 减轻维护的负担：可以更容易被理解，并且在调试的时候可以不影响其他模块
+* 有效地调节性能：可以通过剖析来确定哪些模块影响了系统的性能
+* 提高软件的可重用性
+* 降低了构建大型系统的风险：即使整个系统不可用，但是这些独立的模块却有可能是可用的
+
+以下 Person 类封装 name、gender、age 等属性，外界只能通过 get\(\) 方法获取一个 Person 对象的 name 属性和 gender 属性，而无法获取 age 属性，但是 age 属性可以供 work\(\) 方法使用。
+
+注意到 gender 属性使用 int 数据类型进行存储，封装使得用户注意不到这种实现细节。并且在需要修改 gender 属性使用的数据类型时，也可以在不影响客户端代码的情况下进行。
+
+```java
+public class Person {
+
+    private String name;
+    private int gender;
+    private int age;
+
+    public String getName() {
+        return name;
+    }
+
+    public String getGender() {
+        return gender == 0 ? "man" : "woman";
+    }
+
+    public void work() {
+        if (18 <= age && age <= 50) {
+            System.out.println(name + " is working very hard!");
+        } else {
+            System.out.println(name + " can't work any more!");
+        }
+    }
+}
+```
+
+### 继承
+
+继承实现了 **IS-A** 关系，例如 Cat 和 Animal 就是一种 IS-A 关系，因此 Cat 可以继承自 Animal，从而获得 Animal 非 private 的属性和方法。
+
+继承应该遵循里氏替换原则，子类对象必须能够替换掉所有父类对象。
+
+Cat 可以当做 Animal 来使用，也就是说可以使用 Animal 引用 Cat 对象。父类引用指向子类对象称为 **向上转型** 。
+
+```java
+Animal animal = new Cat();
+```
+
+### 多态
+
+多态分为编译时多态和运行时多态：
+
+* 编译时多态主要指方法的重载
+* 运行时多态指程序中定义的对象引用所指向的具体类型在运行期间才确定
+
+运行时多态有三个条件：
+
+* 继承
+* 覆盖（重写）
+* 向上转型
+
+下面的代码中，乐器类（Instrument）有两个子类：Wind 和 Percussion，它们都覆盖了父类的 play\(\) 方法，并且在 main\(\) 方法中使用父类 Instrument 来引用 Wind 和 Percussion 对象。在 Instrument 引用调用 play\(\) 方法时，会执行实际引用对象所在类的 play\(\) 方法，而不是 Instrument 类的方法。
+
+```java
+public class Instrument {
+
+    public void play() {
+        System.out.println("Instument is playing...");
+    }
+}
+```
+
+```java
+public class Wind extends Instrument {
+
+    public void play() {
+        System.out.println("Wind is playing...");
+    }
+}
+```
+
+```java
+public class Percussion extends Instrument {
+
+    public void play() {
+        System.out.println("Percussion is playing...");
+    }
+}
+```
+
+```java
+public class Music {
+
+    public static void main(String[] args) {
+        List<Instrument> instruments = new ArrayList<>();
+        instruments.add(new Wind());
+        instruments.add(new Percussion());
+        for(Instrument instrument : instruments) {
+            instrument.play();
+        }
+    }
+}
+```
+
+```text
+Wind is playing...
+Percussion is playing...
+```
+
+## 十五、变量类型
+
+{% embed url="https://www.runoob.com/java/java-variable-types.html" %}
+
+{% embed url="https://www.cnblogs.com/cxuanBlog/p/12940894.html" %}
+
+已知变量：
+
+* 实例变量
+* 静态变量（也叫类变量）
+* 成员变量：实例变量和静态变量都称为成员变量
+* 局部变量
+* ~~全局变量~~   **Java中是不存在全局变量的！**
+
+Java 支持的变量类型有：
+
+* 类变量（静态变量）：独立于方法之外的变量，用 static 修饰。
+  * 类变量也称为静态变量，在类中以 static 关键字声明，但必须在方法之外。
+* 实例变量：独立于方法之外的变量，不过没有 static 修饰。
+  * 实例变量声明在一个类中，但在方法、构造方法和语句块之外。
+* 局部变量：类的方法中的变量。
+  * 局部变量声明在方法、构造方法或者语句块中
 

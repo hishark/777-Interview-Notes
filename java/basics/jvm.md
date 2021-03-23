@@ -622,6 +622,11 @@ public static final int value = 123;
 
 #### 5. 初始化
 
+> [初始化的顺序](https://blog.csdn.net/weixin_44736603/article/details/109984047)：
+>
+> * 类中静态的成员只会在类第一次加载的时候初始化一次，而非静态成员和构造器执行在次数在于实例化对象的个数，实例化多少个对象就执行多少次。
+> * 各个成员执行的顺序：由静态到非静态，由父类到子类，静态之间按代码书写顺序，非静态之间按代码书写顺序，构造器排在非静态之后
+
 初始化阶段才真正开始执行类中定义的 Java 程序代码。初始化阶段是虚拟机执行类构造器 &lt;clinit&gt;\(\) 方法的过程。
 
 在准备阶段，类变量已经赋过一次系统要求的初始值，而在初始化阶段，根据程序员通过程序制定的主观计划去初始化类变量和其它资源。
@@ -838,4 +843,8 @@ public class FileSystemClassLoader extends ClassLoader {
     }
 }
 ```
+
+## 附
+
+{% embed url="https://thinkwon.blog.csdn.net/article/details/104390752" %}
 

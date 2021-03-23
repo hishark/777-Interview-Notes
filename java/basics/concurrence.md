@@ -162,6 +162,8 @@ public void run() {
 
 一个线程执行完毕之后会自动结束，如果在运行过程中发生异常也会提前结束。
 
+> 操作系统中断的概念：在程序执行过程中，遇到急需处理的事件时，暂时中止CPU上现行程序的运行，转去执行相应的事件处理程序，待处理完成后再返回原程序的**被中断处**或调度其他程序执行的过程。
+
 ### InterruptedException
 
 通过调用一个线程的 interrupt\(\) 来中断该线程，如果该线程处于阻塞、限期等待或者无限期等待状态，那么就会抛出 InterruptedException，从而提前结束该线程。但是不能中断 I/O 阻塞和 synchronized 锁阻塞。
@@ -403,7 +405,7 @@ public synchronized static void fun() {
 >
 > [https://zhuanlan.zhihu.com/p/94545324](https://zhuanlan.zhihu.com/p/94545324)
 
-### ReentrantLock
+### ReentrantLock 可重入锁
 
 ReentrantLock 是 java.util.concurrent（J.U.C）包中的锁。
 

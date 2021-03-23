@@ -17,7 +17,7 @@
 
 {% embed url="https://www.nowcoder.net/discuss/526897" %}
 
-{% embed url="https://www.nowcoder.com/discuss/262595?type=post&order=time&pos=&page=2&channel=1009&source\_id=search\_post" %}
+{% embed url="https://www.nowcoder.com/discuss/262595?type=post&order=time&pos=&page=2&channel=1009&source\_id=search\_post" caption="⭐️" %}
 
 ## 刷题网站
 

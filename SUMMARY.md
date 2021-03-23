@@ -479,6 +479,8 @@
 ## 杂 <a id="other"></a>
 
 * [Git](other/git.md)
-* [设计模式](other/design-patterns.md)
+* [设计模式](other/design-patterns/README.md)
+  * [单例模式](other/design-patterns/singleton.md)
+  * [MVC MVP MVVM](other/design-patterns/mvc-mvp-mvvm.md)
 * [简历](other/resume.md)
 

@@ -316,12 +316,12 @@ public Vector() {
 
 #### 3. 与 ArrayList 的比较
 
-* Vector 是同步的，因此开销就比 ArrayList 要大，访问速度更慢。最好使用 ArrayList 而不是 Vector，因为同步操作完全可以由程序员自己来控制；
+* Vector 是同步的，因此开销就比 ArrayList 要大，访问速度更慢。最好使用 ArrayList 而不是 Vector，因为同步操作完全可以由程序员自己来控制。
 * Vector 每次扩容请求其大小的 2 倍（也可以通过构造函数设置增长的容量），而 ArrayList 是 1.5 倍。
 
 #### 4. 替代方案
 
-可以使用 `Collections.synchronizedList();` 得到一个线程安全的 ArrayList。// 也就是上面说的由程序员自己控制同步。
+可以使用 `Collections.synchronizedList();` 得到一个线程安全的 ArrayList。
 
 ```java
 List<String> list = new ArrayList<>();
