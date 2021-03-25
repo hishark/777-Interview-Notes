@@ -370,7 +370,10 @@
 
 * [简介](android/readme.md)
 * [基础知识](android/basic/README.md)
-  * [四大组件](android/basic/four.md)
+  * [Android 基础](android/basic/android-basic.md)
+  * [Android 进阶](android/basic/android-advance.md)
+  * [开源框架](android/basic/kai-yuan-kuang-jia.md)
+  * [具体场景分析](android/basic/simulate.md)
 * [常见问题](android/interview-question.md)
 
 ## 面经 <a id="interview"></a>
@@ -479,6 +482,7 @@
 ## 杂 <a id="other"></a>
 
 * [Git](other/git.md)
+* [智力题](other/zhi-li-ti.md)
 * [设计模式](other/design-patterns/README.md)
   * [单例模式](other/design-patterns/singleton.md)
   * [MVC MVP MVVM](other/design-patterns/mvc-mvp-mvvm.md)

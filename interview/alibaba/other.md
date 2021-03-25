@@ -12,5 +12,7 @@
 
 {% embed url="https://www.nowcoder.com/discuss/604947?source\_id=profile\_create\_nctrack&channel=-1" %}
 
+{% embed url="https://www.nowcoder.com/discuss/369844?source\_id=discuss\_experience\_nctrack&channel=-1" %}
+
 
 

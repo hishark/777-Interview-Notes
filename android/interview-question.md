@@ -3,7 +3,7 @@
 ## 参考
 
 * [Android 面试题集](https://www.yuque.com/docs/share/73271436-56d3-4c63-9311-ae499378198a)
-* [LRH1993/android\_interview](https://github.com/LRH1993/android_interview#android)
+* [LRH1993/android\_interview](https://github.com/LRH1993/android_interview#android) ⭐️
 
 ## APP/APK
 

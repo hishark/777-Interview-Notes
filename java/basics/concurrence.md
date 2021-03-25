@@ -166,7 +166,7 @@ public void run() {
 
 ### InterruptedException
 
-通过调用一个线程的 interrupt\(\) 来中断该线程，如果该线程处于阻塞、限期等待或者无限期等待状态，那么就会抛出 InterruptedException，从而提前结束该线程。但是不能中断 I/O 阻塞和 synchronized 锁阻塞。
+通过调用一个线程的 interrupt\(\) 来中断该线程，如果该线程处于`阻塞`、`限期等待`或者`无限期等待状态`，那么就会抛出 InterruptedException，从而提前结束该线程。但是不能中断 I/O 阻塞和 synchronized 锁阻塞。
 
 对于以下代码，在 main\(\) 中启动一个线程之后再中断它，由于线程中调用了 Thread.sleep\(\) 方法，因此会抛出一个 InterruptedException，从而提前结束线程，不执行之后的语句。
 
@@ -207,9 +207,9 @@ java.lang.InterruptedException: sleep interrupted
 
 ### interrupted\(\)
 
-如果一个线程的 run\(\) 方法执行一个无限循环，并且没有执行 sleep\(\) 等等会抛出 InterruptedException 的操作，那么调用线程的 interrupt\(\) 方法就无法使线程提前结束。
+如果一个线程的 run\(\) 方法执行一个无限循环，并且没有执行 sleep\(\) 等等会抛出 InterruptedException 的操作（也就是不处于阻塞、限期等待、无限期等待状态时），那么调用线程的 interrupt\(\) 方法就无法使线程提前结束，只是设置了一个标记。
 
-但是调用 interrupt\(\) 方法会设置线程的中断标记，此时调用 interrupted\(\) 方法会返回 true。因此可以在循环体中使用 interrupted\(\) 方法来判断线程是否处于中断状态，从而提前结束线程。
+调用 interrupt\(\) 方法会设置线程的中断标记，此时调用 interrupted\(\) 方法会返回 true。因此可以在循环体中使用 interrupted\(\) 方法来判断线程是否处于中断状态，从而提前结束线程。
 
 ```java
 public class InterruptExample {
@@ -1100,6 +1100,8 @@ Java 内存模型定义了 8 个操作来完成主内存和工作内存的交互
 
 #### 1. 原子性
 
+> 一个操作或多个操作要么全部执行完成且执行过程不被中断，要么就不执行。
+
 Java 内存模型保证了 read、load、use、assign、store、write、lock 和 unlock 操作具有原子性，例如对一个 int 类型的变量执行 assign 赋值操作，这个操作就是原子性的。
 
 但是 Java 内存模型允许虚拟机将没有被 volatile 修饰的 64 位数据（long，double）的读写操作划分为两次 32 位的操作来进行，即 load、store、read 和 write 操作可以不具备原子性。
@@ -1196,7 +1198,7 @@ public static void main(String[] args) throws InterruptedException {
 
 #### 2. 可见性
 
-可见性指当一个线程修改了共享变量的值，其它线程能够立即得知这个修改。
+> 当一个线程修改了共享变量的值，其它线程能够立即得知这个修改。
 
 JMM 是通过在变量修改后将新值同步回主内存，在变量读取前从主内存刷新变量值来实现可见性的。
 
@@ -1210,7 +1212,7 @@ JMM 是通过在变量修改后将新值同步回主内存，在变量读取前�
 
 #### 3. 有序性
 
-有序性是指：在本线程内观察，所有操作都是有序的。
+> 在本线程内观察，所有操作都是有序的。
 
 在一个线程观察另一个线程，所有操作都是无序的，无序是因为发生了指令重排序。
 
@@ -1648,4 +1650,19 @@ JDK 1.6 引入了偏向锁和轻量级锁，从而让锁拥有了四个状态：
 * 多用并发集合少用同步集合，例如应该使用 ConcurrentHashMap 而不是 HashTable。
 * 使用本地变量和不可变类来保证线程安全。
 * 使用线程池而不是直接创建线程，这是因为创建线程代价很高，线程池可以有效地利用有限的线程来启动任务。
+
+## 十四、线程池
+
+{% embed url="https://tech.meituan.com/2020/04/02/java-pooling-pratice-in-meituan.html" %}
+
+线程池的优势：
+
+* **降低资源消耗**：通过池化技术重复利用已创建的线程，降低线程创建和销毁造成的损耗。
+* **提高响应速度**：任务到达时，无需等待线程创建即可立即执行。
+* **提高线程的可管理性**：线程是稀缺资源，如果无限制创建，不仅会消耗系统资源，还会因为线程的不合理分布导致资源调度失衡，降低系统的稳定性。使用线程池可以进行统一的分配、调优和监控。
+* **提供更多更强大的功能**：线程池具备可拓展性，允许开发人员向其中增加更多的功能。比如延时定时线程池ScheduledThreadPoolExecutor，就允许任务延期执行或定期执行。
+
+线程池的执行流程：
+
+![&#x56DE; &#x27A1;&#xFE0F; &#x4F1A;](../../.gitbook/assets/image%20%2871%29.png)
 

@@ -7,9 +7,18 @@
 
 ## 一、概览
 
+{% embed url="https://blog.csdn.net/u013063153/article/details/47337555" %}
+
 容器主要包括 Collection 和 Map 两种，Collection 存储着对象的集合，而 Map 存储着键值对（两个对象）的映射表。
 
-### Collection 集合
+Java容器大致可以分为Set、List、Queue和Map四种体系。
+
+* Set代表无序、不可重复的集合。
+* List代表有序、可重复的集合。
+* Queue代表一种队列集合实现。
+* Map则代表具有映射关系的集合。
+
+### Collection
 
 > 存储对象的集合：Set、List、Queue。
 
@@ -417,7 +426,9 @@ ArrayList 基于动态数组实现，LinkedList 基于双向链表实现。Array
 
 ### HashMap⭐️
 
-> 面试必问。
+{% embed url="https://www.hollischuang.com/archives/2091" %}
+
+> [hash的应用](https://baike.baidu.com/item/hash/390310)
 
 为了便于理解，以下源码分析以 JDK 1.7 为主。
 
@@ -799,6 +810,8 @@ static final int tableSizeFor(int cap) {
 * HashMap 可以插入键为 null 的 Entry。
 * HashMap 的迭代器是 fail-fast 迭代器。
 * HashMap 不能保证随着时间的推移 Map 中的元素次序是不变的。
+
+#### 10. hash的原理
 
 ### ConcurrentHashMap
 
