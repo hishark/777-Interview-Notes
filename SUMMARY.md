@@ -386,6 +386,7 @@
   * [秋招](interview/tencent/official.md)
 * [阿里面经汇总](interview/alibaba/README.md)
   * [杂](interview/alibaba/other.md)
+  * [HR 面准备](interview/alibaba/hr.md)
 * [字节跳动面经汇总](interview/bytedance-interview-collect/README.md)
   * [实习](interview/bytedance-interview-collect/intern/README.md)
     * [Android](interview/bytedance-interview-collect/intern/android/README.md)
