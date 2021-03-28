@@ -319,6 +319,7 @@
   * [68 - I. 二叉搜索树的最近公共祖先【迭代/递归】](algorithm/lcof/lcof-68-1.md)
   * [68 - II. 二叉树的最近公共祖先【递归】](algorithm/lcof/lcof-68-2.md)
 * [常见问题](algorithm/common-question/README.md)
+  * [俩必须掌握的排序](algorithm/common-question/sort.md)
   * [腾讯常见问题](algorithm/common-question/algorithm-tencent.md)
   * [字节常见问题](algorithm/common-question/algorithm-bytedance.md)
 
