@@ -817,6 +817,10 @@ public abstract class ClassLoader {
 }
 ```
 
+#### 4. 为什么叫双亲？
+
+Java 中的双亲委派的“双”怎么理解 ？ - 大宽宽的回答 - 知乎 [https://www.zhihu.com/question/288949359/answer/468524259](https://www.zhihu.com/question/288949359/answer/468524259)
+
 ### 自定义类加载器实现
 
 以下代码中的 FileSystemClassLoader 是自定义类加载器，继承自 java.lang.ClassLoader，用于加载文件系统上的类。它首先根据类的全名在文件系统上查找类的字节代码文件（.class 文件），然后读取该文件内容，最后通过 defineClass\(\) 方法来把这些字节代码转换成 java.lang.Class 类的实例。

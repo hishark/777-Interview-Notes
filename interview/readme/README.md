@@ -14,7 +14,7 @@
 
 ## 我的2021年春招面经
 
-{% page-ref page="777-interview.md" %}
+{% page-ref page="777-interview/" %}
 
 ## 复习方法
 
