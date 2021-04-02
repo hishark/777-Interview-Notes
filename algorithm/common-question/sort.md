@@ -4,6 +4,8 @@
 
 ## 快速排序
 
+> 面字节、腾讯都被要求手写快排啦。
+
 ```java
 import java.util.*;
 //快速排序
@@ -46,9 +48,9 @@ class QuickSort{
 			//↑左指针找到了第一个比基准数大的数，就停止循环，并把大的数移动到右边
 			arr[right] = arr[left];
 		}
-		//把基准值赋值给两个指针碰头的地方，也就是中间
+		// 把基准值赋值给两个指针碰头的地方，也就是中间
     // 退出上面循环的时候，left=right
-		arr[left] = pivotKey;//所以left换成right一样的
+		arr[left] = pivotKey; //所以left换成right一样的
 
 		//把这个位置返回，以给下一次划分使用，划分左半边就-1，划分右半边就+1
 		return left;//这里换成right也ok
