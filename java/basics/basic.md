@@ -619,6 +619,8 @@ public InitialOrderTest() {
 
 ## 五、Object 通用方法
 
+> 腾讯问到了这个。
+
 ### 概览
 
 ```java
@@ -651,26 +653,26 @@ public final void wait() throws InterruptedException
 
 两个对象具有等价关系，需要满足以下五个条件：
 
-Ⅰ 自反性
+1⃣️ 自反性
 
 ```java
 x.equals(x); // true
 ```
 
-Ⅱ 对称性
+2⃣️ 对称性
 
 ```java
 x.equals(y) == y.equals(x); // true
 ```
 
-Ⅲ 传递性
+3⃣️ 传递性
 
 ```java
 if (x.equals(y) && y.equals(z))
     x.equals(z); // true;
 ```
 
-Ⅳ 一致性
+4⃣️ 一致性
 
 多次调用 equals\(\) 方法结果不变
 
@@ -678,7 +680,7 @@ if (x.equals(y) && y.equals(z))
 x.equals(y) == x.equals(y); // true
 ```
 
-Ⅴ 与 null 的比较
+5⃣️ 与 null 的比较
 
 对任何不是 null 的对象 x 调用 x.equals\(null\) 结果都为 false
 
@@ -688,8 +690,8 @@ x.equals(null); // false;
 
 **2. 等价与相等**
 
-* 对于基本类型，== 判断两个值是否相等，基本类型没有 equals\(\) 方法。
-* 对于引用类型，== 判断两个变量是否引用同一个对象，而 equals\(\) 判断引用的对象是否等价。
+* 对于基本类型，`==` 判断两个值是否相等，基本类型没有 `equals()` 方法。
+* 对于引用类型，`==` 判断两个变量是否引用同一个对象，而 `equals()` 判断引用的对象是否等价。
 
 ```java
 Integer x = new Integer(1);
