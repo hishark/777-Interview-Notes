@@ -12,7 +12,7 @@
 
 本人是 ECNU 2019级软件工程专硕，学制2.5年，秋招时间是2021年6月—10月。 字节跳动等互联网厂子的提前批招聘在6月中旬就会开始，持续一到两个月。
 
-春招找实习2021年3月—4月，已上岸，准备去阿里，[点击查看面筋](interview/readme/777-interview.md)。 🤗 
+春招找实习2021年3月—4月，已去阿里实习，[点击查看面筋](interview/readme/777-interview.md)。 
 
 ## 开库目的
 
@@ -20,5 +20,5 @@
 
 ## 帮忙捉虫
 
-如果发现了什么错误麻烦[提个issue](https://github.com/hishark/Android-Interview/issues/new)哦，阿里嘎多～ 🥳 
+如果发现了什么错误麻烦[提个issue](https://github.com/hishark/Android-Interview/issues/new)哦，阿里嘎多～🥳 
 
