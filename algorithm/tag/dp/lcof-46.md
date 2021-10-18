@@ -97,5 +97,4 @@ class Solution {
 
 ## 4. 学习草稿
 
-![](../../../.gitbook/assets/image%20%2827%29.png)
-
+![](<../../../.gitbook/assets/image (21).png>)

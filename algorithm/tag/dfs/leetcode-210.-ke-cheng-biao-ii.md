@@ -4,7 +4,7 @@
 
 现在你总共有 n 门课需要选，记为 0 到 n-1。
 
-在选修某些课程之前需要一些先修课程。 例如，想要学习课程 0 ，你需要先完成课程 1 ，我们用一个匹配来表示他们: \[0,1\]
+在选修某些课程之前需要一些先修课程。 例如，想要学习课程 0 ，你需要先完成课程 1 ，我们用一个匹配来表示他们: \[0,1]
 
 给定课程总量以及它们的先决条件，返回你为了学完所有课程所安排的学习顺序。
 
@@ -12,7 +12,7 @@
 
 示例 1:
 
-```text
+```
 输入: 2, [[1,0]] 
 输出: [0,1]
 解释: 总共有 2 门课程。要学习课程 1，你需要先完成课程 0。因此，正确的课程顺序为 [0,1] 。
@@ -20,7 +20,7 @@
 
 示例 2:
 
-```text
+```
 输入: 4, [[1,0],[2,0],[3,1],[3,2]]
 输出: [0,1,2,3] or [0,2,1,3]
 解释: 总共有 4 门课程。要学习课程 3，你应该先完成课程 1 和课程 2。并且课程 1 和课程 2 都应该排在课程 0 之后。
@@ -136,7 +136,7 @@ class Solution {
 
 ### 3.2 复杂度分析
 
-* 时间复杂度 `O(n+m)` ：其中 n 为课程数，m 为先修课程的要求数。O\(n+m\) 即对图进行深度优先搜索的时间复杂度。
+* 时间复杂度 `O(n+m)` ：其中 n 为课程数，m 为先修课程的要求数。O(n+m) 即对图进行深度优先搜索的时间复杂度。
 * 空间复杂度 `O(n+m)` ：
 
 ## 4. 解法 - BFS
@@ -144,7 +144,6 @@ class Solution {
 ### 4.1 Java
 
 ```java
-
 ```
 
 ### 4.2 复杂度分析
@@ -156,4 +155,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/course-schedule-ii/](https://leetcode-cn.com/problems/course-schedule-ii/)
 * [https://leetcode-cn.com/problems/course-schedule-ii/solution/ke-cheng-biao-ii-by-leetcode-solution/](https://leetcode-cn.com/problems/course-schedule-ii/solution/ke-cheng-biao-ii-by-leetcode-solution/)
-

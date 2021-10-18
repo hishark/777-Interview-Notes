@@ -2,7 +2,7 @@
 
 作者：今天开始敲代码
 
-链接：https://www.nowcoder.com/discuss/513953?source\_id=profile\_create&channel=1009
+链接：https://www.nowcoder.com/discuss/513953?source_id=profile_create\&channel=1009
 
 来源：牛客网
 
@@ -62,7 +62,7 @@ Service两种启动模式，有什么区别。
 
 view的绘制流程
 
-Framelayout wrap\_content    TextView match\_parent  怎么显示
+Framelayout wrap_content    TextView match_parent  怎么显示
 
 约束布局和RelativeLayout的区别
 
@@ -78,11 +78,11 @@ Handler
 
 ThreadLocal
 
-怎么获取view的宽高，如何确定值是准确的，说了view.post\(\)，补充viewTreeObserverOnGlobalLayoutListener
+怎么获取view的宽高，如何确定值是准确的，说了view.post()，补充viewTreeObserverOnGlobalLayoutListener
 
 场景题：头条列表有多个不同的card，使用RecyclerView怎么解耦getViewType，获得不同的card
 
-说了用个管理类映射，面试官说用注解、反射，依赖注入\(我？？我太菜了呜呜呜
+说了用个管理类映射，面试官说用注解、反射，依赖注入(我？？我太菜了呜呜呜
 
 
 
@@ -90,15 +90,15 @@ java：
 
 迭代器，迭代器怎么删除一个元素
 
-说一下集合框架\(Set、list、map
+说一下集合框架(Set、list、map
 
-Hashmap 原理，红黑树如何自平衡\(不会
+Hashmap 原理，红黑树如何自平衡(不会
 
-hashmap的Concurrentmodification 异常\(不会
+hashmap的Concurrentmodification 异常(不会
 
 双亲委派模型
 
-根类加载器加载什么类\(jre包下的类
+根类加载器加载什么类(jre包下的类
 
 GC分代算法
 
@@ -128,15 +128,15 @@ GCRoots种类
 
 
 
-求个offer~
+求个offer\~
 
-秋招遇到的面试官都好好~认认真真跟我聊技术，提问我
+秋招遇到的面试官都好好\~认认真真跟我聊技术，提问我
 
 
 
 作者：今天开始敲代码
 
-链接：https://www.nowcoder.com/discuss/533078?source\_id=profile\_create&channel=1009
+链接：https://www.nowcoder.com/discuss/533078?source_id=profile_create\&channel=1009
 
 来源：牛客网
 
@@ -168,7 +168,7 @@ Java 多态
 
 看过哪些数据结构的源码
 
-ArrayList扩容机制：为什么会new 一个新的数组   我说了效率高而且数组长度不可变，但是面试官不太满意\(谁能告诉我怎么回答！！
+ArrayList扩容机制：为什么会new 一个新的数组   我说了效率高而且数组长度不可变，但是面试官不太满意(谁能告诉我怎么回答！！
 
 哪些数据结构是线程安全的：concurrentHashmap
 
@@ -176,7 +176,7 @@ concurrentHashmap怎么实现线程安全的
 
 乐观锁和悲观锁
 
-你怎么实现一个乐观锁，比如多线程下使用list \(不会…..
+你怎么实现一个乐观锁，比如多线程下使用list (不会…..
 
 hashmap原理
 
@@ -202,25 +202,25 @@ hashmap原理
 
 问项目
 
-这个项目是做什么的\(实验室的老项目，只能说个大概
+这个项目是做什么的(实验室的老项目，只能说个大概
 
 
 
-Java 泛型，泛型上界下界\(完全是靠面试才学会了泛型，面试官还教我怎么使用
+Java 泛型，泛型上界下界(完全是靠面试才学会了泛型，面试官还教我怎么使用
 
 Volatile 哪里使用
 
-双重校验锁里的volatile ，创建对象是这么个危险的操作吗\(呜呜呜不造
+双重校验锁里的volatile ，创建对象是这么个危险的操作吗(呜呜呜不造
 
 哪里还用到了volatile   我说了多线程停止，volatile 修饰flag
 
 说一下hashmap   put方法
 
-怎么判断两个元素相同\(equal
+怎么判断两个元素相同(equal
 
-阈值是桶元素个数，还是全部元素个数\(全部元素个数
+阈值是桶元素个数，还是全部元素个数(全部元素个数
 
-为什么树化的阈值为8 \(面试官说前后链表前后查找为n/2，和log8 差不多 我心存疑虑
+为什么树化的阈值为8 (面试官说前后链表前后查找为n/2，和log8 差不多 我心存疑虑
 
 ActivityA 启动 Activity b A    B生命周期
 
@@ -228,7 +228,7 @@ onSaveInstance 调用的场景，onPause之后调用
 
 requestLayout 和invalidate 的区别
 
-GC新生代和年老代的回收算法有什么不同\(新生代复制清除、年老代标记整理
+GC新生代和年老代的回收算法有什么不同(新生代复制清除、年老代标记整理
 
 内存分配担保策略
 
@@ -248,7 +248,5 @@ GC新生代和年老代的回收算法有什么不同\(新生代复制清除、�
 
 
 
-然后就感谢信了~
-
-
+然后就感谢信了\~
 

@@ -6,7 +6,7 @@
 
 主要是责任链
 
-## Retrofit <a id="articleContentId"></a>
+## Retrofit <a href="articlecontentid" id="articlecontentid"></a>
 
 网络请求库
 
@@ -29,4 +29,3 @@
 // 实话说我又没用过 - - 彩笔就是我
 
 它简化了应用程序内各个组件之间进行通信的复杂度，尤其是碎片之间进行通信的问题，可以避免由于使用广播通信而带来的诸多不便。
-

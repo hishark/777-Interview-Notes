@@ -6,14 +6,14 @@
 
 **示例 1:**
 
-```text
+```
 输入: [1,2,3,4,5]
 输出: True
 ```
 
 **示例 2:**
 
-```text
+```
 输入: [0,0,1,2,5]
 输出: True
 ```
@@ -21,7 +21,7 @@
 **限制：**
 
 * 数组长度为 5 
-* 数组的数取值为 \[0, 13\] 
+* 数组的数取值为 \[0, 13] 
 
 ## 2. 标签
 
@@ -168,11 +168,10 @@ class Solution {
 
 ### 4.3 复杂度分析
 
-* 时间复杂度 `O(NlogN)` ：其中 N 为数组 nums 的长度，使用内置函数对数组进行排序需要占用 O\(NlogN\) 的时间。本题的 N 恒等于 5，所以时间复杂度为 `O(5log5) = O(1)` 。
+* 时间复杂度 `O(NlogN)` ：其中 N 为数组 nums 的长度，使用内置函数对数组进行排序需要占用 O(NlogN) 的时间。本题的 N 恒等于 5，所以时间复杂度为 `O(5log5) = O(1)` 。
 * 空间复杂度 `O(1)` ：变量 kingNum 仅占用了常数大小的额外存储空间。
 
 ## 4. 参考
 
 * [https://leetcode-cn.com/problems/bu-ke-pai-zhong-de-shun-zi-lcof/](https://leetcode-cn.com/problems/bu-ke-pai-zhong-de-shun-zi-lcof/)
 * [https://leetcode-cn.com/problems/bu-ke-pai-zhong-de-shun-zi-lcof/solution/mian-shi-ti-61-bu-ke-pai-zhong-de-shun-zi-ji-he-se/](https://leetcode-cn.com/problems/bu-ke-pai-zhong-de-shun-zi-lcof/solution/mian-shi-ti-61-bu-ke-pai-zhong-de-shun-zi-ji-he-se/)
-

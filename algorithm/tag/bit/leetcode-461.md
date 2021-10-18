@@ -6,11 +6,11 @@
 
 给出两个整数 x 和 y，计算它们之间的汉明距离。
 
-注意： 0 ≤ x, y &lt; 231.
+注意： 0 ≤ x, y < 231.
 
 示例:
 
-```text
+```
 输入: x = 1, y = 4
 
 输出: 2
@@ -62,4 +62,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/hamming-distance/](https://leetcode-cn.com/problems/hamming-distance/)
 * [https://leetcode-cn.com/problems/hamming-distance/solution/yi-ming-ju-chi-by-leetcode/](https://leetcode-cn.com/problems/hamming-distance/solution/yi-ming-ju-chi-by-leetcode/)
-

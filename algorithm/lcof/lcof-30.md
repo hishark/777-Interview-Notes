@@ -1,24 +1,12 @@
----
-title: 30. 包含min函数的栈
-date: '2020-10-11T23:16:20.000Z'
-tags:
-  - leetcode
-  - lcof
-  - java
-  - 栈
-  - 设计
-categories: 算法笔记
----
-
 # 30. 包含min函数的栈【辅助栈】
 
 ## 1. [问题](https://leetcode-cn.com/problems/bao-han-minhan-shu-de-zhan-lcof/)
 
-定义栈的数据结构，请在该类型中实现一个能够得到栈的最小元素的 min 函数。在该栈中，调用 min、push 及 pop 的时间复杂度都是 O\(1\)。
+定义栈的数据结构，请在该类型中实现一个能够得到栈的最小元素的 min 函数。在该栈中，调用 min、push 及 pop 的时间复杂度都是 O(1)。
 
 示例:
 
-```text
+```
 MinStack minStack = new MinStack();
 minStack.push(-2);
 minStack.push(0);
@@ -138,11 +126,10 @@ class MinStack {
 
 ### 2.3 复杂度分析
 
-* 时间复杂度 `O(1)` ： push\(\), pop\(\), top\(\), min\(\) 四个函数的时间复杂度都属于常数级别。
+* 时间复杂度 `O(1)` ： push(), pop(), top(), min() 四个函数的时间复杂度都属于常数级别。
 * 空间复杂度 `O(N)` ：辅助栈 B 最差情况下存储 N 个元素，需要使用 `O(N)` 的额外空间。
 
 ## 3. 参考
 
 * [https://leetcode-cn.com/problems/bao-han-minhan-shu-de-zhan-lcof/](https://leetcode-cn.com/problems/bao-han-minhan-shu-de-zhan-lcof/)
 * [https://leetcode-cn.com/problems/bao-han-minhan-shu-de-zhan-lcof/solution/mian-shi-ti-30-bao-han-minhan-shu-de-zhan-fu-zhu-z/](https://leetcode-cn.com/problems/bao-han-minhan-shu-de-zhan-lcof/solution/mian-shi-ti-30-bao-han-minhan-shu-de-zhan-fu-zhu-z/)
-

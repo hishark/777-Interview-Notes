@@ -8,14 +8,14 @@
 
 **示例 1：**
 
-```text
+```
 输入：n = 12
 输出：5
 ```
 
 **示例 2：**
 
-```text
+```
 输入：n = 13
 输出：6
 ```
@@ -119,4 +119,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/1nzheng-shu-zhong-1chu-xian-de-ci-shu-lcof/](https://leetcode-cn.com/problems/1nzheng-shu-zhong-1chu-xian-de-ci-shu-lcof/)
 * [https://leetcode-cn.com/problems/1nzheng-shu-zhong-1chu-xian-de-ci-shu-lcof/solution/mian-shi-ti-43-1n-zheng-shu-zhong-1-chu-xian-de-2/](https://leetcode-cn.com/problems/1nzheng-shu-zhong-1chu-xian-de-ci-shu-lcof/solution/mian-shi-ti-43-1n-zheng-shu-zhong-1-chu-xian-de-2/)
-

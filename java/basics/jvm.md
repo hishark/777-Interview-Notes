@@ -37,7 +37,7 @@ Java 虚拟机在执行 Java 程序的过程中会把它管理的内存划分成
 
 * 堆
 * 方法区
-* 直接内存 \(非运行时数据区的一部分\)
+* 直接内存 (非运行时数据区的一部分)
 
 ### 程序计数器（线程私有）
 
@@ -58,7 +58,7 @@ Java 虚拟机在执行 Java 程序的过程中会把它管理的内存划分成
 
 > 内存泄露：Memory Leak，指程序在申请内存后，无法释放已申请的内存空间，内存泄漏最终将导致内存溢出。
 >
-> 内存溢出：OutOfMemory，指程序在申请内存时，没有足够的内存空间供其使用。
+> 内存溢出：OutOfMemory，指程序在申请内存时，没有足够的内存空间供其使用。 
 
 ### 虚拟机栈（线程私有）
 
@@ -89,7 +89,7 @@ java -Xss2M HackTheJava
 
 与程序计数器一样，Java 虚拟机栈也是线程私有的，它的生命周期和线程相同，描述的是 Java 方法执行的内存模型，每次方法调用的数据都是通过栈传递的。
 
-Java 内存可以粗糙的区分为堆内存（Heap）和栈内存 \(Stack\)，其中栈就是现在说的虚拟机栈，或者说是虚拟机栈中局部变量表部分。 （实际上，Java 虚拟机栈是由一个个栈帧组成，而每个栈帧中都拥有：局部变量表、操作数栈、动态链接、方法出口信息。）
+Java 内存可以粗糙的区分为堆内存（Heap）和栈内存 (Stack)，其中栈就是现在说的虚拟机栈，或者说是虚拟机栈中局部变量表部分。 （实际上，Java 虚拟机栈是由一个个栈帧组成，而每个栈帧中都拥有：局部变量表、操作数栈、动态链接、方法出口信息。）
 
 局部变量表主要存放了：
 
@@ -167,11 +167,11 @@ HotSpot 虚拟机把它当成永久代来进行垃圾回收。但很难确定永
 
 Class 文件中的常量池（编译器生成的字面量和符号引用）会在类加载后被放入这个区域。
 
-除了在编译期生成的常量，还允许动态生成，例如 String 类的 [intern\(\)](https://juejin.cn/post/6844903913116680199#heading-5)。
+除了在编译期生成的常量，还允许动态生成，例如 String 类的 [intern()](https://juejin.cn/post/6844903913116680199#heading-5)。
 
 ### 直接内存（线程共享）
 
-> 非运行时数据区的一部分
+>  非运行时数据区的一部分
 
 在 JDK 1.4 中新引入了 NIO 类，它可以使用 Native 函数库直接分配堆外内存，然后通过 Java 堆里的 DirectByteBuffer 对象作为这块内存的引用进行操作。
 
@@ -250,17 +250,17 @@ Java 虚拟机使用该算法来判断对象是否可被回收，GC Roots 一般
 * 加载该类的 ClassLoader 已经被回收。
 * 该类对应的 Class 对象没有在任何地方被引用，也就无法在任何地方通过反射访问该类方法。
 
-#### 4. finalize\(\)
+#### 4. finalize()
 
 类似 C++ 的析构函数，用于关闭外部资源。但是 try-finally 等方式可以做得更好，并且该方法运行代价很高，不确定性大，无法保证各个对象的调用顺序，因此最好不要使用。
 
-当一个对象可被回收时，如果需要执行该对象的 finalize\(\) 方法，那么就有可能在该方法中让对象重新被引用，从而实现自救。自救只能进行一次，如果回收的对象之前调用了 finalize\(\) 方法自救，后面回收时不会再调用该方法。
+当一个对象可被回收时，如果需要执行该对象的 finalize() 方法，那么就有可能在该方法中让对象重新被引用，从而实现自救。自救只能进行一次，如果回收的对象之前调用了 finalize() 方法自救，后面回收时不会再调用该方法。
 
 ### 引用类型
 
 无论是通过引用计数算法判断对象的引用数量，还是通过可达性分析算法判断对象是否可达，判定对象是否可被回收都与引用有关。
 
-Java 提供了[四种强度不同的引用类型](https://snailclimb.gitee.io/javaguide/#/docs/java/jvm/JVM%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6?id=_23-%e5%86%8d%e8%b0%88%e5%bc%95%e7%94%a8)：强引用、软引用、弱引用、虚引用。
+Java 提供了[四种强度不同的引用类型](https://snailclimb.gitee.io/javaguide/#/docs/java/jvm/JVM%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6?id=\_23-%e5%86%8d%e8%b0%88%e5%bc%95%e7%94%a8)：强引用、软引用、弱引用、虚引用。
 
 #### 1. 强引用
 
@@ -334,7 +334,7 @@ obj = null;
 
 在清除阶段，会进行对象回收并取消标志位，另外，还会判断回收后的分块与前一个空闲分块是否连续，若连续，会合并这两个分块。回收对象就是把对象作为分块，连接到被称为 “空闲链表” 的单向链表，之后进行分配时只需要遍历这个空闲链表，就可以找到分块。
 
-在分配时，程序会搜索空闲链表寻找空间大于等于新对象大小 size 的块 block。如果它找到的块等于 size，会直接返回这个分块；如果找到的块大于 size，会将块分割成大小为 size 与 \(block - size\) 的两部分，返回大小为 size 的分块，并把大小为 \(block - size\) 的块返回给空闲链表。
+在分配时，程序会搜索空闲链表寻找空间大于等于新对象大小 size 的块 block。如果它找到的块等于 size，会直接返回这个分块；如果找到的块大于 size，会将块分割成大小为 size 与 (block - size) 的两部分，返回大小为 size 的分块，并把大小为 (block - size) 的块返回给空闲链表。
 
 不足：
 
@@ -363,7 +363,7 @@ obj = null;
 
 现在的商业虚拟机都采用这种收集算法回收新生代，但是并不是划分为大小相等的两块，而是一块较大的 Eden 空间和两块较小的 Survivor 空间，每次使用 Eden 和其中一块 Survivor。在回收时，将 Eden 和 Survivor 中还存活着的对象全部复制到另一块 Survivor 上，最后清理 Eden 和使用过的那一块 Survivor。
 
-[HotSpot 虚拟机](https://www.cnblogs.com/charlesblc/p/5993804.html)的 Eden \( \[ˈiːdn\] \) 和 Survivor 大小比例默认为 8:1，保证了内存的利用率达到 90%。如果每次回收有多于 10% 的对象存活，那么一块 Survivor 就不够用了，此时需要依赖于老年代进行空间分配担保，也就是借用老年代的空间存储放不下的对象。
+[HotSpot 虚拟机](https://www.cnblogs.com/charlesblc/p/5993804.html)的 Eden ( \[ˈiːdn] ) 和 Survivor 大小比例默认为 8:1，保证了内存的利用率达到 90%。如果每次回收有多于 10% 的对象存活，那么一块 Survivor 就不够用了，此时需要依赖于老年代进行空间分配担保，也就是借用老年代的空间存储放不下的对象。
 
 #### 4. 分代收集
 
@@ -514,13 +514,13 @@ G1 把堆划分成多个大小相等的独立区域（Region），新生代和�
 
 经常出现大对象会提前触发垃圾收集以获取足够的连续空间分配给大对象。
 
--XX:PretenureSizeThreshold，大于此值的对象直接在老年代分配，避免在 Eden 和 Survivor 之间的大量内存复制。
+\-XX:PretenureSizeThreshold，大于此值的对象直接在老年代分配，避免在 Eden 和 Survivor 之间的大量内存复制。
 
 #### 3. 长期存活的对象进入老年代
 
 为对象定义年龄计数器，对象在 Eden 出生并经过 Minor GC 依然存活，将移动到 Survivor 中，年龄就增加 1 岁，增加到一定年龄则移动到老年代中。
 
--XX:MaxTenuringThreshold 用来定义年龄的阈值。
+\-XX:MaxTenuringThreshold 用来定义年龄的阈值。
 
 #### 4. 动态对象年龄判定
 
@@ -538,7 +538,7 @@ G1 把堆划分成多个大小相等的独立区域（Region），新生代和�
 
 而 Full GC 则相对复杂，有以下条件：
 
-#### 1. 调用 System.gc\(\)
+#### 1. 调用 System.gc()
 
 只是建议虚拟机执行 Full GC，但是虚拟机不一定真正去执行。不建议使用这种方式，而是让虚拟机管理内存。
 
@@ -649,16 +649,16 @@ public static final int value = 123;
 
 #### 5. 初始化
 
-> [初始化的顺序](https://blog.csdn.net/weixin_44736603/article/details/109984047)：
+> [初始化的顺序](https://blog.csdn.net/weixin\_44736603/article/details/109984047)：
 >
 > * 类中静态的成员只会在类第一次加载的时候初始化一次，而非静态成员和构造器执行在次数在于实例化对象的个数，实例化多少个对象就执行多少次。
 > * 各个成员执行的顺序：由静态到非静态，由父类到子类，静态之间按代码书写顺序，非静态之间按代码书写顺序，构造器排在非静态之后
 
-初始化阶段才真正开始执行类中定义的 Java 程序代码。初始化阶段是虚拟机执行类构造器 &lt;clinit&gt;\(\) 方法的过程。
+初始化阶段才真正开始执行类中定义的 Java 程序代码。初始化阶段是虚拟机执行类构造器 \<clinit>() 方法的过程。
 
 在准备阶段，类变量已经赋过一次系统要求的初始值，而在初始化阶段，根据程序员通过程序制定的主观计划去初始化类变量和其它资源。
 
-&lt;clinit&gt;\(\) 是由编译器自动收集类中所有类变量的赋值动作和静态语句块中的语句合并产生的，编译器收集的顺序由语句在源文件中出现的顺序决定。
+\<clinit>() 是由编译器自动收集类中所有类变量的赋值动作和静态语句块中的语句合并产生的，编译器收集的顺序由语句在源文件中出现的顺序决定。
 
 特别注意的是，静态语句块只能访问到定义在它之前的类变量，定义在它之后的类变量只能赋值，不能访问。例如以下代码：
 
@@ -672,7 +672,7 @@ public class Test {
 }
 ```
 
-由于父类的 &lt;clinit&gt;\(\) 方法先执行，也就意味着父类中定义的静态语句块的执行要优先于子类。例如以下代码：
+由于父类的 \<clinit>() 方法先执行，也就意味着父类中定义的静态语句块的执行要优先于子类。例如以下代码：
 
 ```java
 static class Parent {
@@ -691,9 +691,9 @@ public static void main(String[] args) {
 }
 ```
 
-接口中不可以使用静态语句块，但仍然有类变量初始化的赋值操作，因此接口与类一样都会生成 &lt;clinit&gt;\(\) 方法。但接口与类不同的是，执行接口的 &lt;clinit&gt;\(\) 方法不需要先执行父接口的 &lt;clinit&gt;\(\) 方法。只有当父接口中定义的变量使用时，父接口才会初始化。另外，接口的实现类在初始化时也一样不会执行接口的 &lt;clinit&gt;\(\) 方法。
+接口中不可以使用静态语句块，但仍然有类变量初始化的赋值操作，因此接口与类一样都会生成 \<clinit>() 方法。但接口与类不同的是，执行接口的 \<clinit>() 方法不需要先执行父接口的 \<clinit>() 方法。只有当父接口中定义的变量使用时，父接口才会初始化。另外，接口的实现类在初始化时也一样不会执行接口的 \<clinit>() 方法。
 
-虚拟机会保证一个类的 &lt;clinit&gt;\(\) 方法在多线程环境下被正确的加锁和同步，如果多个线程同时初始化一个类，只会有一个线程执行这个类的 &lt;clinit&gt;\(\) 方法，其它线程都会阻塞等待，直到活动线程执行 &lt;clinit&gt;\(\) 方法完毕。如果在一个类的 &lt;clinit&gt;\(\) 方法中有耗时的操作，就可能造成多个线程阻塞，在实际过程中此种阻塞很隐蔽。
+虚拟机会保证一个类的 \<clinit>() 方法在多线程环境下被正确的加锁和同步，如果多个线程同时初始化一个类，只会有一个线程执行这个类的 \<clinit>() 方法，其它线程都会阻塞等待，直到活动线程执行 \<clinit>() 方法完毕。如果在一个类的 \<clinit>() 方法中有耗时的操作，就可能造成多个线程阻塞，在实际过程中此种阻塞很隐蔽。
 
 ### 类初始化时机
 
@@ -706,8 +706,8 @@ public static void main(String[] args) {
 * 【字节码指令】遇到 `new`、`getstatic`、`putstatic`、`invokestatic` 这四条字节码指令时，如果类没有进行过初始化，则必须先触发其初始化。最常见的生成这 4 条指令的场景是：使用 new 关键字实例化对象的时候；读取或设置一个类的静态字段（被 final 修饰、已在编译期把结果放入常量池的静态字段除外）的时候；以及调用一个类的静态方法的时候。
 * 【反射】使用 java.lang.reflect 包的方法对类进行反射调用的时候，如果类没有进行初始化，则需要先触发其初始化。
 * 【父类未初始化】当初始化一个类的时候，如果发现其父类还没有进行过初始化，则需要先触发其父类的初始化。
-* 【主类】当虚拟机启动时，用户需要指定一个要执行的主类（包含 main\(\) 方法的那个类），虚拟机会先初始化这个主类；
-* 【句柄】当使用 JDK 1.7 的动态语言支持时，如果一个 java.lang.invoke.MethodHandle 实例最后的解析结果为 REF\_getStatic, REF\_putStatic, REF\_invokeStatic 的方法句柄，并且这个方法句柄所对应的类没有进行过初始化，则需要先触发其初始化；
+* 【主类】当虚拟机启动时，用户需要指定一个要执行的主类（包含 main() 方法的那个类），虚拟机会先初始化这个主类；
+* 【句柄】当使用 JDK 1.7 的动态语言支持时，如果一个 java.lang.invoke.MethodHandle 实例最后的解析结果为 REF_getStatic, REF_putStatic, REF_invokeStatic 的方法句柄，并且这个方法句柄所对应的类没有进行过初始化，则需要先触发其初始化；
 
 #### 2. 被动引用
 
@@ -735,7 +735,7 @@ System.out.println(ConstClass.HELLOWORLD);
 
 两个类相等，需要类本身相等，并且使用同一个类加载器进行加载。这是因为每一个类加载器都拥有一个独立的类名称空间。
 
-这里的相等，包括类的 Class 对象的 equals\(\) 方法、isAssignableFrom\(\) 方法、isInstance\(\) 方法的返回结果为 true，也包括使用 instanceof 关键字做对象所属关系判定结果为 true。
+这里的相等，包括类的 Class 对象的 equals() 方法、isAssignableFrom() 方法、isInstance() 方法的返回结果为 true，也包括使用 instanceof 关键字做对象所属关系判定结果为 true。
 
 ### 类加载器分类
 
@@ -746,9 +746,9 @@ System.out.println(ConstClass.HELLOWORLD);
 
 从 Java 开发人员的角度看，类加载器可以划分得更细致一些：
 
-* **启动类加载器（Bootstrap ClassLoader）**此类加载器负责将存放在 &lt;JRE\_HOME&gt;\lib 目录中的，或者被 -Xbootclasspath 参数所指定的路径中的，并且是虚拟机识别的（仅按照文件名识别，如 rt.jar，名字不符合的类库即使放在 lib 目录中也不会被加载）类库加载到虚拟机内存中。启动类加载器无法被 Java 程序直接引用，用户在编写自定义类加载器时，如果需要把加载请求委派给启动类加载器，直接使用 null 代替即可。
-* **扩展类加载器（Extension ClassLoader）**这个类加载器是由 ExtClassLoader（sun.misc.Launcher$ExtClassLoader）实现的。它负责将 &lt;JAVA\_HOME&gt;/lib/ext 或者被 java.ext.dir 系统变量所指定路径中的所有类库加载到内存中，开发者可以直接使用扩展类加载器。
-* **应用程序类加载器（Application ClassLoader）**这个类加载器是由 AppClassLoader（sun.misc.Launcher$AppClassLoader）实现的。由于这个类加载器是 ClassLoader 中的 getSystemClassLoader\(\) 方法的返回值，因此一般称为**系统类加载器**。它负责加载用户类路径（ClassPath）上所指定的类库，开发者可以直接使用这个类加载器，如果应用程序中没有自定义过自己的类加载器，一般情况下这个就是程序中默认的类加载器。
+* **启动类加载器（Bootstrap ClassLoader）**此类加载器负责将存放在 \<JRE_HOME>\lib 目录中的，或者被 -Xbootclasspath 参数所指定的路径中的，并且是虚拟机识别的（仅按照文件名识别，如 rt.jar，名字不符合的类库即使放在 lib 目录中也不会被加载）类库加载到虚拟机内存中。启动类加载器无法被 Java 程序直接引用，用户在编写自定义类加载器时，如果需要把加载请求委派给启动类加载器，直接使用 null 代替即可。
+* **扩展类加载器（Extension ClassLoader）**这个类加载器是由 ExtClassLoader（sun.misc.Launcher$ExtClassLoader）实现的。它负责将 \<JAVA_HOME>/lib/ext 或者被 java.ext.dir 系统变量所指定路径中的所有类库加载到内存中，开发者可以直接使用扩展类加载器。
+* **应用程序类加载器（Application ClassLoader）**这个类加载器是由 AppClassLoader（sun.misc.Launcher$AppClassLoader）实现的。由于这个类加载器是 ClassLoader 中的 getSystemClassLoader() 方法的返回值，因此一般称为**系统类加载器**。它负责加载用户类路径（ClassPath）上所指定的类库，开发者可以直接使用这个类加载器，如果应用程序中没有自定义过自己的类加载器，一般情况下这个就是程序中默认的类加载器。
 
 ### 双亲委派模型
 
@@ -772,7 +772,7 @@ System.out.println(ConstClass.HELLOWORLD);
 
 #### 3. 实现
 
-以下是抽象类 java.lang.ClassLoader 的代码片段，其中的 loadClass\(\) 方法运行过程如下：
+以下是抽象类 java.lang.ClassLoader 的代码片段，其中的 loadClass() 方法运行过程如下：
 
 先检查类是否已经加载过，如果没有则让父类加载器去加载。当父类加载器加载失败时抛出 ClassNotFoundException，此时尝试自己去加载。
 
@@ -828,9 +828,9 @@ Java 中的双亲委派的“双”怎么理解 ？ - 大宽宽的回答 - 知�
 
 ### 自定义类加载器实现
 
-以下代码中的 FileSystemClassLoader 是自定义类加载器，继承自 java.lang.ClassLoader，用于加载文件系统上的类。它首先根据类的全名在文件系统上查找类的字节代码文件（.class 文件），然后读取该文件内容，最后通过 defineClass\(\) 方法来把这些字节代码转换成 java.lang.Class 类的实例。
+以下代码中的 FileSystemClassLoader 是自定义类加载器，继承自 java.lang.ClassLoader，用于加载文件系统上的类。它首先根据类的全名在文件系统上查找类的字节代码文件（.class 文件），然后读取该文件内容，最后通过 defineClass() 方法来把这些字节代码转换成 java.lang.Class 类的实例。
 
-java.lang.ClassLoader 的 loadClass\(\) 实现了双亲委派模型的逻辑，自定义类加载器一般不去重写它，但是需要重写 findClass\(\) 方法。
+java.lang.ClassLoader 的 loadClass() 实现了双亲委派模型的逻辑，自定义类加载器一般不去重写它，但是需要重写 findClass() 方法。
 
 ```java
 public class FileSystemClassLoader extends ClassLoader {
@@ -878,4 +878,3 @@ public class FileSystemClassLoader extends ClassLoader {
 ## 附
 
 {% embed url="https://thinkwon.blog.csdn.net/article/details/104390752" %}
-

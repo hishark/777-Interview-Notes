@@ -1,21 +1,8 @@
----
-title: 26. 树的子结构
-date: '2020-09-21T22:55:49.000Z'
-tags:
-  - leetcode
-  - java
-  - kotlin
-  - lcof
-  - 树
-  - 递归
-categories: 算法笔记
----
-
 # 26. 树的子结构【递归】
 
 ## 1. [问题](https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/)
 
-输入两棵二叉树A和B，判断B是不是A的子结构。\(约定空树不是任意一个树的子结构\)
+输入两棵二叉树A和B，判断B是不是A的子结构。(约定空树不是任意一个树的子结构)
 
 B是A的子结构， 即 A中有出现和B相同的结构和节点值。
 
@@ -23,7 +10,7 @@ B是A的子结构， 即 A中有出现和B相同的结构和节点值。
 
 给定的树 A:
 
-```text
+```
      3
     / \
    4   5
@@ -33,7 +20,7 @@ B是A的子结构， 即 A中有出现和B相同的结构和节点值。
 
 给定的树 B：
 
-```text
+```
    4 
   /
  1
@@ -43,21 +30,21 @@ B是A的子结构， 即 A中有出现和B相同的结构和节点值。
 
 示例 1：
 
-```text
+```
 输入：A = [1,2,3], B = [3,1]
 输出：false
 ```
 
 示例 2：
 
-```text
+```
 输入：A = [3,4,5,1,2], B = [4,1]
 输出：true
 ```
 
 限制：
 
-* 0 &lt;= 节点个数 &lt;= 10000
+* 0 <= 节点个数 <= 10000
 
 ## 2. 解法 - 递归
 
@@ -178,11 +165,10 @@ class Solution {
 
 ### 2.3 复杂度分析
 
-* 时间复杂度：`O(mn)`。其中m和n分别是A树和B树的结点数量，先序遍历树A占用O\(m\)，每次调用`recur(A, B)`判断占用O\(n\)。
-* 空间复杂度：`O(m)`。当A树和B树都退化为链表时，递归的调用深度达到最大。m&lt;=n时，遍历A树和递归判断的总递归深度为m，当m&gt;n时，最差情况为遍历到A树的叶子结点，此时的总递归深度为m。
+* 时间复杂度：`O(mn)`。其中m和n分别是A树和B树的结点数量，先序遍历树A占用O(m)，每次调用`recur(A, B)`判断占用O(n)。
+* 空间复杂度：`O(m)`。当A树和B树都退化为链表时，递归的调用深度达到最大。m<=n时，遍历A树和递归判断的总递归深度为m，当m>n时，最差情况为遍历到A树的叶子结点，此时的总递归深度为m。
 
 ## 3. 参考
 
 * [https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/](https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/)
 * [https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/solution/mian-shi-ti-26-shu-de-zi-jie-gou-xian-xu-bian-li-p/](https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/solution/mian-shi-ti-26-shu-de-zi-jie-gou-xian-xu-bian-li-p/)
-

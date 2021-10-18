@@ -1,3 +1,7 @@
+---
+description: test
+---
+
 # 58 - II. 左旋转字符串【字符串】
 
 ## 1. [问题](https://leetcode-cn.com/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/)
@@ -6,14 +10,14 @@
 
 **示例 1：**
 
-```text
+```
 输入: s = "abcdefg", k = 2
 输出: "cdefgab"
 ```
 
 **示例 2：**
 
-```text
+```
 输入: s = "lrloseumgh", k = 6
 输出: "umghlrlose"
 ```
@@ -80,4 +84,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/](https://leetcode-cn.com/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/)
 * [https://leetcode-cn.com/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/solution/mian-shi-ti-58-ii-zuo-xuan-zhuan-zi-fu-chuan-qie-p/](https://leetcode-cn.com/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/solution/mian-shi-ti-58-ii-zuo-xuan-zhuan-zi-fu-chuan-qie-p/)
-

@@ -1,15 +1,3 @@
----
-title: 63. 不同路径 II
-date: '2020-07-06T15:28:08.000Z'
-tags:
-  - leetcode
-  - java
-  - kotlin
-  - 动态规划
-categories: 算法笔记
-notshow: true
----
-
 # LEETCODE 63. 不同路径 II
 
 ## 1. [问题](https://leetcode-cn.com/problems/unique-paths-ii/)
@@ -28,7 +16,7 @@ notshow: true
 
 示例 1:
 
-```text
+```
 输入:
 [
   [0,0,0],
@@ -117,4 +105,3 @@ class Solution {
 ## 4. 笔记
 
 ![](https://777blog.oss-cn-shanghai.aliyuncs.com/leetcode/leetcode-63.jpg)
-

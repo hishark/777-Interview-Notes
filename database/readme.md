@@ -15,5 +15,3 @@
 
 [Awesome Database Learning](https://github.com/pingcap/awesome-database-learning)
 
-
-

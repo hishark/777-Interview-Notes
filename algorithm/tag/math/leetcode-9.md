@@ -1,15 +1,3 @@
----
-title: 9. 回文数
-date: '2020-06-10T13:13:29.000Z'
-tags:
-  - leetcode
-  - java
-  - kotlin
-  - 数学
-categories: 算法笔记
-notshow: true
----
-
 # LEETCODE 9. 回文数
 
 ## [1. 问题](https://leetcode-cn.com/problems/palindrome-number/)
@@ -18,7 +6,7 @@ notshow: true
 
 示例 1:
 
-> 输入: 121 输出: true
+> 输入: 121 输出: true 
 
 示例 2: 
 
@@ -101,4 +89,3 @@ class Solution {
 ## 4. 学习草稿
 
 ![](https://777blog.oss-cn-shanghai.aliyuncs.com/blog%20pic/leetcode9.JPG)
-

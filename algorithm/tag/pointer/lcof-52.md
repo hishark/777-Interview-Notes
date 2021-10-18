@@ -6,15 +6,15 @@
 
 如下面的两个链表：
 
-![](../../../.gitbook/assets/image%20%2813%29.png)
+![](<../../../.gitbook/assets/image (10).png>)
 
 在节点 c1 开始相交。
 
 **示例 1：**
 
-![](../../../.gitbook/assets/image%20%2812%29.png)
+![](<../../../.gitbook/assets/image (11).png>)
 
-```text
+```
 输入：intersectVal = 8, listA = [4,1,8,4,5], listB = [5,0,1,8,4,5], skipA = 2, skipB = 3
 输出：Reference of the node with value = 8
 输入解释：
@@ -25,9 +25,9 @@
 
 **示例 2：**
 
-![](../../../.gitbook/assets/image%20%2815%29.png)
+![](<../../../.gitbook/assets/image (12).png>)
 
-```text
+```
 输入：intersectVal = 2, listA = [0,9,1,2,4], listB = [3,2,4], skipA = 3, skipB = 1
 输出：Reference of the node with value = 2
 输入解释：
@@ -38,9 +38,9 @@
 
 **示例 3：**
 
-![](../../../.gitbook/assets/image%20%2811%29.png)
+![](<../../../.gitbook/assets/image (13).png>)
 
-```text
+```
 输入：intersectVal = 0, listA = [2,6,4], listB = [1,5], skipA = 3, skipB = 2
 输出：null
 输入解释：
@@ -54,7 +54,7 @@
 * 如果两个链表没有交点，返回 null. 
 * 在返回结果后，两个链表仍须保持原有的结构。 
 * 可假定整个链表结构中没有循环。 
-* 程序尽量满足 O\(n\) 时间复杂度，且仅用 O\(1\) 内存。
+* 程序尽量满足 O(n) 时间复杂度，且仅用 O(1) 内存。
 
 ## 2. 标签
 
@@ -107,4 +107,3 @@ public class Solution {
 
 * [https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/](https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/)
 * [https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/solution/shuang-zhi-zhen-fa-lang-man-xiang-yu-by-ml-zimingm/](https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/solution/shuang-zhi-zhen-fa-lang-man-xiang-yu-by-ml-zimingm/)
-

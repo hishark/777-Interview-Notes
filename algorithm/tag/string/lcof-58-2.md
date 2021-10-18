@@ -6,14 +6,14 @@
 
 **示例 1：**
 
-```text
+```
 输入: s = "abcdefg", k = 2
 输出: "cdefgab"
 ```
 
 **示例 2：**
 
-```text
+```
 输入: s = "lrloseumgh", k = 6
 输出: "umghlrlose"
 ```
@@ -49,7 +49,7 @@ class Solution {
 
 两个循环可以用一个求余操作写在一起：
 
-```text
+```
 ans += s.charAt(i % s.length());
 ```
 
@@ -79,4 +79,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/](https://leetcode-cn.com/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/)
 * [https://leetcode-cn.com/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/solution/mian-shi-ti-58-ii-zuo-xuan-zhuan-zi-fu-chuan-qie-p/](https://leetcode-cn.com/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/solution/mian-shi-ti-58-ii-zuo-xuan-zhuan-zi-fu-chuan-qie-p/)
-

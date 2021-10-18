@@ -10,7 +10,7 @@
 
 作者：一个程序媛
 
-链接：https://www.nowcoder.com/discuss/402382?source\_id=profile\_create\_nctrack&channel=-1
+链接：https://www.nowcoder.com/discuss/402382?source_id=profile_create_nctrack\&channel=-1
 
 来源：牛客网
 
@@ -22,27 +22,27 @@
 
 自我介绍之后没想到开始先问项目问题：
 
-- 在项目中的任务？（我是页面加联网请求数据）
+\- 在项目中的任务？（我是页面加联网请求数据）
 
-- 页面用到了哪些组件？
+\- 页面用到了哪些组件？
 
-- GET和POST的区别？
+\- GET和POST的区别？
 
-- 进程和线程了解吗？（这个问题我卡住了一下，线程一时想不起描述，后来面试官提示了一点就接着往下说）
+\- 进程和线程了解吗？（这个问题我卡住了一下，线程一时想不起描述，后来面试官提示了一点就接着往下说）
 
-- Andriod四大组件？每一个是干什么的（除了Activity之外其实都不是很了解，，我就重点说了Activity）
+\- Andriod四大组件？每一个是干什么的（除了Activity之外其实都不是很了解，，我就重点说了Activity）
 
-- Activity生命周期简单介绍？出题：从Activity a返回到Activity b经历了哪些阶段？（我的回答是a先onPause-&gt;onStop-&gt;onDestroy，然后b再onStart-&gt;onResume，面试官纠正其实先让b可见并且可操作再让a onStop-&gt;onDestroy，还解释了为什么要这么做）
+\- Activity生命周期简单介绍？出题：从Activity a返回到Activity b经历了哪些阶段？（我的回答是a先onPause->onStop->onDestroy，然后b再onStart->onResume，面试官纠正其实先让b可见并且可操作再让a onStop->onDestroy，还解释了为什么要这么做）
 
 
 
 然后就是一些基础问题（我感觉真的挺简单，但第一次大厂面试太紧张了555）：
 
-1. 数组和链表区别？各自优缺点？在内存中的分配？
+1\. 数组和链表区别？各自优缺点？在内存中的分配？
 
-2. ==和.equals\(\)的区别？
+2\. ==和.equals()的区别？
 
-3. String a = new String\(\);
+3\. String a = new String();
 
 b = a;
 
@@ -100,7 +100,7 @@ b 是否= null?
 
 作者：一个程序媛
 
-链接：https://www.nowcoder.com/discuss/417073?source\_id=profile\_create\_nctrack&channel=-1
+链接：https://www.nowcoder.com/discuss/417073?source_id=profile_create_nctrack\&channel=-1
 
 来源：牛客网
 
@@ -155,4 +155,3 @@ b 是否= null?
 5.如果大学重来一次你会弥补哪些遗憾？
 
 6.有对象吗？他对你的工作地点是什么态度？
-

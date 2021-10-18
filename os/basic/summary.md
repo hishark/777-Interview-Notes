@@ -18,11 +18,11 @@
 
 > [知乎](https://www.zhihu.com/question/33515481/answer/58849148)上有一段解释非常形象：
 >
-> 你吃饭吃到一半，电话来了，你一直到吃完了以后才去接，这就说明你不支持并发也不支持并行。  
-> 你吃饭吃到一半，电话来了，你停了下来接了电话，接完后继续吃饭，这说明你支持并发。  
+> 你吃饭吃到一半，电话来了，你一直到吃完了以后才去接，这就说明你不支持并发也不支持并行。\
+> 你吃饭吃到一半，电话来了，你停了下来接了电话，接完后继续吃饭，这说明你支持并发。\
 > 你吃饭吃到一半，电话来了，你一边打电话一边吃饭，这说明你支持并行。
 >
-> 并发的关键是你有处理多个任务的能力，不一定要同时。  
+> 并发的关键是你有处理多个任务的能力，不一定要同时。\
 > 并行的关键是你有同时处理多个任务的能力。所以我认为它们最关键的点就是：是否是『同时』。
 
 ### 2. 共享
@@ -81,22 +81,22 @@
 
 ## 系统调用
 
-> [什么是系统调用？](https://snailclimb.gitee.io/javaguide/#/docs/operating-system/basis?id=_12-%e7%b3%bb%e7%bb%9f%e8%b0%83%e7%94%a8)
+> [什么是系统调用？](https://snailclimb.gitee.io/javaguide/#/docs/operating-system/basis?id=\_12-%e7%b3%bb%e7%bb%9f%e8%b0%83%e7%94%a8)
 
 如果一个进程在用户态需要使用内核态的功能，就进行系统调用从而陷入内核，由操作系统代为完成。
 
-![](../../.gitbook/assets/image%20%2857%29.png)
+![](<../../.gitbook/assets/image (43).png>)
 
 Linux 的系统调用主要有以下这些：
 
-| Task | Commands |
-| :--- | :--- |
-| 进程控制 | fork\(\); exit\(\); wait\(\); |
-| 进程通信 | pipe\(\); shmget\(\); mmap\(\); |
-| 文件操作 | open\(\); read\(\); write\(\); |
-| 设备操作 | ioctl\(\); read\(\); write\(\); |
-| 信息维护 | getpid\(\); alarm\(\); sleep\(\); |
-| 安全 | chmod\(\); umask\(\); chown\(\); |
+| Task | Commands                    |
+| ---- | --------------------------- |
+| 进程控制 | fork(); exit(); wait();     |
+| 进程通信 | pipe(); shmget(); mmap();   |
+| 文件操作 | open(); read(); write();    |
+| 设备操作 | ioctl(); read(); write();   |
+| 信息维护 | getpid(); alarm(); sleep(); |
+| 安全   | chmod(); umask(); chown();  |
 
 ## 宏内核和微内核
 
@@ -112,9 +112,9 @@ Linux 的系统调用主要有以下这些：
 
 在微内核结构下，操作系统被划分成小的、定义良好的模块，只有微内核这一个模块运行在内核态，其余模块运行在用户态。
 
-因为需要频繁地在[用户态和核心态](https://snailclimb.gitee.io/javaguide/#/docs/operating-system/basis?id=_12-%e7%b3%bb%e7%bb%9f%e8%b0%83%e7%94%a8)之间进行切换，所以会有一定的性能损失。
+因为需要频繁地在[用户态和核心态](https://snailclimb.gitee.io/javaguide/#/docs/operating-system/basis?id=\_12-%e7%b3%bb%e7%bb%9f%e8%b0%83%e7%94%a8)之间进行切换，所以会有一定的性能损失。
 
-![](../../.gitbook/assets/image%20%2856%29.png)
+![](<../../.gitbook/assets/image (44).png>)
 
 
 
@@ -145,4 +145,3 @@ Linux 的系统调用主要有以下这些：
 > 用户态陷入内核态。
 
 在用户程序中使用系统调用。
-

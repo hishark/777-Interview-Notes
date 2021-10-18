@@ -8,14 +8,14 @@
 
 **示例 1:**
 
-```text
+```
 输入: flowerbed = [1,0,0,0,1], n = 1
 输出: True
 ```
 
 **示例 2:**
 
-```text
+```
 输入: flowerbed = [1,0,0,0,1], n = 2
 输出: False
 ```
@@ -23,7 +23,7 @@
 **注意:**
 
 1. 数组内已种好的花不会违反种植规则。
-2. 输入的数组长度范围为 \[1, 20000\]。
+2. 输入的数组长度范围为 \[1, 20000]。
 3. **n** 是非负整数，且不会超过输入数组的大小。
 
 ## 2. 标签
@@ -64,4 +64,3 @@ public class Solution {
 
 * [https://leetcode-cn.com/problems/can-place-flowers/](https://leetcode-cn.com/problems/can-place-flowers/)
 * [https://leetcode-cn.com/problems/can-place-flowers/solution/chong-hua-wen-ti-by-leetcode/](https://leetcode-cn.com/problems/can-place-flowers/solution/chong-hua-wen-ti-by-leetcode/)
-

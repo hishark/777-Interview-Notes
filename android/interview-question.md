@@ -3,7 +3,7 @@
 ## 参考
 
 * [Android 面试题集](https://www.yuque.com/docs/share/73271436-56d3-4c63-9311-ae499378198a)
-* [LRH1993/android\_interview](https://github.com/LRH1993/android_interview#android) ⭐️
+* [LRH1993/android_interview](https://github.com/LRH1993/android_interview#android) ⭐️
 
 ## APP/APK
 
@@ -31,13 +31,13 @@ Android 编译过程介绍一下，反编译呢
 
 ## **Handler**
 
-\*\*\*\*[**https://github.com/LRH1993/android\_interview/blob/master/android/basis/message-mechanism.md**](https://github.com/LRH1993/android_interview/blob/master/android/basis/message-mechanism.md)\*\*\*\*
+****[**https://github.com/LRH1993/android_interview/blob/master/android/basis/message-mechanism.md**](https://github.com/LRH1993/android_interview/blob/master/android/basis/message-mechanism.md)****
 
 Handler机制，Looper.loop会不会阻塞线程，为什么？
 
 handler机制 looper，message，handler，queue
 
-handler内存泄漏，内存泄漏的引用链是啥？（looper—&gt;messagequeue-&gt;message-&gt;handler,所以如果队
+handler内存泄漏，内存泄漏的引用链是啥？（looper—>messagequeue->message->handler,所以如果队
 
 列为空就不会泄露）
 
@@ -45,21 +45,21 @@ handle作用
 
 Handler的原理。Looper，MessageQueue，Message。面试官追问在一个Handler中给另一个Handler发送消息
 
-主线程的looper.loop\(\)是谁在调用
+主线程的looper.loop()是谁在调用
 
 Handler的原理（Handler、Looper、MessageQueue等）
 
-Handler机制\(**延时消息机制、handler泄漏原理**\)
+Handler机制(**延时消息机制、handler泄漏原理**)
 
 异步消息处理流程，如果发送一个延时消息，messagequeue里面怎么个顺序，messagequeue是个什么数据结构
 
-handler 如何切换线程\(handler聊了挺久\)
+handler 如何切换线程(handler聊了挺久)
 
 handler **如何回调**
 
-handler注意事项\(**预防内存泄漏**\)
+handler注意事项(**预防内存泄漏**)
 
-handler封装使用\(handlerThread IntentService\)
+handler封装使用(handlerThread IntentService)
 
 Handler和Looper（单个Looper和多个Handler）
 
@@ -69,7 +69,7 @@ Handler原理。 （讲完后，问了一下**取出message之后怎么知道要
 
 HandlerThread原理。
 
-Looper。（大致就是想让回答 **Android是依靠事件驱动的，通过Looper.loop\(\)不断进行消息循环之类的**）
+Looper。（大致就是想让回答 **Android是依靠事件驱动的，通过Looper.loop()不断进行消息循环之类的**）
 
 扯到了对象池（Message类维护，每个message有next指针）
 
@@ -77,7 +77,7 @@ Looper。（大致就是想让回答 **Android是依靠事件驱动的，通过L
 
 //
 
-handler原理；能否让message被push到非主线程的线程里？（提示looper\)
+handler原理；能否让message被push到非主线程的线程里？（提示looper)
 
 谈谈对Handler、Looper的理解，他们俩的数量关系
 
@@ -109,7 +109,7 @@ Log.i(TAG,"c");
 
 ## **内存泄漏**
 
-\*\*\*\*[**https://github.com/LRH1993/android\_interview/blob/master/android/advance/memory-leak.md**](https://github.com/LRH1993/android_interview/blob/master/android/advance/memory-leak.md)\*\*\*\*
+****[**https://github.com/LRH1993/android_interview/blob/master/android/advance/memory-leak.md**](https://github.com/LRH1993/android_interview/blob/master/android/advance/memory-leak.md)****
 
 怎么解决内存泄漏（声明static，弱引用包裹） // 避免干嘛干嘛
 
@@ -137,11 +137,11 @@ asynctask内存泄漏
 
 有关注内存泄漏问题吗
 
-答：内存泄漏有关注，比如使用ContentResolver查询数据后，光标对象Cursor要进行close\(\)回收；Bitmap在加载完成后要记得回收等。（顺带提到了Bitmap容易造成的OOM问题，并提出解决方案。）
+答：内存泄漏有关注，比如使用ContentResolver查询数据后，光标对象Cursor要进行close()回收；Bitmap在加载完成后要记得回收等。（顺带提到了Bitmap容易造成的OOM问题，并提出解决方案。）
 
 ## **View**
 
-\*\*\*\*[**https://github.com/LRH1993/android\_interview/blob/master/android/basis/custom\_view.md**](https://github.com/LRH1993/android_interview/blob/master/android/basis/custom_view.md)\*\*\*\*
+****[**https://github.com/LRH1993/android_interview/blob/master/android/basis/custom_view.md**](https://github.com/LRH1993/android_interview/blob/master/android/basis/custom_view.md)****
 
 View的绘制过程（OnMeasure、OnLayout、OnDraw）
 
@@ -185,13 +185,13 @@ SurfaceView与View区别？SurfaceView原理？
 
 binder 机制：
 
-[https://github.com/LRH1993/android\_interview/blob/master/android/advance/binder.md](https://github.com/LRH1993/android_interview/blob/master/android/advance/binder.md)
+[https://github.com/LRH1993/android_interview/blob/master/android/advance/binder.md](https://github.com/LRH1993/android_interview/blob/master/android/advance/binder.md)
 
-[https://www.yuque.com/docs/share/73271436-56d3-4c63-9311-ae499378198a\#ccf2414e](https://www.yuque.com/docs/share/73271436-56d3-4c63-9311-ae499378198a#ccf2414e) （为什么用Binder）
+[https://www.yuque.com/docs/share/73271436-56d3-4c63-9311-ae499378198a#ccf2414e](https://www.yuque.com/docs/share/73271436-56d3-4c63-9311-ae499378198a#ccf2414e) （为什么用Binder）
 
 进程间通信：
 
-[https://github.com/LRH1993/android\_interview/blob/master/android/basis/ipc.md](https://github.com/LRH1993/android_interview/blob/master/android/basis/ipc.md)
+[https://github.com/LRH1993/android_interview/blob/master/android/basis/ipc.md](https://github.com/LRH1993/android_interview/blob/master/android/basis/ipc.md)
 
 Binder机制以及原理（binder驱动、共享内存等）
 
@@ -239,7 +239,7 @@ Android的线程同步机制和进程通信机制
 
 ## **进程**
 
-\*\*\*\*[**https://github.com/LRH1993/android\_interview/blob/master/android/basis/process-priority.md**](https://github.com/LRH1993/android_interview/blob/master/android/basis/process-priority.md)\*\*\*\*
+****[**https://github.com/LRH1993/android_interview/blob/master/android/basis/process-priority.md**](https://github.com/LRH1993/android_interview/blob/master/android/basis/process-priority.md)****
 
 讲讲Android进程。前台进程、后台进程……这块不大会
 
@@ -249,7 +249,7 @@ Android的线程同步机制和进程通信机制
 
 项目中后台网络请求为什么用service不用线程
 
-多进程：[https://github.com/BlackZhangJX/Android-Notes/blob/master/Docs/Android%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB.md\#%E5%A4%9A%E8%BF%9B%E7%A8%8B](https://github.com/BlackZhangJX/Android-Notes/blob/master/Docs/Android%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB.md#%E5%A4%9A%E8%BF%9B%E7%A8%8B)
+多进程：[https://github.com/BlackZhangJX/Android-Notes/blob/master/Docs/Android%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB.md#%E5%A4%9A%E8%BF%9B%E7%A8%8B](https://github.com/BlackZhangJX/Android-Notes/blob/master/Docs/Android%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB.md#%E5%A4%9A%E8%BF%9B%E7%A8%8B)
 
 //
 
@@ -269,7 +269,7 @@ application和activity的onCreat哪个先调用
 
 // 问我干脆说我没用过哈哈哈哈我确实没用过OTZ
 
-\*\*\*\*[**https://github.com/LRH1993/android\_interview/blob/master/android/open-source-framework/EventBus.md**](https://github.com/LRH1993/android_interview/blob/master/android/open-source-framework/EventBus.md)\*\*\*\*
+****[**https://github.com/LRH1993/android_interview/blob/master/android/open-source-framework/EventBus.md**](https://github.com/LRH1993/android_interview/blob/master/android/open-source-framework/EventBus.md)****
 
 eventbus 2
 
@@ -281,7 +281,7 @@ eventbus有哪些缺点，什么类可以作为event，为什么不用广播
 
 ## **广播**
 
-\*\*\*\*[**https://github.com/LRH1993/android\_interview/blob/master/android/basis/broadcastreceiver.md**](https://github.com/LRH1993/android_interview/blob/master/android/basis/broadcastreceiver.md)\*\*\*\*
+****[**https://github.com/LRH1993/android_interview/blob/master/android/basis/broadcastreceiver.md**](https://github.com/LRH1993/android_interview/blob/master/android/basis/broadcastreceiver.md)****
 
 广播的种类，注册的方式，以及不同注册方式的生命周期。
 
@@ -295,7 +295,7 @@ Broadcast有几种注册方式
 
 ## **通信方式**
 
-\*\*\*\*[**https://www.jianshu.com/p/6040dfa83594**](https://www.jianshu.com/p/6040dfa83594)\*\*\*\*
+****[**https://www.jianshu.com/p/6040dfa83594**](https://www.jianshu.com/p/6040dfa83594)****
 
 activity和service的通信方式
 
@@ -345,7 +345,7 @@ app 如何判断在后台？
 
 看过哪些Android源码
 
-熟悉使用什么框架？（回答AFN，SDWebImage和[百度](https:///jump/super-jump/word?word=百度)地图SDK，让我选择一种技术解释，本来选择的是AFN，不过在一面的时候说过，让我重新换一个，选择了SDW，解释了大概原理）；
+熟悉使用什么框架？（回答AFN，SDWebImage和[百度](https://jump/super-jump/word?word=%E7%99%BE%E5%BA%A6)地图SDK，让我选择一种技术解释，本来选择的是AFN，不过在一面的时候说过，让我重新换一个，选择了SDW，解释了大概原理）；
 
 **retrofit**
 
@@ -379,11 +379,13 @@ RxJava的通信机制
 
 {% embed url="https://blog.csdn.net/so1993/article/details/106489951" %}
 
-{% embed url="https://blog.csdn.net/xwh\_1230/article/details/100006311" %}
+{% embed url="https://blog.csdn.net/xwh_1230/article/details/100006311" %}
 
 {% embed url="https://juejin.cn/post/6844904002551808013" %}
 
-{% embed url="https://juejin.cn/post/6844903986412126216" caption="⭐️" %}
+{% embed url="https://juejin.cn/post/6844903986412126216" %}
+⭐️
+{% endembed %}
 
 说下Glide的使用
 
@@ -399,15 +401,19 @@ Glide框架的分析
 
 ## **okhttp**
 
-{% embed url="https://github.com/LRH1993/android\_interview/blob/master/android/open-source-framework/okhttp.md" %}
+{% embed url="https://github.com/LRH1993/android_interview/blob/master/android/open-source-framework/okhttp.md" %}
 
 {% embed url="https://juejin.cn/post/6844904087788453896" %}
 
-{% embed url="https://cloud.tencent.com/developer/article/1601358" caption="这个最后提到了设计模式" %}
+{% embed url="https://cloud.tencent.com/developer/article/1601358" %}
+这个最后提到了设计模式
+{% endembed %}
 
-{% embed url="https://juejin.cn/post/6844904077726334984" caption="这一系列不错，还有其他的源码比如Glide" %}
+{% embed url="https://juejin.cn/post/6844904077726334984" %}
+这一系列不错，还有其他的源码比如Glide
+{% endembed %}
 
-okHttp的缓存策略，你觉得**okHttp**有哪些特别的优势\(讲了_\*_源码\)
+okHttp的缓存策略，你觉得**okHttp**有哪些特别的优势(讲了_\*_源码)
 
 okhttp怎么实现的
 
@@ -461,9 +467,9 @@ activtiy 如何被实例化的
 
 activity是通过反射被初始化的吗？初始化的类加载器是哪个呢？
 
-## **Activity 生命周期** 
+## **Activity 生命周期 **
 
-\*\*\*\*[**https://github.com/LRH1993/android\_interview/blob/master/android/basis/activity.md**](https://github.com/LRH1993/android_interview/blob/master/android/basis/activity.md)\*\*\*\*
+****[**https://github.com/LRH1993/android_interview/blob/master/android/basis/activity.md**](https://github.com/LRH1993/android_interview/blob/master/android/basis/activity.md)****
 
 安卓生命周期
 
@@ -479,7 +485,7 @@ activity之间的切换/返回
 
 Activity生命周期有哪些？你是如何获取当前的生命状态？哪些情况下会执行onStop（）方法？
 
-Activity生命周期简单介绍？出题：从Activity a返回到Activity b经历了哪些阶段？（我的回答是a先onPause-&gt;onStop-&gt;onDestroy，然后b再onStart-&gt;onResume，面试官纠正其实先让b可见并且可操作再让a onStop-&gt;onDestroy，还解释了为什么要这么做）
+Activity生命周期简单介绍？出题：从Activity a返回到Activity b经历了哪些阶段？（我的回答是a先onPause->onStop->onDestroy，然后b再onStart->onResume，面试官纠正其实先让b可见并且可操作再让a onStop->onDestroy，还解释了为什么要这么做）
 
 Activity的创建流程与原理（OnStart、OnCreate、OnResume等）
 
@@ -491,11 +497,11 @@ activity生命周期，**息屏或者按Home键的流程**
 
 **//**
 
-\*\*\*\*
+****
 
 ## 启动模式
 
-[https://github.com/LRH1993/android\_interview/blob/master/android/basis/activity.md](https://github.com/LRH1993/android_interview/blob/master/android/basis/activity.md)
+[https://github.com/LRH1993/android_interview/blob/master/android/basis/activity.md](https://github.com/LRH1993/android_interview/blob/master/android/basis/activity.md)
 
 Activity的四种**启动模式**，区别
 
@@ -519,15 +525,15 @@ Activity的启动模式，应用场景，然后举了很多微信的场景，让
 
 ## **Fragment**
 
-\*\*\*\*[**https://github.com/LRH1993/android\_interview/blob/master/android/basis/Fragment.md**](https://github.com/LRH1993/android_interview/blob/master/android/basis/Fragment.md)\*\*\*\*
+****[**https://github.com/LRH1993/android_interview/blob/master/android/basis/Fragment.md**](https://github.com/LRH1993/android_interview/blob/master/android/basis/Fragment.md)****
 
 fragment生命周期
 
 fragment生命周期
 
-使用addView达到弹出框的效果，但是耗时长。后来了解Fragment，使用Fragment代替addView。面试官追问你能分析为什么这么慢吗，我就说了Android的Activity-&gt;PhoneWindow-&gt;DecorView-&gt;ContentView-&gt;WindowManager-&gt;RootViewImpl的绘制流程。面试官继续追问ANR出现的类型，原因以及排查的方式。面试官继续追问Fragment和Activity的区别以及Fragment的优点。
+使用addView达到弹出框的效果，但是耗时长。后来了解Fragment，使用Fragment代替addView。面试官追问你能分析为什么这么慢吗，我就说了Android的Activity->PhoneWindow->DecorView->ContentView->WindowManager->RootViewImpl的绘制流程。面试官继续追问ANR出现的类型，原因以及排查的方式。面试官继续追问Fragment和Activity的区别以及Fragment的优点。
 
-**//** 
+**// **
 
 主界面UI的fragment设计的优势，安卓系统对于多个fragment的管理了解吗
 
@@ -535,7 +541,7 @@ fragment生命周期
 
 ## **Service**
 
-\*\*\*\*[**https://github.com/LRH1993/android\_interview/blob/master/android/basis/service.md**](https://github.com/LRH1993/android_interview/blob/master/android/basis/service.md)\*\*\*\*
+****[**https://github.com/LRH1993/android_interview/blob/master/android/basis/service.md**](https://github.com/LRH1993/android_interview/blob/master/android/basis/service.md)****
 
 服务的启动方式，生命周期
 
@@ -579,7 +585,7 @@ Android中你常用哪些控件
 
 一般我们调试的时候，会用到断点，**断点在底层是怎么实现的**，为什么还可以看到一些变量的值。
 
-IDE如何判断代码哪一行报错\(瞎编，不会，就说了说函数栈之类的糊弄过去了\)
+IDE如何判断代码哪一行报错(瞎编，不会，就说了说函数栈之类的糊弄过去了)
 
 ## **大小端**
 
@@ -593,9 +599,9 @@ C的字节对齐，大小端对齐
 
 ## **布局**
 
-\*\*\*\*[**https://github.com/Omooo/Android-Notes/blob/master/blogs/Android/RecyclerView.md**](https://github.com/Omooo/Android-Notes/blob/master/blogs/Android/RecyclerView.md)\*\*\*\*
+****[**https://github.com/Omooo/Android-Notes/blob/master/blogs/Android/RecyclerView.md**](https://github.com/Omooo/Android-Notes/blob/master/blogs/Android/RecyclerView.md)****
 
-四大布局\(主要帧布局\)
+四大布局(主要帧布局)
 
 // 六大布局 ：LineartLayout 、FrameLayout 、TableLayout 、 RelativeLayout 、 AbsoluteLayout 、 GridLayout ；
 
@@ -619,7 +625,7 @@ Android布局优化，为什么多层嵌套下，相对布局不如线性布局�
 
 ## ListView RecyclerView
 
-**recyclerview  listview** // 这俩要问肯定一起问的
+**recyclerview  listview **// 这俩要问肯定一起问的
 
 {% embed url="https://www.jianshu.com/p/4f9591291365" %}
 
@@ -675,7 +681,7 @@ ListView的优化
 
 ## **动画**
 
-\*\*\*\*[**https://github.com/LRH1993/android\_interview/blob/master/android/basis/animator.md**](https://github.com/LRH1993/android_interview/blob/master/android/basis/animator.md)\*\*\*\*
+****[**https://github.com/LRH1993/android_interview/blob/master/android/basis/animator.md**](https://github.com/LRH1993/android_interview/blob/master/android/basis/animator.md)****
 
 // 不知道
 
@@ -711,7 +717,7 @@ Flutter dart语言是在什么上运行的。
 
 ## **图片 Bitmap**
 
-\*\*\*\*[**https://github.com/LRH1993/android\_interview/blob/master/android/basis/bitmap.md**](https://github.com/LRH1993/android_interview/blob/master/android/basis/bitmap.md)\*\*\*\*
+****[**https://github.com/LRH1993/android_interview/blob/master/android/basis/bitmap.md**](https://github.com/LRH1993/android_interview/blob/master/android/basis/bitmap.md)****
 
 如果多图片进行压缩：bitmap
 
@@ -737,13 +743,13 @@ Flutter dart语言是在什么上运行的。
 
 ## **contentprovider**
 
-[https://github.com/LRH1993/android\_interview/blob/master/android/basis/ContentProvider.md](https://github.com/LRH1993/android_interview/blob/master/android/basis/ContentProvider.md)
+[https://github.com/LRH1993/android_interview/blob/master/android/basis/ContentProvider.md](https://github.com/LRH1993/android_interview/blob/master/android/basis/ContentProvider.md)
 
 介绍项目用到了**contentprovider**,然后问ContentProvider的生命周期，**application,activity，service,contentprovider他们的context有什么区别。**
 
 ## **数据存储**
 
-![](../.gitbook/assets/image%20%2864%29.png)
+![](<../.gitbook/assets/image (76).png>)
 
 android中多种数据存储类型的应用场景
 
@@ -763,7 +769,7 @@ ShareReference的用法和原理
 
 ## **事件分发**
 
-\*\*\*\*[**https://github.com/LRH1993/android\_interview/blob/master/android/basis/Event-Dispatch.md**](https://github.com/LRH1993/android_interview/blob/master/android/basis/Event-Dispatch.md)\*\*\*\*
+****[**https://github.com/LRH1993/android_interview/blob/master/android/basis/Event-Dispatch.md**](https://github.com/LRH1993/android_interview/blob/master/android/basis/Event-Dispatch.md)****
 
 事件分发机制，滑动冲突处理
 
@@ -779,9 +785,9 @@ ShareReference的用法和原理
 
 ## **屏幕适配**
 
-\*\*\*\*[**https://mp.weixin.qq.com/s/d9QCoBP6kV9VSWvVldVVwA**](https://mp.weixin.qq.com/s/d9QCoBP6kV9VSWvVldVVwA)\*\*\*\*
+****[**https://mp.weixin.qq.com/s/d9QCoBP6kV9VSWvVldVVwA**](https://mp.weixin.qq.com/s/d9QCoBP6kV9VSWvVldVVwA)****
 
-\(**dp、px怎么转换，屏幕真实DPI**...\)
+(**dp、px怎么转换，屏幕真实DPI**...)
 
 手机端应该和电脑端应用的注意事项和区别。（机型适配）
 
@@ -807,13 +813,13 @@ Android中dp、px、sp有什么区别，用在哪
 
 parcelable serializable
 
-{% embed url="https://lrh1993.gitbooks.io/android\_interview\_guide/content/android/advance/serializable.html" %}
+{% embed url="https://lrh1993.gitbooks.io/android_interview_guide/content/android/advance/serializable.html" %}
 
 //
 
 安卓的序列化内部实现原理？反射了解吗？
 
-其它的问了个Intent.putString\(Object\) 行不行，就是不进行序列化，然后直接传递对象，嗯，就进程内可以，内存空间相同，跨进程不行。
+其它的问了个Intent.putString(Object) 行不行，就是不进行序列化，然后直接传递对象，嗯，就进程内可以，内存空间相同，跨进程不行。
 
 ## **新特性**
 
@@ -843,7 +849,7 @@ parcelable serializable
 
 抖音点赞动画怎么实现
 
-登陆一般是如何实现 **// 项目里也有，重点梳理一下**
+登陆一般是如何实现** // 项目里也有，重点梳理一下**
 
 怎么让图片占的空间变小
 
@@ -851,7 +857,7 @@ parcelable serializable
 
 如果做一个看图软件，应该如何设计
 
-USB模块的数据怎么传输的？超声数据怎么转化成绘图数据？ **// 重点梳理一下**
+USB模块的数据怎么传输的？超声数据怎么转化成绘图数据？** // 重点梳理一下**
 
 数据按照什么协议传输的？项目中是怎么保证数据的安全性的？如果要和远端进行网络通信怎么实现数据加密？
 
@@ -951,7 +957,7 @@ OpenGL和Canvas的优缺点？canvas底层也是c++，为啥OpenGL更快？图�
 
 **有自己写过网络编程吗 比如TCP/UDP类似这种的编程**
 
- 答：无。然后扯到了https。（面试官：能说一下https和http的区别吗 https如何实现加密的呢）=&gt; 继续这个话题答 然后说了一下https的非对称加密以及加密过程的五次握手。
+ 答：无。然后扯到了https。（面试官：能说一下https和http的区别吗 https如何实现加密的呢）=> 继续这个话题答 然后说了一下https的非对称加密以及加密过程的五次握手。
 
 ## 内存机制
 
@@ -974,4 +980,3 @@ BlueboothAdapter
 开发中的优化，有哪些地方会存在界面卡顿，怎么解决
 
 ## 跨域问题
-

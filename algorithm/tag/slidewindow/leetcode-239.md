@@ -10,7 +10,7 @@
 
 > 通过下面的解释可以明显看出，对于长度为 n 的数组 nums ，滑动窗口的数量为 `n−k+1`。
 
-```text
+```
 输入：nums = [1,3,-1,-3,5,3,6,7], k = 3
 输出：[3,3,5,5,6,7]
 解释：
@@ -26,28 +26,28 @@
 
 **示例 2：**
 
-```text
+```
 输入：nums = [1], k = 1
 输出：[1]
 ```
 
 **示例 3：**
 
-```text
+```
 输入：nums = [1,-1], k = 1
 输出：[1,-1]
 ```
 
 **示例 4：**
 
-```text
+```
 输入：nums = [9,11], k = 2
 输出：[11]
 ```
 
 **示例 5：**
 
-```text
+```
 输入：nums = [4,-2], k = 2
 输出：[4]
 ```
@@ -66,7 +66,7 @@
 
 ## 3. 解法 - 大根堆
 
-> 还有一点糊涂 \#TODO
+> 还有一点糊涂 #TODO
 
 ### 3.1 Java
 
@@ -112,10 +112,9 @@ class Solution {
 ### 3.2 复杂度分析
 
 * 时间复杂度 `O(nlogn)` ：其中 n 是数组 nums 的长度。在最坏情况下，数组 nums 中的元素单调递增，那么最终优先队列将会包含了所有元素，没有元素被移除。由于将一个元素放入优先队列的时间复杂度为 `O(logn)`，因此总时间复杂度为 `O(nlogn)`。
-* 空间复杂度 `O(n)` ：即优先队列需要使用的空间。这里所有的空间复杂度分析都不考虑返回的答案所需要的 O\(n\) 空间，只计算额外的空间使用。
+* 空间复杂度 `O(n)` ：即优先队列需要使用的空间。这里所有的空间复杂度分析都不考虑返回的答案所需要的 O(n) 空间，只计算额外的空间使用。
 
 ## 4. 参考
 
 * [https://leetcode-cn.com/problems/sliding-window-maximum/](https://leetcode-cn.com/problems/sliding-window-maximum/)
 * [https://leetcode-cn.com/problems/sliding-window-maximum/solution/hua-dong-chuang-kou-zui-da-zhi-by-leetco-ki6m/](https://leetcode-cn.com/problems/sliding-window-maximum/solution/hua-dong-chuang-kou-zui-da-zhi-by-leetco-ki6m/)
-

@@ -1,17 +1,3 @@
----
-title: 112. 路径总和
-date: '2020-07-07T15:35:03.000Z'
-tags:
-  - leetcode
-  - java
-  - kotlin
-  - 树
-  - 递归
-  - BFS
-categories: 算法笔记
-notshow: true
----
-
 # LEETCODE 112. 路径总和
 
 ## 1. [问题](https://leetcode-cn.com/problems/path-sum/)
@@ -22,7 +8,7 @@ notshow: true
 
 示例:
 
-```text
+```
 给定如下二叉树，以及目标和 sum = 22，
 
               5
@@ -180,4 +166,3 @@ class Solution {
 ## 5. 笔记
 
 ![](https://777blog.oss-cn-shanghai.aliyuncs.com/leetcode/leetcode-112.jpg)
-

@@ -8,14 +8,14 @@
 
 **示例 1:**
 
-```text
+```
 输入: 1
 输出: [0.16667,0.16667,0.16667,0.16667,0.16667,0.16667]
 ```
 
 **示例 2:**
 
-```text
+```
 输入: 2
 输出: [0.02778,0.05556,0.08333,0.11111,0.13889,0.16667,0.13889,0.11111,0.08333,0.05556,0.02778]
 ```
@@ -154,4 +154,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/nge-tou-zi-de-dian-shu-lcof/](https://leetcode-cn.com/problems/nge-tou-zi-de-dian-shu-lcof/)
 * [https://leetcode-cn.com/problems/nge-tou-zi-de-dian-shu-lcof/solution/nge-tou-zi-de-dian-shu-dong-tai-gui-hua-ji-qi-yo-3/](https://leetcode-cn.com/problems/nge-tou-zi-de-dian-shu-lcof/solution/nge-tou-zi-de-dian-shu-dong-tai-gui-hua-ji-qi-yo-3/)
-

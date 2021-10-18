@@ -1,15 +1,3 @@
----
-title: 96. 不同的二叉搜索树
-date: '2020-07-15T16:24:48.000Z'
-tags:
-  - leetcode
-  - java
-  - 树
-  - 动态规划
-categories: 算法笔记
-notshow: true
----
-
 # LEETCODE 96. 不同的二叉搜索树
 
 ## 1. [问题](https://leetcode-cn.com/problems/unique-binary-search-trees)
@@ -18,7 +6,7 @@ notshow: true
 
 示例:
 
-```text
+```
 输入: 3
 输出: 5
 解释:
@@ -62,4 +50,3 @@ class Solution {
 ## 4. 笔记
 
 ![](https://777blog.oss-cn-shanghai.aliyuncs.com/leetcode/leetcode-96-1.jpg) ![](https://777blog.oss-cn-shanghai.aliyuncs.com/leetcode/leetcode-96-2.jpg)
-

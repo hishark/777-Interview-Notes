@@ -1,15 +1,3 @@
----
-title: 108. 将有序数组转换为二叉搜索树
-date: '2020-07-03T17:42:12.000Z'
-tags:
-  - 树
-  - DFS
-  - leetcode
-  - java
-categories: 算法笔记
-notshow: true
----
-
 # LEETCODE 108. 将有序数组转换为二叉搜索树
 
 ## [1. 问题](https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree/)
@@ -20,7 +8,7 @@ notshow: true
 
 示例:
 
-```text
+```
 给定有序数组: [-10,-3,0,5,9],
 一个可能的答案是：[0,-3,9,-10,null,5]，它可以表示下面这个高度平衡二叉搜索树：
       0
@@ -79,4 +67,3 @@ class Solution {
 ## 4. 笔记
 
 ![](https://777blog.oss-cn-shanghai.aliyuncs.com/blog%20pic/leetcode-108.jpg)
-

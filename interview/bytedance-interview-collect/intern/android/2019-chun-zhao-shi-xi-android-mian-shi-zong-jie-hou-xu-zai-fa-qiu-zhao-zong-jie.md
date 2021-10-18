@@ -1,8 +1,8 @@
-# 2019春招实习Android面试总结\(后续再发秋招总结\)
+# 2019春招实习Android面试总结(后续再发秋招总结)
 
-作者：heng222  
-链接：https://www.nowcoder.com/discuss/298790  
-来源：牛客网  
+作者：heng222\
+链接：https://www.nowcoder.com/discuss/298790\
+来源：牛客网\
 
 
 ## 字节跳动
@@ -18,7 +18,7 @@
 ####  Java
 
 *  深拷贝/浅拷贝，怎么实现深-浅拷贝 CopyonWrite
-*  Java内存（分配-&gt;回收）
+*  Java内存（分配->回收）
 
 ####  网络通信
 
@@ -50,7 +50,7 @@
 
 *  给定两个有序整数数组 nums1 和 nums2，将 nums2 合并到 nums1 中，使得 num1 成为一个有序数组
 
-###  字节三面 40min \(挂\)
+###  字节三面 40min (挂)
 
 ####  自我介绍
 
@@ -75,4 +75,3 @@
 *  Java有哪几种锁
 *  临界区概念
 *  synchronized和可重入锁的区别
-

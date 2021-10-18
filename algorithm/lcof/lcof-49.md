@@ -6,13 +6,13 @@
 
 **示例:**
 
-```text
+```
 输入: n = 10
 输出: 12
 解释: 1, 2, 3, 4, 5, 6, 8, 9, 10, 12 是前 10 个丑数。
 ```
 
-**说明:**  
+**说明: ** 
 
 1. `1` 是丑数。
 2. `n` **不超过**1690。
@@ -119,4 +119,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/chou-shu-lcof/](https://leetcode-cn.com/problems/chou-shu-lcof/)
 * [https://leetcode-cn.com/problems/chou-shu-lcof/solution/mian-shi-ti-49-chou-shu-dong-tai-gui-hua-qing-xi-t/](https://leetcode-cn.com/problems/chou-shu-lcof/solution/mian-shi-ti-49-chou-shu-dong-tai-gui-hua-qing-xi-t/)
-

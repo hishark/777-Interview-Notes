@@ -1,19 +1,8 @@
----
-title: 44. 通配符匹配
-date: '2020-07-05T17:29:21.000Z'
-tags:
-  - leetcode
-  - java
-  - 动态规划
-categories: 算法笔记
-notshow: true
----
-
 # LEETCODE 44. 通配符匹配
 
 ## [1. 问题](https://leetcode-cn.com/problems/wildcard-matching/)
 
-给定一个字符串 \(s\) 和一个字符模式 \(p\) ，实现一个支持 '?' 和 '\*' 的通配符匹配。
+给定一个字符串 (s) 和一个字符模式 (p) ，实现一个支持 '?' 和 '\*' 的通配符匹配。
 
 '?' 可以匹配任何单个字符。 '\*' 可以匹配任意字符串（包括空字符串）。 两个字符串完全匹配才算匹配成功。
 
@@ -97,4 +86,3 @@ class Solution {
 ## 4. 笔记
 
 ![](https://777blog.oss-cn-shanghai.aliyuncs.com/blog%20pic/leetcode44-1.jpg) ![](https://777blog.oss-cn-shanghai.aliyuncs.com/blog%20pic/leetcode44-2.jpg)
-

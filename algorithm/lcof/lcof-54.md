@@ -1,16 +1,3 @@
----
-title: 54. 二叉搜索树的第k大节点
-date: '2020-08-06T15:13:14.000Z'
-tags:
-  - 树
-  - leetcode
-  - lcof
-  - java
-  - kotlin
-categories: 算法笔记
-notshow: true
----
-
 # 54. 二叉搜索树的第k大节点【中序遍历】
 
 ## 1. [问题](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/)
@@ -19,7 +6,7 @@ notshow: true
 
 示例 1:
 
-```text
+```
 输入: root = [3,1,4,null,2], k = 1
    3
   / \
@@ -31,7 +18,7 @@ notshow: true
 
 示例 2:
 
-```text
+```
 输入: root = [5,3,6,2,4,null,null,1], k = 3
        5
       / \
@@ -150,4 +137,3 @@ class Solution {
 ## 4. 笔记
 
 ![](https://777blog.oss-cn-shanghai.aliyuncs.com/leetcode/lcof-54.jpg)
-

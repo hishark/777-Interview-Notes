@@ -1,15 +1,3 @@
----
-title: 309. 最佳买卖股票时机含冷冻期
-date: '2020-07-10T15:55:42.000Z'
-tags:
-  - leetcode
-  - java
-  - kotlin
-  - 动态规划
-categories: 算法笔记
-notshow: true
----
-
 # LEETCODE 309. 最佳买卖股票时机含冷冻期
 
 ## 1. [问题](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/)
@@ -19,11 +7,11 @@ notshow: true
 设计一个算法计算出最大利润。在满足以下约束条件下，你可以尽可能地完成更多的交易（多次买卖一支股票）:
 
 * 你不能同时参与多笔交易（你必须在再次购买前出售掉之前的股票）。
-* 卖出股票后，你无法在第二天买入股票 \(即冷冻期为 1 天\)。
+* 卖出股票后，你无法在第二天买入股票 (即冷冻期为 1 天)。
 
 示例:
 
-```text
+```
 输入: [1,2,3,0,2]
 输出: 3 
 解释: 对应的交易状态为: [买入, 卖出, 冷冻期, 买入, 卖出]
@@ -123,4 +111,3 @@ class Solution {
 ## 4. 笔记
 
 ![](https://777blog.oss-cn-shanghai.aliyuncs.com/leetcode/leetcode-309-1.jpg) ![](https://777blog.oss-cn-shanghai.aliyuncs.com/leetcode/leetcode-309-2.jpg) ![](https://777blog.oss-cn-shanghai.aliyuncs.com/leetcode/leetcode-309-3.jpg)
-

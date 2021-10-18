@@ -1,17 +1,3 @@
----
-title: 20. 表示数值的字符串
-date: '2020-09-13T10:11:10.000Z'
-tags:
-  - 数学
-  - 有限状态自动机
-  - leetcode
-  - java
-  - kotlin
-  - lcof
-  - TODO
-categories: 算法笔记
----
-
 # 20. 表示数值的字符串
 
 ## 1. [问题](https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/)
@@ -191,13 +177,13 @@ class Solution {
 }
 ```
 
-> 还有个解法是用有限状态自动机来做的，直接看[K佬的题解](https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/solution/mian-shi-ti-20-biao-shi-shu-zhi-de-zi-fu-chuan-y-2/)吧，我看着就头晕OTZ。\#就是不想做
+> 还有个解法是用有限状态自动机来做的，直接看[K佬的题解](https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/solution/mian-shi-ti-20-biao-shi-shu-zhi-de-zi-fu-chuan-y-2/)吧，我看着就头晕OTZ。#就是不想做
 
 ### 2.3 LEETCODE-08 解法
 
 字符串转数字 🔢
 
-> res \* 10 + num &gt; Integer.MAX\_VALUE 需要注意，直接这么写会越界的，稍微移动一下就不会出现越界的情况了。
+> res \* 10 + num > Integer.MAX_VALUE 需要注意，直接这么写会越界的，稍微移动一下就不会出现越界的情况了。
 
 ```java
 class Solution {
@@ -260,4 +246,3 @@ class Solution {
 * [https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/](https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/)
 * [https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/solution/mian-shi-ti-20-biao-shi-shu-zhi-de-zi-fu-chuan-y-2/](https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/solution/mian-shi-ti-20-biao-shi-shu-zhi-de-zi-fu-chuan-y-2/) // 还没看 就不看
 * [https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/solution/zui-jian-dan-si-lu-xiang-xi-zhu-shi-zheng-shu-xiao/](https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/solution/zui-jian-dan-si-lu-xiang-xi-zhu-shi-zheng-shu-xiao/)
-

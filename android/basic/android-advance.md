@@ -48,7 +48,9 @@ Dex 文件格式是专为 Dalvik 设计的一种压缩格式。所以可以简�
 
 > 看android-interview
 
-{% embed url="https://mp.weixin.qq.com/s?\_\_biz=MzI1MTA1MzM2Nw==&mid=400118620&idx=1&sn=b4fdd5055731290eef12ad0d17f39d4a&scene=1&srcid=1106Imu9ZgwybID13e7y2nEi\#wechat\_redirect" caption="2015年的文章" %}
+{% embed url="https://mp.weixin.qq.com/s?__biz=MzI1MTA1MzM2Nw==&mid=400118620&idx=1&sn=b4fdd5055731290eef12ad0d17f39d4a&scene=1&srcid=1106Imu9ZgwybID13e7y2nEi#wechat_redirect" %}
+2015年的文章
+{% endembed %}
 
 {% embed url="https://juejin.cn/post/6844904181908635662" %}
 
@@ -99,4 +101,3 @@ Dex 文件格式是专为 Dalvik 设计的一种压缩格式。所以可以简�
 * 继承特定的 ViewGroup（比如 LinearLayout）
 
 把用过的两种说清楚就好了。
-

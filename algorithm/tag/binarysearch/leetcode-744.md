@@ -6,11 +6,11 @@
 
 在比较时，字母是依序循环出现的。举个例子：
 
-* 如果目标字母 target = 'z' 并且字符列表为 letters = \['a', 'b'\]，则答案返回 'a'
+* 如果目标字母 target = 'z' 并且字符列表为 letters = \['a', 'b']，则答案返回 'a'
 
 **示例：**
 
-```text
+```
 输入:
 letters = ["c", "f", "j"]
 target = "a"
@@ -44,7 +44,7 @@ target = "k"
 
 **提示：**
 
-letters长度范围在\[2, 10000\]区间内。 letters 仅由小写字母组成，最少包含两个不同的字母。 目标字母target 是一个小写字母。
+letters长度范围在\[2, 10000]区间内。 letters 仅由小写字母组成，最少包含两个不同的字母。 目标字母target 是一个小写字母。
 
 ## 2. 标签
 
@@ -163,4 +163,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/find-smallest-letter-greater-than-target/](https://leetcode-cn.com/problems/find-smallest-letter-greater-than-target/)
 * [https://leetcode-cn.com/problems/find-smallest-letter-greater-than-target/solution/xun-zhao-bi-mu-biao-zi-mu-da-de-zui-xiao-zi-mu-by-/](https://leetcode-cn.com/problems/find-smallest-letter-greater-than-target/solution/xun-zhao-bi-mu-biao-zi-mu-da-de-zui-xiao-zi-mu-by-/)
-

@@ -86,9 +86,9 @@ DataInputStream 装饰者提供了对更多数据类型进行输入的操作，�
 
 ### 编码与解码
 
-> 编码：字符 -&gt; 字节。
+> 编码：字符 -> 字节。
 >
-> 解码：字节 -&gt; 字符。
+> 解码：字节 -> 字符。
 
 编码就是把字符转换为字节，而解码是把字节重新组合成字符。
 
@@ -113,7 +113,7 @@ String str2 = new String(bytes, "UTF-8");
 System.out.println(str2);
 ```
 
-在调用无参数 getBytes\(\) 方法时，默认的编码方式不是 UTF-16be。双字节编码的好处是可以使用一个 char 存储中文和英文，而将 String 转为 bytes\[\] 字节数组就不再需要这个好处，因此也就不再需要双字节编码。getBytes\(\) 的默认编码方式与平台有关，一般为 UTF-8。
+在调用无参数 getBytes() 方法时，默认的编码方式不是 UTF-16be。双字节编码的好处是可以使用一个 char 存储中文和英文，而将 String 转为 bytes\[] 字节数组就不再需要这个好处，因此也就不再需要双字节编码。getBytes() 的默认编码方式与平台有关，一般为 UTF-8。
 
 ```java
 byte[] bytes = str1.getBytes();
@@ -150,12 +150,14 @@ public static void readFileContent(String filePath) throws IOException {
 
 ### 序列化
 
-{% embed url="https://www.liaoxuefeng.com/wiki/1252599548343744/1298366845681698" caption="序列化会存在一定的安全性问题" %}
+{% embed url="https://www.liaoxuefeng.com/wiki/1252599548343744/1298366845681698" %}
+序列化会存在一定的安全性问题
+{% endembed %}
 
 序列化就是将一个对象转换成字节序列，方便存储和传输。
 
-* 序列化：ObjectOutputStream.writeObject\(\)
-* 反序列化：ObjectInputStream.readObject\(\)
+* 序列化：ObjectOutputStream.writeObject()
+* 反序列化：ObjectInputStream.readObject()
 
 不会对静态变量进行序列化，因为序列化只是保存对象的状态，静态变量属于类的状态。
 
@@ -270,7 +272,7 @@ public static void main(String[] args) throws IOException {
 
 > 还没看。
 
-新的输入/输出 \(NIO\) 库是在 JDK 1.4 中引入的，弥补了原来的 I/O 的不足，提供了高速的、面向块的 I/O。
+新的输入/输出 (NIO) 库是在 JDK 1.4 中引入的，弥补了原来的 I/O 的不足，提供了高速的、面向块的 I/O。
 
 ### 流与块
 
@@ -288,7 +290,7 @@ I/O 包和 NIO 已经很好地集成了，java.io.\* 已经以 NIO 为基础重�
 
 通道 Channel 是对原 I/O 包中的流的模拟，可以通过它读取和写入数据。
 
-通道与流的不同之处在于，流只能在一个方向上移动\(一个流必须是 InputStream 或者 OutputStream 的子类\)，而通道是双向的，可以用于读、写或者同时用于读写。
+通道与流的不同之处在于，流只能在一个方向上移动(一个流必须是 InputStream 或者 OutputStream 的子类)，而通道是双向的，可以用于读、写或者同时用于读写。
 
 通道包括以下类型：
 
@@ -329,7 +331,7 @@ I/O 包和 NIO 已经很好地集成了，java.io.\* 已经以 NIO 为基础重�
 
 ![](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/80804f52-8815-4096-b506-48eef3eed5c6.png)
 
-③ 在将缓冲区的数据写到输出通道之前，需要先调用 flip\(\) 方法，这个方法将 limit 设置为当前 position，并将 position 设置为 0。
+③ 在将缓冲区的数据写到输出通道之前，需要先调用 flip() 方法，这个方法将 limit 设置为当前 position，并将 position 设置为 0。
 
 ![](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/952e06bd-5a65-4cab-82e4-dd1536462f38.png)
 
@@ -337,7 +339,7 @@ I/O 包和 NIO 已经很好地集成了，java.io.\* 已经以 NIO 为基础重�
 
 ![](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/b5bdcbe2-b958-4aef-9151-6ad963cb28b4.png)
 
-⑤ 最后需要调用 clear\(\) 方法来清空缓冲区，此时 position 和 limit 都被设置为最初位置。
+⑤ 最后需要调用 clear() 方法来清空缓冲区，此时 position 和 limit 都被设置为最初位置。
 
 ![](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/67bf5487-c45d-49b6-b9c0-a058d8c68902.png)
 
@@ -417,10 +419,10 @@ ssChannel.register(selector, SelectionKey.OP_ACCEPT);
 
 在将通道注册到选择器上时，还需要指定要注册的具体事件，主要有以下几类：
 
-* SelectionKey.OP\_CONNECT
-* SelectionKey.OP\_ACCEPT
-* SelectionKey.OP\_READ
-* SelectionKey.OP\_WRITE
+* SelectionKey.OP_CONNECT
+* SelectionKey.OP_ACCEPT
+* SelectionKey.OP_READ
+* SelectionKey.OP_WRITE
 
 它们在 SelectionKey 的定义如下：
 
@@ -443,7 +445,7 @@ int interestSet = SelectionKey.OP_READ | SelectionKey.OP_WRITE;
 int num = selector.select();
 ```
 
-使用 select\(\) 来监听到达的事件，它会一直阻塞直到有至少一个事件到达。
+使用 select() 来监听到达的事件，它会一直阻塞直到有至少一个事件到达。
 
 #### 4. 获取到达的事件
 
@@ -463,7 +465,7 @@ while (keyIterator.hasNext()) {
 
 #### 5. 事件循环
 
-因为一次 select\(\) 调用不能处理完所有的事件，并且服务器端有可能需要一直监听事件，因此服务器端处理事件的代码一般会放在一个死循环内。
+因为一次 select() 调用不能处理完所有的事件，并且服务器端有可能需要一直监听事件，因此服务器端处理事件的代码一般会放在一个死循环内。
 
 ```java
 while (true) {
@@ -577,7 +579,7 @@ public class NIOClient {
 
 向内存映射文件写入可能是危险的，只是改变数组的单个元素这样的简单操作，就可能会直接修改磁盘上的文件。修改数据与将数据保存到磁盘是没有分开的。
 
-下面代码行将文件的前 1024 个字节映射到内存中，map\(\) 方法返回一个 MappedByteBuffer，它是 ByteBuffer 的子类。因此，可以像使用其他任何 ByteBuffer 一样使用新映射的缓冲区，操作系统会在需要时负责执行映射。
+下面代码行将文件的前 1024 个字节映射到内存中，map() 方法返回一个 MappedByteBuffer，它是 ByteBuffer 的子类。因此，可以像使用其他任何 ByteBuffer 一样使用新映射的缓冲区，操作系统会在需要时负责执行映射。
 
 ```java
 MappedByteBuffer mbb = fc.map(FileChannel.MapMode.READ_WRITE, 0, 1024);
@@ -589,4 +591,3 @@ NIO 与普通 I/O 的区别主要有以下两点：
 
 * NIO 是非阻塞的。
 * NIO 面向块，I/O 面向流。⭐️
-

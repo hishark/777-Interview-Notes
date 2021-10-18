@@ -1,17 +1,3 @@
----
-title: 04. 二维数组中的查找
-date: '2020-08-11T20:07:31.000Z'
-tags:
-  - 数组
-  - 双指针
-  - leetcode
-  - lcof
-  - java
-  - kotlin
-categories: 算法笔记
-notshow: true
----
-
 # 04. 二维数组中的查找【线性查找】
 
 ## 1. [问题](https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/)
@@ -20,7 +6,7 @@ notshow: true
 
 示例:
 
-```text
+```
 现有矩阵 matrix 如下：
 
 [
@@ -38,8 +24,8 @@ notshow: true
 
 限制：
 
-* 0 &lt;= n &lt;= 1000
-* 0 &lt;= m &lt;= 1000
+* 0 <= n <= 1000
+* 0 <= m <= 1000
 
 ## 2. 解法 - 线性查找
 
@@ -116,4 +102,3 @@ class Solution {
 ## 4. 笔记
 
 ![](https://777blog.oss-cn-shanghai.aliyuncs.com/leetcode/lcof-04.jpg)
-

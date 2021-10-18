@@ -22,7 +22,7 @@
 
 ### 实现 Runnable 接口
 
-需要实现接口中的 run\(\) 方法。
+需要实现接口中的 run() 方法。
 
 ```java
 public class MyRunnable implements Runnable {
@@ -33,7 +33,7 @@ public class MyRunnable implements Runnable {
 }
 ```
 
-使用 Runnable 实例再创建一个 Thread 实例，然后调用 Thread 实例的 start\(\) 方法来启动线程。
+使用 Runnable 实例再创建一个 Thread 实例，然后调用 Thread 实例的 start() 方法来启动线程。
 
 ```java
 public static void main(String[] args) {
@@ -67,9 +67,9 @@ public static void main(String[] args) throws ExecutionException, InterruptedExc
 
 ### 继承 Thread 类
 
-同样也是需要实现 run\(\) 方法，因为 Thread 类也实现了 Runable 接口。
+同样也是需要实现 run() 方法，因为 Thread 类也实现了 Runable 接口。
 
-当调用 start\(\) 方法启动一个线程时，虚拟机会将该线程放入就绪队列中等待被调度，当一个线程被调度时会执行该线程的 run\(\) 方法。
+当调用 start() 方法启动一个线程时，虚拟机会将该线程放入就绪队列中等待被调度，当一个线程被调度时会执行该线程的 run() 方法。
 
 ```java
 public class MyThread extends Thread {
@@ -121,9 +121,9 @@ public static void main(String[] args) {
 
 当所有非守护线程结束时，程序也就终止，同时会杀死所有守护线程。
 
-main\(\) 属于非守护线程。
+main() 属于非守护线程。
 
-在线程启动之前使用 setDaemon\(\) 方法可以将一个线程设置为守护线程。
+在线程启动之前使用 setDaemon() 方法可以将一个线程设置为守护线程。
 
 ```java
 public static void main(String[] args) {
@@ -132,11 +132,11 @@ public static void main(String[] args) {
 }
 ```
 
-### sleep\(\)
+### sleep()
 
-Thread.sleep\(millisec\) 方法会休眠当前正在执行的线程，millisec 单位为毫秒。
+Thread.sleep(millisec) 方法会休眠当前正在执行的线程，millisec 单位为毫秒。
 
-sleep\(\) 可能会抛出 InterruptedException，因为异常不能跨线程传播回 main\(\) 中，因此必须在本地进行处理。线程中抛出的其它异常也同样需要在本地进行处理。
+sleep() 可能会抛出 InterruptedException，因为异常不能跨线程传播回 main() 中，因此必须在本地进行处理。线程中抛出的其它异常也同样需要在本地进行处理。
 
 ```java
 public void run() {
@@ -148,9 +148,9 @@ public void run() {
 }
 ```
 
-### yield\(\)
+### yield()
 
-对静态方法 Thread.yield\(\) 的调用声明了当前线程已经完成了生命周期中最重要的部分，可以切换给其它线程来执行。该方法只是对线程调度器的一个建议，而且也只是建议具有相同优先级的其它线程可以运行。
+对静态方法 Thread.yield() 的调用声明了当前线程已经完成了生命周期中最重要的部分，可以切换给其它线程来执行。该方法只是对线程调度器的一个建议，而且也只是建议具有相同优先级的其它线程可以运行。
 
 ```java
 public void run() {
@@ -166,9 +166,9 @@ public void run() {
 
 ### InterruptedException
 
-通过调用一个线程的 interrupt\(\) 来中断该线程，如果该线程处于`阻塞`、`限期等待`或者~~`无限期等待状态`~~，那么就会抛出 InterruptedException，从而提前结束该线程。但是不能中断 I/O 阻塞和 synchronized 锁阻塞。
+通过调用一个线程的 interrupt() 来中断该线程，如果该线程处于`阻塞`、`限期等待`或者~~`无限期等待状态`~~，那么就会抛出 InterruptedException，从而提前结束该线程。但是不能中断 I/O 阻塞和 synchronized 锁阻塞。
 
-对于以下代码，在 main\(\) 中启动一个线程之后再中断它，由于线程中调用了 Thread.sleep\(\) 方法，因此会抛出一个 InterruptedException，从而提前结束线程，不执行之后的语句。
+对于以下代码，在 main() 中启动一个线程之后再中断它，由于线程中调用了 Thread.sleep() 方法，因此会抛出一个 InterruptedException，从而提前结束线程，不执行之后的语句。
 
 ```java
 public class InterruptExample {
@@ -205,11 +205,11 @@ java.lang.InterruptedException: sleep interrupted
     at java.lang.Thread.run(Thread.java:745)
 ```
 
-### interrupted\(\)
+### interrupted()
 
-如果一个线程的 run\(\) 方法执行一个无限循环，并且没有执行 sleep\(\) 等等会抛出 InterruptedException 的操作（也就是不处于`阻塞`、`限期等待`、`无限期等待`状态时），那么调用线程的 interrupt\(\) 方法就无法使线程提前结束，只是设置了一个标记。
+如果一个线程的 run() 方法执行一个无限循环，并且没有执行 sleep() 等等会抛出 InterruptedException 的操作（也就是不处于`阻塞`、`限期等待`、`无限期等待`状态时），那么调用线程的 interrupt() 方法就无法使线程提前结束，只是设置了一个标记。
 
-调用 interrupt\(\) 方法会设置线程的中断标记，此时调用 interrupted\(\) 方法会返回 true。因此可以在循环体中使用 interrupted\(\) 方法来判断线程是否处于中断状态，从而提前结束线程。
+调用 interrupt() 方法会设置线程的中断标记，此时调用 interrupted() 方法会返回 true。因此可以在循环体中使用 interrupted() 方法来判断线程是否处于中断状态，从而提前结束线程。
 
 ```java
 public class InterruptExample {
@@ -240,7 +240,7 @@ Thread end
 
 ### Executor 的中断操作
 
-调用 Executor 的 shutdown\(\) 方法会等待线程都执行完毕之后再关闭，但是如果调用的是 shutdownNow\(\) 方法，则相当于调用每个线程的 interrupt\(\) 方法。
+调用 Executor 的 shutdown() 方法会等待线程都执行完毕之后再关闭，但是如果调用的是 shutdownNow() 方法，则相当于调用每个线程的 interrupt() 方法。
 
 以下使用 Lambda 创建线程，相当于创建了一个匿名内部线程。
 
@@ -271,7 +271,7 @@ java.lang.InterruptedException: sleep interrupted
     at java.lang.Thread.run(Thread.java:745)
 ```
 
-如果只想中断 Executor 中的一个线程，可以通过使用 submit\(\) 方法来提交一个线程，它会返回一个 Future&lt;?&gt; 对象，通过调用该对象的 cancel\(true\) 方法就可以中断线程。
+如果只想中断 Executor 中的一个线程，可以通过使用 submit() 方法来提交一个线程，它会返回一个 Future\<?> 对象，通过调用该对象的 cancel(true) 方法就可以中断线程。
 
 ```java
 Future<?> future = executorService.submit(() -> {
@@ -286,7 +286,7 @@ Java 提供了两种锁机制来控制多个线程对共享资源的互斥访问
 
 ### synchronized
 
-> 顺便看一下 [volatile](https://snailclimb.gitee.io/javaguide/#/docs/java/multi-thread/2020%E6%9C%80%E6%96%B0Java%E5%B9%B6%E5%8F%91%E8%BF%9B%E9%98%B6%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93?id=_2-volatile-%e5%85%b3%e9%94%ae%e5%ad%97)，对比理解。
+> 顺便看一下 [volatile](https://snailclimb.gitee.io/javaguide/#/docs/java/multi-thread/2020%E6%9C%80%E6%96%B0Java%E5%B9%B6%E5%8F%91%E8%BF%9B%E9%98%B6%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93?id=\_2-volatile-%e5%85%b3%e9%94%ae%e5%ad%97)，对比理解。
 
 **1. 同步一个代码块**
 
@@ -476,7 +476,7 @@ synchronized 中的锁是非公平的，ReentrantLock 默认情况下也是非�
 
 ### 乐观锁和悲观锁
 
-{% embed url="https://blog.csdn.net/caisongcheng\_good/article/details/79916873" %}
+{% embed url="https://blog.csdn.net/caisongcheng_good/article/details/79916873" %}
 
 **悲观锁**：假定会发生并发冲突，屏蔽一切可能违反数据完整性的操作。加锁的时间可能会很长，也就是说悲观锁的并发访问性不好。由于在进程挂起和恢复执行过程中存在着很大的开销。当一个线程正在等待锁时，它不能做任何事，所以悲观锁有很大的缺点。
 
@@ -484,7 +484,7 @@ synchronized 中的锁是非公平的，ReentrantLock 默认情况下也是非�
 
 例子1：synchronized和ReentrantLock都是独占锁（悲观锁，操作之前先上锁），它假设最坏的情况，认为一个线程修改共享数据的时候其他线程也会修改该数据，因此只在确保其它线程不会造成干扰的情况下执行，会导致其它所有需要锁的线程挂起，等待持有锁的线程释放锁。
 
-例子2：CAS是一种乐观锁思想，CAS 操作包含三个操作数 —— 内存位置（V）、预期原值（A）和新值\(B\)。执行 CAS操作的时候，将内存位置的值与预期原值比较，如果相匹配，那么处理器会自动将该位置值更新为新值。否则，处理器不做任何操作。
+例子2：CAS是一种乐观锁思想，CAS 操作包含三个操作数 —— 内存位置（V）、预期原值（A）和新值(B)。执行 CAS操作的时候，将内存位置的值与预期原值比较，如果相匹配，那么处理器会自动将该位置值更新为新值。否则，处理器不做任何操作。
 
 **适用场景：**
 
@@ -502,11 +502,11 @@ synchronized 中的锁是非公平的，ReentrantLock 默认情况下也是非�
 
 当多个线程可以一起工作去解决某个问题时，如果某些部分必须在其它部分之前完成，那么就需要对线程进行协调。
 
-### join\(\)
+### join()
 
-在线程中调用另一个线程的 join\(\) 方法，会将当前线程挂起，而不是忙等待，直到目标线程结束。
+在线程中调用另一个线程的 join() 方法，会将当前线程挂起，而不是忙等待，直到目标线程结束。
 
-对于以下代码，虽然 b 线程先启动，但是因为在 b 线程中调用了 a 线程的 join\(\) 方法，b 线程会等待 a 线程结束才继续执行，因此最后能够保证 a 线程的输出先于 b 线程的输出。
+对于以下代码，虽然 b 线程先启动，但是因为在 b 线程中调用了 a 线程的 join() 方法，b 线程会等待 a 线程结束才继续执行，因此最后能够保证 a 线程的输出先于 b 线程的输出。
 
 ```java
 public class JoinExample {
@@ -553,20 +553,20 @@ public static void main(String[] args) {
 }
 ```
 
-```text
+```
 A
 B
 ```
 
-### wait\(\) notify\(\) notifyAll\(\)
+### wait() notify() notifyAll()
 
-调用 wait\(\) 使得线程等待某个条件满足，线程在等待时会被挂起，当其他线程的运行使得这个条件满足时，其它线程会调用 notify\(\) 或者 notifyAll\(\) 来唤醒挂起的线程。
+调用 wait() 使得线程等待某个条件满足，线程在等待时会被挂起，当其他线程的运行使得这个条件满足时，其它线程会调用 notify() 或者 notifyAll() 来唤醒挂起的线程。
 
 它们都属于 Object 的一部分，而不属于 Thread。
 
 只能用在同步方法或者同步控制块中使用，否则会在运行时抛出 IllegalMonitorStateException。
 
-使用 wait\(\) 挂起期间，线程会释放锁。这是因为，如果没有释放锁，那么其它线程就无法进入对象的同步方法或者同步控制块中，那么就无法执行 notify\(\) 或者 notifyAll\(\) 来唤醒挂起的线程，造成死锁。
+使用 wait() 挂起期间，线程会释放锁。这是因为，如果没有释放锁，那么其它线程就无法进入对象的同步方法或者同步控制块中，那么就无法执行 notify() 或者 notifyAll() 来唤醒挂起的线程，造成死锁。
 
 ```java
 public class WaitNotifyExample {
@@ -601,16 +601,16 @@ before
 after
 ```
 
-**wait\(\) 和 sleep\(\) 的区别**
+**wait() 和 sleep() 的区别**
 
-* wait\(\) 是 Object 的方法，而 sleep\(\) 是 Thread 的静态方法；
-* wait\(\) 会释放锁，sleep\(\) 不会。
+* wait() 是 Object 的方法，而 sleep() 是 Thread 的静态方法；
+* wait() 会释放锁，sleep() 不会。
 
-### await\(\) signal\(\) signalAll\(\)
+### await() signal() signalAll()
 
-java.util.concurrent 类库中提供了 Condition 类来实现线程之间的协调，可以在 Condition 上调用 await\(\) 方法使线程等待，其它线程调用 signal\(\) 或 signalAll\(\) 方法唤醒等待的线程。
+java.util.concurrent 类库中提供了 Condition 类来实现线程之间的协调，可以在 Condition 上调用 await() 方法使线程等待，其它线程调用 signal() 或 signalAll() 方法唤醒等待的线程。
 
-相比于 wait\(\) 这种等待方式，await\(\) 可以指定等待的条件，因此更加灵活。
+相比于 wait() 这种等待方式，await() 可以指定等待的条件，因此更加灵活。
 
 使用 Lock 来获取一个 Condition 对象。
 
@@ -682,29 +682,29 @@ after
 
 等待其它线程显式地唤醒。
 
-阻塞和等待的区别在于，阻塞是被动的，它是在等待获取 monitor lock。而等待是主动的，通过调用 Object.wait\(\) 等方法进入。
+阻塞和等待的区别在于，阻塞是被动的，它是在等待获取 monitor lock。而等待是主动的，通过调用 Object.wait() 等方法进入。
 
-| 进入方法 | 退出方法 |
-| :--- | :--- |
-| 没有设置 Timeout 参数的 Object.wait\(\) 方法 | Object.notify\(\) / Object.notifyAll\(\) |
-| 没有设置 Timeout 参数的 Thread.join\(\) 方法 | 被调用的线程执行完毕 |
-| LockSupport.park\(\) 方法 | LockSupport.unpark\(Thread\) |
+| 进入方法                              | 退出方法                                 |
+| --------------------------------- | ------------------------------------ |
+| 没有设置 Timeout 参数的 Object.wait() 方法 | Object.notify() / Object.notifyAll() |
+| 没有设置 Timeout 参数的 Thread.join() 方法 | 被调用的线程执行完毕                           |
+| LockSupport.park() 方法             | LockSupport.unpark(Thread)           |
 
-### 限期等待（TIMED\_WAITING）
+### 限期等待（TIMED_WAITING）
 
 无需等待其它线程显式地唤醒，在一定时间之后会被系统自动唤醒。
 
-| 进入方法 | 退出方法 |
-| :--- | :--- |
-| Thread.sleep\(\) 方法 | 时间结束 |
-| 设置了 Timeout 参数的 Object.wait\(\) 方法 | 时间结束 / Object.notify\(\) / Object.notifyAll\(\) |
-| 设置了 Timeout 参数的 Thread.join\(\) 方法 | 时间结束 / 被调用的线程执行完毕 |
-| LockSupport.parkNanos\(\) 方法 | LockSupport.unpark\(Thread\) |
-| LockSupport.parkUntil\(\) 方法 | LockSupport.unpark\(Thread\) |
+| 进入方法                             | 退出方法                                        |
+| -------------------------------- | ------------------------------------------- |
+| Thread.sleep() 方法                | 时间结束                                        |
+| 设置了 Timeout 参数的 Object.wait() 方法 | 时间结束 / Object.notify() / Object.notifyAll() |
+| 设置了 Timeout 参数的 Thread.join() 方法 | 时间结束 / 被调用的线程执行完毕                           |
+| LockSupport.parkNanos() 方法       | LockSupport.unpark(Thread)                  |
+| LockSupport.parkUntil() 方法       | LockSupport.unpark(Thread)                  |
 
-调用 Thread.sleep\(\) 方法使线程进入限期等待状态时，常常用“使一个线程睡眠”进行描述。
+调用 Thread.sleep() 方法使线程进入限期等待状态时，常常用“使一个线程睡眠”进行描述。
 
-调用 Object.wait\(\) 方法使线程进入限期等待或者无限期等待时，常常用“挂起一个线程”进行描述。
+调用 Object.wait() 方法使线程进入限期等待或者无限期等待时，常常用“挂起一个线程”进行描述。
 
 睡眠（sleep）和挂起（wait）是用来描述行为，而阻塞（BLOCKED）和等待（WAITING）用来描述状态。
 
@@ -726,7 +726,7 @@ java.util.concurrent（J.U.C）大大提高了并发性能，AQS 被认为是 J.
 
 用来控制一个或者多个线程等待多个线程。
 
-维护了一个计数器 cnt，每次调用 countDown\(\) 方法会让计数器的值减 1，减到 0 的时候，那些因为调用 await\(\) 方法而在等待的线程就会被唤醒。
+维护了一个计数器 cnt，每次调用 countDown() 方法会让计数器的值减 1，减到 0 的时候，那些因为调用 await() 方法而在等待的线程就会被唤醒。
 
 ![](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/ba078291-791e-4378-b6d1-ece76c2f0b14.png)
 
@@ -758,9 +758,9 @@ run..run..run..run..run..run..run..run..run..run..end
 
 用来控制多个线程互相等待，只有当多个线程都到达时，这些线程才会继续执行。
 
-和 CountdownLatch 相似，都是通过维护计数器来实现的。线程执行 await\(\) 方法之后计数器会减 1，并进行等待，直到计数器为 0，所有调用 await\(\) 方法而在等待的线程才能继续执行。
+和 CountdownLatch 相似，都是通过维护计数器来实现的。线程执行 await() 方法之后计数器会减 1，并进行等待，直到计数器为 0，所有调用 await() 方法而在等待的线程才能继续执行。
 
-CyclicBarrier 和 CountdownLatch 的一个区别是，CyclicBarrier 的计数器通过调用 reset\(\) 方法可以循环使用，所以它才叫做循环屏障。
+CyclicBarrier 和 CountdownLatch 的一个区别是，CyclicBarrier 的计数器通过调用 reset() 方法可以循环使用，所以它才叫做循环屏障。
 
 CyclicBarrier 有两个构造函数，其中 parties 指示计数器的初始值，barrierAction 在所有线程都到达屏障的时候会执行一次。
 
@@ -904,7 +904,7 @@ java.util.concurrent.BlockingQueue 接口有以下阻塞队列的实现：
 * **FIFO 队列**  ：LinkedBlockingQueue、ArrayBlockingQueue（固定长度）
 * **优先级队列**  ：PriorityBlockingQueue
 
-提供了阻塞的 take\(\) 和 put\(\) 方法：如果队列为空 take\(\) 将阻塞，直到队列中有内容；如果队列为满 put\(\) 将阻塞，直到队列有空闲位置。
+提供了阻塞的 take() 和 put() 方法：如果队列为空 take() 将阻塞，直到队列中有内容；如果队列为满 put() 将阻塞，直到队列有空闲位置。
 
 **使用 BlockingQueue 实现生产者消费者问题**
 
@@ -1262,7 +1262,7 @@ volatile 关键字通过添加内存屏障的方式来禁止指令重排，即�
 
 > Thread Start Rule
 
-Thread 对象的 start\(\) 方法调用先行发生于此线程的每一个动作。
+Thread 对象的 start() 方法调用先行发生于此线程的每一个动作。
 
 ![](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/6270c216-7ec0-4db7-94de-0003bce37cd2.png)
 
@@ -1270,7 +1270,7 @@ Thread 对象的 start\(\) 方法调用先行发生于此线程的每一个动�
 
 > Thread Join Rule
 
-Thread 对象的结束先行发生于 join\(\) 方法返回。
+Thread 对象的结束先行发生于 join() 方法返回。
 
 ![](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/233f8d89-31d7-413f-9c02-042f19c46ba1.png)
 
@@ -1278,13 +1278,13 @@ Thread 对象的结束先行发生于 join\(\) 方法返回。
 
 > Thread Interruption Rule
 
-对线程 interrupt\(\) 方法的调用先行发生于被中断线程的代码检测到中断事件的发生，可以通过 interrupted\(\) 方法检测到是否有中断发生。
+对线程 interrupt() 方法的调用先行发生于被中断线程的代码检测到中断事件的发生，可以通过 interrupted() 方法检测到是否有中断发生。
 
 #### 7. 对象终结规则
 
 > Finalizer Rule
 
-一个对象的初始化完成（构造函数执行结束）先行发生于它的 finalize\(\) 方法的开始。
+一个对象的初始化完成（构造函数执行结束）先行发生于它的 finalize() 方法的开始。
 
 #### 8. 传递性
 
@@ -1309,7 +1309,7 @@ Thread 对象的结束先行发生于 join\(\) 方法返回。
 * 枚举类型
 * Number 部分子类，如 Long 和 Double 等数值包装类型，BigInteger 和 BigDecimal 等大数据类型。但同为 Number 的原子类 AtomicInteger 和 AtomicLong 则是可变的。
 
-对于集合类型，可以使用 Collections.unmodifiableXXX\(\) 方法来获取一个不可变的集合。
+对于集合类型，可以使用 Collections.unmodifiableXXX() 方法来获取一个不可变的集合。
 
 ```java
 public class ImmutableExample {
@@ -1327,7 +1327,7 @@ Exception in thread "main" java.lang.UnsupportedOperationException
     at ImmutableExample.main(ImmutableExample.java:9)
 ```
 
-Collections.unmodifiableXXX\(\) 先对原始的集合进行拷贝，需要对集合进行修改的方法都直接抛出异常。
+Collections.unmodifiableXXX() 先对原始的集合进行拷贝，需要对集合进行修改的方法都直接抛出异常。
 
 ```java
 public V put(K key, V value) {
@@ -1373,7 +1373,7 @@ public void add() {
 }
 ```
 
-以下代码是 incrementAndGet\(\) 的源码，它调用了 Unsafe 的 getAndAddInt\(\) 。
+以下代码是 incrementAndGet() 的源码，它调用了 Unsafe 的 getAndAddInt() 。
 
 ```java
 public final int incrementAndGet() {
@@ -1381,9 +1381,9 @@ public final int incrementAndGet() {
 }
 ```
 
-以下代码是 getAndAddInt\(\) 源码，var1 指示对象内存地址，var2 指示该字段相对对象内存地址的偏移，var4 指示操作需要加的数值，这里为 1。通过 getIntVolatile\(var1, var2\) 得到旧的预期值，通过调用 compareAndSwapInt\(\) 来进行 CAS 比较，如果该字段内存地址中的值等于 var5，那么就更新内存地址为 var1+var2 的变量为 var5+var4。
+以下代码是 getAndAddInt() 源码，var1 指示对象内存地址，var2 指示该字段相对对象内存地址的偏移，var4 指示操作需要加的数值，这里为 1。通过 getIntVolatile(var1, var2) 得到旧的预期值，通过调用 compareAndSwapInt() 来进行 CAS 比较，如果该字段内存地址中的值等于 var5，那么就更新内存地址为 var1+var2 的变量为 var5+var4。
 
-可以看到 getAndAddInt\(\) 在一个循环中进行，发生冲突的做法是不断的进行重试。
+可以看到 getAndAddInt() 在一个循环中进行，发生冲突的做法是不断的进行重试。
 
 ```java
 public final int getAndAddInt(Object var1, long var2, int var4) {
@@ -1514,7 +1514,7 @@ public class ThreadLocalExample1 {
 ThreadLocal.ThreadLocalMap threadLocals = null;
 ```
 
-当调用一个 ThreadLocal 的 set\(T value\) 方法时，先得到当前线程的 ThreadLocalMap 对象，然后将 ThreadLocal-&gt;value 键值对插入到该 Map 中。
+当调用一个 ThreadLocal 的 set(T value) 方法时，先得到当前线程的 ThreadLocalMap 对象，然后将 ThreadLocal->value 键值对插入到该 Map 中。
 
 ```java
 public void set(T value) {
@@ -1527,7 +1527,7 @@ public void set(T value) {
 }
 ```
 
-get\(\) 方法类似。
+get() 方法类似。
 
 ```java
 public T get() {
@@ -1547,7 +1547,7 @@ public T get() {
 
 ThreadLocal 从理论上讲并不是用来解决多线程并发问题的，因为根本不存在多线程竞争。
 
-在一些场景 \(尤其是使用线程池\) 下，由于 ThreadLocal.ThreadLocalMap 的底层数据结构导致 ThreadLocal 有内存泄漏的情况，应该尽可能在每次使用 ThreadLocal 后手动调用 remove\(\)，以避免出现 ThreadLocal 经典的内存泄漏甚至是造成自身业务混乱的风险。
+在一些场景 (尤其是使用线程池) 下，由于 ThreadLocal.ThreadLocalMap 的底层数据结构导致 ThreadLocal 有内存泄漏的情况，应该尽可能在每次使用 ThreadLocal 后手动调用 remove()，以避免出现 ThreadLocal 经典的内存泄漏甚至是造成自身业务混乱的风险。
 
 #### 3. 可重入代码（Reentrant Code）
 
@@ -1590,7 +1590,7 @@ public static String concatString(String s1, String s2, String s3) {
 }
 ```
 
-String 是一个不可变的类，编译器会对 String 的拼接自动优化。在 JDK 1.5 之前，会转化为 StringBuffer 对象的连续 append\(\) 操作：
+String 是一个不可变的类，编译器会对 String 的拼接自动优化。在 JDK 1.5 之前，会转化为 StringBuffer 对象的连续 append() 操作：
 
 ```java
 public static String concatString(String s1, String s2, String s3) {
@@ -1602,17 +1602,17 @@ public static String concatString(String s1, String s2, String s3) {
 }
 ```
 
-每个 append\(\) 方法中都有一个同步块。虚拟机观察变量 sb，很快就会发现它的动态作用域被限制在 concatString\(\) 方法内部。也就是说，sb 的所有引用永远不会逃逸到 concatString\(\) 方法之外，其他线程无法访问到它，因此可以进行消除。
+每个 append() 方法中都有一个同步块。虚拟机观察变量 sb，很快就会发现它的动态作用域被限制在 concatString() 方法内部。也就是说，sb 的所有引用永远不会逃逸到 concatString() 方法之外，其他线程无法访问到它，因此可以进行消除。
 
 ### 锁粗化
 
 如果一系列的连续操作都对同一个对象反复加锁和解锁，频繁的加锁操作就会导致性能损耗。
 
-上一节的示例代码中连续的 append\(\) 方法就属于这类情况。
+上一节的示例代码中连续的 append() 方法就属于这类情况。
 
 如果虚拟机探测到由这样的一串零碎的操作都对同一个对象加锁，将会把加锁的范围扩展（粗化）到整个操作序列的外部。
 
-对于上一节的示例代码就是扩展到第一个 append\(\) 操作之前直至最后一个 append\(\) 操作之后，这样只需要加锁一次就可以了。
+对于上一节的示例代码就是扩展到第一个 append() 操作之前直至最后一个 append() 操作之后，这样只需要加锁一次就可以了。
 
 ### 轻量级锁
 
@@ -1653,7 +1653,7 @@ JDK 1.6 引入了偏向锁和轻量级锁，从而让锁拥有了四个状态：
 
 * 给线程起个有意义的名字，这样可以方便找 Bug。
 * 缩小同步范围，从而减少锁争用。例如对于 synchronized，应该尽量使用同步块而不是同步方法。
-* 多用同步工具少用 wait\(\) 和 notify\(\)。首先，CountDownLatch, CyclicBarrier, Semaphore 和 Exchanger 这些同步类简化了编码操作，而用 wait\(\) 和 notify\(\) 很难实现复杂控制流；其次，这些同步类是由最好的企业编写和维护，在后续的 JDK 中还会不断优化和完善。
+* 多用同步工具少用 wait() 和 notify()。首先，CountDownLatch, CyclicBarrier, Semaphore 和 Exchanger 这些同步类简化了编码操作，而用 wait() 和 notify() 很难实现复杂控制流；其次，这些同步类是由最好的企业编写和维护，在后续的 JDK 中还会不断优化和完善。
 * 使用 BlockingQueue 实现生产者消费者问题。
 * 多用并发集合少用同步集合，例如应该使用 ConcurrentHashMap 而不是 HashTable。
 * 使用本地变量和不可变类来保证线程安全。
@@ -1674,5 +1674,4 @@ JDK 1.6 引入了偏向锁和轻量级锁，从而让锁拥有了四个状态：
 
 线程池的执行流程：
 
-![&#x56DE; &#x27A1;&#xFE0F; &#x4F1A;](../../.gitbook/assets/image%20%2871%29.png)
-
+![回 ➡️ 会](<../../.gitbook/assets/image (79).png>)

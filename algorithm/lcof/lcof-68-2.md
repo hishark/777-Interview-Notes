@@ -1,18 +1,18 @@
 # 68 - II. 二叉树的最近公共祖先【递归】
 
-## 1. [问题](https://leetcode-cn.com/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/) <a id="1-wen-ti"></a>
+## 1. [问题](https://leetcode-cn.com/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/) <a href="1-wen-ti" id="1-wen-ti"></a>
 
 ‌给定一个二叉树, 找到该树中两个指定节点的最近公共祖先。
 
 [百度百科](https://baike.baidu.com/item/%E6%9C%80%E8%BF%91%E5%85%AC%E5%85%B1%E7%A5%96%E5%85%88/8918834?fr=aladdin)中最近公共祖先的定义为：“对于有根树 T 的两个结点 p、q，最近公共祖先表示为一个结点 x，满足 x 是 p、q 的祖先且 x 的深度尽可能大（一个节点也可以是它自己的祖先）。”
 
-例如，给定如下二叉树: root = \[3,5,1,6,2,0,8,null,null,7,4\]
+例如，给定如下二叉树: root = \[3,5,1,6,2,0,8,null,null,7,4]
 
-![](../../.gitbook/assets/image%20%2814%29.png)
+![](<../../.gitbook/assets/image (8).png>)
 
 **示例 1:**
 
-```text
+```
 输入: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 1
 输出: 3
 解释: 节点 5 和节点 1 的最近公共祖先是节点 3。
@@ -20,7 +20,7 @@
 
 **示例 2:**
 
-```text
+```
 输入: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 4
 输出: 5
 解释: 节点 5 和节点 4 的最近公共祖先是节点 5。因为根据定义最近公共祖先节点可以为节点本身。
@@ -31,15 +31,15 @@
 * 所有节点的值都是唯一的。
 * p、q 为不同节点且均存在于给定的二叉树中。
 
-## 2. 标签‌ <a id="2-biao-qian"></a>
+## 2. 标签‌ <a href="2-biao-qian" id="2-biao-qian"></a>
 
 * 树
 * DFS
 * 递归
 
-## 3. 解法 - 递归 <a id="3-jie-fa"></a>
+## 3. 解法 - 递归 <a href="3-jie-fa" id="3-jie-fa"></a>
 
-### 3.1 Java <a id="3-1-java"></a>
+### 3.1 Java <a href="3-1-java" id="3-1-java"></a>
 
 ```java
 ​/**
@@ -86,13 +86,12 @@ class Solution {
 }
 ```
 
-### 3.2 复杂度分析 <a id="33-fu-za-du-fen-xi"></a>
+### 3.2 复杂度分析 <a href="33-fu-za-du-fen-xi" id="33-fu-za-du-fen-xi"></a>
 
 * 时间复杂度 `O(N)` ：其中 N 为二叉树的结点数，最差情况下，二叉树退化为链表时，需要递归遍历树的所有结点。
 * 空间复杂度 `O(N)` ：最差情况下，当二叉树退化为链表时，递归深度达到 N，系统需要使用 `O(N)` 大小的额外存储空间。
 
-## 4. 参考 <a id="4-can-kao"></a>
+## 4. 参考 <a href="4-can-kao" id="4-can-kao"></a>
 
 * [https://leetcode-cn.com/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/](https://leetcode-cn.com/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/)
 * [https://leetcode-cn.com/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/solution/mian-shi-ti-68-ii-er-cha-shu-de-zui-jin-gong-gon-7/](https://leetcode-cn.com/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/solution/mian-shi-ti-68-ii-er-cha-shu-de-zui-jin-gong-gon-7/)​
-

@@ -1,9 +1,9 @@
 # 字节飞书iOS客户端实习一面面经
 
-作者：Saafo  
-链接：[https://www.nowcoder.com/discuss/557294](https://www.nowcoder.com/discuss/557294)  
-来源：牛客网  
-  
+作者：Saafo\
+链接：[https://www.nowcoder.com/discuss/557294](https://www.nowcoder.com/discuss/557294)\
+来源：牛客网\
+\
 
 
 自我介绍
@@ -26,7 +26,7 @@
 
 了解哪些锁，大概说一下？
 
-* 答：自旋锁和互斥锁，自旋锁就不断尝试，需要占用CPU时间，适合需要高频获取的资源，但其他进程很少用到的，线程不安全；互斥锁就是不断尝试，但每次尝试之后会休眠，等待操作系统唤醒。个人猜测这个是基于操作系统内核实现的，就是尝试之后就回到block状态，然后等待有资源了，内核会将其调度到ready&running态，然后再去尝试获取资源。
+* 答：自旋锁和互斥锁，自旋锁就不断尝试，需要占用CPU时间，适合需要高频获取的资源，但其他进程很少用到的，线程不安全；互斥锁就是不断尝试，但每次尝试之后会休眠，等待操作系统唤醒。个人猜测这个是基于操作系统内核实现的，就是尝试之后就回到block状态，然后等待有资源了，内核会将其调度到ready\&running态，然后再去尝试获取资源。
 
 解释一下中断？
 
@@ -41,5 +41,4 @@ iOS知识知道多少，都说一下？
 
 * 大概从生命周期、runloop、runloop mode、observer、source0/1、timer讲到autoreleasepool开发中使用时机、autoreleasepool的释放时机，大概这样。
 
-[算法](/jump/super-jump/word?word=%E7%AE%97%E6%B3%95)，[三数之和](/jump/super-jump/practice?questionId=731)
-
+[算法](https://app.gitbook.com/jump/super-jump/word?word=%E7%AE%97%E6%B3%95)，[三数之和](https://app.gitbook.com/jump/super-jump/practice?questionId=731)

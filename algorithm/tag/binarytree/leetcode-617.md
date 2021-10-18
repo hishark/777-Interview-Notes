@@ -8,7 +8,7 @@
 
 示例1：
 
-```text
+```
 输入: 
 	Tree 1                     Tree 2                  
           1                         2                             
@@ -66,4 +66,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/merge-two-binary-trees/](https://leetcode-cn.com/problems/merge-two-binary-trees/)
 * [https://leetcode-cn.com/problems/merge-two-binary-trees/solution/he-bing-er-cha-shu-by-leetcode-solution/](https://leetcode-cn.com/problems/merge-two-binary-trees/solution/he-bing-er-cha-shu-by-leetcode-solution/)
-

@@ -8,7 +8,7 @@
 
 给定二叉树 `[3,9,20,null,null,15,7]`，
 
-```text
+```
     3
    / \
   9  20
@@ -194,4 +194,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/](https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/)
 * [https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/solution/mian-shi-ti-55-i-er-cha-shu-de-shen-du-xian-xu-bia/](https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/solution/mian-shi-ti-55-i-er-cha-shu-de-shen-du-xian-xu-bia/)
-

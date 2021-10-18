@@ -1,25 +1,12 @@
----
-title: 32. 最长有效括号
-date: '2020-07-04T17:22:37.000Z'
-tags:
-  - leetcode
-  - java
-  - 字符串
-  - 栈
-  - 动态规划
-categories: 算法笔记
-notshow: true
----
-
 # LEETCODE 32. 最长有效括号
 
 ## [1. 问题](https://leetcode-cn.com/problems/longest-valid-parentheses/)
 
-给定一个只包含 '\(' 和 '\)' 的字符串，找出最长的包含有效括号的子串的长度。
+给定一个只包含 '(' 和 ')' 的字符串，找出最长的包含有效括号的子串的长度。
 
 示例 1:
 
-> 输入: "\(\(\)" 输出: 2 解释: 最长有效括号子串为 "\(\)"  示例 2: 输入: "\)\(\)\(\)\)" 输出: 4 解释: 最长有效括号子串为 "\(\)\(\)"
+> 输入: "(()" 输出: 2 解释: 最长有效括号子串为 "()"  示例 2: 输入: ")()())" 输出: 4 解释: 最长有效括号子串为 "()()"
 
 ## 2. 解法
 
@@ -113,4 +100,3 @@ class Solution {
 ## 4. 笔记
 
 ![](https://777blog.oss-cn-shanghai.aliyuncs.com/blog%20pic/leetcode32-1.jpg) ![](https://777blog.oss-cn-shanghai.aliyuncs.com/blog%20pic/leetcode32-2.jpg) ![](https://777blog.oss-cn-shanghai.aliyuncs.com/blog%20pic/leetcode32-3.jpg) ![](https://777blog.oss-cn-shanghai.aliyuncs.com/blog%20pic/leetcode32-4.jpg)
-

@@ -1,15 +1,3 @@
----
-title: 16. 最接近的三数之和
-date: '2020-06-30T10:45:22.000Z'
-tags:
-  - leetcode
-  - java
-  - 排序
-  - 双指针
-categories: 算法笔记
-notshow: true
----
-
 # LEETCODE 16. 最接近的三数之和
 
 ## [1. 问题](https://leetcode-cn.com/problems/3sum-closest/)
@@ -18,17 +6,17 @@ notshow: true
 
 示例：
 
-> 输入：nums = \[-1,2,1,-4\], target = 1 
+> 输入：nums = \[-1,2,1,-4], target = 1 
 >
 > 输出：2 
 >
-> 解释：与 target 最接近的和是 2 \(-1 + 2 + 1 = 2\) 。
+> 解释：与 target 最接近的和是 2 (-1 + 2 + 1 = 2) 。
 
 提示：
 
-* 3 &lt;= nums.length &lt;= 10^3
-* -10^3 &lt;= nums\[i\] &lt;= 10^3
-* -10^4 &lt;= target &lt;= 10^4
+* 3 <= nums.length <= 10^3
+* \-10^3 <= nums\[i] <= 10^3
+* \-10^4 <= target <= 10^4
 
 ## 2. 解法 - 双指针
 
@@ -77,4 +65,3 @@ class Solution {
 ## 4. 笔记
 
 ![](https://777blog.oss-cn-shanghai.aliyuncs.com/blog%20pic/leetcode16.jpg)
-

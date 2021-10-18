@@ -1,12 +1,12 @@
 # 字节iOS客户端实习 三次技术面面经
 
-作者：LeonZou  
-链接：[https://www.nowcoder.com/discuss/443414](https://www.nowcoder.com/discuss/443414)  
-来源：牛客网  
-  
+作者：LeonZou\
+链接：[https://www.nowcoder.com/discuss/443414](https://www.nowcoder.com/discuss/443414)\
+来源：牛客网\
+\
 一面：1h
 
-1.  [项目](/jump/super-jump/word?word=%E9%A1%B9%E7%9B%AE)经历
+1.  [项目](https://app.gitbook.com/jump/super-jump/word?word=%E9%A1%B9%E7%9B%AE)经历
 2.  数据库事务
 3.  写sql语句，group by
 4.  为什么需要rollback
@@ -50,15 +50,16 @@
 4.  innodb和mylsam的异同
 5.  两种引擎的索引异同
 6.  索引的底层实现
-7.  介绍下C++的引用 
+7.  介绍下C++的引用\
+
 8.  说下左值和右值
-9.  说下unique\_ptr
-10.  说下use\_count机制
-11.  use\_count存在内存哪里
+9.  说下unique_ptr
+10.  说下use_count机制
+11.  use_count存在内存哪里
 12.  C++实现严格的单例模式
-13.  说下map和unordered\_map
+13.  说下map和unordered_map
 14.  哈希构造方法、哈希冲突解决方法
-15.  说下AVL树和[红黑树](/jump/super-jump/word?word=%E7%BA%A2%E9%BB%91%E6%A0%91)
+15.  说下AVL树和[红黑树](https://app.gitbook.com/jump/super-jump/word?word=%E7%BA%A2%E9%BB%91%E6%A0%91)
 16.  说下生产者-消费者模型，其中的同步机制是怎么样的
 17.  什么是写优先和读写平衡
 18.  什么是优先级反转，怎么解决
@@ -67,9 +68,9 @@
 21.  优先队列的底层实现是什么
 22.  post和get的异同
 23.  HTTP2.0相对1.0有什么改进
-24.  如果一个服务器和[客户端](/jump/super-jump/word?word=%E5%AE%A2%E6%88%B7%E7%AB%AF)突然断开连接（只有握手没有挥手），这时会发生什么
+24.  如果一个服务器和[客户端](https://app.gitbook.com/jump/super-jump/word?word=%E5%AE%A2%E6%88%B7%E7%AB%AF)突然断开连接（只有握手没有挥手），这时会发生什么
 25.  3升和5升的杯子，怎么得到4升水
-26.  做题：[二叉树](/jump/super-jump/word?word=%E4%BA%8C%E5%8F%89%E6%A0%91)，从根节点出发，输出节点之和等于给定目标值的全部路径
+26.  做题：[二叉树](https://app.gitbook.com/jump/super-jump/word?word=%E4%BA%8C%E5%8F%89%E6%A0%91)，从根节点出发，输出节点之和等于给定目标值的全部路径
 27.  杂谈+反问
 
  三面：1h
@@ -90,10 +91,9 @@
 14.  做题：反转单词序列，追问怎么优化，有没有更好的办法
 15.  杂谈+反问
 
-  
- 许愿来个HR面吧~ ball ball了    
-  
- 6.29 HR面  
-  
+\
+ 许愿来个HR面吧\~ ball ball了  \
+\
+ 6.29 HR面\
+\
  6.30 OC了！哈哈哈哈哈感谢牛客
-

@@ -6,14 +6,14 @@
 
 **示例 1：**
 
-```text
+```
 输入：nums = [2,7,11,15], target = 9
 输出：[2,7] 或者 [7,2]
 ```
 
 **示例 2：**
 
-```text
+```
 输入：nums = [10,26,30,31,47,60], target = 40
 输出：[10,30] 或者 [30,10]
 ```
@@ -108,4 +108,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/he-wei-sde-liang-ge-shu-zi-lcof/](https://leetcode-cn.com/problems/he-wei-sde-liang-ge-shu-zi-lcof/)
 * [https://leetcode-cn.com/problems/he-wei-sde-liang-ge-shu-zi-lcof/solution/mian-shi-ti-57-he-wei-s-de-liang-ge-shu-zi-shuang-/](https://leetcode-cn.com/problems/he-wei-sde-liang-ge-shu-zi-lcof/solution/mian-shi-ti-57-he-wei-s-de-liang-ge-shu-zi-shuang-/)
-

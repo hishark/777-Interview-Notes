@@ -6,7 +6,7 @@
 
 示例 1:
 
-```text
+```
 输入: n = 1
 输出: [1,2,3,4,5,6,7,8,9]
 ```
@@ -62,4 +62,3 @@ class Solution {
 ## 3. 参考
 
 * [https://leetcode-cn.com/problems/da-yin-cong-1dao-zui-da-de-nwei-shu-lcof/](https://leetcode-cn.com/problems/da-yin-cong-1dao-zui-da-de-nwei-shu-lcof/)
-

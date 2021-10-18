@@ -1,28 +1,14 @@
----
-title: 95. 不同的二叉搜索树 II
-date: '2020-07-21T16:38:46.000Z'
-tags:
-  - leetcode
-  - java
-  - kotlin
-  - 树
-  - 动态规划
-  - 递归
-categories: 算法笔记
-notshow: true
----
-
 # LEETCODE 95. 不同的二叉搜索树 II
 
 ## 1. [问题](https://leetcode-cn.com/problems/unique-binary-search-trees-ii/)
 
-![](../../../.gitbook/assets/image%20%2842%29.png)
+![](<../../../.gitbook/assets/image (65).png>)
 
 给定一个整数 n，生成所有由 1 ... n 为节点所组成的 二叉搜索树 。
 
 示例：
 
-```text
+```
 输入：3
 输出：
 [
@@ -44,7 +30,7 @@ notshow: true
 
 提示：
 
-* 0 &lt;= n &lt;= 8
+* 0 <= n <= 8
 
 ## 2. 解法 - 递归
 
@@ -177,4 +163,3 @@ class Solution {
 ## 4. 笔记
 
 ![](https://777blog.oss-cn-shanghai.aliyuncs.com/leetcode/leetcode-95-1.jpg) ![](https://777blog.oss-cn-shanghai.aliyuncs.com/leetcode/leetcode-95-2.jpg)
-

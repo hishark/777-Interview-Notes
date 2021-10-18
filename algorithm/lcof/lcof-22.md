@@ -1,16 +1,3 @@
----
-title: 22. 链表中倒数第k个节点
-date: '2020-09-15T10:34:29.000Z'
-tags:
-  - 双指针
-  - 链表
-  - leetcode
-  - java
-  - kotlin
-  - lcof
-categories: 算法笔记
----
-
 # 22. 链表中倒数第k个节点【快慢指针】
 
 ## 1. [问题](https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/)
@@ -19,7 +6,7 @@ categories: 算法笔记
 
 示例：
 
-```text
+```
 给定一个链表: 1->2->3->4->5, 和 k = 2.
 返回链表 4->5.
 ```
@@ -160,4 +147,3 @@ class Solution {
 * [https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/](https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/)
 * [https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/solution/mian-shi-ti-22-lian-biao-zhong-dao-shu-di-kge-j-11/](https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/solution/mian-shi-ti-22-lian-biao-zhong-dao-shu-di-kge-j-11/)
 * [https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/solution/shuang-zhi-zhen-zhan-di-gui-3chong-jie-jue-fang-sh/](https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/solution/shuang-zhi-zhen-zhan-di-gui-3chong-jie-jue-fang-sh/)
-

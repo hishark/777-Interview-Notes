@@ -4,11 +4,11 @@
 
 给定两个大小为 m 和 n 的正序（从小到大）数组 nums1 和 nums2。请你找出并返回这两个正序数组的中位数。
 
-进阶：你能设计一个时间复杂度为 O\(log \(m+n\)\) 的算法解决此问题吗？
+进阶：你能设计一个时间复杂度为 O(log (m+n)) 的算法解决此问题吗？
 
 **示例 1：**
 
-```text
+```
 输入：nums1 = [1,3], nums2 = [2]
 输出：2.00000
 解释：合并数组 = [1,2,3] ，中位数 2
@@ -16,7 +16,7 @@
 
 **示例 2：**
 
-```text
+```
 输入：nums1 = [1,2], nums2 = [3,4]
 输出：2.50000
 解释：合并数组 = [1,2,3,4] ，中位数 (2 + 3) / 2 = 2.5
@@ -24,21 +24,21 @@
 
 **示例 3：**
 
-```text
+```
 输入：nums1 = [0,0], nums2 = [0,0]
 输出：0.00000
 ```
 
 **示例 4：**
 
-```text
+```
 输入：nums1 = [], nums2 = [1]
 输出：1.00000
 ```
 
 **示例 5：**
 
-```text
+```
 输入：nums1 = [2], nums2 = []
 输出：2.00000
 ```
@@ -47,10 +47,10 @@
 
 * nums1.length == m 
 * nums2.length == n 
-* 0 &lt;= m &lt;= 1000 
-* 0 &lt;= n &lt;= 1000 
-* 1 &lt;= m + n &lt;= 2000
-*  -10^6 &lt;= nums1\[i\], nums2\[i\] &lt;= 10^6
+* 0 <= m <= 1000 
+* 0 <= n <= 1000 
+* 1 <= m + n <= 2000
+*  \-10^6 <= nums1\[i], nums2\[i] <= 10^6
 
 ## 2. 标签
 
@@ -230,18 +230,16 @@ class Solution {
 * 时间复杂度 `O(m+n)` ：遍历 `len/2+1` 次，`len=m+n`，所以时间复杂度是 `O(m+n)`。
 * 空间复杂度 `O(1)` ：几个变量仅占用常数大小的存储空间。
 
-## 4. 解法 - 二分查找\#TODO
+## 4. 解法 - 二分查找#TODO
 
 ### 4.1 Java
 
 ```java
-
 ```
 
 ### 4.2 Kotlin
 
 ```kotlin
-
 ```
 
 ### 4.3 复杂度分析
@@ -254,4 +252,3 @@ class Solution {
 * [https://leetcode-cn.com/problems/median-of-two-sorted-arrays/](https://leetcode-cn.com/problems/median-of-two-sorted-arrays/)
 * [https://leetcode-cn.com/problems/median-of-two-sorted-arrays/solution/xun-zhao-liang-ge-you-xu-shu-zu-de-zhong-wei-s-114/](https://leetcode-cn.com/problems/median-of-two-sorted-arrays/solution/xun-zhao-liang-ge-you-xu-shu-zu-de-zhong-wei-s-114/)
 * [https://leetcode-cn.com/problems/median-of-two-sorted-arrays/solution/xiang-xi-tong-su-de-si-lu-fen-xi-duo-jie-fa-by-w-2/](https://leetcode-cn.com/problems/median-of-two-sorted-arrays/solution/xiang-xi-tong-su-de-si-lu-fen-xi-duo-jie-fa-by-w-2/)
-

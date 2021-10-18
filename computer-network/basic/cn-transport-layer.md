@@ -4,7 +4,7 @@
 
 * [TCP协议灵魂之问，巩固你的网路底层基础](https://juejin.cn/post/6844904070889603085)
 * [CYC CS-Notes 计算机网络 - 传输层](http://www.cyc2018.xyz/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%20-%20%E4%BC%A0%E8%BE%93%E5%B1%82.html)
-* [《计算机网络》谢希仁](https://book.douban.com/subject/26960678//)
+* [《计算机网络》谢希仁](https://book.douban.com/subject/26960678/)
 
 ## 简介
 
@@ -77,7 +77,7 @@
 
 客户端发送了 FIN 连接释放报文之后，服务器收到了这个报文，就进入了 CLOSE-WAIT 状态。这个状态是为了让服务器端发送还未传送完毕的数据，传送完毕之后，服务器会发送 FIN 连接释放报文。
 
-**TIME\_WAIT**
+**TIME_WAIT**
 
 客户端接收到服务器端的 FIN 报文后进入此状态，此时并不是直接进入 CLOSED 状态，还需要等待一个时间计时器设置的时间 2MSL。这么做有两个理由：
 
@@ -90,13 +90,13 @@ TCP 使用超时重传来实现可靠传输：如果一个已经发送的报文�
 
 一个报文段从发送再到接收到确认所经过的时间称为往返时间 RTT，加权平均往返时间 RTTs 计算如下：​
 
-![](https://latex.codecogs.com/gif.latex?RTTs=%281-a%29*%28RTTs%29+a*RTT)
+![](https://latex.codecogs.com/gif.latex?RTTs=\(1-a\)\*\(RTTs\)+a\*RTT)
 
 其中，0 ≤ a ＜ 1，RTTs 随着 a 的增加更容易受到 RTT 的影响。
 
 超时时间 RTO 应该略大于 RTTs，TCP 使用的超时时间计算如下：​
 
-![](https://latex.codecogs.com/gif.latex?RTO=RTTs+4*RTT_d)
+![](https://latex.codecogs.com/gif.latex?RTO=RTTs+4\*RTT_d)
 
 其中 RTTd 为偏差的加权平均值。
 
@@ -131,7 +131,8 @@ TCP 主要通过四个算法来进行拥塞控制：慢开始、拥塞避免、�
 为了便于讨论，做如下假设：
 
 * 接收方有足够大的接收缓存，因此不会发生流量控制；
-* 虽然 TCP 的窗口基于字节，但是这里设窗口的大小单位为报文段。 ​
+* 虽然 TCP 的窗口基于字节，但是这里设窗口的大小单位为报文段。\
+  ​
 
 ![](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/910f613f-514f-4534-87dd-9b4699d59d31.png)
 
@@ -139,7 +140,7 @@ TCP 主要通过四个算法来进行拥塞控制：慢开始、拥塞避免、�
 
 发送的最初执行慢开始，令 cwnd = 1，发送方只能发送 1 个报文段；当收到确认后，将 cwnd 加倍，因此之后发送方能够发送的报文段数量为：2、4、8 ...
 
-注意到慢开始每个轮次都将 cwnd 加倍，这样会让 cwnd 增长速度非常快，从而使得发送方发送的速度增长速度过快，网络拥塞的可能性也就更高。设置一个慢开始门限 ssthresh，当 cwnd &gt;= ssthresh 时，进入拥塞避免，每个轮次只将 cwnd 加 1。
+注意到慢开始每个轮次都将 cwnd 加倍，这样会让 cwnd 增长速度非常快，从而使得发送方发送的速度增长速度过快，网络拥塞的可能性也就更高。设置一个慢开始门限 ssthresh，当 cwnd >= ssthresh 时，进入拥塞避免，每个轮次只将 cwnd 加 1。
 
 如果出现了超时，则令 ssthresh = cwnd / 2，然后重新执行慢开始。
 
@@ -159,13 +160,13 @@ TCP 主要通过四个算法来进行拥塞控制：慢开始、拥塞避免、�
 
 滑动窗口协议比较复杂，是TCP协议的精髓所在。这里先给出连续ARQ协议最基本的概念，但不涉及到许多细节问题。
 
-![](../../.gitbook/assets/xnip2021-02-04_19-54-31.jpg)
+![](../../.gitbook/assets/Xnip2021-02-04\_19-54-31.jpg)
 
-图\(a\)表示发送方维持的发送窗口，它的意义是：位于发送窗口内的5个分组都可连续发送出去，而不需要等待对方的确认。这样，信道利用率就提高了。
+图(a)表示发送方维持的发送窗口，它的意义是：位于发送窗口内的5个分组都可连续发送出去，而不需要等待对方的确认。这样，信道利用率就提高了。
 
 在讨论滑动窗口时，我们应当注意到，图中还有一个时间坐标（但以后往往省略这样的时间坐标）。按照习惯，“向前”是指“向着时间增大的方向”，而“向后”则是“向着时间减少的方向”。分组发送是按照分组序号从小到大发送。
 
-连续ARQ协议规定，发送方每收到一个确认，就把发送窗口向前滑动一个分组的位置。图\(b\)表示发送方收到了对第1个分组的确认，于是把发送窗口向前移动一个分组的位置。如果原来已经发送了前5个分组，那么现在就可以发送窗口内的第6个分组了。
+连续ARQ协议规定，发送方每收到一个确认，就把发送窗口向前滑动一个分组的位置。图(b)表示发送方收到了对第1个分组的确认，于是把发送窗口向前移动一个分组的位置。如果原来已经发送了前5个分组，那么现在就可以发送窗口内的第6个分组了。
 
 接收方一般都是采用累积确认的方式。这就是说，接收方不必对收到的分组逐个发送确认，而是在收到几个分组后，对按序到达的最后一个分组发送确认，这就表示：到这个分组为止的所有分组都已正确收到了。
 
@@ -175,7 +176,6 @@ TCP 主要通过四个算法来进行拥塞控制：慢开始、拥塞避免、�
 
 ## 三种传输协议
 
-* [TCP \(Transmission Control Protocol\)](https://baike.baidu.com/item/TCP/33012?fr=aladdin)
-* [UDP \(User Datagram Protocol\)](https://baike.baidu.com/item/UDP)
-* [QUIC \(Quick UDP Internet Connections\)](https://baike.baidu.com/item/QUIC) _**New**_
-
+* [TCP (Transmission Control Protocol)](https://baike.baidu.com/item/TCP/33012?fr=aladdin)
+* [UDP (User Datagram Protocol)](https://baike.baidu.com/item/UDP)
+* [QUIC (Quick UDP Internet Connections)](https://baike.baidu.com/item/QUIC) _**New**_

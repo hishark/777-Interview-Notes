@@ -6,7 +6,7 @@ description: 选择性查阅
 
 ## 参考
 
-* [HTTP \| CS-Notes](http://www.cyc2018.xyz/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/HTTP/HTTP.html)
+* [HTTP | CS-Notes](http://www.cyc2018.xyz/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/HTTP/HTTP.html)
 * [HTTP灵魂之问，巩固你的 HTTP 知识体系](https://juejin.cn/post/6844904100035821575)
 
 ## 一 、基础概念
@@ -57,7 +57,7 @@ POST 主要用来传输数据，而 GET 主要用来获取资源。
 
 由于自身不带验证机制，任何人都可以上传文件，因此存在安全性问题，一般不使用该方法。
 
-```text
+```
 PUT /new.html HTTP/1.1
 Host: example.com
 Content-type: text/html
@@ -72,7 +72,7 @@ Content-length: 16
 
 PUT 也可以用于修改资源，但是只能完全替代原始资源，PATCH 允许部分修改。
 
-```text
+```
 PATCH /file.txt HTTP/1.1
 Host: www.example.com
 Content-Type: application/example
@@ -88,7 +88,7 @@ Content-Length: 100
 
 与 PUT 功能相反，并且同样不带验证机制。
 
-```text
+```
 DELETE /file.html HTTP/1.1
 ```
 
@@ -106,7 +106,7 @@ DELETE /file.html HTTP/1.1
 
 使用 SSL（Secure Sockets Layer，安全套接层）和 TLS（Transport Layer Security，传输层安全）协议把通信内容加密后经网络隧道传输。
 
-```text
+```
 CONNECT www.example.com:443 HTTP/1.1
 ```
 
@@ -126,13 +126,13 @@ CONNECT www.example.com:443 HTTP/1.1
 
 服务器返回的 **响应报文** 中第一行为状态行，包含了状态码以及原因短语，用来告知客户端请求的结果。
 
-| 状态码 | 类别 | 含义 |
-| :--- | :--- | :--- |
-| 1XX | Informational（信息性状态码） | 接收的请求正在处理 |
-| 2XX | Success（成功状态码） | 请求正常处理完毕 |
-| 3XX | Redirection（重定向状态码） | 需要进行附加操作以完成请求 |
-| 4XX | Client Error（客户端错误状态码） | 服务器无法处理请求 |
-| 5XX | Server Error（服务器错误状态码） | 服务器处理请求出错 |
+| 状态码 | 类别                     | 含义            |
+| --- | ---------------------- | ------------- |
+| 1XX | Informational（信息性状态码）  | 接收的请求正在处理     |
+| 2XX | Success（成功状态码）         | 请求正常处理完毕      |
+| 3XX | Redirection（重定向状态码）    | 需要进行附加操作以完成请求 |
+| 4XX | Client Error（客户端错误状态码） | 服务器无法处理请求     |
+| 5XX | Server Error（服务器错误状态码） | 服务器处理请求出错     |
 
 ### 1XX 信息
 
@@ -173,76 +173,76 @@ CONNECT www.example.com:443 HTTP/1.1
 
 ### 通用首部字段
 
-| 首部字段名 | 说明 |
-| :--- | :--- |
-| Cache-Control | 控制缓存的行为 |
-| Connection | 控制不再转发给代理的首部字段、管理持久连接 |
-| Date | 创建报文的日期时间 |
-| Pragma | 报文指令 |
-| Trailer | 报文末端的首部一览 |
-| Transfer-Encoding | 指定报文主体的传输编码方式 |
-| Upgrade | 升级为其他协议 |
-| Via | 代理服务器的相关信息 |
-| Warning | 错误通知 |
+| 首部字段名             | 说明                    |
+| ----------------- | --------------------- |
+| Cache-Control     | 控制缓存的行为               |
+| Connection        | 控制不再转发给代理的首部字段、管理持久连接 |
+| Date              | 创建报文的日期时间             |
+| Pragma            | 报文指令                  |
+| Trailer           | 报文末端的首部一览             |
+| Transfer-Encoding | 指定报文主体的传输编码方式         |
+| Upgrade           | 升级为其他协议               |
+| Via               | 代理服务器的相关信息            |
+| Warning           | 错误通知                  |
 
 ### 请求首部字段
 
-| 首部字段名 | 说明 |
-| :--- | :--- |
-| Accept | 用户代理可处理的媒体类型 |
-| Accept-Charset | 优先的字符集 |
-| Accept-Encoding | 优先的内容编码 |
-| Accept-Language | 优先的语言（自然语言） |
-| Authorization | Web 认证信息 |
-| Expect | 期待服务器的特定行为 |
-| From | 用户的电子邮箱地址 |
-| Host | 请求资源所在服务器 |
-| If-Match | 比较实体标记（ETag） |
-| If-Modified-Since | 比较资源的更新时间 |
-| If-None-Match | 比较实体标记（与 If-Match 相反） |
-| If-Range | 资源未更新时发送实体 Byte 的范围请求 |
+| 首部字段名               | 说明                                |
+| ------------------- | --------------------------------- |
+| Accept              | 用户代理可处理的媒体类型                      |
+| Accept-Charset      | 优先的字符集                            |
+| Accept-Encoding     | 优先的内容编码                           |
+| Accept-Language     | 优先的语言（自然语言）                       |
+| Authorization       | Web 认证信息                          |
+| Expect              | 期待服务器的特定行为                        |
+| From                | 用户的电子邮箱地址                         |
+| Host                | 请求资源所在服务器                         |
+| If-Match            | 比较实体标记（ETag）                      |
+| If-Modified-Since   | 比较资源的更新时间                         |
+| If-None-Match       | 比较实体标记（与 If-Match 相反）             |
+| If-Range            | 资源未更新时发送实体 Byte 的范围请求             |
 | If-Unmodified-Since | 比较资源的更新时间（与 If-Modified-Since 相反） |
-| Max-Forwards | 最大传输逐跳数 |
-| Proxy-Authorization | 代理服务器要求客户端的认证信息 |
-| Range | 实体的字节范围请求 |
-| Referer | 对请求中 URI 的原始获取方 |
-| TE | 传输编码的优先级 |
-| User-Agent | HTTP 客户端程序的信息 |
+| Max-Forwards        | 最大传输逐跳数                           |
+| Proxy-Authorization | 代理服务器要求客户端的认证信息                   |
+| Range               | 实体的字节范围请求                         |
+| Referer             | 对请求中 URI 的原始获取方                   |
+| TE                  | 传输编码的优先级                          |
+| User-Agent          | HTTP 客户端程序的信息                     |
 
 ### 响应首部字段
 
-| 首部字段名 | 说明 |
-| :--- | :--- |
-| Accept-Ranges | 是否接受字节范围请求 |
-| Age | 推算资源创建经过时间 |
-| ETag | 资源的匹配信息 |
-| Location | 令客户端重定向至指定 URI |
+| 首部字段名              | 说明             |
+| ------------------ | -------------- |
+| Accept-Ranges      | 是否接受字节范围请求     |
+| Age                | 推算资源创建经过时间     |
+| ETag               | 资源的匹配信息        |
+| Location           | 令客户端重定向至指定 URI |
 | Proxy-Authenticate | 代理服务器对客户端的认证信息 |
-| Retry-After | 对再次发起请求的时机要求 |
-| Server | HTTP 服务器的安装信息 |
-| Vary | 代理服务器缓存的管理信息 |
-| WWW-Authenticate | 服务器对客户端的认证信息 |
+| Retry-After        | 对再次发起请求的时机要求   |
+| Server             | HTTP 服务器的安装信息  |
+| Vary               | 代理服务器缓存的管理信息   |
+| WWW-Authenticate   | 服务器对客户端的认证信息   |
 
 ### 实体首部字段
 
-| 首部字段名 | 说明 |
-| :--- | :--- |
-| Allow | 资源可支持的 HTTP 方法 |
-| Content-Encoding | 实体主体适用的编码方式 |
-| Content-Language | 实体主体的自然语言 |
-| Content-Length | 实体主体的大小 |
-| Content-Location | 替代对应资源的 URI |
-| Content-MD5 | 实体主体的报文摘要 |
-| Content-Range | 实体主体的位置范围 |
-| Content-Type | 实体主体的媒体类型 |
-| Expires | 实体主体过期的日期时间 |
-| Last-Modified | 资源的最后修改日期时间 |
+| 首部字段名            | 说明             |
+| ---------------- | -------------- |
+| Allow            | 资源可支持的 HTTP 方法 |
+| Content-Encoding | 实体主体适用的编码方式    |
+| Content-Language | 实体主体的自然语言      |
+| Content-Length   | 实体主体的大小        |
+| Content-Location | 替代对应资源的 URI    |
+| Content-MD5      | 实体主体的报文摘要      |
+| Content-Range    | 实体主体的位置范围      |
+| Content-Type     | 实体主体的媒体类型      |
+| Expires          | 实体主体过期的日期时间    |
+| Last-Modified    | 资源的最后修改日期时间    |
 
 ## 五、具体应用
 
 ### 连接管理
 
-![](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/HTTP1_x_Connections.png)
+![](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/HTTP1\_x_Connections.png)
 
 #### 1. 短连接与长连接
 
@@ -279,7 +279,7 @@ Cookie 曾一度用于客户端数据的存储，因为当时并没有其它合�
 
 服务器发送的响应报文包含 Set-Cookie 首部字段，客户端得到响应报文后把 Cookie 内容保存到浏览器中。
 
-```text
+```
 HTTP/1.0 200 OK
 Content-type: text/html
 Set-Cookie: yummy_cookie=choco
@@ -290,7 +290,7 @@ Set-Cookie: tasty_cookie=strawberry
 
 客户端之后对同一个服务器发送请求时，会从浏览器中取出 Cookie 信息并通过 Cookie 请求首部字段发送给服务器。
 
-```text
+```
 GET /sample_page.html HTTP/1.1
 Host: www.example.org
 Cookie: yummy_cookie=choco; tasty_cookie=strawberry
@@ -301,7 +301,7 @@ Cookie: yummy_cookie=choco; tasty_cookie=strawberry
 * 会话期 Cookie：浏览器关闭之后它会被自动删除，也就是说它仅在会话期内有效。
 * 持久性 Cookie：指定过期时间（Expires）或有效期（max-age）之后就成为了持久性的 Cookie。
 
-```text
+```
 Set-Cookie: id=a3fWa; Expires=Wed, 21 Oct 2015 07:28:00 GMT;
 ```
 
@@ -309,7 +309,7 @@ Set-Cookie: id=a3fWa; Expires=Wed, 21 Oct 2015 07:28:00 GMT;
 
 Domain 标识指定了哪些主机可以接受 Cookie。如果不指定，默认为当前文档的主机（不包含子域名）。如果指定了 Domain，则一般包含子域名。例如，如果设置 Domain=mozilla.org，则 Cookie 也包含在子域名中（如 developer.mozilla.org）。
 
-Path 标识指定了主机下的哪些路径可以接受 Cookie（该 URL 路径必须存在于请求 URL 中）。以字符 %x2F \("/"\) 作为路径分隔符，子路径也会被匹配。例如，设置 Path=/docs，则以下地址都会匹配：
+Path 标识指定了主机下的哪些路径可以接受 Cookie（该 URL 路径必须存在于请求 URL 中）。以字符 %x2F ("/") 作为路径分隔符，子路径也会被匹配。例如，设置 Path=/docs，则以下地址都会匹配：
 
 * /docs
 * /docs/Web/
@@ -319,7 +319,7 @@ Path 标识指定了主机下的哪些路径可以接受 Cookie（该 URL 路径
 
 浏览器通过 `document.cookie` 属性可创建新的 Cookie，也可通过该属性访问非 HttpOnly 标记的 Cookie。
 
-```text
+```
 document.cookie = "yummy_cookie=choco";
 document.cookie = "tasty_cookie=strawberry";
 console.log(document.cookie);
@@ -327,9 +327,9 @@ console.log(document.cookie);
 
 #### 6. HttpOnly
 
-标记为 HttpOnly 的 Cookie 不能被 JavaScript 脚本调用。跨站脚本攻击 \(XSS\) 常常使用 JavaScript 的 `document.cookie` API 窃取用户的 Cookie 信息，因此使用 HttpOnly 标记可以在一定程度上避免 XSS 攻击。
+标记为 HttpOnly 的 Cookie 不能被 JavaScript 脚本调用。跨站脚本攻击 (XSS) 常常使用 JavaScript 的 `document.cookie` API 窃取用户的 Cookie 信息，因此使用 HttpOnly 标记可以在一定程度上避免 XSS 攻击。
 
-```text
+```
 Set-Cookie: id=a3fWa; Expires=Wed, 21 Oct 2015 07:28:00 GMT; Secure; HttpOnly
 ```
 
@@ -382,7 +382,7 @@ HTTP/1.1 通过 Cache-Control 首部字段来控制缓存。
 
 no-store 指令规定不能对请求或响应的任何一部分进行缓存。
 
-```text
+```
 Cache-Control: no-store
 ```
 
@@ -390,7 +390,7 @@ Cache-Control: no-store
 
 no-cache 指令规定缓存服务器需要先向源服务器验证缓存资源的有效性，只有当缓存资源有效时才能使用该缓存对客户端的请求进行响应。
 
-```text
+```
 Cache-Control: no-cache
 ```
 
@@ -398,13 +398,13 @@ Cache-Control: no-cache
 
 private 指令规定了将资源作为私有缓存，只能被单独用户使用，一般存储在用户浏览器中。
 
-```text
+```
 Cache-Control: private
 ```
 
 public 指令规定了将资源作为公共缓存，可以被多个用户使用，一般存储在代理服务器中。
 
-```text
+```
 Cache-Control: public
 ```
 
@@ -414,13 +414,13 @@ max-age 指令出现在请求报文，并且缓存资源的缓存时间小于该
 
 max-age 指令出现在响应报文，表示缓存资源在缓存服务器中保存的时间。
 
-```text
+```
 Cache-Control: max-age=31536000
 ```
 
 Expires 首部字段也可以用于告知缓存服务器该资源什么时候会过期。
 
-```text
+```
 Expires: Wed, 04 Jul 2012 08:26:05 GMT
 ```
 
@@ -431,23 +431,23 @@ Expires: Wed, 04 Jul 2012 08:26:05 GMT
 
 需要先了解 ETag 首部字段的含义，它是资源的唯一标识。URL 不能唯一表示资源，例如 `http://www.google.com/` 有中文和英文两个资源，只有 ETag 才能对这两个资源进行唯一标识。
 
-```text
+```
 ETag: "82e22293907ce725faf67773957acd12"
 ```
 
 可以将缓存资源的 ETag 值放入 If-None-Match 首部，服务器收到该请求后，判断缓存资源的 ETag 值和资源的最新 ETag 值是否一致，如果一致则表示缓存资源有效，返回 304 Not Modified。
 
-```text
+```
 If-None-Match: "82e22293907ce725faf67773957acd12"
 ```
 
 Last-Modified 首部字段也可以用于缓存验证，它包含在源服务器发送的响应报文中，指示源服务器对资源的最后修改时间。但是它是一种弱校验器，因为只能精确到一秒，所以它通常作为 ETag 的备用方案。如果响应首部字段里含有这个信息，客户端可以在后续的请求中带上 If-Modified-Since 来验证缓存。服务器只在所请求的资源在给定的日期时间之后对内容进行过修改的情况下才会将资源返回，状态码为 200 OK。如果请求的资源从那时起未经修改，那么返回一个不带有实体主体的 304 Not Modified 响应报文。
 
-```text
+```
 Last-Modified: Wed, 21 Oct 2015 07:28:00 GMT
 ```
 
-```text
+```
 If-Modified-Since: Wed, 21 Oct 2015 07:28:00 GMT
 ```
 
@@ -473,7 +473,7 @@ If-Modified-Since: Wed, 21 Oct 2015 07:28:00 GMT
 
 #### 2. Vary
 
-```text
+```
 Vary: Accept-Language
 ```
 
@@ -497,7 +497,7 @@ Vary: Accept-Language
 
 在请求报文中添加 Range 首部字段指定请求的范围。
 
-```text
+```
 GET /z4d4kWk.jpg HTTP/1.1
 Host: i.imgur.com
 Range: bytes=0-1023
@@ -505,7 +505,7 @@ Range: bytes=0-1023
 
 请求成功的话服务器返回的响应包含 206 Partial Content 状态码。
 
-```text
+```
 HTTP/1.1 206 Partial Content
 Content-Range: bytes 0-1023/146515
 Content-Length: 1024
@@ -517,7 +517,7 @@ Content-Length: 1024
 
 响应首部字段 Accept-Ranges 用于告知客户端是否能处理范围请求，可以处理使用 bytes，否则使用 none。
 
-```text
+```
 Accept-Ranges: bytes
 ```
 
@@ -537,7 +537,7 @@ Chunked Transfer Encoding，可以把数据分割成多块，让浏览器逐步�
 
 例如，上传多个表单时可以使用如下方式：
 
-```text
+```
 Content-Type: multipart/form-data; boundary=AaB03x
 ​
 --AaB03x
@@ -575,7 +575,8 @@ HTTP/1.1 使用虚拟主机技术，使得一台服务器拥有多个域名，�
 
 ![](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/a314bb79-5b18-4e63-a976-3448bffa6f1b.png)
 
-* 而反向代理一般位于内部网络中，用户察觉不到。 ​
+* 而反向代理一般位于内部网络中，用户察觉不到。\
+  ​
 
 ![](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/2d09a847-b854-439c-9198-b29c65810944.png)
 
@@ -608,7 +609,8 @@ HTTPS 并不是新协议，而是让 HTTP 先和 SSL（Secure Sockets Layer）�
 对称密钥加密（Symmetric-Key Encryption），加密和解密使用同一密钥。
 
 * 优点：运算速度快；
-* 缺点：无法安全地将密钥传输给通信方。 ​
+* 缺点：无法安全地将密钥传输给通信方。\
+  ​
 
 ![](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/7fffa4b8-b36d-471f-ad0c-a88ee763bb76.png)
 
@@ -621,7 +623,8 @@ HTTPS 并不是新协议，而是让 HTTP 先和 SSL（Secure Sockets Layer）�
 非对称密钥除了用来加密，还可以用来进行签名。因为私有密钥无法被其他人获取，因此通信发送方使用其私有密钥进行签名，通信接收方使用发送方的公开密钥对签名进行解密，就能判断这个签名是否正确。
 
 * 优点：可以更安全地将公开密钥传输给通信发送方；
-* 缺点：运算速度慢。 ​
+* 缺点：运算速度慢。\
+  ​
 
 ![](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/39ccb299-ee99-4dd1-b8b4-2f9ec9495cb4.png)
 
@@ -741,7 +744,7 @@ HTTP/2.0 要求客户端和服务器同时维护和更新一个包含之前见�
 
 不仅如此，HTTP/2.0 也使用 Huffman 编码对首部字段进行压缩。​
 
-![](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/_u4E0B_u8F7D.png)
+![](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/\_u4E0B_u8F7D.png)
 
 ## 九、GET 和 POST 比较
 
@@ -755,11 +758,11 @@ GET 和 POST 的请求都能使用额外的参数，但是 GET 的参数是以�
 
 因为 URL 只支持 ASCII 码，因此 GET 的参数中如果存在中文等字符就需要先进行编码。例如 `中文` 会转换为 `%E4%B8%AD%E6%96%87`，而空格会转换为 `%20`。POST 参数支持标准字符集。
 
-```text
+```
 GET /test/demo_form.asp?name1=value1&name2=value2 HTTP/1.1
 ```
 
-```text
+```
 POST /test/demo_form.asp HTTP/1.1
 Host: w3schools.com
 name1=value1&name2=value2
@@ -785,16 +788,16 @@ GET 方法是安全的，而 POST 却不是，因为 POST 的目的是传送实�
 
 GET /pageX HTTP/1.1 是幂等的，连续调用多次，客户端接收到的结果都是一样的：
 
-```text
+```
 GET /pageX HTTP/1.1
 GET /pageX HTTP/1.1
 GET /pageX HTTP/1.1
 GET /pageX HTTP/1.1
 ```
 
-POST /add\_row HTTP/1.1 不是幂等的，如果调用多次，就会增加多行记录：
+POST /add_row HTTP/1.1 不是幂等的，如果调用多次，就会增加多行记录：
 
-```text
+```
 POST /add_row HTTP/1.1   -> Adds a 1nd row
 POST /add_row HTTP/1.1   -> Adds a 2nd row
 POST /add_row HTTP/1.1   -> Adds a 3rd row
@@ -802,7 +805,7 @@ POST /add_row HTTP/1.1   -> Adds a 3rd row
 
 DELETE /idX/delete HTTP/1.1 是幂等的，即使不同的请求接收到的状态码不一样：
 
-```text
+```
 DELETE /idX/delete HTTP/1.1   -> Returns 200 if idX exists
 DELETE /idX/delete HTTP/1.1   -> Returns 404 as it just got deleted
 DELETE /idX/delete HTTP/1.1   -> Returns 404
@@ -824,4 +827,3 @@ DELETE /idX/delete HTTP/1.1   -> Returns 404
 
 * 在使用 XMLHttpRequest 的 POST 方法时，浏览器会先发送 Header 再发送 Data。但并不是所有浏览器会这么做，例如火狐就不会。
 * 而 GET 方法 Header 和 Data 会一起发送。​
-

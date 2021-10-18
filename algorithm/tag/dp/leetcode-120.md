@@ -1,15 +1,3 @@
----
-title: 120. 三角形最小路径和
-date: '2020-07-14T16:20:55.000Z'
-tags:
-  - leetcode
-  - java
-  - kotlin
-  - 动态规划
-categories: 算法笔记
-notshow: true
----
-
 # LEETCODE 120. 三角形最小路径和
 
 ## 1. [问题](https://leetcode-cn.com/problems/triangle)
@@ -20,7 +8,7 @@ notshow: true
 
 例如，给定三角形：
 
-```text
+```
 [
      [2],
     [3,4],
@@ -31,7 +19,7 @@ notshow: true
 
 自顶向下的最小路径和为 11（即，2 + 3 + 5 + 1 = 11）。
 
-说明： 如果你可以只使用 O\(n\) 的额外空间（n 为三角形的总行数）来解决这个问题，那么你的算法会很加分。
+说明： 如果你可以只使用 O(n) 的额外空间（n 为三角形的总行数）来解决这个问题，那么你的算法会很加分。
 
 ## 2. 解法 - 动态规划
 
@@ -122,4 +110,3 @@ class Solution {
 ## 4. 笔记
 
 ![](https://777blog.oss-cn-shanghai.aliyuncs.com/leetcode/leetcode-120.jpg)
-

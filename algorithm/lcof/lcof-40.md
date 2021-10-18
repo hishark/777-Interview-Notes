@@ -6,14 +6,14 @@
 
 示例1：
 
-```text
+```
 输入：arr = [3,2,1], k = 2
 输出：[1,2] 或者 [2,1]
 ```
 
 示例2：
 
-```text
+```
 输入：arr = [0,1,2,1], k = 1
 输出：[0]
 ```
@@ -139,7 +139,7 @@ class Solution {
 
 ## 4. 解法 - 快排
 
-> 注意找前 K 大/前 K 小问题不需要对整个数组进行 O\(NlogN\) 的排序！ 例如本题，直接通过快排切分排好第 K 小的数（下标为 K-1），那么它左边的数就是比它小的另外 K-1 个数。
+> 注意找前 K 大/前 K 小问题不需要对整个数组进行 O(NlogN) 的排序！ 例如本题，直接通过快排切分排好第 K 小的数（下标为 K-1），那么它左边的数就是比它小的另外 K-1 个数。
 
 ### 4.1 Java
 
@@ -212,12 +212,11 @@ class Solution {
 
 > 关于复杂度：[https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/solution/3chong-jie-fa-miao-sha-topkkuai-pai-dui-er-cha-sou/296015](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/solution/3chong-jie-fa-miao-sha-topkkuai-pai-dui-er-cha-sou/296015)
 
-* 时间复杂度 `O(n^2)` ：期望为 O\(n\) ，最坏情况下，每次的划分点都是最大值或最小值，一共需要划分 n - 1 次，而一次划分需要线性的时间复杂度O\(n\)，所以最坏情况下时间复杂度为 O\(n^2\)。
-* 空间复杂度 `O(n)` ：期望为 O\(logn\)，递归调用的期望深度为 O\(logn\)，每层需要的空间为 O\(1\)，只有常数个变量。最坏情况下需要划分 n 次，递归调用最深达到 n−1 层，而每层由于需要 O\(1\) 的空间，所以一共需要 O\(n\) 的空间复杂度。
+* 时间复杂度 `O(n^2)` ：期望为 O(n) ，最坏情况下，每次的划分点都是最大值或最小值，一共需要划分 n - 1 次，而一次划分需要线性的时间复杂度O(n)，所以最坏情况下时间复杂度为 O(n^2)。
+* 空间复杂度 `O(n)` ：期望为 O(logn)，递归调用的期望深度为 O(logn)，每层需要的空间为 O(1)，只有常数个变量。最坏情况下需要划分 n 次，递归调用最深达到 n−1 层，而每层由于需要 O(1) 的空间，所以一共需要 O(n) 的空间复杂度。
 
 ## 5. 参考
 
 * [https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/solution/](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/solution/)
 * [https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/solution/zui-xiao-de-kge-shu-by-leetcode-solution/](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/solution/zui-xiao-de-kge-shu-by-leetcode-solution/)
 * [https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/solution/3chong-jie-fa-miao-sha-topkkuai-pai-dui-er-cha-sou/](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/solution/3chong-jie-fa-miao-sha-topkkuai-pai-dui-er-cha-sou/)
-

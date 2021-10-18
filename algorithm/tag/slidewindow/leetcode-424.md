@@ -8,7 +8,7 @@
 
 示例 1：
 
-```text
+```
 输入：s = "ABAB", k = 2
 输出：4
 解释：用两个'A'替换为两个'B',反之亦然。
@@ -16,7 +16,7 @@
 
 示例 2：
 
-```text
+```
 输入：s = "AABABBA", k = 1
 输出：4
 解释：
@@ -74,4 +74,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/longest-repeating-character-replacement/](https://leetcode-cn.com/problems/longest-repeating-character-replacement/)
 * [https://leetcode-cn.com/problems/longest-repeating-character-replacement/solution/ti-huan-hou-de-zui-chang-zhong-fu-zi-fu-n6aza/](https://leetcode-cn.com/problems/longest-repeating-character-replacement/solution/ti-huan-hou-de-zui-chang-zhong-fu-zi-fu-n6aza/)
-

@@ -6,7 +6,7 @@
 
 示例：
 
-```text
+```
 给定一个链表: 1->2->3->4->5, 和 k = 2.
 返回链表 4->5.
 ```
@@ -83,11 +83,10 @@ class Solution {
 
 ### 2.3 复杂度分析
 
-* 时间复杂度 O\(N\)：N是链表的结点数量。总体来看，pre走了N步，aft走了N-k步。
-* 空间复杂度 O\(1\)：双指针pre和aft使用了常数大小的额外空间。
+* 时间复杂度 O(N)：N是链表的结点数量。总体来看，pre走了N步，aft走了N-k步。
+* 空间复杂度 O(1)：双指针pre和aft使用了常数大小的额外空间。
 
 ## 3. 参考
 
 * [https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/](https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/)
 * [https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/solution/mian-shi-ti-22-lian-biao-zhong-dao-shu-di-kge-j-11/](https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/solution/mian-shi-ti-22-lian-biao-zhong-dao-shu-di-kge-j-11/)
-

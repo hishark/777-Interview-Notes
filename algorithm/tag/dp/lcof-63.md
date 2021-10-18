@@ -6,7 +6,7 @@
 
 **示例 1:**
 
-```text
+```
 输入: [7,1,5,3,6,4]
 输出: 5
 解释: 在第 2 天（股票价格 = 1）的时候买入，在第 5 天（股票价格 = 6）的时候卖出，最大利润 = 6-1 = 5 。
@@ -15,7 +15,7 @@
 
 **示例 2:**
 
-```text
+```
 输入: [7,6,4,3,1]
 输出: 0
 解释: 在这种情况下, 没有交易完成, 所以最大利润为 0。
@@ -104,7 +104,7 @@ class Solution {
 ### 3.3 复杂度分析
 
 * 时间复杂度 `O(N)` ：其中 N 为 prices 的长度，需要遍历整个数组。
-* 空间复杂度 `O(N)` ：dp 数组占用了 O\(N\) 的额外空间。
+* 空间复杂度 `O(N)` ：dp 数组占用了 O(N) 的额外空间。
 
 **效率优化**：
 
@@ -135,4 +135,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/gu-piao-de-zui-da-li-run-lcof/](https://leetcode-cn.com/problems/gu-piao-de-zui-da-li-run-lcof/)
 * [https://leetcode-cn.com/problems/gu-piao-de-zui-da-li-run-lcof/solution/mian-shi-ti-63-gu-piao-de-zui-da-li-run-dong-tai-2/](https://leetcode-cn.com/problems/gu-piao-de-zui-da-li-run-lcof/solution/mian-shi-ti-63-gu-piao-de-zui-da-li-run-dong-tai-2/)
-

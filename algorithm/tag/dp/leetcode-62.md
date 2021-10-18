@@ -8,18 +8,18 @@
 
 问总共有多少条不同的路径？
 
-![](../../../.gitbook/assets/image%20%2823%29.png)
+![](<../../../.gitbook/assets/image (61).png>)
 
 示例 1：
 
-```text
+```
 输入：m = 3, n = 7
 输出：28
 ```
 
 示例 2：
 
-```text
+```
 输入：m = 3, n = 2
 输出：3
 解释：
@@ -31,14 +31,14 @@
 
 示例 3：
 
-```text
+```
 输入：m = 7, n = 3
 输出：28
 ```
 
 示例 4：
 
-```text
+```
 输入：m = 3, n = 3
 输出：6
 ```
@@ -93,4 +93,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/unique-paths/](https://leetcode-cn.com/problems/unique-paths/)
 * [https://leetcode-cn.com/problems/unique-paths/solution/bu-tong-lu-jing-by-leetcode-solution-hzjf/](https://leetcode-cn.com/problems/unique-paths/solution/bu-tong-lu-jing-by-leetcode-solution-hzjf/)
-

@@ -1,15 +1,3 @@
----
-title: 174. 地下城游戏
-date: '2020-07-12T16:00:55.000Z'
-tags:
-  - leetcode
-  - java
-  - kotlin
-  - 动态规划
-categories: 算法笔记
-notshow: true
----
-
 # LEETCODE 174. 地下城游戏
 
 ## 1. [问题](https://leetcode-cn.com/problems/dungeon-game/)
@@ -26,7 +14,7 @@ notshow: true
 
 例如，考虑到如下布局的地下城，如果骑士遵循最佳路径`右 -> 右 -> 下 -> 下`，则骑士的初始健康点数至少为 7。
 
-```text
+```
 -2 (K)    -3       3
 -5        -10       1
 10        30      -5 (P)
@@ -116,4 +104,3 @@ class Solution {
 ## 4. 笔记
 
 ![](https://777blog.oss-cn-shanghai.aliyuncs.com/leetcode/leetcode-174-1.jpg) ![](https://777blog.oss-cn-shanghai.aliyuncs.com/leetcode/leetcode-174-2.jpg)
-

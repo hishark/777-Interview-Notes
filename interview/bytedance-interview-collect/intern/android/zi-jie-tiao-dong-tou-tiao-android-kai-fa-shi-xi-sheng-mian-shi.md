@@ -40,7 +40,7 @@
 #### 三面（7月3日 40min）
 
 * 自我介绍。
-* 项目中出现的难处以及解决。我说的是我使用addView达到弹出框的效果，但是耗时长。后来了解Fragment，使用Fragment代替addView。面试官追问你能分析为什么这么慢吗，我就说了Android的Activity-&gt;PhoneWindow-&gt;DecorView-&gt;ContentView-&gt;WindowManager-&gt;RootViewImpl的绘制流程。面试官继续追问ANR出现的类型，原因以及排查的方式。面试官继续追问Fragment和Activity的区别以及Fragment的优点。
+* 项目中出现的难处以及解决。我说的是我使用addView达到弹出框的效果，但是耗时长。后来了解Fragment，使用Fragment代替addView。面试官追问你能分析为什么这么慢吗，我就说了Android的Activity->PhoneWindow->DecorView->ContentView->WindowManager->RootViewImpl的绘制流程。面试官继续追问ANR出现的类型，原因以及排查的方式。面试官继续追问Fragment和Activity的区别以及Fragment的优点。
 * 说一下Android中多线程使用方式。面试官追问如何停止一个线程。
 * Handler的原理。Looper，MessageQueue，Message。面试官追问在一个Handler中给另一个Handler发送消息，我没太理解其实。
 * Java内存，回收的搜索算法：引用计数和根搜索算法。
@@ -52,4 +52,3 @@
 * 自我介绍。
 * 询问我的基本情况，实习时间，职业规划等。
 * 给了口头Offer。
-

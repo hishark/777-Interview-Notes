@@ -1,15 +1,3 @@
----
-title: 15. 二进制中1的个数
-date: '2020-09-03T13:35:03.000Z'
-tags:
-  - 位运算
-  - 二进制
-  - leetcode
-  - lcof
-  - java
-categories: 算法笔记
----
-
 # 15. 二进制中1的个数【位运算】
 
 ## 1. [问题](https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/)
@@ -18,7 +6,7 @@ categories: 算法笔记
 
 示例 1：
 
-```text
+```
 输入：00000000000000000000000000001011
 输出：3
 解释：输入的二进制串 00000000000000000000000000001011 中，共有三位为 '1'。
@@ -26,7 +14,7 @@ categories: 算法笔记
 
 示例 2：
 
-```text
+```
 输入：00000000000000000000000010000000
 输出：1
 解释：输入的二进制串 00000000000000000000000010000000 中，共有一位为 '1'。
@@ -34,7 +22,7 @@ categories: 算法笔记
 
 示例 3：
 
-```text
+```
 输入：11111111111111111111111111111101
 输出：31
 解释：输入的二进制串 11111111111111111111111111111101 中，共有 31 位为 '1'。
@@ -44,9 +32,9 @@ categories: 算法笔记
 
 Java 移位运算符
 
-1. **&lt;&lt;**：左移运算符，左移几位就补几个0。
-2. **&gt;&gt;**：右移运算符（算术右移），如果数字为正数时，移位后在前面补0，为负数时，则在前面补1。
-3. **&gt;&gt;&gt;**：无符号右移运算符（逻辑右移），忽略符号，空位补0即可。
+1. **<<**：左移运算符，左移几位就补几个0。
+2. **>>**：右移运算符（算术右移），如果数字为正数时，移位后在前面补0，为负数时，则在前面补1。
+3. **>>>**：无符号右移运算符（逻辑右移），忽略符号，空位补0即可。
 
 ### 2.1 Java
 
@@ -80,7 +68,7 @@ public class Solution {
 }
 ```
 
-## 3. 解法② - 使用n&\(n−1\)
+## 3. 解法② - 使用n&(n−1)
 
 ### 3.1 Java
 
@@ -106,11 +94,11 @@ public class Solution {
 
 ### 3.2 复杂度分析
 
-时间复杂度：O\(M\)
+时间复杂度：O(M)
 
-* n&\(n−1\)操作只有【减法】和【与】运算，占用O\(1\)；设M为二进制数字n中1的个数，那么需要循环M次（每次消去一个1），所以是O\(M\)。
+* n&(n−1)操作只有【减法】和【与】运算，占用O(1)；设M为二进制数字n中1的个数，那么需要循环M次（每次消去一个1），所以是O(M)。
 
-空间复杂度：O\(1\)
+空间复杂度：O(1)
 
 * 变量ans占用常数空间。
 
@@ -119,4 +107,3 @@ public class Solution {
 * [https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/](https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/)
 * [https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/solution/mian-shi-ti-15-er-jin-zhi-zhong-1de-ge-shu-wei-yun/](https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/solution/mian-shi-ti-15-er-jin-zhi-zhong-1de-ge-shu-wei-yun/)
 * [https://juejin.cn/post/6844903752915222535](https://juejin.cn/post/6844903752915222535)
-

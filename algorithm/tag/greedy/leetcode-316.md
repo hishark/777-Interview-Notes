@@ -6,14 +6,14 @@
 
 **示例 1：**
 
-```text
+```
 输入：s = "bcabc"
 输出："abc"
 ```
 
 **示例 2：**
 
-```text
+```
 输入：s = "cbacdcbc"
 输出："acdb"
 ```
@@ -89,4 +89,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/remove-duplicate-letters/](https://leetcode-cn.com/problems/remove-duplicate-letters/)
 * [https://leetcode-cn.com/problems/remove-duplicate-letters/solution/qu-chu-zhong-fu-zi-mu-by-leetcode-soluti-vuso/](https://leetcode-cn.com/problems/remove-duplicate-letters/solution/qu-chu-zhong-fu-zi-mu-by-leetcode-soluti-vuso/)
-

@@ -1,17 +1,3 @@
----
-title: 03. 数组中重复的数字
-date: '2020-08-10T23:21:04.000Z'
-tags:
-  - 数组
-  - 哈希表
-  - leetcode
-  - lcof
-  - java
-  - kotlin
-categories: 算法笔记
-notshow: true
----
-
 # 03. 数组中重复的数字【排序/哈希/比较交换】
 
 ## 1. [问题](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/)
@@ -22,7 +8,7 @@ notshow: true
 
 示例 1：
 
-```text
+```
 输入：
 [2, 3, 1, 0, 2, 5, 3]
 输出：2 或 3
@@ -30,7 +16,7 @@ notshow: true
 
 限制：
 
-* 2 &lt;= n &lt;= 100000
+* 2 <= n <= 100000
 
 ## 2. 解法1 - 排序
 
@@ -187,4 +173,3 @@ class Solution {
 
 * 数组
 * 哈希表
-

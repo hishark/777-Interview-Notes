@@ -12,25 +12,25 @@
 
 示例 1：
 
-![](../../../.gitbook/assets/image%20%288%29.png)
+![](<../../../.gitbook/assets/image (56).png>)
 
-```text
+```
 输入：isConnected = [[1,1,0],[1,1,0],[0,0,1]]
 输出：2
 ```
 
 示例 2：
 
-![](../../../.gitbook/assets/image%20%2810%29.png)
+![](<../../../.gitbook/assets/image (57).png>)
 
-```text
+```
 输入：isConnected = [[1,0,0],[0,1,0],[0,0,1]]
 输出：3
 ```
 
 提示：
 
-* `1 <= n <= 200` 
+* `1 <= n <= 200 `
 * `n == isConnected.length`
 * `n == isConnected[i].length`
 * `isConnected[i][j]` 为 1 或 0 
@@ -148,4 +148,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/number-of-provinces/](https://leetcode-cn.com/problems/number-of-provinces/)
 * [https://leetcode-cn.com/problems/number-of-provinces/solution/sheng-fen-shu-liang-by-leetcode-solution-eyk0/](https://leetcode-cn.com/problems/number-of-provinces/solution/sheng-fen-shu-liang-by-leetcode-solution-eyk0/)
-

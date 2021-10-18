@@ -28,7 +28,7 @@ jvm内存区域，为什么要有jvm // java guide
 
 jvm 内存
 
-Java内存（分配-&gt;回收）
+Java内存（分配->回收）
 
 jvm启动过程? 验证是验证什么
 
@@ -76,9 +76,9 @@ String类如何被加载的【类加载机制】；双亲委派模型【常规�
 
 java对象的加载机制
 
-**//** 
+**// **
 
-你觉得像成员变量、成员方法、然后静态类，这些类在加载的时候，顺序是什么样的 **// meituan**
+你觉得像成员变量、成员方法、然后静态类，这些类在加载的时候，顺序是什么样的** // meituan**
 
 ## **异常 2**
 
@@ -96,7 +96,7 @@ Java中常见的异常。
 
 // 还有安卓的热启动
 
-## **抽象类和接口** 
+## **抽象类和接口 **
 
 抽象类与接口的区别
 
@@ -134,7 +134,7 @@ hashmap的扩容机制，为什么要俩倍扩容。
 
 HashMap的源码，扩容的条件。
 
-hashmap 原理 机制 扩容\(他说我扩容说太简单了。。\)
+hashmap 原理 机制 扩容(他说我扩容说太简单了。。)
 
 hashmap 扩容，为啥是 2 倍，为啥 size 是 2 的幂次方
 
@@ -146,7 +146,7 @@ ArrayList和HashMap了解吗？（面试前恶补过HashMap，这部分说了蛮
 
 HashMap原理，get、put的**时间复杂度**
 
-谈谈HashMap\(为什么不适用基础数据类型、添加的时候需要注意什么、添加的key有什么特殊性\)
+谈谈HashMap(为什么不适用基础数据类型、添加的时候需要注意什么、添加的key有什么特殊性)
 
 介绍一下所有的map，以及他们之间的对比，适用场景。
 
@@ -156,7 +156,7 @@ hashmap底层结构 扩容机制 查询机制 hash算法
 
 hashmap的key可以是基本类型吗 如果一定要定义为基本类型怎么做 //⭐️
 
-讲一下**hashCode**\(\)。（这里提到了hashmap的原理）
+讲一下**hashCode**()。（这里提到了hashmap的原理）
 
 哈希构造方法、哈希冲突解决方法
 
@@ -170,7 +170,7 @@ concurrentHashmap
 
 HashMap、HashTable、ConcurrentHashMap
 
-HashMap和HastTable，HashMap安全？不安全用什么？hash\(\)？HashTable是怎么实现安全的？
+HashMap和HastTable，HashMap安全？不安全用什么？hash()？HashTable是怎么实现安全的？
 
 HashMap如何实现、HashMap和HashTable区别、ConcurrentHashMap实现原理。
 
@@ -190,7 +190,7 @@ ArrayList和**LinkedList**的区别。
 
 List如何删除。（为什么用iterator的不用List的删除方法，讲了一下ConcurrentModificationException）
 
-ArrayList&lt;String&gt; 删除空字符串\(""\)对象
+ArrayList\<String> 删除空字符串("")对象
 
 sparseArray
 
@@ -216,7 +216,7 @@ arraylist与vector的区别
 
 CAS介绍，CAS有什么问题，Java是否有解决方法
 
-## **回收 6（Java GC\(Garbage Collection,垃圾收集,垃圾回收\)机制）**
+## **回收 6（Java GC(Garbage Collection,垃圾收集,垃圾回收)机制）**
 
 gc算法，收集器，stop the world
 
@@ -240,7 +240,7 @@ Java**垃圾回收**的过程
 
 对象判死的两种方法，**gc roots**有哪些
 
-Java的**GC机制**，引用计数和可达性分析算法，finize\(\)方法，四种回收算法，哪些对象可以作为GC ROOTS对象
+Java的**GC机制**，引用计数和可达性分析算法，finize()方法，四种回收算法，哪些对象可以作为GC ROOTS对象
 
 如何**减少GC**，有哪些高频方\*\*\*经常创建对象（好像是这个意思...） 【这里他问我擅长什么，我说gc（因为关于回收算法和垃圾收集器我记得比较熟），然后他说分代收集算法那些就不用讲了，就一直在问一些我不懂的东西，我真是搬起石头砸自己的脚....】
 
@@ -316,7 +316,7 @@ java如何实现线程的互斥
 
 乐观锁和悲观锁
 
-手写单例模式\(double-check\)
+手写单例模式(double-check)
 
 乐观锁写单例模式
 
@@ -328,11 +328,11 @@ java如何实现线程的互斥
 
 是否了解Java的atomic，以及好多很底层的东西 （原子性？
 
-**wait\(\)的用法，notifyAll\(\)的用法，notify\(\)唤醒的是哪一个线程。**
+**wait()的用法，notifyAll()的用法，notify()唤醒的是哪一个线程。**
 
 给定代码，会输出`i`等于什么；如何令`i`输出为1【用`static`与`volatile`修饰，主线程调用`sleep()`】；如何保证`i`一定输出为1，写一下代码【用`wait()`与`notifyAll()`？】；`Runnable`的`run()`方法中使用`this`指的是什么，`Runnable`还是`Thread`【`Runnable`的匿名内部类】
 
-```text
+```
 class A {
     private int i = 0;
     public static void main(String[] args) {
@@ -367,7 +367,7 @@ sychronize关键字修饰同类的两个方法，调用会阻塞吗？
 
 线程和进程有什么区别，Java怎么使用线程，线程的新建和销毁的具体过程。
 
-## wait\(\)
+## wait()
 
 wait和sleep的区别？
 
@@ -405,7 +405,7 @@ volatile 关键字的具体作用是什么？
 
 volatile 可不可以保证线程安全，在什么情况之下，可以保证线程安全？
 
-Java 里面，Object 类有一个 hashCode\(\) 方法和 equals\(\) 方法，可以讲一下它们的区别吗？
+Java 里面，Object 类有一个 hashCode() 方法和 equals() 方法，可以讲一下它们的区别吗？
 
 什么时候要重写这两个方法？
 
@@ -413,7 +413,7 @@ Java 里面，Object 类有一个 hashCode\(\) 方法和 equals\(\) 方法，可
 
 什么是可重入锁
 
-object.wait\(\) 可重入吗？
+object.wait() 可重入吗？
 
 什么是公平锁，什么是非公平锁
 
@@ -507,7 +507,7 @@ final关键字，final常量存储位置，常量池的好处
 
 讲讲JAVA几个访问权限关键字
 
-如下代码的会执行false吗？A a=new A\(\); System.out.println\(a isInstance of A\) ; **//** [**考察instanceof关键字用法**](https://www.runoob.com/java/method-instanceof.html)\*\*\*\*
+如下代码的会执行false吗？A a=new A(); System.out.println(a isInstance of A) ;** // **[**考察instanceof关键字用法**](https://www.runoob.com/java/method-instanceof.html)****
 
 ## **编译**
 
@@ -529,17 +529,17 @@ java文件的编译方式，谁把源文件编译成.class文件
 
 Json解析的时候是怎么将json解析为对应的类。
 
-## **==和.equals\(\)的区别？**
+## **==和.equals()的区别？**
 
- // 这个可以说自己碰到的情况\[-128,127\]
+ // 这个可以说自己碰到的情况\[-128,127]
 
-重写equals方法\(写不出，面试官一直引导我，最后面试官区去开会去了，让我自己出去查一查，菜\)
+重写equals方法(写不出，面试官一直引导我，最后面试官区去开会去了，让我自己出去查一查，菜)
 
-讲一下**equals**\(\)。
+讲一下**equals**()。
 
 //
 
-==和equals的区别
+\==和equals的区别
 
 ## **重写和重载的区别。**
 
@@ -549,7 +549,7 @@ Json解析的时候是怎么将json解析为对应的类。
 
 引用：
 
-String a = new String\(\);
+String a = new String();
 
 b = a;
 
@@ -557,7 +557,7 @@ a = null;
 
 b 是否= null?
 
-String s=new String\("123"\);建立了几个对象
+String s=new String("123");建立了几个对象
 
 `String a = new String("abc")`与`String a = "abc"`的区别【前者分配在堆上，后者在常量池中】
 
@@ -569,7 +569,7 @@ String str = “123” + “456”;会创建几个对象。
 
 //
 
-String s = new String\("hello"\)与String s = "hello"的区别
+String s = new String("hello")与String s = "hello"的区别
 
 ## **内存泄漏问题**
 
@@ -579,7 +579,7 @@ String s = new String\("hello"\)与String s = "hello"的区别
 
 讲一下**内存泄漏**
 
-Java可以自动管理内存，为什么会有**OOM**【可达性[算法](https:///jump/super-jump/word?word=%E7%AE%97%E6%B3%95)】
+Java可以自动管理内存，为什么会有**OOM**【可达性[算法](https://jump/super-jump/word?word=%E7%AE%97%E6%B3%95)】
 
 //
 
@@ -591,7 +591,7 @@ Java可以自动管理内存，为什么会有**OOM**【可达性[算法](https:
 
 ## **LRU**
 
-LRU[算法](https:///jump/super-jump/word?word=%E7%AE%97%E6%B3%95)的`get`时间复杂度是多少，为什么【只知道是干什么的但不了解】（不知道属不属于java
+LRU[算法](https://jump/super-jump/word?word=%E7%AE%97%E6%B3%95)的`get`时间复杂度是多少，为什么【只知道是干什么的但不了解】（不知道属不属于java
 
 LRU\*\*\*
 
@@ -601,7 +601,7 @@ LRU怎么实现
 
 LruCache
 
-LRU怎么实现\(hash+[链表](https:///jump/super-jump/word?word=%E9%93%BE%E8%A1%A8)\)，详细解释步骤、时间复杂度，
+LRU怎么实现(hash+[链表](https://jump/super-jump/word?word=%E9%93%BE%E8%A1%A8))，详细解释步骤、时间复杂度，
 
 ## **泛型**
 
@@ -633,7 +633,7 @@ Java的类型擦除
 
 深拷贝/浅拷贝，怎么实现深-浅拷贝 CopyonWrite
 
-讲一下**clone**\(\)，**深拷贝和浅拷贝**的区别。
+讲一下**clone**()，**深拷贝和浅拷贝**的区别。
 
 //
 
@@ -724,6 +724,4 @@ Kotlin 与 Java 比较
 ## 注解
 
 注解介绍下？
-
-
 

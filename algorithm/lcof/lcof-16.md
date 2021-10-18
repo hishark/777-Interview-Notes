@@ -1,41 +1,26 @@
----
-title: 16. 数值的整数次方
-date: '2020-09-04T18:49:46.000Z'
-tags:
-  - 递归
-  - 分治
-  - 二进制
-  - 位运算
-  - leetcode
-  - lcof
-  - java
-  - kotlin
-categories: 算法笔记
----
-
 # 16. 数值的整数次方【分治】
 
 ## 1. [问题](https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof)
 
-实现函数double Power\(double base, int exponent\)，求base的exponent次方。不得使用库函数，同时不需要考虑大数问题。
+实现函数double Power(double base, int exponent)，求base的exponent次方。不得使用库函数，同时不需要考虑大数问题。
 
 示例 1:
 
-```text
+```
 输入: 2.00000, 10
 输出: 1024.00000
 ```
 
 示例 2:
 
-```text
+```
 输入: 2.10000, 3
 输出: 9.26100
 ```
 
 示例 3:
 
-```text
+```
 输入: 2.00000, -2
 输出: 0.25000
 解释: 2-2 = 1/22 = 1/4 = 0.25
@@ -43,12 +28,12 @@ categories: 算法笔记
 
 说明:
 
-* -100.0 &lt; x &lt; 100.0
-* n 是 32 位有符号整数，其数值范围是 \[−2^31, 2^31 − 1\]。
+* \-100.0 < x < 100.0
+* n 是 32 位有符号整数，其数值范围是 \[−2^31, 2^31 − 1]。
 
 ## 2. 解法 - 分治 递归
 
-n 的范围是\[−2^31, 2^31 − 1\]，当 n = -2^31 时，执行 -n 操作会导致越界，所以需要将 n 转换成 long 类型来计算。
+n 的范围是\[−2^31, 2^31 − 1]，当 n = -2^31 时，执行 -n 操作会导致越界，所以需要将 n 转换成 long 类型来计算。
 
 > 可以用右移运算符代替除以2，用位与运算符代替求余符号（%）来判断一个数是奇数还是偶数，位运算的效率比乘除法及求余运算的效率要高很多。
 
@@ -143,7 +128,7 @@ class Solution {
 
 ## 3. 解法 - [快速幂](https://baike.baidu.com/item/%E5%BF%AB%E9%80%9F%E5%B9%82/5500243?fr=aladdin)
 
-> n 的范围是\[−2^31, 2^31 − 1\]，当 n = -2^31 时，执行 -n 操作会导致越界，所以需要将n转换成long类型来计算。
+> n 的范围是\[−2^31, 2^31 − 1]，当 n = -2^31 时，执行 -n 操作会导致越界，所以需要将n转换成long类型来计算。
 
 ### 3.1 Java
 
@@ -233,4 +218,3 @@ class Solution {
 * [https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof](https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof)
 * [https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/solution/di-gui-xie-fa-fen-zhi-si-xiang-yu-fei-di-gui-xie-f/](https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/solution/di-gui-xie-fa-fen-zhi-si-xiang-yu-fei-di-gui-xie-f/)
 * [《剑指Offer（第2版）》](https://book.douban.com/subject/27008702/)
-

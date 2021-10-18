@@ -2,11 +2,11 @@
 
 ## 1. [问题](https://leetcode-cn.com/problems/rotate-array/)
 
-给定一个数组，将数组中的元素向右移动 _k_ 个位置，其中 _k_ 是非负数。
+给定一个数组，将数组中的元素向右移动 _k _个位置，其中 _k _是非负数。
 
 **示例 1:**
 
-```text
+```
 输入: [1,2,3,4,5,6,7] 和 k = 3
 输出: [5,6,7,1,2,3,4]
 解释:
@@ -17,7 +17,7 @@
 
 **示例 2:**
 
-```text
+```
 输入: [-1,-100,3,99] 和 k = 2
 输出: [3,99,-1,-100]
 解释: 
@@ -28,7 +28,7 @@
 **说明:**
 
 * 尽可能想出更多的解决方案，至少有三种不同的方法可以解决这个问题。
-* 要求使用空间复杂度为 O\(1\) 的 **原地** 算法。
+* 要求使用空间复杂度为 O(1) 的 **原地 **算法。
 
 ## 2. 标签
 
@@ -110,4 +110,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/rotate-array/](https://leetcode-cn.com/problems/rotate-array/)
 * [https://leetcode-cn.com/problems/rotate-array/solution/xuan-zhuan-shu-zu-by-leetcode-solution-nipk/](https://leetcode-cn.com/problems/rotate-array/solution/xuan-zhuan-shu-zu-by-leetcode-solution-nipk/)
-

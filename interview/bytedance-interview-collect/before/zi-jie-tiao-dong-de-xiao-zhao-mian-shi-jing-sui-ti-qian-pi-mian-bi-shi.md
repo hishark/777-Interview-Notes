@@ -1,6 +1,6 @@
 # 字节提前批移动端面经（1-3面）已拿意向书
 
-{% embed url="https://www.nowcoder.com/discuss/486381?type=post&order=time&pos=&page=1&channel=1009&source\_id=search\_post" %}
+{% embed url="https://www.nowcoder.com/discuss/486381?type=post&order=time&pos=&page=1&channel=1009&source_id=search_post" %}
 
 碎碎念：之前在牛客许愿，后来来了offer就忘记了要发，现在赶紧补上。三次面试是一天内完成的，意向书是面试结束后过了一周拿到的。
 
@@ -83,4 +83,3 @@
 8.SP的内部实现了解么？如何实现的序列化
 
 9.了解注入么？
-

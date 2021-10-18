@@ -1,15 +1,3 @@
----
-title: 64. 最小路径和
-date: '2020-07-23T13:29:07.000Z'
-tags:
-  - leetcode
-  - java
-  - kotlin
-  - 动态规划
-categories: 算法笔记
-notshow: true
----
-
 # LEETCODE 64. 最小路径和
 
 ## 1. [问题](https://leetcode-cn.com/problems/minimum-path-sum)
@@ -20,7 +8,7 @@ notshow: true
 
 示例:
 
-```text
+```
 输入:
 [
   [1,3,1],
@@ -115,4 +103,3 @@ class Solution {
 ## 4. 笔记
 
 ![](https://777blog.oss-cn-shanghai.aliyuncs.com/leetcode/leetcode-64.jpg)
-

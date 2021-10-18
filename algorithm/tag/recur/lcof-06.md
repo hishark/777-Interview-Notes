@@ -2,20 +2,20 @@
 
 ## 1. [问题](https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/)
 
-![](../../../.gitbook/assets/image%20%2819%29%20%281%29.png)
+![](<../../../.gitbook/assets/image (19).png>)
 
 输入一个链表的头节点，从尾到头反过来返回每个节点的值（用数组返回）。
 
 示例 1：
 
-```text
+```
 输入：head = [1,3,2]
 输出：[2,3,1]
 ```
 
 限制：
 
-* 0 &lt;= 链表长度 &lt;= 10000
+* 0 <= 链表长度 <= 10000
 
 ## 2. 解法1 - 栈
 
@@ -106,5 +106,4 @@ class Solution {
 
 ## 5. 笔记
 
-![](../../../.gitbook/assets/image%20%2819%29%20%282%29.png)
-
+![](<../../../.gitbook/assets/image (17).png>)

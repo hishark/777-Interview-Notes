@@ -6,7 +6,7 @@
 
 示例 : 给定二叉树
 
-```text
+```
           1
          / \
         2   3
@@ -14,7 +14,7 @@
       4   5  
 ```
 
-返回 **3**, 它的长度是路径 \[4,2,1,3\] 或者 \[5,2,1,3\]。
+返回 **3**, 它的长度是路径 \[4,2,1,3] 或者 \[5,2,1,3]。
 
 **注意：**两结点之间的路径长度是以它们之间边的数目表示。
 
@@ -77,4 +77,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/diameter-of-binary-tree/](https://leetcode-cn.com/problems/diameter-of-binary-tree/)
 * [https://leetcode-cn.com/problems/diameter-of-binary-tree/solution/er-cha-shu-de-zhi-jing-by-leetcode-solution/](https://leetcode-cn.com/problems/diameter-of-binary-tree/solution/er-cha-shu-de-zhi-jing-by-leetcode-solution/)
-

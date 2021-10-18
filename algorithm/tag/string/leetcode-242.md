@@ -6,22 +6,22 @@
 
 **示例 1:**
 
-```text
+```
 输入: s = "anagram", t = "nagaram"
 输出: true
 ```
 
 **示例 2:**
 
-```text
+```
 输入: s = "anagram", t = "nagaram"
 输出: true
 ```
 
-**说明:**  
+**说明:**\
 你可以假设字符串只包含小写字母。
 
-**进阶:**  
+**进阶:**\
 如果输入字符串包含 unicode 字符怎么办？你能否调整你的解法来应对这种情况？
 
 ## 2. 标签
@@ -178,4 +178,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/valid-anagram/](https://leetcode-cn.com/problems/valid-anagram/)
 * [https://leetcode-cn.com/problems/valid-anagram/solution/you-xiao-de-zi-mu-yi-wei-ci-by-leetcode-solution/](https://leetcode-cn.com/problems/valid-anagram/solution/you-xiao-de-zi-mu-yi-wei-ci-by-leetcode-solution/)
-

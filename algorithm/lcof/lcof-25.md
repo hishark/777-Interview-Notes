@@ -1,16 +1,3 @@
----
-title: 25. 合并两个排序的链表
-date: '2020-09-16T18:54:51.000Z'
-tags:
-  - leetcode
-  - java
-  - kotlin
-  - lcof
-  - 链表
-  - 递归
-categories: 算法笔记
----
-
 # 25. 合并两个排序的链表【递归】
 
 ## 1. [问题](https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof)
@@ -19,14 +6,14 @@ categories: 算法笔记
 
 示例1：
 
-```text
+```
 输入：1->2->4, 1->3->4
 输出：1->1->2->3->4->4
 ```
 
 限制：
 
-* 0 &lt;= 链表长度 &lt;= 1000
+* 0 <= 链表长度 <= 1000
 
 ## 2. 解法 - 递归
 
@@ -101,4 +88,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof](https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof)
 * [https://leetcode-cn.com/problems/merge-two-sorted-lists/solution/he-bing-liang-ge-you-xu-lian-biao-by-leetcode-solu/](https://leetcode-cn.com/problems/merge-two-sorted-lists/solution/he-bing-liang-ge-you-xu-lian-biao-by-leetcode-solu/)
-

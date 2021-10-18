@@ -1,16 +1,3 @@
----
-title: 34. 二叉树中和为某一值的路径
-date: '2020-10-15T23:26:20.000Z'
-tags:
-  - leetcode
-  - lcof
-  - java
-  - 树
-  - DFS
-  - kotlin
-categories: 算法笔记
----
-
 # 34. 二叉树中和为某一值的路径【递归 回溯】
 
 ## 1. [问题](https://leetcode-cn.com/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof)
@@ -19,7 +6,7 @@ categories: 算法笔记
 
 示例: 给定如下二叉树，以及目标和 sum = 22，
 
-```text
+```
               5
              / \
             4   8
@@ -31,7 +18,7 @@ categories: 算法笔记
 
 返回:
 
-```text
+```
 [
    [5,4,11,2],
    [5,8,4,5]
@@ -40,15 +27,15 @@ categories: 算法笔记
 
 提示：
 
-* 节点总数 &lt;= 10000
+* 节点总数 <= 10000
 
 ## 2. 解法 - 递归
 
 ### 2.1 Java
 
-> 值得注意的是，记录路径时若直接执行 res.add\(path\) ，则是将 path 对象加入了 res ；后续 path 改变时， res 中的 path 对象也会随之改变。
+> 值得注意的是，记录路径时若直接执行 res.add(path) ，则是将 path 对象加入了 res ；后续 path 改变时， res 中的 path 对象也会随之改变。
 >
-> 正确做法：res.append\(new LinkedList\(path\)\) ，相当于复制了一个 path 并加入到 res 。
+> 正确做法：res.append(new LinkedList(path)) ，相当于复制了一个 path 并加入到 res 。
 
 ```java
 /**
@@ -146,4 +133,3 @@ pending
 * 树
 * DFS
 * 回溯
-

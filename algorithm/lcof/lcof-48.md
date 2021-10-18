@@ -6,7 +6,7 @@
 
 **示例 1:**
 
-```text
+```
 输入: "abcabcbb"
 输出: 3 
 解释: 因为无重复字符的最长子串是 "abc"，所以其长度为 3。
@@ -14,7 +14,7 @@
 
 **示例 2:**
 
-```text
+```
 输入: "bbbbb"
 输出: 1
 解释: 因为无重复字符的最长子串是 "b"，所以其长度为 1。
@@ -22,7 +22,7 @@
 
 **示例 3:**
 
-```text
+```
 输入: "pwwkew"
 输出: 3
 解释: 因为无重复字符的最长子串是 "wke"，所以其长度为 3。
@@ -133,7 +133,7 @@ class Solution {
 ### 3.3 复杂度分析
 
 * 时间复杂度 `O(N)` ：其中 N 是字符串的长度，动态规划需要遍历字符串来计算 dp 数组。
-* 空间复杂度 `O(1)` ：字符的 ASCII 码范围为 \[0, 127\]，所以哈希表最多使用 `O(128) = O(1)` 大小的额外存储空间。
+* 空间复杂度 `O(1)` ：字符的 ASCII 码范围为 \[0, 127]，所以哈希表最多使用 `O(128) = O(1)` 大小的额外存储空间。
 
 ## 4. 解法 - 滑动窗口
 
@@ -181,4 +181,3 @@ class Solution {
 * [https://leetcode-cn.com/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/](https://leetcode-cn.com/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/)
 * [https://leetcode-cn.com/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/solution/mian-shi-ti-48-zui-chang-bu-han-zhong-fu-zi-fu-d-9/](https://leetcode-cn.com/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/solution/mian-shi-ti-48-zui-chang-bu-han-zhong-fu-zi-fu-d-9/)
 * [https://leetcode-cn.com/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/solution/shuang-zhi-zhen-hua-dong-chuang-kou-dong-tai-gui-h/](https://leetcode-cn.com/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/solution/shuang-zhi-zhen-hua-dong-chuang-kou-dong-tai-gui-h/)
-

@@ -13,28 +13,28 @@
 
 **示例 1：**
 
-```text
+```
 输入：nums = [2,0,2,1,1,0]
 输出：[0,0,1,1,2,2]
 ```
 
 **示例 2：**
 
-```text
+```
 输入：nums = [2,0,1]
 输出：[0,1,2]
 ```
 
 **示例 3：**
 
-```text
+```
 输入：nums = [0]
 输出：[0]
 ```
 
 **示例 4：**
 
-```text
+```
 输入：nums = [1]
 输出：[1]
 ```
@@ -110,4 +110,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/sort-colors/](https://leetcode-cn.com/problems/sort-colors/)
 * [https://leetcode-cn.com/problems/sort-colors/solution/yan-se-fen-lei-by-leetcode-solution/](https://leetcode-cn.com/problems/sort-colors/solution/yan-se-fen-lei-by-leetcode-solution/)
-

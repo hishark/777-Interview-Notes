@@ -6,19 +6,19 @@
 
 例如，
 
-\[2,3,4\] 的中位数是 3
+\[2,3,4] 的中位数是 3
 
-\[2,3\] 的中位数是 \(2 + 3\) / 2 = 2.5
+\[2,3] 的中位数是 (2 + 3) / 2 = 2.5
 
 设计一个支持以下两种操作的数据结构：
 
-void addNum\(int num\) - 从数据流中添加一个整数到数据结构中。 
+void addNum(int num) - 从数据流中添加一个整数到数据结构中。 
 
-double findMedian\(\) - 返回目前所有元素的中位数。 
+double findMedian() - 返回目前所有元素的中位数。 
 
 **示例 1：**
 
-```text
+```
 输入：
 ["MedianFinder","addNum","addNum","findMedian","addNum","findMedian"]
 [[],[1],[2],[],[3],[]]
@@ -27,7 +27,7 @@ double findMedian\(\) - 返回目前所有元素的中位数。
 
 **示例 2：**
 
-```text
+```
 输入：
 ["MedianFinder","addNum","findMedian","addNum","findMedian"]
 [[],[2],[],[3],[]]
@@ -149,4 +149,3 @@ class MedianFinder {
 * [https://leetcode-cn.com/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof/](https://leetcode-cn.com/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof/)
 * [https://leetcode-cn.com/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof/solution/mian-shi-ti-41-shu-ju-liu-zhong-de-zhong-wei-shu-y/](https://leetcode-cn.com/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof/solution/mian-shi-ti-41-shu-ju-liu-zhong-de-zhong-wei-shu-y/)
 * [https://leetcode-cn.com/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof/solution/you-xian-dui-lie-wu-fei-hua-jian-dan-yi-dong-by-je/](https://leetcode-cn.com/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof/solution/you-xian-dui-lie-wu-fei-hua-jian-dan-yi-dong-by-je/)
-

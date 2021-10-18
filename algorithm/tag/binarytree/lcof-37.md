@@ -6,7 +6,7 @@
 
 示例：
 
-```text
+```
 你可以将以下二叉树：
 
     1
@@ -138,21 +138,20 @@ public class Codec {
 
 ### 3.2 复杂度分析
 
-**序列化 `serialize`** 
+**序列化 `serialize` **
 
 * 时间复杂度 `O(N)` ：N 为二叉树的结点数，层序遍历会按层访问到所有的结点。
 * 空间复杂度 `O(N)` ：最差情况下，树为完全二叉树时，最多会有 `N/2` 个结点在 `queue` 中，需要占用 `O(N)` 大小的额外空间。
 
 > 假设完全二叉树的层数为 k ，那么总结点数为 `2^(k-1)` ，叶子结点的个数为 `2^k - 1`。
 
-**反序列化 `deserialize`** 
+**反序列化 `deserialize` **
 
 * 时间复杂度 `O(N)` ：N 为二叉树的结点数，按层构建二叉树需要遍历 nodeValues，其长度最大为 `2N + 1` 。
-  * _为啥 2N+1 \#TODO_
+  * _为啥 2N+1 #TODO_
 * 空间复杂度 `O(N)` ：最差情况下，树为完全二叉树时，最多会有 `N/2` 个结点在 `queue` 中，需要占用 `O(N)` 大小的额外空间。
 
 ## 4. 参考
 
 * [https://leetcode-cn.com/problems/xu-lie-hua-er-cha-shu-lcof/](https://leetcode-cn.com/problems/xu-lie-hua-er-cha-shu-lcof/)
 * [https://leetcode-cn.com/problems/xu-lie-hua-er-cha-shu-lcof/solution/mian-shi-ti-37-xu-lie-hua-er-cha-shu-ceng-xu-bian-/](https://leetcode-cn.com/problems/xu-lie-hua-er-cha-shu-lcof/solution/mian-shi-ti-37-xu-lie-hua-er-cha-shu-ceng-xu-bian-/)
-

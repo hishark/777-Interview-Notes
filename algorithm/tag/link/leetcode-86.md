@@ -8,7 +8,7 @@
 
 示例：
 
-```text
+```
 输入：head = 1->4->3->2->5->2, x = 3
 输出：1->2->2->4->3->5
 ```
@@ -65,4 +65,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/partition-list/](https://leetcode-cn.com/problems/partition-list/)
 * [https://leetcode-cn.com/problems/partition-list/solution/fen-ge-lian-biao-by-leetcode-solution-7ade/](https://leetcode-cn.com/problems/partition-list/solution/fen-ge-lian-biao-by-leetcode-solution-7ade/)
-

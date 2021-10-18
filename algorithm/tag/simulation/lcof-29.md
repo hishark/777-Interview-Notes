@@ -6,22 +6,22 @@
 
 示例 1：
 
-```text
+```
 输入：matrix = [[1,2,3],[4,5,6],[7,8,9]]
 输出：[1,2,3,6,9,8,7,4,5]
 ```
 
 示例 2：
 
-```text
+```
 输入：matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
 输出：[1,2,3,4,8,12,11,10,9,5,6,7]
 ```
 
 限制：
 
-* 0 &lt;= matrix.length &lt;= 100
-* 0 &lt;= matrix\[i\].length &lt;= 100
+* 0 <= matrix.length <= 100
+* 0 <= matrix\[i].length <= 100
 
 ## 2. 解法
 
@@ -157,4 +157,3 @@ class Solution {
 
 * [《剑指 Offer（第 2 版）》：面试题29. 顺时针打印矩阵](https://leetcode-cn.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof)
 * [Krahets：面试题29. 顺时针打印矩阵（模拟、设定边界，清晰图解）](https://leetcode-cn.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/solution/mian-shi-ti-29-shun-shi-zhen-da-yin-ju-zhen-she-di/)
-

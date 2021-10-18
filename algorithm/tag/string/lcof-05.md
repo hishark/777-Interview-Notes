@@ -6,14 +6,14 @@
 
 示例 1：
 
-```text
+```
 输入：s = "We are happy."
 输出："We%20are%20happy."
 ```
 
 限制：
 
-* 0 &lt;= s 的长度 &lt;= 10000
+* 0 <= s 的长度 <= 10000
 
 ## 2. 解法
 
@@ -72,5 +72,4 @@ class Solution {
 
 ## 4. 笔记
 
-![](../../../.gitbook/assets/image%20%2818%29.png)
-
+![](<../../../.gitbook/assets/image (16).png>)

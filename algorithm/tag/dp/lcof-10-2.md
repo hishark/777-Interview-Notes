@@ -8,28 +8,28 @@
 
 示例 1：
 
-```text
+```
 输入：n = 2
 输出：2
 ```
 
 示例 2：
 
-```text
+```
 输入：n = 7
 输出：21
 ```
 
 示例 3：
 
-```text
+```
 输入：n = 0
 输出：1
 ```
 
 提示：
 
-* 0 &lt;= n &lt;= 100
+* 0 <= n <= 100
 
 ## 2. 解法 - 动态规划
 
@@ -88,4 +88,3 @@ class Solution {
 ## 3. 参考
 
 * [https://leetcode-cn.com/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/](https://leetcode-cn.com/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/)
-

@@ -1,14 +1,3 @@
----
-title: 07. 重建二叉树
-date: '2020-08-19T12:57:37.000Z'
-tags:
-  - java
-  - leetcode
-  - 树
-  - 递归
-categories: 算法笔记
----
-
 # 07. 重建二叉树【递归】
 
 ## 1. [问题](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/)
@@ -17,14 +6,14 @@ categories: 算法笔记
 
 例如，给出
 
-```text
+```
 前序遍历 preorder = [3,9,20,15,7]
 中序遍历 inorder = [9,3,15,20,7]
 ```
 
 返回如下的二叉树：
 
-```text
+```
     3
    / \
   9  20
@@ -34,7 +23,7 @@ categories: 算法笔记
 
 限制：
 
-* 0 &lt;= 节点个数 &lt;= 5000
+* 0 <= 节点个数 <= 5000
 
 ## 2. 解法 - 递归
 
@@ -126,4 +115,3 @@ class Solution {
 ## 4. 笔记
 
 ![](https://777blog.oss-cn-shanghai.aliyuncs.com/leetcode/lcof-07.jpg)
-

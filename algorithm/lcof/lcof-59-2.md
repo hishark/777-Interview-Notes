@@ -2,13 +2,13 @@
 
 ## 1. [问题](https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/)
 
-请定义一个队列并实现函数 max\_value 得到队列里的最大值，要求函数max\_value、push\_back 和 pop\_front 的均摊时间复杂度都是O\(1\)。
+请定义一个队列并实现函数 max_value 得到队列里的最大值，要求函数max_value、push_back 和 pop_front 的均摊时间复杂度都是O(1)。
 
-若队列为空，pop\_front 和 max\_value 需要返回 -1
+若队列为空，pop_front 和 max_value 需要返回 -1
 
 **示例 1：**
 
-```text
+```
 输入: 
 ["MaxQueue","push_back","push_back","max_value","pop_front","max_value"]
 [[],[1],[2],[],[],[]]
@@ -17,7 +17,7 @@
 
 **示例 2：**
 
-```text
+```
 输入: 
 ["MaxQueue","pop_front","max_value"]
 [[],[],[]]
@@ -173,4 +173,3 @@ class MaxQueue {
 
 * [https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/](https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/)
 * [https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/solution/mian-shi-ti-59-ii-dui-lie-de-zui-da-zhi-by-leetcod/](https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/solution/mian-shi-ti-59-ii-dui-lie-de-zui-da-zhi-by-leetcod/)
-

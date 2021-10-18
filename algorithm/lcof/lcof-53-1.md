@@ -6,14 +6,14 @@
 
 示例 1：
 
-```text
+```
 输入: nums = [5,7,7,8,8,10], target = 8
 输出: 2
 ```
 
 示例 2：
 
-```text
+```
 输入: nums = [5,7,7,8,8,10], target = 6
 输出: 0
 ```
@@ -133,4 +133,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)
 * [https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/solution/mian-shi-ti-53-i-zai-pai-xu-shu-zu-zhong-cha-zha-5/](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/solution/mian-shi-ti-53-i-zai-pai-xu-shu-zu-zhong-cha-zha-5/)
-

@@ -1,15 +1,3 @@
----
-title: 17. 打印从1到最大的n位数
-date: '2020-09-09T10:09:41.000Z'
-tags:
-  - 数学
-  - leetcode
-  - lcof
-  - java
-  - kotlin
-categories: 算法笔记
----
-
 # \*17. 打印从1到最大的n位数
 
 ## 1. [问题](https://leetcode-cn.com/problems/da-yin-cong-1dao-zui-da-de-nwei-shu-lcof/)
@@ -18,7 +6,7 @@ categories: 算法笔记
 
 示例 1:
 
-```text
+```
 输入: n = 1
 输出: [1,2,3,4,5,6,7,8,9]
 ```
@@ -74,4 +62,3 @@ class Solution {
 ## 3. 参考
 
 * [https://leetcode-cn.com/problems/da-yin-cong-1dao-zui-da-de-nwei-shu-lcof/](https://leetcode-cn.com/problems/da-yin-cong-1dao-zui-da-de-nwei-shu-lcof/)
-

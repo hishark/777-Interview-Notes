@@ -4,38 +4,38 @@
 
 给你一个整数数组 nums ，和一个整数 target 。
 
-该整数数组原本是按升序排列，但输入时在预先未知的某个点上进行了旋转。（例如，数组 \[0,1,2,4,5,6,7\] 可能变为 \[4,5,6,7,0,1,2\] ）。
+该整数数组原本是按升序排列，但输入时在预先未知的某个点上进行了旋转。（例如，数组 \[0,1,2,4,5,6,7] 可能变为 \[4,5,6,7,0,1,2] ）。
 
 请你在数组中搜索 target ，如果数组中存在这个目标值，则返回它的索引，否则返回 -1 。
 
 **示例 1：**
 
-```text
+```
 输入：nums = [4,5,6,7,0,1,2], target = 0
 输出：4
 ```
 
 **示例 2：**
 
-```text
+```
 输入：nums = [4,5,6,7,0,1,2], target = 3
 输出：-1
 ```
 
 **示例 3：**
 
-```text
+```
 输入：nums = [1], target = 0
 输出：-1
 ```
 
 提示：
 
-* 1 &lt;= nums.length &lt;= 5000 
-* -10^4 &lt;= nums\[i\] &lt;= 10^4 
+* 1 <= nums.length <= 5000 
+* \-10^4 <= nums\[i] <= 10^4 
 * nums 中的每个值都 独一无二 
 * nums 肯定会在某个点上旋转 
-* -10^4 &lt;= target &lt;= 10^4
+* \-10^4 <= target <= 10^4
 
 ## 2. 标签
 
@@ -182,4 +182,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/search-in-rotated-sorted-array/](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)
 * [https://leetcode-cn.com/problems/search-in-rotated-sorted-array/solution/sou-suo-xuan-zhuan-pai-xu-shu-zu-by-leetcode-solut/](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/solution/sou-suo-xuan-zhuan-pai-xu-shu-zu-by-leetcode-solut/)
-

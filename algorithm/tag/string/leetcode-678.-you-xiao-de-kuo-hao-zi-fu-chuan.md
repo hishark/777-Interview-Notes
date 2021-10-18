@@ -72,4 +72,3 @@ class Solution {
 
 
 [参考](https://leetcode-cn.com/problems/valid-parenthesis-string/solution/you-xiao-de-gua-hao-zi-fu-chuan-zhan-lia-w0n2/)
-

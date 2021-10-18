@@ -8,7 +8,7 @@
 
 给定二叉树 `[3,9,20,null,null,15,7]`
 
-```text
+```
     3
    / \
   9  20
@@ -22,7 +22,7 @@
 
 给定二叉树 `[1,2,2,3,3,null,null,4,4]`
 
-```text
+```
        1
       / \
      2   2
@@ -45,7 +45,7 @@
 
 ## 3. 解法 - DFS
 
-> 该解法为自顶向下，还有一种解法是自底向上剪枝，之后可以看一下。\#TODO
+> 该解法为自顶向下，还有一种解法是自底向上剪枝，之后可以看一下。#TODO
 
 ### 3.1 Java
 
@@ -143,6 +143,4 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/ping-heng-er-cha-shu-lcof/](https://leetcode-cn.com/problems/ping-heng-er-cha-shu-lcof/)
 * [https://leetcode-cn.com/problems/ping-heng-er-cha-shu-lcof/solution/mian-shi-ti-55-ii-ping-heng-er-cha-shu-cong-di-zhi/](https://leetcode-cn.com/problems/ping-heng-er-cha-shu-lcof/solution/mian-shi-ti-55-ii-ping-heng-er-cha-shu-cong-di-zhi/)
-
-
 

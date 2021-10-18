@@ -2,11 +2,11 @@
 
 ## 1. [问题](https://leetcode-cn.com/problems/permutations/)
 
-给定一个 **没有重复** 数字的序列，返回其所有可能的全排列。
+给定一个** 没有重复** 数字的序列，返回其所有可能的全排列。
 
 **示例:**
 
-```text
+```
 输入: [1,2,3]
 输出:
 [
@@ -90,4 +90,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/permutations/](https://leetcode-cn.com/problems/permutations/)
 * [https://leetcode-cn.com/problems/permutations/solution/quan-pai-lie-by-leetcode-solution-2/](https://leetcode-cn.com/problems/permutations/solution/quan-pai-lie-by-leetcode-solution-2/)
-

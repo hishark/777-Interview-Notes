@@ -1,6 +1,6 @@
 # LEETCODE 205. 同构字符串
 
-## 1. [问题](https://leetcode-cn.com/problems/isomorphic-strings/%20)
+## 1. [问题](https://leetcode-cn.com/problems/isomorphic-strings/)
 
 给定两个字符串 s 和 t，判断它们是否是同构的。
 
@@ -10,28 +10,28 @@
 
 **示例 1:**
 
-```text
+```
 输入: s = "egg", t = "add"
 输出: true
 ```
 
 **示例 2:**
 
-```text
+```
 输入: s = "foo", t = "bar"
 输出: false
 ```
 
 **示例 3:**
 
-```text
+```
 输入: s = "paper", t = "title"
 输出: true
 ```
 
 **说明:**
 
-* 你可以假设 _**s**_ 和 _**t**_ 具有相同的长度。
+* 你可以假设 _**s **_和 _**t **_具有相同的长度。
 
 ## 2. 标签
 
@@ -86,4 +86,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/isomorphic-strings/](https://leetcode-cn.com/problems/isomorphic-strings/)
 * [https://leetcode-cn.com/problems/isomorphic-strings/solution/tong-gou-zi-fu-chuan-by-leetcode-solutio-s6fd/](https://leetcode-cn.com/problems/isomorphic-strings/solution/tong-gou-zi-fu-chuan-by-leetcode-solutio-s6fd/)
-

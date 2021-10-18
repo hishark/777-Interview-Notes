@@ -8,7 +8,7 @@
 
 示例：
 
-```text
+```
 输入：nums: [1, 1, 1, 1, 1], S: 3
 输出：5
 解释：
@@ -133,4 +133,3 @@ public class Solution {
 
 * [https://leetcode-cn.com/problems/target-sum/](https://leetcode-cn.com/problems/target-sum/)
 * [https://leetcode-cn.com/problems/target-sum/solution/mu-biao-he-by-leetcode/](https://leetcode-cn.com/problems/target-sum/solution/mu-biao-he-by-leetcode/)
-

@@ -2,11 +2,11 @@
 
 ## 1. [问题](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)
 
-给定一个链表，删除链表的倒数第 _n_ 个节点，并且返回链表的头结点。
+给定一个链表，删除链表的倒数第 _n _个节点，并且返回链表的头结点。
 
 **示例：**
 
-```text
+```
 给定一个链表: 1->2->3->4->5, 和 n = 2.
 当删除了倒数第二个节点后，链表变为 1->2->3->5.
 ```
@@ -65,4 +65,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)
 * [https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/solution/shan-chu-lian-biao-de-dao-shu-di-nge-jie-dian-b-61/](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/solution/shan-chu-lian-biao-de-dao-shu-di-nge-jie-dian-b-61/)
-

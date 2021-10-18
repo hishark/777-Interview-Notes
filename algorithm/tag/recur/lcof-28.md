@@ -4,9 +4,9 @@
 
 请实现一个函数，用来判断一棵二叉树是不是对称的。如果一棵二叉树和它的镜像一样，那么它是对称的。
 
-例如，二叉树 \[1,2,2,3,4,4,3\] 是对称的。
+例如，二叉树 \[1,2,2,3,4,4,3] 是对称的。
 
-```text
+```
     1
    / \
   2   2
@@ -14,9 +14,9 @@
 3  4 4  3
 ```
 
-但是下面这个 \[1,2,2,null,3,null,3\] 则不是镜像对称的:
+但是下面这个 \[1,2,2,null,3,null,3] 则不是镜像对称的:
 
-```text
+```
     1
    / \
   2   2
@@ -26,21 +26,21 @@
 
 示例 1：
 
-```text
+```
 输入：root = [1,2,2,3,4,4,3]
 输出：true
 ```
 
 示例 2：
 
-```text
+```
 输入：root = [1,2,2,null,3,null,3]
 输出：false
 ```
 
 限制：
 
-* 0 &lt;= 节点个数 &lt;= 1000
+* 0 <= 节点个数 <= 1000
 
 ## 2. 解法
 
@@ -122,11 +122,10 @@ class Solution {
 
 ### 2.3 复杂度分析
 
-* 时间复杂度O\(N\)：其中N是二叉树的结点数量，每次执行`recursion()`可以判断一对结点是否对称，所以最多调用`N/2`次`recursion()`方法。
-* 空间复杂度O\(N\)：最差情况下二叉树退化为链表，系统需要占用O\(N\)大小的栈。
+* 时间复杂度O(N)：其中N是二叉树的结点数量，每次执行`recursion()`可以判断一对结点是否对称，所以最多调用`N/2`次`recursion()`方法。
+* 空间复杂度O(N)：最差情况下二叉树退化为链表，系统需要占用O(N)大小的栈。
 
 ## 3. 参考
 
 * [https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof](https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof)
 * [https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/solution/mian-shi-ti-28-dui-cheng-de-er-cha-shu-di-gui-qing/](https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/solution/mian-shi-ti-28-dui-cheng-de-er-cha-shu-di-gui-qing/)
-

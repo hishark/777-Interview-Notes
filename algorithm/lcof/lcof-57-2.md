@@ -8,14 +8,14 @@
 
 **示例 1：**
 
-```text
+```
 输入：target = 9
 输出：[[2,3,4],[4,5]]
 ```
 
 **示例 2：**
 
-```text
+```
 输入：target = 15
 输出：[[1,2,3,4,5],[4,5,6],[7,8]]
 ```
@@ -123,18 +123,16 @@ class Solution {
 
 > 为啥是这个上界 - - 先搁着
 
-## 4. 解法 - 滑动窗口 \#TODO
+## 4. 解法 - 滑动窗口 #TODO
 
 ### 4.1 Java
 
 ```java
-
 ```
 
 ### 4.2 Kotlin
 
 ```kotlin
-
 ```
 
 ### 4.3 复杂度分析
@@ -147,4 +145,3 @@ class Solution {
 * [https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/](https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/)
 * [https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/solution/mian-shi-ti-57-ii-he-wei-sde-lian-xu-zheng-shu-x-2/](https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/solution/mian-shi-ti-57-ii-he-wei-sde-lian-xu-zheng-shu-x-2/)
 * [https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/solution/shi-yao-shi-hua-dong-chuang-kou-yi-ji-ru-he-yong-h/](https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/solution/shi-yao-shi-hua-dong-chuang-kou-yi-ji-ru-he-yong-h/)
-

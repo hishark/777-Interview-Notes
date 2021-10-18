@@ -1,16 +1,3 @@
----
-title: 32 - I. 从上到下打印二叉树
-date: '2020-10-13T23:16:20.000Z'
-tags:
-  - leetcode
-  - lcof
-  - java
-  - 树
-  - BFS
-  - kotlin
-categories: 算法笔记
----
-
 # 32 - I. 从上到下打印二叉树【BFS】
 
 ## 1. [问题](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/)
@@ -19,7 +6,7 @@ categories: 算法笔记
 
 例如: 给定二叉树: `[3,9,20,null,null,15,7]`,
 
-```text
+```
     3
    / \
   9  20
@@ -29,13 +16,13 @@ categories: 算法笔记
 
 返回：
 
-```text
+```
 [3,9,20,15,7]
 ```
 
 提示：
 
-* 节点总数 &lt;= 1000
+* 节点总数 <= 1000
 
 ## 2. 解法 - BFS
 
@@ -147,7 +134,7 @@ class Solution {
 * 时间复杂度 `O(N)`： N 是二叉树的结点数，BFS 需要循环 N 次。
 * 空间复杂度 `O(N)`： 最差的情况下，即树为平衡二叉树时，最多有 `N/2` 个结点同时在 `queue` 中，需要使用 `O(N)` 大小的额外空间。
 
-> 平衡树\(Balance Tree，BT\) 指的是，任意节点的子树的高度差都小于等于1。
+> 平衡树(Balance Tree，BT) 指的是，任意节点的子树的高度差都小于等于1。
 
 ## 3. 参考
 
@@ -158,4 +145,3 @@ class Solution {
 
 * BFS
 * 树
-

@@ -6,14 +6,14 @@
 
 **示例 1:**
 
-```text
+```
 输入: [10,2]
 输出: "102"
 ```
 
 **示例 2:**
 
-```text
+```
 输入: [3,30,34,5,9]
 输出: "3033459"
 ```
@@ -171,4 +171,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/](https://leetcode-cn.com/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/)
 * [https://leetcode-cn.com/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/solution/mian-shi-ti-45-ba-shu-zu-pai-cheng-zui-xiao-de-s-4/](https://leetcode-cn.com/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/solution/mian-shi-ti-45-ba-shu-zu-pai-cheng-zui-xiao-de-s-4/)
-

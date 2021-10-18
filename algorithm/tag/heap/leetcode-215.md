@@ -1,15 +1,3 @@
----
-title: 215. 数组中的第K个最大元素
-date: '2020-06-29T15:56:39.000Z'
-tags:
-  - 堆
-  - 分治
-  - leetcode
-  - java
-categories: 算法笔记
-notshow: true
----
-
 # LEETCODE 215. 数组中的第K个最大元素
 
 ## [1. 问题](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)
@@ -18,11 +6,11 @@ notshow: true
 
 示例 1:
 
-> 输入: \[3,2,1,5,6,4\] 和 k = 2 输出: 5
+> 输入: \[3,2,1,5,6,4] 和 k = 2 输出: 5
 
 示例 2:
 
-> 输入: \[3,2,3,1,2,4,5,5,6\] 和 k = 4 输出: 4
+> 输入: \[3,2,3,1,2,4,5,5,6] 和 k = 4 输出: 4
 
 **说明:**
 
@@ -122,4 +110,3 @@ class Solution {
 ## 4. 笔记
 
 ![](https://777blog.oss-cn-shanghai.aliyuncs.com/blog%20pic/leetcode215.JPEG)
-

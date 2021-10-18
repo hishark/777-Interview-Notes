@@ -6,7 +6,7 @@
 
 示例 1:
 
-```text
+```
 输入:
 s = "aa"
 p = "a"
@@ -16,7 +16,7 @@ p = "a"
 
 示例 2:
 
-```text
+```
 输入:
 s = "aa"
 p = "a*"
@@ -26,7 +26,7 @@ p = "a*"
 
 示例 3:
 
-```text
+```
 输入:
 s = "ab"
 p = ".*"
@@ -36,7 +36,7 @@ p = ".*"
 
 示例 4:
 
-```text
+```
 输入:
 s = "aab"
 p = "c*a*b"
@@ -46,7 +46,7 @@ p = "c*a*b"
 
 示例 5:
 
-```text
+```
 输入:
 s = "mississippi"
 p = "mis*is*p*."
@@ -203,4 +203,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/zheng-ze-biao-da-shi-pi-pei-lcof/](https://leetcode-cn.com/problems/zheng-ze-biao-da-shi-pi-pei-lcof/)
 * [https://leetcode-cn.com/problems/zheng-ze-biao-da-shi-pi-pei-lcof/solution/zhu-xing-xiang-xi-jiang-jie-you-qian-ru-shen-by-je/](https://leetcode-cn.com/problems/zheng-ze-biao-da-shi-pi-pei-lcof/solution/zhu-xing-xiang-xi-jiang-jie-you-qian-ru-shen-by-je/)
-

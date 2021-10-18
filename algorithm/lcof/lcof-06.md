@@ -1,16 +1,3 @@
----
-title: 06. 从尾到头打印链表
-date: '2020-08-14T12:57:33.000Z'
-tags:
-  - kotlin
-  - java
-  - leetcode
-  - 链表
-  - 栈
-  - 递归
-categories: 算法笔记
----
-
 # 06. 从尾到头打印链表【栈/递归】
 
 ## 1. [问题](https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/)
@@ -19,14 +6,14 @@ categories: 算法笔记
 
 示例 1：
 
-```text
+```
 输入：head = [1,3,2]
 输出：[2,3,1]
 ```
 
 限制：
 
-* 0 &lt;= 链表长度 &lt;= 10000
+* 0 <= 链表长度 <= 10000
 
 ## 2. 解法1 - 栈
 
@@ -172,7 +159,7 @@ class Solution {
 ### 3.3 复杂度分析
 
 * 时间复杂度 `O(N)` ：遍历链表，递归 N 次。
-* 空间复杂度 `O(N)` ：系统递归需要 O\(N\) 的栈空间。
+* 空间复杂度 `O(N)` ：系统递归需要 O(N) 的栈空间。
 
 ## 4. 参考
 
@@ -182,4 +169,3 @@ class Solution {
 ## 5. 笔记
 
 ![](https://777blog.oss-cn-shanghai.aliyuncs.com/leetcode/lcof-06.jpg)
-

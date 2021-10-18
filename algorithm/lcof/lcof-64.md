@@ -6,14 +6,14 @@
 
 **示例 1：**
 
-```text
+```
 输入: n = 3
 输出: 6
 ```
 
 **示例 2：**
 
-```text
+```
 输入: n = 9
 输出: 45
 ```
@@ -67,4 +67,3 @@ class Solution {
 * [https://leetcode-cn.com/problems/qiu-12n-lcof/](https://leetcode-cn.com/problems/qiu-12n-lcof/)
 * [https://leetcode-cn.com/problems/qiu-12n-lcof/solution/qiu-12n-by-leetcode-solution/](https://leetcode-cn.com/problems/qiu-12n-lcof/solution/qiu-12n-by-leetcode-solution/)
 * [https://leetcode-cn.com/problems/qiu-12n-lcof/solution/mian-shi-ti-64-qiu-1-2-nluo-ji-fu-duan-lu-qing-xi-/](https://leetcode-cn.com/problems/qiu-12n-lcof/solution/mian-shi-ti-64-qiu-1-2-nluo-ji-fu-duan-lu-qing-xi-/)
-

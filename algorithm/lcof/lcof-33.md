@@ -1,18 +1,3 @@
----
-title: 33. 二叉搜索树的后序遍历序列
-date: '2020-10-14T23:26:20.000Z'
-tags:
-  - leetcode
-  - lcof
-  - java
-  - 树
-  - 栈
-  - 分治
-  - 递归
-  - kotlin
-categories: 算法笔记
----
-
 # 33. 二叉搜索树的后序遍历序列【分治 递归】
 
 ## 1. [问题](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof)
@@ -21,7 +6,7 @@ categories: 算法笔记
 
 参考以下这颗二叉搜索树：
 
-```text
+```
      5
     / \
    2   6
@@ -31,21 +16,21 @@ categories: 算法笔记
 
 示例 1：
 
-```text
+```
 输入: [1,6,3,2,5]
 输出: false
 ```
 
 示例 2：
 
-```text
+```
 输入: [1,3,2,6,5]
 输出: true
 ```
 
 提示：
 
-* 数组长度 &lt;= 1000
+* 数组长度 <= 1000
 
 ## 2. 解法 - 分治 递归
 
@@ -164,4 +149,3 @@ class Solution {
 * 栈
 * 分治
 * 递归
-

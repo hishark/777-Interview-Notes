@@ -26,7 +26,7 @@ Java容器大致可以分为Set、List、Queue（这三种都属于 Collection�
 
 #### 1. Set
 
-* TreeSet：基于红黑树实现，支持有序性操作，例如根据一个范围查找元素的操作。但是查找效率不如 HashSet，HashSet 查找的时间复杂度为 O\(1\)，TreeSet 则为 O\(logN\)。
+* TreeSet：基于红黑树实现，支持有序性操作，例如根据一个范围查找元素的操作。但是查找效率不如 HashSet，HashSet 查找的时间复杂度为 O(1)，TreeSet 则为 O(logN)。
 * HashSet：基于哈希表实现，支持快速查找，但不支持有序性操作。并且失去了元素的插入顺序信息，也就是说使用 Iterator 遍历 HashSet 得到的结果是不确定的。
 * LinkedHashSet：具有 HashSet 的查找效率，并且内部使用双向链表维护元素的插入顺序。
 
@@ -60,7 +60,7 @@ Java容器大致可以分为Set、List、Queue（这三种都属于 Collection�
 
 ![](https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/image-20191208225301973.png)
 
-Collection 继承了 Iterable 接口，其中的 iterator\(\) 方法能够产生一个 Iterator 对象，通过这个对象就可以迭代遍历 Collection 中的元素。
+Collection 继承了 Iterable 接口，其中的 iterator() 方法能够产生一个 Iterator 对象，通过这个对象就可以迭代遍历 Collection 中的元素。
 
 从 JDK 1.5 之后可以使用 foreach 方法来遍历实现了 Iterable 接口的聚合对象。
 
@@ -75,21 +75,21 @@ for (String item : list) {
 
 ### 适配器模式
 
-java.util.Arrays\#asList\(\) 可以把数组类型转换为 List 类型。
+java.util.Arrays#asList() 可以把数组类型转换为 List 类型。
 
 ```java
 @SafeVarargs
 public static <T> List<T> asList(T... a)
 ```
 
-应该注意的是 asList\(\) 的参数为泛型的变长参数，不能使用基本类型数组作为参数，只能使用相应的包装类型数组。
+应该注意的是 asList() 的参数为泛型的变长参数，不能使用基本类型数组作为参数，只能使用相应的包装类型数组。
 
 ```java
 Integer[] arr = {1, 2, 3};
 List list = Arrays.asList(arr);
 ```
 
-也可以使用以下方式调用 asList\(\)：
+也可以使用以下方式调用 asList()：
 
 ```java
 List list = Arrays.asList(1, 2, 3);
@@ -122,7 +122,7 @@ private static final int DEFAULT_CAPACITY = 10;
 
 #### 2. 扩容
 
-添加元素时使用 ensureCapacityInternal\(\) 方法来保证容量足够，如果不够时，需要使用 grow\(\) 方法进行扩容，新容量的大小为 `oldCapacity + (oldCapacity >> 1)`，也就是旧容量的 1.5 倍。
+添加元素时使用 ensureCapacityInternal() 方法来保证容量足够，如果不够时，需要使用 grow() 方法进行扩容，新容量的大小为 `oldCapacity + (oldCapacity >> 1)`，也就是旧容量的 1.5 倍。
 
 扩容操作需要调用 `Arrays.copyOf()` 把原数组整个复制到新数组中，这个操作代价很高，因此最好在创建 ArrayList 对象时就指定大概的容量大小，减少扩容操作的次数。
 
@@ -166,7 +166,7 @@ private void grow(int minCapacity) {
 
 #### 3. 删除元素
 
-需要调用 System.arraycopy\(\) 将 index+1 后面的元素都复制到 index 位置上，该操作的时间复杂度为 `O(N)`，可以看到 ArrayList 删除元素的代价是非常高的。
+需要调用 System.arraycopy() 将 index+1 后面的元素都复制到 index 位置上，该操作的时间复杂度为 `O(N)`，可以看到 ArrayList 删除元素的代价是非常高的。
 
 ```java
 public E remove(int index) {
@@ -193,7 +193,7 @@ ArrayList 基于数组实现，并且具有动态扩容特性，因此保存元�
 transient Object[] elementData; // non-private to simplify nested class access
 ```
 
-ArrayList 实现了 writeObject\(\) 和 readObject\(\) 来控制只序列化数组中有元素填充那部分内容。
+ArrayList 实现了 writeObject() 和 readObject() 来控制只序列化数组中有元素填充那部分内容。
 
 ```java
 private void readObject(java.io.ObjectInputStream s)
@@ -240,11 +240,11 @@ private void writeObject(java.io.ObjectOutputStream s)
 }
 ```
 
-序列化时需要使用 ObjectOutputStream 的 writeObject\(\) 将对象转换为字节流并输出。而 writeObject\(\) 方法在传入的对象存在 writeObject\(\) 的时候会去反射调用该对象的 writeObject\(\) 来实现序列化。反序列化使用的是 ObjectInputStream 的 readObject\(\) 方法，原理类似。
+序列化时需要使用 ObjectOutputStream 的 writeObject() 将对象转换为字节流并输出。而 writeObject() 方法在传入的对象存在 writeObject() 的时候会去反射调用该对象的 writeObject() 来实现序列化。反序列化使用的是 ObjectInputStream 的 readObject() 方法，原理类似。
 
-> writeObject\(\) ：对象转换为字节序列。
+> writeObject() ：对象转换为字节序列。
 >
-> readObject\(\) ：字节序列转换为对象。
+> readObject() ：字节序列转换为对象。
 
 ```java
 ArrayList list = new ArrayList();
@@ -256,7 +256,7 @@ oos.writeObject(list);
 
 modCount 用来记录 ArrayList 结构发生变化的次数。结构发生变化是指添加或者删除至少一个元素的所有操作，或者是调整内部数组的大小，仅仅只是设置元素的值不算结构发生变化。
 
-在进行序列化或者迭代等操作时，需要比较操作前后 modCount 是否改变，如果改变了需要抛出 ConcurrentModificationException。代码参考上节序列化中的 writeObject\(\) 方法。
+在进行序列化或者迭代等操作时，需要比较操作前后 modCount 是否改变，如果改变了需要抛出 ConcurrentModificationException。代码参考上节序列化中的 writeObject() 方法。
 
 ### Vector
 
@@ -427,7 +427,7 @@ ArrayList 基于动态数组实现，LinkedList 基于双向链表实现。Array
 ### HashMap⭐️
 
 > * [hash 的应用](https://baike.baidu.com/item/hash/390310)
-> * [JavaGuide - HashMap](https://snailclimb.gitee.io/javaguide/#/docs/java/collection/HashMap%28JDK1.8%29%E6%BA%90%E7%A0%81+%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90)🌠
+> * [JavaGuide - HashMap](https://snailclimb.gitee.io/javaguide/#/docs/java/collection/HashMap\(JDK1.8\)%E6%BA%90%E7%A0%81+%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%88%86%E6%9E%90):stars: 
 
 为了便于理解，以下源码分析以 JDK 1.7 为主。
 
@@ -506,11 +506,11 @@ map.put("K3", "V3");
 ```
 
 * 新建一个 HashMap，默认大小为 16；
-* 插入 &lt;K1,V1&gt; 键值对，先计算 K1 的 hashCode 为 115，使用除留余数法得到所在的桶下标 115%16=3。
-* 插入 &lt;K2,V2&gt; 键值对，先计算 K2 的 hashCode 为 118，使用除留余数法得到所在的桶下标 118%16=6。
-* 插入 &lt;K3,V3&gt; 键值对，先计算 K3 的 hashCode 为 118，使用除留余数法得到所在的桶下标 118%16=6，插在 &lt;K2,V2&gt; 前面。
+* 插入 \<K1,V1> 键值对，先计算 K1 的 hashCode 为 115，使用除留余数法得到所在的桶下标 115%16=3。
+* 插入 \<K2,V2> 键值对，先计算 K2 的 hashCode 为 118，使用除留余数法得到所在的桶下标 118%16=6。
+* 插入 \<K3,V3> 键值对，先计算 K3 的 hashCode 为 118，使用除留余数法得到所在的桶下标 118%16=6，插在 \<K2,V2> 前面。
 
-应该注意到链表的插入是以头插法方式进行的，例如上面的 &lt;K3,V3&gt; 不是插在 &lt;K2,V2&gt; 后面，而是插入在链表头部。
+应该注意到链表的插入是以头插法方式进行的，例如上面的 \<K3,V3> 不是插在 \<K2,V2> 后面，而是插入在链表头部。
 
 查找（get）需要分成两步进行：
 
@@ -556,7 +556,7 @@ public V put(K key, V value) {
 }
 ```
 
-HashMap 允许插入键为 null 的键值对。但是因为无法调用 null 的 hashCode\(\) 方法，也就无法确定该键值对的桶下标，只能通过强制指定一个桶下标来存放。
+HashMap 允许插入键为 null 的键值对。但是因为无法调用 null 的 hashCode() 方法，也就无法确定该键值对的桶下标，只能通过强制指定一个桶下标来存放。
 
 HashMap 使用第 0 个桶存放键为 null 的键值对。
 
@@ -642,16 +642,16 @@ public final int hashCode() {
 
 **4.2 取模**
 
-令 x = 1&lt;&lt;4，即 x 为 2 的 4 次方，它具有以下性质：
+令 x = 1<<4，即 x 为 2 的 4 次方，它具有以下性质：
 
-```text
+```
 x   : 00010000
 x-1 : 00001111
 ```
 
 令一个数 y 与 x-1 做与运算，可以去除 y 位级表示的第 4 位以上数：
 
-```text
+```
 y       : 10110010
 x-1     : 00001111
 y&(x-1) : 00000010
@@ -659,7 +659,7 @@ y&(x-1) : 00000010
 
 这个性质和 y 对 x 取模效果是一样的：
 
-```text
+```
 y   : 10110010
 x   : 00010000
 y%x : 00000010
@@ -677,18 +677,18 @@ static int indexFor(int h, int length) {
 
 #### 5. 扩容-基本原理
 
-设 HashMap 的 table 长度为 M，需要存储的键值对数量为 N，如果哈希函数满足均匀性的要求，那么每条链表的长度大约为 N/M，因此查找的复杂度为 O\(N/M\)。
+设 HashMap 的 table 长度为 M，需要存储的键值对数量为 N，如果哈希函数满足均匀性的要求，那么每条链表的长度大约为 N/M，因此查找的复杂度为 O(N/M)。
 
 为了让查找的成本降低，应该使 N/M 尽可能小，因此需要保证 M 尽可能大，也就是说 table 要尽可能大。HashMap 采用动态扩容来根据当前的 N 值来调整 M 值，使得空间效率和时间效率都能得到保证。
 
-和扩容相关的参数主要有：capacity、size、threshold 和 load\_factor。
+和扩容相关的参数主要有：capacity、size、threshold 和 load_factor。
 
-| 参数 | 含义 |
-| :---: | :--- |
-| capacity | table 的容量大小，默认为 16。需要注意的是 capacity 必须保证为 2 的 n 次方。 |
-| size | 键值对数量。 |
-| threshold | size 的临界值，当 size 大于等于 threshold 就必须进行扩容操作。 |
-| loadFactor | 装载因子，table 能够使用的比例，threshold = \(int\)\(capacity\* loadFactor\)。 |
+|     参数     | 含义                                                           |
+| :--------: | ------------------------------------------------------------ |
+|  capacity  | table 的容量大小，默认为 16。需要注意的是 capacity 必须保证为 2 的 n 次方。           |
+|    size    | 键值对数量。                                                       |
+|  threshold | size 的临界值，当 size 大于等于 threshold 就必须进行扩容操作。                   |
+| loadFactor | 装载因子，table 能够使用的比例，threshold = (int)(capacity\* loadFactor)。 |
 
 > 装载因子的默认值是 `0.75`。
 
@@ -721,7 +721,7 @@ void addEntry(int hash, K key, V value, int bucketIndex) {
 }
 ```
 
-扩容使用 resize\(\) 实现，需要注意的是，扩容操作同样需要把 oldTable 的所有键值对重新插入 newTable 中，因此这一步是很费时的。
+扩容使用 resize() 实现，需要注意的是，扩容操作同样需要把 oldTable 的所有键值对重新插入 newTable 中，因此这一步是很费时的。
 
 ```java
 void resize(int newCapacity) {
@@ -778,7 +778,7 @@ HashMap 构造函数允许用户传入的容量不是 2 的 n 次方，因为它
 
 先考虑如何求一个数的掩码，对于 10010000，它的掩码为 11111111，可以使用以下方法得到：
 
-```text
+```
 mask |= mask >> 1    11011000
 mask |= mask >> 2    11111110
 mask |= mask >> 4    11111111
@@ -786,7 +786,7 @@ mask |= mask >> 4    11111111
 
 mask+1 是大于原始数字的最小的 2 的 n 次方。
 
-```text
+```
 num     10010000
 mask+1 100000000
 ```
@@ -913,7 +913,7 @@ transient int count;
 
 ConcurrentHashMap 在执行 size 操作时先尝试不加锁，如果连续两次不加锁操作得到的结果一致，那么可以认为这个结果是正确的。
 
-尝试次数使用 RETRIES\_BEFORE\_LOCK 定义，该值为 2，retries 初始值为 -1，因此尝试次数为 3。
+尝试次数使用 RETRIES_BEFORE_LOCK 定义，该值为 2，retries 初始值为 -1，因此尝试次数为 3。
 
 如果尝试的次数超过 3 次，就需要对每个 Segment 加锁。
 
@@ -1014,7 +1014,7 @@ void afterNodeAccess(Node<K,V> p) { }
 void afterNodeInsertion(boolean evict) { }
 ```
 
-#### afterNodeAccess\(\)
+#### afterNodeAccess()
 
 当一个节点被访问时，如果 accessOrder 为 true，则会将该节点移到链表尾部。也就是说指定为 LRU 顺序之后，在每次访问一个节点时，会将这个节点移到链表尾部，保证链表尾部是最近访问的节点，那么链表首部就是最近最久未使用的节点。
 
@@ -1045,9 +1045,9 @@ void afterNodeAccess(Node<K,V> e) { // move node to last
 }
 ```
 
-#### afterNodeInsertion\(\)
+#### afterNodeInsertion()
 
-在 put 等操作之后执行，当 removeEldestEntry\(\) 方法返回 true 时会移除最晚的节点，也就是链表首部节点 first。
+在 put 等操作之后执行，当 removeEldestEntry() 方法返回 true 时会移除最晚的节点，也就是链表首部节点 first。
 
 evict 只有在构建 Map 的时候才为 false，在这里为 true。
 
@@ -1061,7 +1061,7 @@ void afterNodeInsertion(boolean evict) { // possibly remove eldest
 }
 ```
 
-removeEldestEntry\(\) 默认为 false，如果需要让它为 true，需要继承 LinkedHashMap 并且覆盖这个方法的实现，这在实现 LRU 的缓存中特别有用，通过移除最近最久未使用的节点，从而保证缓存空间足够，并且缓存的数据都是热点数据。
+removeEldestEntry() 默认为 false，如果需要让它为 true，需要继承 LinkedHashMap 并且覆盖这个方法的实现，这在实现 LRU 的缓存中特别有用，通过移除最近最久未使用的节点，从而保证缓存空间足够，并且缓存的数据都是热点数据。
 
 ```java
 protected boolean removeEldestEntry(Map.Entry<K,V> eldest) {
@@ -1073,9 +1073,9 @@ protected boolean removeEldestEntry(Map.Entry<K,V> eldest) {
 
 以下是使用 LinkedHashMap 实现的一个 LRU 缓存：
 
-* 设定最大缓存空间 MAX\_ENTRIES  为 3；
+* 设定最大缓存空间 MAX_ENTRIES  为 3；
 * 使用 LinkedHashMap 的构造函数将 accessOrder 设置为 true，开启 LRU 顺序；
-* 覆盖 removeEldestEntry\(\) 方法实现，在节点多于 MAX\_ENTRIES 就会将最近最久未使用的数据移除。
+* 覆盖 removeEldestEntry() 方法实现，在节点多于 MAX_ENTRIES 就会将最近最久未使用的数据移除。
 
 ```java
 class LRUCache<K, V> extends LinkedHashMap<K, V> {
@@ -1127,8 +1127,8 @@ ConcurrentCache 采取的是分代缓存：
 
 * 经常使用的对象放入 eden 中，eden 使用 ConcurrentHashMap 实现，不用担心会被回收（伊甸园）；
 * 不常用的对象放入 longterm，longterm 使用 WeakHashMap 实现，这些老对象会被垃圾收集器回收。
-* 当调用  get\(\) 方法时，会先从 eden 区获取，如果没有找到的话再到 longterm 获取，当从 longterm 获取到就把对象放入 eden 中，从而保证经常被访问的节点不容易被回收。
-* 当调用 put\(\) 方法时，如果 eden 的大小超过了 size，那么就将 eden 中的所有对象都放入 longterm 中，利用虚拟机回收掉一部分不经常使用的对象。
+* 当调用  get() 方法时，会先从 eden 区获取，如果没有找到的话再到 longterm 获取，当从 longterm 获取到就把对象放入 eden 中，从而保证经常被访问的节点不容易被回收。
+* 当调用 put() 方法时，如果 eden 的大小超过了 size，那么就将 eden 中的所有对象都放入 longterm 中，利用虚拟机回收掉一部分不经常使用的对象。
 
 ```java
 public final class ConcurrentCache<K, V> {
@@ -1175,9 +1175,8 @@ public final class ConcurrentCache<K, V> {
 2. 根是黑色。
 3. 所有叶子都是黑色（叶子是NIL节点）。
 4. 每个红色节点必须有两个黑色的子节点。（从每个叶子到根的所有路径上不能有两个连续的红色节点。）
-5. 从任一节点到其每个叶子的所有[简单路径](https://zh.wikipedia.org/wiki/%E9%81%93%E8%B7%AF_%28%E5%9B%BE%E8%AE%BA%29)都包含相同数目的黑色节点。
+5. 从任一节点到其每个叶子的所有[简单路径](https://zh.wikipedia.org/wiki/%E9%81%93%E8%B7%AF_\(%E5%9B%BE%E8%AE%BA\))都包含相同数目的黑色节点。
 
 下面是一个具体的红黑树的图例：
 
 ![An example of a red-black tree](https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Red-black_tree_example.svg/450px-Red-black_tree_example.svg.png)
-

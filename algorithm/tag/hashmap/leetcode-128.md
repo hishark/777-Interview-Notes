@@ -1,27 +1,14 @@
----
-title: 128. 最长连续序列
-date: '2020-06-10T15:07:53.000Z'
-tags:
-  - leetcode
-  - java
-  - kotlin
-  - 数组
-  - 哈希表
-categories: 算法笔记
-notshow: true
----
-
 # LEETCODE 128. 最长连续序列
 
 ## [1. 问题](https://leetcode-cn.com/problems/longest-consecutive-sequence/)
 
 给定一个未排序的整数数组，找出最长连续序列的长度。
 
-要求算法的时间复杂度为 O\(n\)。
+要求算法的时间复杂度为 O(n)。
 
 示例:
 
-> 输入: \[100, 4, 200, 1, 3, 2\] 输出: 4 解释: 最长连续序列是 \[1, 2, 3, 4\]。它的长度为 4。
+> 输入: \[100, 4, 200, 1, 3, 2] 输出: 4 解释: 最长连续序列是 \[1, 2, 3, 4]。它的长度为 4。
 
 ## 2. 解法 - 哈希表
 
@@ -116,5 +103,4 @@ class Solution {
 
 ## 4. 学习草稿
 
-![](https://777blog.oss-cn-shanghai.aliyuncs.com/blog%20pic/IMG_4305.JPG)
-
+![](https://777blog.oss-cn-shanghai.aliyuncs.com/blog%20pic/IMG\_4305.JPG)

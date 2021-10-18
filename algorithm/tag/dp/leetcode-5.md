@@ -6,7 +6,7 @@
 
 **示例 1：**
 
-```text
+```
 输入: "babad"
 输出: "bab"
 注意: "aba" 也是一个有效答案。
@@ -14,7 +14,7 @@
 
 **示例 2：**
 
-```text
+```
 输入: "cbbd"
 输出: "bb"
 ```
@@ -75,4 +75,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/longest-palindromic-substring/](https://leetcode-cn.com/problems/longest-palindromic-substring/)
 * [https://leetcode-cn.com/problems/longest-palindromic-substring/solution/zui-chang-hui-wen-zi-chuan-by-leetcode-solution/](https://leetcode-cn.com/problems/longest-palindromic-substring/solution/zui-chang-hui-wen-zi-chuan-by-leetcode-solution/)
-

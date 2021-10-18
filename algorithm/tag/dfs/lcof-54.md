@@ -6,7 +6,7 @@
 
 示例 1:
 
-```text
+```
 输入: root = [3,1,4,null,2], k = 1
    3
   / \
@@ -18,7 +18,7 @@
 
 示例 2:
 
-```text
+```
 输入: root = [5,3,6,2,4,null,null,1], k = 3
        5
       / \
@@ -135,5 +135,4 @@ class Solution {
 
 ## 4. 笔记
 
-![](../../../.gitbook/assets/image%20%2829%29.png)
-
+![](<../../../.gitbook/assets/image (29).png>)

@@ -1,6 +1,6 @@
-# ᐕ\)୨
+# ᐕ)୨
 
-![](.gitbook/assets/img_5080-1-.gif)
+![](<.gitbook/assets/IMG\_5080 (1).gif>)
 
 仓库启动时间：2020年6月29日
 
@@ -22,5 +22,4 @@ Update：阿里转正过了懒得面了，秋招拜拜。
 
 ## 帮忙捉虫
 
-如果发现了什么错误麻烦[提个issue](https://github.com/hishark/Android-Interview/issues/new)哦，阿里嘎多～🥳 
-
+如果发现了什么错误麻烦[提个issue](https://github.com/hishark/Android-Interview/issues/new)哦，阿里嘎多～:partying_face: 

@@ -1,16 +1,3 @@
----
-title: 46. 把数字翻译成字符串
-date: '2020-06-09T00:38:15.000Z'
-tags:
-  - kotlin
-  - java
-  - leetcode
-  - lcof
-  - 动态规划
-categories: 算法笔记
-notshow: true
----
-
 # 46. 把数字翻译成字符串【DP】
 
 ## [1. 问题](https://leetcode-cn.com/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/)
@@ -19,7 +6,7 @@ notshow: true
 
 示例 1:
 
-```text
+```
 输入: 12258 
 输出: 5 
 解释: 12258 有 5 种不同的翻译，分别是"bccfi", "bwfi", "bczi", "mcfi"和"mzi"
@@ -112,5 +99,4 @@ class Solution {
 * [《剑指 Offer（第 2 版）》：面试题46. 把数字翻译成字符串](https://leetcode-cn.com/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof)
 * [Krahets：面试题46. 把数字翻译成字符串（动态规划，清晰图解）](https://leetcode-cn.com/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/solution/mian-shi-ti-46-ba-shu-zi-fan-yi-cheng-zi-fu-chua-6/)
 
-![](https://777blog.oss-cn-shanghai.aliyuncs.com/blog%20pic/IMG_4258.JPG)
-
+![](https://777blog.oss-cn-shanghai.aliyuncs.com/blog%20pic/IMG\_4258.JPG)

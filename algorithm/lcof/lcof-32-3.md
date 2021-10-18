@@ -1,25 +1,12 @@
----
-title: 32 - III. 从上到下打印二叉树 III
-date: '2020-10-14T23:26:20.000Z'
-tags:
-  - leetcode
-  - lcof
-  - java
-  - 树
-  - BFS
-  - kotlin
-categories: 算法笔记
----
-
 # 32 - III. 从上到下打印二叉树 III【BFS 双端队列】
 
 ## 1. [问题](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof)
 
 请实现一个函数按照之字形顺序打印二叉树，即第一行按照从左到右的顺序打印，第二层按照从右到左的顺序打印，第三行再按照从左到右的顺序打印，其他行以此类推。
 
-例如: 给定二叉树: \[3,9,20,null,null,15,7\],
+例如: 给定二叉树: \[3,9,20,null,null,15,7],
 
-```text
+```
     3
    / \
   9  20
@@ -29,7 +16,7 @@ categories: 算法笔记
 
 返回其层次遍历结果：
 
-```text
+```
 [
   [3],
   [20,9],
@@ -39,7 +26,7 @@ categories: 算法笔记
 
 提示：
 
-* 节点总数 &lt;= 1000
+* 节点总数 <= 1000
 
 ## 2. 解法 - BFS双端队列
 
@@ -200,4 +187,3 @@ class Solution {
 
 * BFS
 * 树
-

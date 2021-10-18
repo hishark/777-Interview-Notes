@@ -8,14 +8,14 @@
 
 **示例 1：**
 
-```text
+```
 输入: n = 5, m = 3
 输出: 3
 ```
 
 **示例 2：**
 
-```text
+```
 输入: n = 10, m = 17
 输出: 2
 ```
@@ -72,4 +72,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/](https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/)
 * [https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/solution/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-by-lee/](https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/solution/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-by-lee/)
-

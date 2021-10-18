@@ -1,16 +1,3 @@
----
-title: 24. 反转链表
-date: '2020-09-15T11:01:09.000Z'
-tags:
-  - leetcode
-  - java
-  - kotlin
-  - lcof
-  - 链表
-  - 双指针
-categories: 算法笔记
----
-
 # 24. 反转链表【递归/双指针】
 
 ## 1. [问题](https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof)
@@ -19,14 +6,14 @@ categories: 算法笔记
 
 示例:
 
-```text
+```
 输入: 1->2->3->4->5->NULL
 输出: 5->4->3->2->1->NULL
 ```
 
 限制：
 
-* 0 &lt;= 节点个数 &lt;= 5000
+* 0 <= 节点个数 <= 5000
 
 ## 2. 解法 - 递归
 
@@ -97,8 +84,8 @@ class Solution {
 
 ### 2.3 复杂度分析
 
-* 时间复杂度：O\(n\)，n是链表的长度。
-* 空间复杂度：O\(n\)，由于使用递归，将会使用隐式栈空间，递归深度可能会达到 n 层。
+* 时间复杂度：O(n)，n是链表的长度。
+* 空间复杂度：O(n)，由于使用递归，将会使用隐式栈空间，递归深度可能会达到 n 层。
 
 ## 3. 解法 - 双指针迭代
 
@@ -173,12 +160,11 @@ class Solution {
 
 ### 3.3 复杂度分析
 
-* 时间复杂度：O\(n\)，n是链表的长度。
-* 空间复杂度：O\(1\)。
+* 时间复杂度：O(n)，n是链表的长度。
+* 空间复杂度：O(1)。
 
 ## 4. 参考
 
 * [https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof](https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof)
 * [https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof/solution/dong-hua-yan-shi-duo-chong-jie-fa-206-fan-zhuan-li/](https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof/solution/dong-hua-yan-shi-duo-chong-jie-fa-206-fan-zhuan-li/)
 * [https://leetcode-cn.com/problems/reverse-linked-list/solution/fan-zhuan-lian-biao-by-leetcode/](https://leetcode-cn.com/problems/reverse-linked-list/solution/fan-zhuan-lian-biao-by-leetcode/)
-

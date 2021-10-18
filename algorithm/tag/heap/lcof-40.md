@@ -6,14 +6,14 @@
 
 示例1：
 
-```text
+```
 输入：arr = [3,2,1], k = 2
 输出：[1,2] 或者 [2,1]
 ```
 
 示例2：
 
-```text
+```
 输入：arr = [0,1,2,1], k = 1
 输出：[0]
 ```
@@ -138,4 +138,3 @@ class Solution {
 * [https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/solution/](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/solution/)
 * [https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/solution/zui-xiao-de-kge-shu-by-leetcode-solution/](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/solution/zui-xiao-de-kge-shu-by-leetcode-solution/)
 * [https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/solution/3chong-jie-fa-miao-sha-topkkuai-pai-dui-er-cha-sou/](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/solution/3chong-jie-fa-miao-sha-topkkuai-pai-dui-er-cha-sou/)
-

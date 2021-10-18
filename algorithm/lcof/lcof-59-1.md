@@ -6,7 +6,7 @@
 
 **示例：**
 
-```text
+```
 输入: nums = [1,3,-1,-3,5,3,6,7], 和 k = 3
 输出: [3,3,5,5,6,7] 
 解释: 
@@ -23,7 +23,7 @@
 
 **提示：**
 
-* 你可以假设 _k_ 总是有效的，在输入数组不为空的情况下，1 ≤ k ≤ 输入数组的大小。
+* 你可以假设 _k _总是有效的，在输入数组不为空的情况下，1 ≤ k ≤ 输入数组的大小。
 
 ## 2. 标签
 
@@ -34,7 +34,7 @@
 
 ### 3.1 Java
 
-> 还需要回头琢磨琢磨\#TODO
+> 还需要回头琢磨琢磨#TODO
 
 ```java
 class Solution {
@@ -135,4 +135,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/](https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/)
 * [https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/solution/mian-shi-ti-59-i-hua-dong-chuang-kou-de-zui-da-1-6/](https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/solution/mian-shi-ti-59-i-hua-dong-chuang-kou-de-zui-da-1-6/)
-

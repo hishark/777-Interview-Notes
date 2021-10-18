@@ -6,7 +6,7 @@
 
 示例 1：
 
-```text
+```
 输入：00000000000000000000000000001011
 输出：3
 解释：输入的二进制串 00000000000000000000000000001011 中，共有三位为 '1'。
@@ -14,7 +14,7 @@
 
 示例 2：
 
-```text
+```
 输入：00000000000000000000000010000000
 输出：1
 解释：输入的二进制串 00000000000000000000000010000000 中，共有一位为 '1'。
@@ -22,7 +22,7 @@
 
 示例 3：
 
-```text
+```
 输入：11111111111111111111111111111101
 输出：31
 解释：输入的二进制串 11111111111111111111111111111101 中，共有 31 位为 '1'。
@@ -62,7 +62,7 @@ public class Solution {
 }
 ```
 
-## 3. 解法 - 使用n&\(n−1\)
+## 3. 解法 - 使用n&(n−1)
 
 ### 3.1 Java
 
@@ -88,11 +88,11 @@ public class Solution {
 
 ### 3.2 复杂度分析
 
-时间复杂度：O\(M\)
+时间复杂度：O(M)
 
-* n&\(n−1\)操作只有【减法】和【与】运算，占用O\(1\)；设M为二进制数字n中1的个数，那么需要循环M次（每次消去一个1），所以是O\(M\)。
+* n&(n−1)操作只有【减法】和【与】运算，占用O(1)；设M为二进制数字n中1的个数，那么需要循环M次（每次消去一个1），所以是O(M)。
 
-空间复杂度：O\(1\)
+空间复杂度：O(1)
 
 * 变量ans占用常数空间。
 
@@ -100,4 +100,3 @@ public class Solution {
 
 * [https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/](https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/)
 * [https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/solution/mian-shi-ti-15-er-jin-zhi-zhong-1de-ge-shu-wei-yun/](https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/solution/mian-shi-ti-15-er-jin-zhi-zhong-1de-ge-shu-wei-yun/)
-

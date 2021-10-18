@@ -1,17 +1,3 @@
----
-title: 104. 二叉树的最大深度
-date: '2020-07-28T17:05:27.000Z'
-tags:
-  - leetcode
-  - java
-  - kotlin
-  - 树
-  - DFS
-  - BFS
-categories: 算法笔记
-notshow: true
----
-
 # LEETCODE 104. 二叉树的最大深度
 
 ## 1. [问题](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree)
@@ -24,7 +10,7 @@ notshow: true
 
 示例：
 
-```text
+```
 给定二叉树 [3,9,20,null,null,15,7]，
 
     3
@@ -153,4 +139,3 @@ class Solution {
 ## 5. 笔记
 
 ![](https://777blog.oss-cn-shanghai.aliyuncs.com/leetcode/leetcode-104-1.jpg) ![](https://777blog.oss-cn-shanghai.aliyuncs.com/leetcode/leetcode-104-2.jpg)
-

@@ -14,23 +14,23 @@
 
 onpause和onstop方法
 
-Android中**多线程**实现方法\(提到handler\)
+Android中**多线程**实现方法(提到handler)
 
 线程**messagequeue**关系
 
-handler 如何切换线程\(handler聊了挺久\)
+handler 如何切换线程(handler聊了挺久)
 
 handler **如何回调**
 
-handler注意事项\(**预防内存泄漏**\)
+handler注意事项(**预防内存泄漏**)
 
 四种引用
 
-**String s=new String\("123"\);建立了几个对象**
+**String s=new String("123");建立了几个对象**
 
-ArrayList&lt;String&gt; 删除空字符串\(""\)对象 
+ArrayList\<String> 删除空字符串("")对象 
 
-算法 0123\_456\_769变成3210\_654\_967\(只有数字加下划线\) 其中出了个bug，重写后就正常\(汗\)
+算法 0123\_456\_769变成3210\_654\_967(只有数字加下划线) 其中出了个bug，重写后就正常(汗)
 
 过几分钟后二面
 
@@ -38,7 +38,7 @@ ArrayList&lt;String&gt; 删除空字符串\(""\)对象
 
 3.29 二面45min
 
-算法 二叉树中两个结点的距离\(通过公共祖先结点的距离和\)
+算法 二叉树中两个结点的距离(通过公共祖先结点的距离和)
 
 先说出思路，回溯获得根到子节点的路径
 
@@ -50,7 +50,7 @@ git 作用
 
 https ssl 加密等
 
-handler封装使用\(handlerThread IntentService\)
+handler封装使用(handlerThread IntentService)
 
 **retrofit**如何跨线程
 
@@ -58,7 +58,7 @@ synchronized和lock区别
 
 锁原理
 
-stack实现o\(1\)获得最小值，手写基于数组的栈，leetcode上有
+stack实现o(1)获得最小值，手写基于数组的栈，leetcode上有
 
 
 
@@ -73,4 +73,3 @@ stack实现o\(1\)获得最小值，手写基于数组的栈，leetcode上有
 然后再做一次。。
 
 之后就问些实习时间等非技术的事情了
-

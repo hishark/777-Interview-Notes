@@ -1,16 +1,3 @@
----
-title: 27. 二叉树的镜像
-date: '2020-09-25T23:39:32.000Z'
-tags:
-  - leetcode
-  - java
-  - kotlin
-  - lcof
-  - 树
-  - 简单
-categories: 算法笔记
----
-
 # 27. 二叉树的镜像【递归/辅助栈】
 
 ## 1. [问题](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/)
@@ -19,7 +6,7 @@ categories: 算法笔记
 
 例如输入：
 
-```text
+```
      4
    /   \
   2     7
@@ -29,7 +16,7 @@ categories: 算法笔记
 
 镜像输出：
 
-```text
+```
      4
    /   \
   7     2
@@ -39,14 +26,14 @@ categories: 算法笔记
 
 示例 1：
 
-```text
+```
 输入：root = [4,2,7,1,3,6,9]
 输出：[4,7,2,9,6,3,1]
 ```
 
 限制：
 
-* 0 &lt;= 节点个数 &lt;= 1000
+* 0 <= 节点个数 <= 1000
 
 ## 2. 解法 - 递归
 
@@ -210,4 +197,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/)
 * [https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/solution/mian-shi-ti-27-er-cha-shu-de-jing-xiang-di-gui-fu-/](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/solution/mian-shi-ti-27-er-cha-shu-de-jing-xiang-di-gui-fu-/)
-

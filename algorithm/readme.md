@@ -11,15 +11,14 @@
 
 ## 刷题网站
 
-* [力扣](https://leetcode-cn.com/)
+* [力扣](https://leetcode-cn.com)
 * [牛客](https://www.nowcoder.com/activity/oj)
 
 ## 参考
 
 * [《剑指Offer》第2版](https://book.douban.com/subject/27008702/)
-* [力扣万能的题解区](https://leetcode-cn.com/)
+* [力扣万能的题解区](https://leetcode-cn.com)
 
 ## 注意事项
 
 * 力扣所有的题目不需要用户自己处理输入输出，能够实现函数功能即可，然而目前大多数互联网公司都在牛客上进行笔试以及面试，笔试中许多题目需要自己来处理输入输出，这个问题需要注意，别等开始校招都忘记 Scanner 要怎么用了。面试的时候比较随机，根据面试官的面试风格视情况而定，总而言之必须熟悉掌握如何处理输入输出的问题。
-

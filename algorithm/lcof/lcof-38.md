@@ -8,14 +8,14 @@
 
 示例：
 
-```text
+```
 输入：s = "abc"
 输出：["abc","acb","bac","bca","cab","cba"]
 ```
 
 限制：
 
-* 1 &lt;= s 的长度 &lt;= 8
+* 1 <= s 的长度 <= 8
 
 ## 2. 标签
 
@@ -25,7 +25,9 @@
 
 ## 3. 解法
 
-{% page-ref page="../tag/backtrack/leetcode-46.-quan-pai-lie.md" %}
+{% content-ref url="../tag/backtrack/leetcode-46.-quan-pai-lie.md" %}
+[leetcode-46.-quan-pai-lie.md](../tag/backtrack/leetcode-46.-quan-pai-lie.md)
+{% endcontent-ref %}
 
 ### 3.1 Java
 
@@ -164,4 +166,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/zi-fu-chuan-de-pai-lie-lcof/](https://leetcode-cn.com/problems/zi-fu-chuan-de-pai-lie-lcof/)
 * [https://leetcode-cn.com/problems/zi-fu-chuan-de-pai-lie-lcof/solution/mian-shi-ti-38-zi-fu-chuan-de-pai-lie-hui-su-fa-by/](https://leetcode-cn.com/problems/zi-fu-chuan-de-pai-lie-lcof/solution/mian-shi-ti-38-zi-fu-chuan-de-pai-lie-hui-su-fa-by/)
-

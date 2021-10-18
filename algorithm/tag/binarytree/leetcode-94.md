@@ -6,41 +6,41 @@
 
 **示例 1：**
 
-![](../../../.gitbook/assets/image%20%2826%29.png)
+![](<../../../.gitbook/assets/image (62).png>)
 
-```text
+```
 输入：root = [1,null,2,3]
 输出：[1,3,2]
 ```
 
 **示例 2：**
 
-```text
+```
 输入：root = []
 输出：[]
 ```
 
 **示例 3：**
 
-```text
+```
 输入：root = [1]
 输出：[1]
 ```
 
 **示例 4：**
 
-![](../../../.gitbook/assets/image%20%2824%29.png)
+![](<../../../.gitbook/assets/image (63).png>)
 
-```text
+```
 输入：root = [1,2]
 输出：[2,1]
 ```
 
 **示例 5：**
 
-![](../../../.gitbook/assets/image%20%2841%29.png)
+![](<../../../.gitbook/assets/image (66).png>)
 
-```text
+```
 输入：root = [1,null,2]
 输出：[1,2]
 ```
@@ -97,7 +97,7 @@ class Solution {
 ### 3.2 复杂度分析
 
 * 时间复杂度 `O(n)` ：其中 n 为二叉树节点的个数。二叉树的遍历中每个节点会被访问一次且只会被访问一次。
-* 空间复杂度 `O(n)` ：空间复杂度取决于递归的栈深度，而栈深度在二叉树为一条链的情况下会达到 O\(n\) 的级别。
+* 空间复杂度 `O(n)` ：空间复杂度取决于递归的栈深度，而栈深度在二叉树为一条链的情况下会达到 O(n) 的级别。
 
 ## 4. 解法 - 栈
 
@@ -135,10 +135,9 @@ class Solution {
 ### 4.2 复杂度分析
 
 * 时间复杂度 `O(n)` ：其中 n 为二叉树节点的个数。二叉树的遍历中每个节点会被访问一次且只会被访问一次。
-* 空间复杂度 `O(n)` ：空间复杂度取决于栈深度，而栈深度在二叉树为一条链的情况下会达到 O\(n\) 的级别。
+* 空间复杂度 `O(n)` ：空间复杂度取决于栈深度，而栈深度在二叉树为一条链的情况下会达到 O(n) 的级别。
 
 ## 5. 参考
 
 * [https://leetcode-cn.com/problems/binary-tree-inorder-traversal/](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/)
 * [https://leetcode-cn.com/problems/binary-tree-inorder-traversal/solution/er-cha-shu-de-zhong-xu-bian-li-by-leetcode-solutio/](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/solution/er-cha-shu-de-zhong-xu-bian-li-by-leetcode-solutio/)
-

@@ -1,16 +1,3 @@
----
-title: 329. 矩阵中的最长递增路径
-date: '2020-07-27T23:12:28.000Z'
-tags:
-  - leetcode
-  - java
-  - kotlin
-  - DFS
-  - 记忆化
-categories: 算法笔记
-notshow: true
----
-
 # LEETCODE 329. 矩阵中的最长递增路径
 
 ## 1. [问题](https://leetcode-cn.com/problems/longest-increasing-path-in-a-matrix)
@@ -21,7 +8,7 @@ notshow: true
 
 示例 1:
 
-```text
+```
 输入: nums = 
 [
   [9,9,4],
@@ -34,7 +21,7 @@ notshow: true
 
 示例 2:
 
-```text
+```
 输入: nums = 
 [
   [3,4,5],
@@ -183,4 +170,3 @@ class Solution {
 ## 4. 笔记
 
 ![](https://777blog.oss-cn-shanghai.aliyuncs.com/leetcode/leetcode-329-1.jpg) ![](https://777blog.oss-cn-shanghai.aliyuncs.com/leetcode/leetcode-329-2.jpg)
-

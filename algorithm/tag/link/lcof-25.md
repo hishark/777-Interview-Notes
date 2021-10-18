@@ -6,14 +6,14 @@
 
 示例1：
 
-```text
+```
 输入：1->2->4, 1->3->4
 输出：1->1->2->3->4->4
 ```
 
 限制：
 
-* 0 &lt;= 链表长度 &lt;= 1000
+* 0 <= 链表长度 <= 1000
 
 ## 2. 解法 - 递归
 
@@ -76,11 +76,10 @@ class Solution {
 
 ### 2.3 复杂度分析
 
-* 时间复杂度：O\(n+m\)其中 n 和 m 分别为两个链表的长度。
-* 空间复杂度：O\(n+m\)其中 n 和 m 分别为两个链表的长度。
+* 时间复杂度：O(n+m)其中 n 和 m 分别为两个链表的长度。
+* 空间复杂度：O(n+m)其中 n 和 m 分别为两个链表的长度。
 
 ## 3. 参考
 
 * [https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof](https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof)
 * [https://leetcode-cn.com/problems/merge-two-sorted-lists/solution/he-bing-liang-ge-you-xu-lian-biao-by-leetcode-solu/](https://leetcode-cn.com/problems/merge-two-sorted-lists/solution/he-bing-liang-ge-you-xu-lian-biao-by-leetcode-solu/)
-

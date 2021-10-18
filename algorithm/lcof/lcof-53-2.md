@@ -6,14 +6,14 @@
 
 **示例 1:**
 
-```text
+```
 输入: [0,1,3]
 输出: 2
 ```
 
 **示例 2:**
 
-```text
+```
 输入: [0,1,2,3,4,5,6,7,9]
 输出: 8
 ```
@@ -148,11 +148,10 @@ class Solution {
 
 ### 4.2 复杂度分析
 
-* 时间复杂度：O\(N\)
-* 空间复杂度：O\(1\)
+* 时间复杂度：O(N)
+* 空间复杂度：O(1)
 
 ## 4. 参考
 
 * [https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/](https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/)
 * [https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/solution/mian-shi-ti-53-ii-0n-1zhong-que-shi-de-shu-zi-er-f/](https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/solution/mian-shi-ti-53-ii-0n-1zhong-que-shi-de-shu-zi-er-f/)
-

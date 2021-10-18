@@ -10,28 +10,28 @@
 
 示例 1：
 
-```text
+```
 输入：nums = [1,2,3]
 输出：[1,3,2]
 ```
 
 示例 2：
 
-```text
+```
 输入：nums = [3,2,1]
 输出：[1,2,3]
 ```
 
 示例 3：
 
-```text
+```
 输入：nums = [1,1,5]
 输出：[1,5,1]
 ```
 
 示例 4：
 
-```text
+```
 输入：nums = [1]
 输出：[1]
 ```
@@ -128,4 +128,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/next-permutation/](https://leetcode-cn.com/problems/next-permutation/)
 * [https://leetcode-cn.com/problems/next-permutation/solution/xia-yi-ge-pai-lie-by-leetcode-solution/](https://leetcode-cn.com/problems/next-permutation/solution/xia-yi-ge-pai-lie-by-leetcode-solution/)
-

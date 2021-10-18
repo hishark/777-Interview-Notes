@@ -6,7 +6,7 @@
 
 **示例：**
 
-```text
+```
 输入：[1,12,-5,-6,50,3], k = 4
 输出：12.75
 解释：最大平均数 (12-5-6+50)/4 = 51/4 = 12.75
@@ -14,8 +14,8 @@
 
 **提示：**
 
-* 1 &lt;= `k` &lt;= `n` &lt;= 30,000。
-* 所给数据范围 \[-10,000，10,000\]。
+* 1 <= `k` <= `n` <= 30,000。
+* 所给数据范围 \[-10,000，10,000]。
 
 ## 2. 标签
 
@@ -62,4 +62,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/maximum-average-subarray-i/](https://leetcode-cn.com/problems/maximum-average-subarray-i/)
 * [https://leetcode-cn.com/problems/maximum-average-subarray-i/solution/zi-shu-zu-zui-da-ping-jun-shu-i-by-leetc-us1k/](https://leetcode-cn.com/problems/maximum-average-subarray-i/solution/zi-shu-zu-zui-da-ping-jun-shu-i-by-leetc-us1k/)
-

@@ -9,16 +9,16 @@
 
 ### 基本类型
 
-| 基本类型 | 位数 | 字节 | 默认值 |
-| :--- | :--- | :--- | :--- |
-| int | 32 | 4 | 0 |
-| short | 16 | 2 | 0 |
-| long | 64 | 8 | 0L |
-| byte | 8 | 1 | 0 |
-| char | 16 | 2 | 'u0000' |
-| float | 32 | 4 | 0f |
-| double | 64 | 8 | 0d |
-| boolean | 1 |  | false |
+| 基本类型    | 位数 | 字节 | 默认值     |
+| ------- | -- | -- | ------- |
+| int     | 32 | 4  | 0       |
+| short   | 16 | 2  | 0       |
+| long    | 64 | 8  | 0L      |
+| byte    | 8  | 1  | 0       |
+| char    | 16 | 2  | 'u0000' |
+| float   | 32 | 4  | 0f      |
+| double  | 64 | 8  | 0d      |
+| boolean | 1  |    | false   |
 
 boolean 只有两个值：true、false，可以使用 1 bit 来存储，但是具体大小没有明确规定。JVM 会在编译时期将 boolean 类型的数据转换为 int，使用 1 来表示 true，0 表示 false。JVM 支持 boolean 数组，但是是通过读写 byte 数组来实现的。
 
@@ -42,8 +42,8 @@ int y = x;         // 拆箱 调用了 X.intValue()
 
 `int a = new Integer(123)` 与 `int a = Integer.valueOf(123)` 的区别在于：
 
-* new Integer\(123\) 每次都会新建一个对象；
-* Integer.valueOf\(123\) 会使用缓存池中的对象，多次调用会取得同一个对象的引用。
+* new Integer(123) 每次都会新建一个对象；
+* Integer.valueOf(123) 会使用缓存池中的对象，多次调用会取得同一个对象的引用。
 
 ```java
 // 新建对象
@@ -56,7 +56,7 @@ Integer k = Integer.valueOf(123);
 System.out.println(z == k);   // true
 ```
 
-valueOf\(\) 方法的实现比较简单，就是先判断值是否在缓存池中，如果在的话就直接返回缓存池的内容。
+valueOf() 方法的实现比较简单，就是先判断值是否在缓存池中，如果在的话就直接返回缓存池的内容。
 
 ```java
 public static Integer valueOf(int i) {
@@ -66,7 +66,7 @@ public static Integer valueOf(int i) {
 }
 ```
 
-在 Java 8 中，Integer 缓存池的大小默认为 -128~127。
+在 Java 8 中，Integer 缓存池的大小默认为 -128\~127。
 
 ```java
 static final int low = -128;
@@ -100,7 +100,7 @@ static {
 }
 ```
 
-编译器会在自动装箱过程调用 valueOf\(\) 方法，因此多个值相同且值在缓存池范围内的 Integer 实例使用自动装箱来创建，那么就会引用相同的对象。
+编译器会在自动装箱过程调用 valueOf() 方法，因此多个值相同且值在缓存池范围内的 Integer 实例使用自动装箱来创建，那么就会引用相同的对象。
 
 ```java
 Integer m = 123; // 相当于 Integer m = Integer.valueOf(123); 自动装箱
@@ -118,11 +118,11 @@ System.out.println(m == n); // true 所以会引用相同的对象
 
 在使用这些基本类型对应的包装类型时，如果该数值范围在缓冲池范围内，就可以直接使用缓冲池中的对象。
 
-在 jdk 1.8 所有的数值类缓冲池中，Integer 的缓冲池 IntegerCache 很特殊，这个缓冲池的下界是 - 128，上界默认是 127，但是这个上界是可调的，在启动 jvm 的时候，通过 -XX:AutoBoxCacheMax=&lt;size&gt; 来指定这个缓冲池的大小，该选项在 JVM 初始化的时候会设定一个名为 java.lang.IntegerCache.high 系统属性，然后 IntegerCache 初始化的时候就会读取该系统属性来决定上界。
+在 jdk 1.8 所有的数值类缓冲池中，Integer 的缓冲池 IntegerCache 很特殊，这个缓冲池的下界是 - 128，上界默认是 127，但是这个上界是可调的，在启动 jvm 的时候，通过 -XX:AutoBoxCacheMax=\<size> 来指定这个缓冲池的大小，该选项在 JVM 初始化的时候会设定一个名为 java.lang.IntegerCache.high 系统属性，然后 IntegerCache 初始化的时候就会读取该系统属性来决定上界。
 
-[StackOverflow : Differences between new Integer\(123\), Integer.valueOf\(123\) and just 123 ](https://stackoverflow.com/questions/9030817/differences-between-new-integer123-integer-valueof123-and-just-123)
+[StackOverflow : Differences between new Integer(123), Integer.valueOf(123) and just 123 ](https://stackoverflow.com/questions/9030817/differences-between-new-integer123-integer-valueof123-and-just-123)
 
-Java 基本类型的包装类的大部分都实现了缓存池技术，即 Byte,Short,Integer,Long,Character,Boolean；前面 4 种包装类默认创建了数值\[-128，127\] 的相应类型的缓存数据，Character 创建了数值在\[0,127\]范围的缓存数据，Boolean 直接返回 True Or False。如果超出对应范围仍然会去创建新的对象。 为啥把缓存设置为\[-128，127\]区间？[（参见 issue/461）](https://github.com/Snailclimb/JavaGuide/issues/461)性能和资源之间的权衡。
+Java 基本类型的包装类的大部分都实现了缓存池技术，即 Byte,Short,Integer,Long,Character,Boolean；前面 4 种包装类默认创建了数值\[-128，127] 的相应类型的缓存数据，Character 创建了数值在\[0,127]范围的缓存数据，Boolean 直接返回 True Or False。如果超出对应范围仍然会去创建新的对象。 为啥把缓存设置为\[-128，127]区间？[（参见 issue/461）](https://github.com/Snailclimb/JavaGuide/issues/461)性能和资源之间的权衡。
 
 另外，两种浮点数类型的包装类 Float,Double 并没有实现缓存池技术。
 
@@ -202,11 +202,11 @@ String 不可变性天生具备线程安全，可以在多个线程中安全地�
 
 ### String Pool
 
-字符串常量池（String Pool）保存着所有字符串字面量（Literal Strings），这些字面量在编译时期就确定。不仅如此，还可以使用 String 的 intern\(\) 方法在运行过程将字符串添加到 String Pool 中。
+字符串常量池（String Pool）保存着所有字符串字面量（Literal Strings），这些字面量在编译时期就确定。不仅如此，还可以使用 String 的 intern() 方法在运行过程将字符串添加到 String Pool 中。
 
-当一个字符串调用 intern\(\) 方法时，如果 String Pool 中已经存在一个字符串和该字符串值相等（使用 equals\(\) 方法进行确定），那么就会返回 String Pool 中字符串的引用；否则，就会在 String Pool 中添加一个新的字符串，并返回这个新字符串的引用。
+当一个字符串调用 intern() 方法时，如果 String Pool 中已经存在一个字符串和该字符串值相等（使用 equals() 方法进行确定），那么就会返回 String Pool 中字符串的引用；否则，就会在 String Pool 中添加一个新的字符串，并返回这个新字符串的引用。
 
-下面示例中，s1 和 s2 采用 new String\(\) 的方式新建了两个不同字符串，而 s3 和 s4 是通过 s1.intern\(\) 方法取得同一个字符串引用。intern\(\) 首先把 s1 引用的字符串放到 String Pool 中，然后返回这个字符串引用。因此 s3 和 s4 引用的是同一个字符串。
+下面示例中，s1 和 s2 采用 new String() 的方式新建了两个不同字符串，而 s3 和 s4 是通过 s1.intern() 方法取得同一个字符串引用。intern() 首先把 s1 引用的字符串放到 String Pool 中，然后返回这个字符串引用。因此 s3 和 s4 引用的是同一个字符串。
 
 ```java
 String s1 = new String("aaa");
@@ -228,9 +228,9 @@ System.out.println(s5 == s6);  // true
 在 Java 7 之前，String Pool 被放在运行时常量池中，它属于永久代。而在 Java 7，String Pool 被移到堆中。这是因为永久代的空间有限，在大量使用字符串的场景下会导致 **O**ut**O**f**M**emoryError （内存溢出）。
 
 * [StackOverflow : What is String interning?](https://stackoverflow.com/questions/10578984/what-is-string-interning)）
-* [深入解析 String\#intern](https://tech.meituan.com/in_depth_understanding_string_intern.html)
+* [深入解析 String#intern](https://tech.meituan.com/in_depth_understanding_string_intern.html)
 
-### \*\*\*\*[**new String\("abc"\)**](https://blog.csdn.net/wo541075754/article/details/108212654) ****
+### ****[**new String("abc")**](https://blog.csdn.net/wo541075754/article/details/108212654)** **
 
 使用这种方式一共会创建两个字符串对象（前提是 String Pool 中还没有 "abc" 字符串对象）。
 
@@ -273,7 +273,7 @@ Constant pool:
 // ...
 ```
 
-在 Constant Pool 中，\#19 存储这字符串字面量 "abc"，\#3 是 String Pool 的字符串对象，它指向 \#19 这个字符串字面量。在 main 方法中，0: 行使用 new \#2 在堆中创建一个字符串对象，并且使用 ldc \#3 将 String Pool 中的字符串对象作为 String 构造函数的参数。
+在 Constant Pool 中，#19 存储这字符串字面量 "abc"，#3 是 String Pool 的字符串对象，它指向 #19 这个字符串字面量。在 main 方法中，0: 行使用 new #2 在堆中创建一个字符串对象，并且使用 ldc #3 将 String Pool 中的字符串对象作为 String 构造函数的参数。
 
 以下是 String 构造函数的源码，可以看到，在将一个字符串对象作为另一个字符串对象的构造函数参数时，并不会完全复制 value 数组内容，而是都会指向同一个 value 数组。
 
@@ -606,7 +606,7 @@ public InitialOrderTest() {
 * 子类（实例变量、普通语句块）
 * 子类（构造函数）
 
-> [初始化的顺序](https://blog.csdn.net/weixin_44736603/article/details/109984047)：
+> [初始化的顺序](https://blog.csdn.net/weixin\_44736603/article/details/109984047)：
 >
 > * 类中静态的成员只会在类第一次加载的时候初始化一次，而非静态成员和构造器执行的次数在于实例化对象的个数，实例化多少个对象就执行多少次。
 > * 各个成员执行的顺序：由静态到非静态，由父类到子类，静态之间按代码书写顺序，非静态之间按代码书写顺序，构造器排在非静态之后
@@ -647,7 +647,7 @@ public final void wait(long timeout, int nanos) throws InterruptedException
 public final void wait() throws InterruptedException
 ```
 
-### equals\(\)
+### equals()
 
 **1. 等价关系**
 
@@ -674,7 +674,7 @@ if (x.equals(y) && y.equals(z))
 
 4⃣️ 一致性
 
-多次调用 equals\(\) 方法结果不变
+多次调用 equals() 方法结果不变
 
 ```java
 x.equals(y) == x.equals(y); // true
@@ -682,7 +682,7 @@ x.equals(y) == x.equals(y); // true
 
 5⃣️ 与 null 的比较
 
-对任何不是 null 的对象 x 调用 x.equals\(null\) 结果都为 false
+对任何不是 null 的对象 x 调用 x.equals(null) 结果都为 false
 
 ```java
 x.equals(null); // false;
@@ -734,19 +734,19 @@ public class EqualExample {
 }
 ```
 
-### hashCode\(\)
+### hashCode()
 
 > 哈希值，也叫散列值。
 
-hashCode\(\) 返回哈希值，而 equals\(\) 是用来判断两个对象是否等价。
+hashCode() 返回哈希值，而 equals() 是用来判断两个对象是否等价。
 
 等价的两个对象哈希值一定相同，但是哈希值相同的两个对象不一定等价，这是因为计算哈希值具有随机性，两个值不同的对象可能计算出相同的哈希值。
 
-在覆盖 equals\(\) 方法时应当总是覆盖 hashCode\(\) 方法，保证等价的两个对象哈希值也相等。
+在覆盖 equals() 方法时应当总是覆盖 hashCode() 方法，保证等价的两个对象哈希值也相等。
 
-HashSet 和 HashMap 等集合类使用了 hashCode\(\) 方法来计算对象应该存储的位置，因此要将对象添加到这些集合类中，需要让对应的类实现 hashCode\(\) 方法。
+HashSet 和 HashMap 等集合类使用了 hashCode() 方法来计算对象应该存储的位置，因此要将对象添加到这些集合类中，需要让对应的类实现 hashCode() 方法。
 
-下面的代码中，新建了两个等价的对象，并将它们添加到 HashSet 中。我们希望将这两个对象当成一样的，只在集合中添加一个对象。但是 EqualExample 没有实现 hashCode\(\) 方法，因此这两个对象的哈希值是不同的，最终导致集合添加了两个等价的对象。
+下面的代码中，新建了两个等价的对象，并将它们添加到 HashSet 中。我们希望将这两个对象当成一样的，只在集合中添加一个对象。但是 EqualExample 没有实现 hashCode() 方法，因此这两个对象的哈希值是不同的，最终导致集合添加了两个等价的对象。
 
 ```java
 EqualExample e1 = new EqualExample(1, 1, 1);
@@ -773,7 +773,7 @@ public int hashCode() {
 }
 ```
 
-### toString\(\)
+### toString()
 
 默认返回 ToStringExample@4554617c 这种形式，其中 @ 后面的数值为散列码的无符号十六进制表示。
 
@@ -797,11 +797,11 @@ System.out.println(example.toString());
 ToStringExample@4554617c
 ```
 
-### clone\(\)
+### clone()
 
 **1. cloneable**
 
-clone\(\) 是 Object 的 protected 方法，它不是 public，一个类不显式去重写 clone\(\)，其它类就不能直接去调用该类实例的 clone\(\) 方法。
+clone() 是 Object 的 protected 方法，它不是 public，一个类不显式去重写 clone()，其它类就不能直接去调用该类实例的 clone() 方法。
 
 ```java
 public class CloneExample {
@@ -815,7 +815,7 @@ CloneExample e1 = new CloneExample();
 // CloneExample e2 = e1.clone(); // 'clone()' has protected access in 'java.lang.Object'
 ```
 
-重写 clone\(\) 得到以下实现：
+重写 clone() 得到以下实现：
 
 ```java
 public class CloneExample {
@@ -844,9 +844,9 @@ java.lang.CloneNotSupportedException: CloneExample
 
 以上抛出了 CloneNotSupportedException，这是因为 CloneExample 没有实现 Cloneable 接口。
 
-应该注意的是，clone\(\) 方法并不是 Cloneable 接口的方法，而是 Object 的一个 protected 方法。
+应该注意的是，clone() 方法并不是 Cloneable 接口的方法，而是 Object 的一个 protected 方法。
 
-Cloneable 接口只是规定，如果一个类没有实现 Cloneable 接口又调用了 clone\(\) 方法，就会抛出 CloneNotSupportedException。
+Cloneable 接口只是规定，如果一个类没有实现 Cloneable 接口又调用了 clone() 方法，就会抛出 CloneNotSupportedException。
 
 ```java
 public class CloneExample implements Cloneable {
@@ -955,9 +955,9 @@ e1.set(2, 222);
 System.out.println(e2.get(2)); // 2
 ```
 
-**4. clone\(\) 的替代方案**
+**4. clone() 的替代方案**
 
-使用 clone\(\) 方法来拷贝一个对象即复杂又有风险，它会抛出异常，并且还需要类型转换。《Effective Java》书上讲到，最好不要去使用 clone\(\)，可以使用拷贝构造函数或者拷贝工厂来拷贝一个对象。
+使用 clone() 方法来拷贝一个对象即复杂又有风险，它会抛出异常，并且还需要类型转换。《Effective Java》书上讲到，最好不要去使用 clone()，可以使用拷贝构造函数或者拷贝工厂来拷贝一个对象。
 
 ```java
 public class CloneConstructorExample {
@@ -1007,7 +1007,7 @@ System.out.println(e2.get(2)); // 2
 >
 > default： 有时候也称为friendly，它是针对本包访问而设计的，任何处于本包下的类、接口、异常等，都可以相互访问，即使是父类没有用protected修饰的成员也可以。
 >
-> private： 访问权限仅限于类的内部，是一种封装的体现，例如，大多数成员变量都是修饰符为private的，它们不希望被其他任何外部的类访问。
+> private： 访问权限仅限于类的内部，是一种封装的体现，例如，大多数成员变量都是修饰符为private的，它们不希望被其他任何外部的类访问。 
 
 Java 中有三个访问权限修饰符：private、protected 以及 public，如果不加访问修饰符，表示包级可见。
 
@@ -1149,7 +1149,7 @@ ie2.func1();
 System.out.println(InterfaceExample.x);
 ```
 
-**3. 比较** 
+**3. 比较 **
 
 * 从设计层面上看，抽象类提供了一种 IS-A 关系，需要满足里式替换原则，即子类对象必须能够替换掉所有父类对象。而接口更像是一种 LIKE-A 关系，它只是提供一种方法实现契约，并不要求接口和实现接口的类具有 IS-A 关系。
 * 从使用上来看，一个类可以实现多个接口，但是不能继承多个抽象类。
@@ -1160,7 +1160,7 @@ System.out.println(InterfaceExample.x);
 
 使用接口：
 
-* 需要让不相关的类都实现一个方法，例如不相关的类都可以实现 Comparable 接口中的 compareTo\(\) 方法；
+* 需要让不相关的类都实现一个方法，例如不相关的类都可以实现 Comparable 接口中的 compareTo() 方法；
 * 需要使用多重继承。
 
 使用抽象类：
@@ -1177,7 +1177,7 @@ System.out.println(InterfaceExample.x);
 
 ### super
 
-* **访问父类的构造函数**：可以使用 super\(\) 函数访问父类的构造函数，从而委托父类完成一些初始化的工作。应该注意到，子类一定会调用父类的构造函数来完成初始化工作，一般是调用父类的默认构造函数，如果子类需要调用父类其它构造函数，那么就可以使用 super\(\) 函数。
+* **访问父类的构造函数**：可以使用 super() 函数访问父类的构造函数，从而委托父类完成一些初始化的工作。应该注意到，子类一定会调用父类的构造函数来完成初始化工作，一般是调用父类的默认构造函数，如果子类需要调用父类其它构造函数，那么就可以使用 super() 函数。
 * **访问父类的成员**：如果子类重写了父类的某个方法，可以通过使用 super 关键字来引用父类的方法实现。
 
 ```java
@@ -1242,7 +1242,7 @@ e.func();
 
 使用 `@Override` 注解，可以让编译器帮忙检查是否满足上面的三个限制条件。
 
-下面的示例中，SubClass 为 SuperClass 的子类，SubClass 重写了 SuperClass 的 func\(\) 方法。其中：
+下面的示例中，SubClass 为 SuperClass 的子类，SubClass 重写了 SuperClass 的 func() 方法。其中：
 
 * 子类方法访问权限为 public，大于父类的 protected。
 * 子类的返回类型为 ArrayList，是父类返回类型 List 的子类。
@@ -1266,10 +1266,10 @@ class SubClass extends SuperClass {
 
 在调用一个方法时，先从本类中查找看是否有对应的方法，如果没有再到父类中查看，看是否从父类继承来。否则就要对参数进行转型，转成父类之后看是否有对应的方法。总的来说，方法调用的优先级为：
 
-* this.func\(this\)
-* super.func\(this\)
-* this.func\(super\)
-* super.func\(super\)
+* this.func(this)
+* super.func(this)
+* this.func(super)
+* super.func(super)
 
 ```java
 /*
@@ -1353,9 +1353,9 @@ public static void main(String[] args) {
 
 Class 和 java.lang.reflect 一起对反射提供了支持，java.lang.reflect 类库主要包含了以下三个类：
 
-* **Field**  ：可以使用 get\(\) 和 set\(\) 方法读取和修改 Field 对象关联的字段。
-* **Method**  ：可以使用 invoke\(\) 方法调用与 Method 对象关联的方法。
-* **Constructor**  ：可以用 Constructor 的 newInstance\(\) 创建新的对象。
+* **Field**  ：可以使用 get() 和 set() 方法读取和修改 Field 对象关联的字段。
+* **Method**  ：可以使用 invoke() 方法调用与 Method 对象关联的方法。
+* **Constructor**  ：可以用 Constructor 的 newInstance() 创建新的对象。
 
 **反射的功能：**
 
@@ -1445,7 +1445,7 @@ System.out.println(c1==c2);
 
 * [Java 泛型详解](http://www.importnew.com/24029.html)
 * [10 道 Java 泛型面试题](https://cloud.tencent.com/developer/article/1033693)
-* [Java 泛型了解么？什么是类型擦除？介绍一下常用的通配符？](https://snailclimb.gitee.io/javaguide/#/docs/java/basis/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86?id=_127-java-%e6%b3%9b%e5%9e%8b%e4%ba%86%e8%a7%a3%e4%b9%88%ef%bc%9f%e4%bb%80%e4%b9%88%e6%98%af%e7%b1%bb%e5%9e%8b%e6%93%a6%e9%99%a4%ef%bc%9f%e4%bb%8b%e7%bb%8d%e4%b8%80%e4%b8%8b%e5%b8%b8%e7%94%a8%e7%9a%84%e9%80%9a%e9%85%8d%e7%ac%a6%ef%bc%9f) 🌠 
+* [Java 泛型了解么？什么是类型擦除？介绍一下常用的通配符？](https://snailclimb.gitee.io/javaguide/#/docs/java/basis/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86?id=\_127-java-%e6%b3%9b%e5%9e%8b%e4%ba%86%e8%a7%a3%e4%b9%88%ef%bc%9f%e4%bb%80%e4%b9%88%e6%98%af%e7%b1%bb%e5%9e%8b%e6%93%a6%e9%99%a4%ef%bc%9f%e4%bb%8b%e7%bb%8d%e4%b8%80%e4%b8%8b%e5%b8%b8%e7%94%a8%e7%9a%84%e9%80%9a%e9%85%8d%e7%ac%a6%ef%bc%9f) :stars: 
 * [Java泛型类型擦除以及类型擦除带来的问题](https://www.cnblogs.com/wuqinglong/p/9456193.html)
 * [什么是java泛型？为什么要使用泛型？用Object不行吗？](https://blog.csdn.net/wangzhenxing991026/article/details/109785509)
 
@@ -1537,7 +1537,7 @@ Java 注解是附加在代码中的一些元信息，用于一些工具在编译
 * **提高软件的可重用性**
 * **降低了构建大型系统的风险**：即使整个系统不可用，但是这些独立的模块却有可能是可用的
 
-以下 Person 类封装 name、gender、age 等属性，外界只能通过 get\(\) 方法获取一个 Person 对象的 name 属性和 gender 属性，而无法获取 age 属性，但是 age 属性可以供 work\(\) 方法使用。
+以下 Person 类封装 name、gender、age 等属性，外界只能通过 get() 方法获取一个 Person 对象的 name 属性和 gender 属性，而无法获取 age 属性，但是 age 属性可以供 work() 方法使用。
 
 注意到 gender 属性使用 int 数据类型进行存储，封装使得用户注意不到这种实现细节。并且在需要修改 gender 属性使用的数据类型时，也可以在不影响客户端代码的情况下进行。
 
@@ -1591,7 +1591,7 @@ Animal animal = new Cat();
 * 覆盖（重写）
 * 向上转型
 
-下面的代码中，乐器类（Instrument）有两个子类：Wind 和 Percussion，它们都覆盖了父类的 play\(\) 方法，并且在 main\(\) 方法中使用父类 Instrument 来引用 Wind 和 Percussion 对象。在 Instrument 引用调用 play\(\) 方法时，会执行实际引用对象所在类的 play\(\) 方法，而不是 Instrument 类的方法。
+下面的代码中，乐器类（Instrument）有两个子类：Wind 和 Percussion，它们都覆盖了父类的 play() 方法，并且在 main() 方法中使用父类 Instrument 来引用 Wind 和 Percussion 对象。在 Instrument 引用调用 play() 方法时，会执行实际引用对象所在类的 play() 方法，而不是 Instrument 类的方法。
 
 ```java
 public class Instrument {
@@ -1634,7 +1634,7 @@ public class Music {
 }
 ```
 
-```text
+```
 Wind is playing...
 Percussion is playing...
 ```
@@ -1683,7 +1683,7 @@ Percussion is playing...
 
 ### **6. 合成复用原则 Composite Reuse Principle, CRP**
 
-又称为组合/聚合复用原则\(Composition/ Aggregate Reuse Principle, CARP\)。
+又称为组合/聚合复用原则(Composition/ Aggregate Reuse Principle, CARP)。
 
 尽量使用对象组合，而不是继承来达到复用的目的。
 
@@ -1691,7 +1691,7 @@ Percussion is playing...
 
 ### **7. 迪米特法则 Law of Demeter, LoD**
 
-又称为最少知识原则\(Least Knowledge Principle, LKP\)。
+又称为最少知识原则(Least Knowledge Principle, LKP)。
 
 1. 不要和“陌生人”说话。英文定义为：Don’t talk to strangers.
 2. 只与你的直接朋友通信。英文定义为：Talk only to your immediate friends.
@@ -1699,7 +1699,7 @@ Percussion is playing...
 
 在迪米特法则中，对于一个对象，其朋友包括以下几类
 
-1. 当前对象本身\(this\)
+1. 当前对象本身(this)
 2. 以参数形式传入到当前对象方法中的对象
 3. 当前对象的成员对象
 4. 如果当前对象的成员对象是一个集合，那么集合中的元素也都是朋友
@@ -1729,4 +1729,3 @@ Java 支持的变量类型有：
   * 实例变量声明在一个类中，但在方法、构造方法和语句块之外。
 * 局部变量：类的方法中的变量。
   * 局部变量声明在方法、构造方法或者语句块中
-

@@ -1,14 +1,3 @@
----
-title: 718. 最长重复子数组
-date: '2020-07-01T17:17:03.000Z'
-tags:
-  - 动态规划
-  - leetcode
-  - java
-categories: 算法笔记
-notshow: true
----
-
 # LEETCODE 718. 最长重复子数组
 
 ## [1. 问题](https://leetcode-cn.com/problems/maximum-length-of-repeated-subarray/)
@@ -17,16 +6,16 @@ notshow: true
 
 示例：
 
-> 输入： A: \[1,2,3,2,1\] B: \[3,2,1,4,7\] 
+> 输入： A: \[1,2,3,2,1] B: \[3,2,1,4,7] 
 >
 > 输出：3 
 >
-> 解释： 长度最长的公共子数组是 \[3, 2, 1\] 。
+> 解释： 长度最长的公共子数组是 \[3, 2, 1] 。 
 
 提示：
 
-* 1 &lt;= len\(A\), len\(B\) &lt;= 1000
-* 0 &lt;= A\[i\], B\[i\] &lt; 100
+* 1 <= len(A), len(B) <= 1000
+* 0 <= A\[i], B\[i] < 100
 
 ## 2. 解法
 
@@ -90,4 +79,3 @@ class Solution {
 ## 4. 笔记
 
 ![](https://777blog.oss-cn-shanghai.aliyuncs.com/blog%20pic/leetcode718-1.jpg) ![](https://777blog.oss-cn-shanghai.aliyuncs.com/blog%20pic/leetcode718-2.jpg)
-

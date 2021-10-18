@@ -14,7 +14,7 @@
 
 **示例 1：**
 
-```text
+```
 输入：[5,5,5,10,20]
 输出：true
 解释：
@@ -26,21 +26,21 @@
 
 **示例 2：**
 
-```text
+```
 输入：[5,5,10]
 输出：true
 ```
 
 **示例 3：**
 
-```text
+```
 输入：[10,10]
 输出：false
 ```
 
 **示例 4：**
 
-```text
+```
 输入：[5,5,10,10,20]
 输出：false
 解释：
@@ -117,4 +117,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/lemonade-change/](https://leetcode-cn.com/problems/lemonade-change/)
 * [https://leetcode-cn.com/problems/lemonade-change/solution/ning-meng-shui-zhao-ling-by-leetcode-sol-nvp7/](https://leetcode-cn.com/problems/lemonade-change/solution/ning-meng-shui-zhao-ling-by-leetcode-sol-nvp7/)
-

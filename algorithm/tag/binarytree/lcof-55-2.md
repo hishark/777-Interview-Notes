@@ -8,7 +8,7 @@
 
 给定二叉树 `[3,9,20,null,null,15,7]`
 
-```text
+```
     3
    / \
   9  20
@@ -22,7 +22,7 @@
 
 给定二叉树 `[1,2,2,3,3,null,null,4,4]`
 
-```text
+```
        1
       / \
      2   2
@@ -141,4 +141,3 @@ class Solution {
 
 * [https://leetcode-cn.com/problems/ping-heng-er-cha-shu-lcof/](https://leetcode-cn.com/problems/ping-heng-er-cha-shu-lcof/)
 * [https://leetcode-cn.com/problems/ping-heng-er-cha-shu-lcof/solution/mian-shi-ti-55-ii-ping-heng-er-cha-shu-cong-di-zhi/](https://leetcode-cn.com/problems/ping-heng-er-cha-shu-lcof/solution/mian-shi-ti-55-ii-ping-heng-er-cha-shu-cong-di-zhi/)
-

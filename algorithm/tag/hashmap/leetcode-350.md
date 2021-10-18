@@ -1,16 +1,3 @@
----
-title: 350. 两个数组的交集 II
-date: '2020-07-13T16:12:57.000Z'
-tags:
-  - leetcode
-  - java
-  - 哈希表
-  - 排序
-  - 双指针
-categories: 算法笔记
-notshow: true
----
-
 # LEETCODE 350. 两个数组的交集 II
 
 ## 1. [问题](https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/)
@@ -19,14 +6,14 @@ notshow: true
 
 示例 1：
 
-```text
+```
 输入：nums1 = [1,2,2,1], nums2 = [2,2]
 输出：[2,2]
 ```
 
 示例 2:
 
-```text
+```
 输入：nums1 = [4,9,5], nums2 = [9,4,9,8,4]
 输出：[4,9]
 ```
@@ -136,4 +123,3 @@ class Solution {
 ## 5. 笔记
 
 ![](https://777blog.oss-cn-shanghai.aliyuncs.com/leetcode/leetcode-350-1.jpg) ![](https://777blog.oss-cn-shanghai.aliyuncs.com/leetcode/leetcode-350-2.jpg)
-

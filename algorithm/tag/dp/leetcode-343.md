@@ -1,15 +1,3 @@
----
-title: 343. 整数拆分
-date: '2020-07-30T13:43:57.000Z'
-tags:
-  - leetcode
-  - java
-  - kotlin
-  - 动态规划
-categories: 算法笔记
-notshow: true
----
-
 # LEETCODE 343. 整数拆分
 
 ## 1. [问题](https://leetcode-cn.com/problems/integer-break)
@@ -18,7 +6,7 @@ notshow: true
 
 示例 1:
 
-```text
+```
 输入: 2
 输出: 1
 解释: 2 = 1 + 1, 1 × 1 = 1。
@@ -26,7 +14,7 @@ notshow: true
 
 示例 2:
 
-```text
+```
 输入: 10
 输出: 36
 解释: 10 = 3 + 3 + 4, 3 × 3 × 4 = 36。
@@ -107,4 +95,3 @@ class Solution {
 ## 4. 笔记
 
 ![](https://777blog.oss-cn-shanghai.aliyuncs.com/leetcode/leetcode-343-1.jpg) ![](https://777blog.oss-cn-shanghai.aliyuncs.com/leetcode/leetcode-343-2.jpg)
-

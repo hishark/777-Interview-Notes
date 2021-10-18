@@ -40,7 +40,7 @@ HTTP 报文的结构和内容
 
 线程和进程的区别
 
-TIME\_WAIT 和 CLOSED\_WAIT 的区别、
+TIME_WAIT 和 CLOSED_WAIT 的区别、
 
 懂多线程吗？我：完全不了解，没用过
 
@@ -114,7 +114,7 @@ Rust 比 java 好在哪里？
 
 四次挥手
 
-如果系统中出现很多 TIME\_WAIT 和 CLOSED\_WAIT 怎么处理，会有什么影响
+如果系统中出现很多 TIME_WAIT 和 CLOSED_WAIT 怎么处理，会有什么影响
 
 加密算法了解吗？ 我：非常了解密码学
 
@@ -182,9 +182,8 @@ TCP报文段的结构，各部分的作用。
 
 手撕代码（估计是看我是非科班，没给我整太难）：
 
-\[给定前序和中序，进行建树\]\]\(https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/\)
+\[给定前序和中序，进行建树]]\(https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
 
 ## 抖音HR面 时长30分钟
 
 简单聊了聊，就过了。
-
