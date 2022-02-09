@@ -50,19 +50,19 @@ class Solution {
         return maxNodeNum - 1;
     }
 
-    // 求二叉树的直径
+    // 求二叉树的高度
     public int dfs(TreeNode root) {
         // 判空
         if (root == null) {
             return 0;
         }
-        // 左子树的直径
+        // 左子树的高度
         int left = dfs(root.left);
-        // 右子树的直径
+        // 右子树的高度
         int right = dfs(root.right);
-        // 更新当前的最大直径
+        // 更新当前的最大直径节点数
         maxNodeNum = Math.max(maxNodeNum, left + right + 1);
-        // 当前树的直径即左右子树的较大者 + 1
+        // 当前树的高度即左右子树的较大者 + 1
         return Math.max(left, right) + 1;
     }
 }
