@@ -1,8 +1,12 @@
 # Table of contents
 
-* [ᐕ\)୨](README.md)
+* [🎯 ᐕ)୨ 戳我戳我](README.md)
 
-## 数据结构与算法 <a id="algorithm"></a>
+## 外企 <a href="#moon" id="moon"></a>
+
+* [上海外企汇总](moon/shang-hai-wai-qi-hui-zong.md)
+
+## 数据结构与算法 <a href="#algorithm" id="algorithm"></a>
 
 * [简介](algorithm/readme.md)
 * [题型](algorithm/tag/README.md)
@@ -165,7 +169,7 @@
   * [链表](algorithm/tag/link/README.md)
     * [LEETCODE 19. 删除链表的倒数第N个节点](algorithm/tag/link/leetcode-19.md)
     * [LEETCODE 86. 分隔链表](algorithm/tag/link/leetcode-86.md)
-    * [\# LEETCODE 234. 回文链表](algorithm/tag/link/leetcode-234.-hui-wen-lian-biao.md)
+    * [# LEETCODE 234. 回文链表](algorithm/tag/link/leetcode-234.-hui-wen-lian-biao.md)
     * [LEETCODE 237. 删除链表中的节点](algorithm/tag/link/leetcode-237.md)
     * [LCOF 06. 从尾到头打印链表](algorithm/tag/link/lcof-06.md)
     * [LCOF 18. 删除链表的节点](algorithm/tag/link/lcof-18.md)
@@ -179,11 +183,11 @@
     * [LEETCODE 94. 二叉树的中序遍历](algorithm/tag/binarytree/leetcode-94.md)
     * [LEETCODE 95. 不同的二叉搜索树 II](algorithm/tag/binarytree/leetcode-95.md)
     * [LEETCODE 96. 不同的二叉搜索树](algorithm/tag/binarytree/leetcode-96.md)
-    * [\# LEETCODE 98. 验证二叉搜索树](algorithm/tag/binarytree/leetcode-98.-yan-zheng-er-cha-sou-suo-shu.md)
+    * [# LEETCODE 98. 验证二叉搜索树](algorithm/tag/binarytree/leetcode-98.-yan-zheng-er-cha-sou-suo-shu.md)
     * [LEETCODE 104. 二叉树的最大深度](algorithm/tag/binarytree/leetcode-104.md)
     * [LEETCODE 108. 将有序数组转换为二叉搜索树](algorithm/tag/binarytree/leetcode-108.md)
     * [LEETCODE 112. 路径总和](algorithm/tag/binarytree/leetcode-112.md)
-    * [\# LEETCODE 144. 二叉树的前序遍历](algorithm/tag/binarytree/leetcode-144.-er-cha-shu-de-qian-xu-bian-li.md)
+    * [# LEETCODE 144. 二叉树的前序遍历](algorithm/tag/binarytree/leetcode-144.-er-cha-shu-de-qian-xu-bian-li.md)
     * [LEETCODE 543. 二叉树的直径](algorithm/tag/binarytree/leetcode-543.md)
     * [LEETCODE 617. 合并二叉树](algorithm/tag/binarytree/leetcode-617.md)
     * [LEETCODE 958. 二叉树的完全性检验](algorithm/tag/binarytree/leetcode-958.md)
@@ -323,7 +327,7 @@
   * [腾讯常见问题](algorithm/common-question/algorithm-tencent.md)
   * [字节常见问题](algorithm/common-question/algorithm-bytedance.md)
 
-## 计算机网络 <a id="computer-network"></a>
+## 计算机网络 <a href="#computer-network" id="computer-network"></a>
 
 * [简介](computer-network/readme.md)
 * [基础知识](computer-network/basic/README.md)
@@ -337,7 +341,7 @@
 * [常见问题](computer-network/interview-question/README.md)
   * [常见问题带答案](computer-network/interview-question/interview-question-a.md)
 
-## 操作系统 <a id="os"></a>
+## 操作系统 <a href="#os" id="os"></a>
 
 * [简介](os/readme.md)
 * [基础知识](os/basic/README.md)
@@ -349,7 +353,7 @@
   * [链接](os/basic/link.md)
 * [常见问题](os/interview-question.md)
 
-## 数据库 <a id="database"></a>
+## 数据库 <a href="#database" id="database"></a>
 
 * [简介](database/readme.md)
 * [基础知识](database/basic/README.md)
@@ -378,7 +382,7 @@
   * [具体场景分析](android/basic/simulate.md)
 * [常见问题](android/interview-question.md)
 
-## 面经 <a id="interview"></a>
+## 面经 <a href="#interview" id="interview"></a>
 
 * [简介](interview/readme/README.md)
   * [777牌面筋](interview/readme/777-interview.md)
@@ -415,17 +419,17 @@
       * [字节跳动安卓客户端面经（安卓开发零经验）](interview/bytedance-interview-collect/intern/android/zi-jie-tiao-dong-an-zhuo-ke-hu-duan-mian-jing-an-zhuo-kai-fa-ling-jing-yan.md)
       * [字节跳动Android客户端一面凉经](interview/bytedance-interview-collect/intern/android/zi-jie-tiao-dong-android-ke-hu-duan-yi-mian-liang-jing.md)
       * [西瓜视频一面](interview/bytedance-interview-collect/intern/android/xi-gua-shi-pin-yi-mian.md)
-      * [头条三面面筋+HR\(已上岸，感谢各位牛友的帮助\)](interview/bytedance-interview-collect/intern/android/tou-tiao-san-mian-mian-jin-+hr-yi-shang-an-gan-xie-ge-wei-niu-you-de-bang-zhu.md)
+      * [头条三面面筋+HR(已上岸，感谢各位牛友的帮助)](interview/bytedance-interview-collect/intern/android/tou-tiao-san-mian-mian-jin-+hr-yi-shang-an-gan-xie-ge-wei-niu-you-de-bang-zhu.md)
       * [字节跳动android实习生一面二面](interview/bytedance-interview-collect/intern/android/zi-jie-tiao-dong-android-shi-xi-sheng-yi-mian-er-mian.md)
       * [字节跳动 客户端实习生 1-5面 面经](interview/bytedance-interview-collect/intern/android/zi-jie-tiao-dong-ke-hu-duan-shi-xi-sheng-15-mian-mian-jing.md)
-      * [2019春招实习Android面试总结\(后续再发秋招总结\)](interview/bytedance-interview-collect/intern/android/2019-chun-zhao-shi-xi-android-mian-shi-zong-jie-hou-xu-zai-fa-qiu-zhao-zong-jie.md)
+      * [2019春招实习Android面试总结(后续再发秋招总结)](interview/bytedance-interview-collect/intern/android/2019-chun-zhao-shi-xi-android-mian-shi-zong-jie-hou-xu-zai-fa-qiu-zhao-zong-jie.md)
       * [字节客户端安卓开发三面面经](interview/bytedance-interview-collect/intern/android/zi-jie-ke-hu-duan-an-zhuo-kai-fa-san-mian-mian-jing.md)
       * [字节跳动效率工程提前批Android实习面经](interview/bytedance-interview-collect/intern/android/zi-jie-tiao-dong-xiao-lv-gong-cheng-ti-qian-pi-android-shi-xi-mian-jing.md)
       * [字节 客户端 一二面面经 下周三面](interview/bytedance-interview-collect/intern/android/zi-jie-ke-hu-duan-yi-er-mian-mian-jing-xia-zhou-san-mian.md)
       * [【字节跳动安卓暑假实习一面】](interview/bytedance-interview-collect/intern/android/zi-jie-tiao-dong-an-zhuo-shu-jia-shi-xi-yi-mian.md)
       * [字节跳动Android实习面经](interview/bytedance-interview-collect/intern/android/zi-jie-tiao-dong-android-shi-xi-mian-jing.md)
-      * [字节跳动 Android客户端 一~三面（已收到offer）](interview/bytedance-interview-collect/intern/android/zi-jie-tiao-dong-android-ke-hu-duan-yi-san-mian-yi-shou-dao-offer.md)
-      * [字节跳动暑期实习Android一二三hr面经\(offer\)](interview/bytedance-interview-collect/intern/android/zi-jie-tiao-dong-shu-qi-shi-xi-android-yi-er-san-hr-mian-jing-offer.md)
+      * [字节跳动 Android客户端 一\~三面（已收到offer）](interview/bytedance-interview-collect/intern/android/zi-jie-tiao-dong-android-ke-hu-duan-yi-san-mian-yi-shou-dao-offer.md)
+      * [字节跳动暑期实习Android一二三hr面经(offer)](interview/bytedance-interview-collect/intern/android/zi-jie-tiao-dong-shu-qi-shi-xi-android-yi-er-san-hr-mian-jing-offer.md)
     * [iOS](interview/bytedance-interview-collect/intern/ios/README.md)
       * [字节ios懂车帝实习 三面已过](interview/bytedance-interview-collect/intern/ios/zi-jie-ios-dong-che-di-shi-xi-san-mian-yi-guo.md)
       * [字节懂车帝IOS实习一面面经](interview/bytedance-interview-collect/intern/ios/zi-jie-dong-che-di-ios-shi-xi-yi-mian-mian-jing.md)
@@ -433,14 +437,14 @@
       * [字节飞书iOS客户端二面面经\[已OC\]](interview/bytedance-interview-collect/intern/ios/zi-jie-fei-shu-ios-ke-hu-duan-er-mian-mian-jing-yi-oc.md)
       * [字节跳动iOS客户端实习面经](interview/bytedance-interview-collect/intern/ios/zi-jie-tiao-dong-ios-ke-hu-duan-shi-xi-mian-jing.md)
       * [字节飞书iOS客户端日常实习面经 一二面+HR面](interview/bytedance-interview-collect/intern/ios/zi-jie-fei-shu-ios-ke-hu-duan-ri-chang-shi-xi-mian-jing-yi-er-mian-+hr-mian.md)
-      * [21届字节ios开发日常实习 一二三面面经\(已拿offer\)](interview/bytedance-interview-collect/intern/ios/21-jie-zi-jie-ios-kai-fa-ri-chang-shi-xi-yi-er-san-mian-mian-jing-yi-na-offer.md)
+      * [21届字节ios开发日常实习 一二三面面经(已拿offer)](interview/bytedance-interview-collect/intern/ios/21-jie-zi-jie-ios-kai-fa-ri-chang-shi-xi-yi-er-san-mian-mian-jing-yi-na-offer.md)
       * [字节iOS客户端实习123面经](interview/bytedance-interview-collect/intern/ios/zi-jie-ios-ke-hu-duan-shi-xi-123-mian-jing.md)
       * [字节iOS客户端实习 三次技术面面经](interview/bytedance-interview-collect/intern/ios/zi-jie-ios-ke-hu-duan-shi-xi-san-ci-ji-shu-mian-mian-jing.md)
       * [字节跳动 iOS日常实习三面+hr面挂](interview/bytedance-interview-collect/intern/ios/zi-jie-tiao-dong-ios-ri-chang-shi-xi-san-mian-+hr-mian-gua.md)
-      * [字节跳动ios客户端一二三四+hr面\(已收到offer\)](interview/bytedance-interview-collect/intern/ios/zi-jie-tiao-dong-ios-ke-hu-duan-yi-er-san-si-+hr-mian-yi-shou-dao-offer.md)
+      * [字节跳动ios客户端一二三四+hr面(已收到offer)](interview/bytedance-interview-collect/intern/ios/zi-jie-tiao-dong-ios-ke-hu-duan-yi-er-san-si-+hr-mian-yi-shou-dao-offer.md)
       * [字节IOS客户端实习面经](interview/bytedance-interview-collect/intern/ios/zi-jie-ios-ke-hu-duan-shi-xi-mian-jing.md)
-      * [iOS实习面经\(字节美团阿里蘑菇街\)](interview/bytedance-interview-collect/intern/ios/ios-shi-xi-mian-jing-zi-jie-mei-tuaneli-mo-gu-jie.md)
-      * [字节跳动面经\|iOS开发\|大三暑期实习（已收offer）](interview/bytedance-interview-collect/intern/ios/zi-jie-tiao-dong-mian-jing-ios-kai-fa-da-san-shu-qi-shi-xi-yi-shou-offer.md)
+      * [iOS实习面经(字节美团阿里蘑菇街)](interview/bytedance-interview-collect/intern/ios/ios-shi-xi-mian-jing-zi-jie-mei-tuaneli-mo-gu-jie.md)
+      * [字节跳动面经|iOS开发|大三暑期实习（已收offer）](interview/bytedance-interview-collect/intern/ios/zi-jie-tiao-dong-mian-jing-ios-kai-fa-da-san-shu-qi-shi-xi-yi-shou-offer.md)
       * [字节ios\[深圳\]实习一面面经](interview/bytedance-interview-collect/intern/ios/zi-jie-ios-shen-zhen-shi-xi-yi-mian-mian-jing.md)
       * [字节跳动飞书iOS开发一二面](interview/bytedance-interview-collect/intern/ios/zi-jie-tiao-dong-fei-shu-ios-kai-fa-yi-er-mian.md)
       * [字节跳动ios客户端实习3+hr面经【已拿offer】](interview/bytedance-interview-collect/intern/ios/zi-jie-tiao-dong-ios-ke-hu-duan-shi-xi-3+hr-mian-jing-yi-na-offer.md)
@@ -459,15 +463,15 @@
     * [字节提前批 安卓客户端加面 四面](interview/bytedance-interview-collect/before/zi-jie-ti-qian-pi-an-zhuo-ke-hu-duan-jia-mian-si-mian.md)
     * [字节跳动 客户端开发提前批一面凉经](interview/bytedance-interview-collect/before/zi-jie-tiao-dong-ke-hu-duan-kai-fa-ti-qian-pi-yi-mian-liang-jing.md)
     * [字节跳动提前批安卓客户端 一二三四+HR面（已意向书）](interview/bytedance-interview-collect/before/zi-jie-tiao-dong-ti-qian-pi-an-zhuo-ke-hu-duan-yi-er-san-si-+hr-mian-yi-yi-xiang-shu.md)
-    * [字节跳动提前批客户端至二面\(凉透经\)](interview/bytedance-interview-collect/before/zi-jie-tiao-dong-ti-qian-pi-ke-hu-duan-zhi-er-mian-liang-tou-jing.md)
+    * [字节跳动提前批客户端至二面(凉透经)](interview/bytedance-interview-collect/before/zi-jie-tiao-dong-ti-qian-pi-ke-hu-duan-zhi-er-mian-liang-tou-jing.md)
     * [字节提前批-客户端Android一面面经](interview/bytedance-interview-collect/before/zi-jie-ti-qian-pi-ke-hu-duan-android-yi-mian-mian-jing.md)
-    * [字节提前批客户端一二三面面经\(已凉）](interview/bytedance-interview-collect/before/zi-jie-ti-qian-pi-ke-hu-duan-yi-er-san-mian-mian-jing-yi-liang.md)
+    * [字节提前批客户端一二三面面经(已凉）](interview/bytedance-interview-collect/before/zi-jie-ti-qian-pi-ke-hu-duan-yi-er-san-mian-mian-jing-yi-liang.md)
     * [字节跳动抖音Android客户端一二三面面经](interview/bytedance-interview-collect/before/zi-jie-tiao-dong-dou-yin-android-ke-hu-duan-yi-er-san-mian-mian-jing.md)
     * [字节客户端开发面经](interview/bytedance-interview-collect/before/zi-jie-ke-hu-duan-kai-fa-mian-jing.md)
   * [秋招](interview/bytedance-interview-collect/official/README.md)
     * [2020年字节跳动秋招面经（抖音全栈已oc）](interview/bytedance-interview-collect/official/2020-nian-zi-jie-tiao-dong-qiu-zhao-mian-jing-dou-yin-quan-zhan-yi-oc.md)
-    * [字节客户端 一、二面面经，许愿三面~](interview/bytedance-interview-collect/official/zi-jie-ke-hu-duan-yi-er-mian-mian-jing-xu-yuan-san-mian.md)
-    * [字节客户端三~四面面经，已oc（更新：已邮件）](interview/bytedance-interview-collect/official/zi-jie-ke-hu-duan-san-si-mian-mian-jing-yi-oc-geng-xin-yi-you-jian.md)
+    * [字节客户端 一、二面面经，许愿三面\~](interview/bytedance-interview-collect/official/zi-jie-ke-hu-duan-yi-er-mian-mian-jing-xu-yuan-san-mian.md)
+    * [字节客户端三\~四面面经，已oc（更新：已邮件）](interview/bytedance-interview-collect/official/zi-jie-ke-hu-duan-san-si-mian-mian-jing-yi-oc-geng-xin-yi-you-jian.md)
     * [字节客户端几乎无安卓基础三面面经](interview/bytedance-interview-collect/official/zi-jie-ke-hu-duan-ji-hu-wu-an-zhuo-ji-chu-san-mian-mian-jing.md)
     * [字节客户端抖音一二三面凉经](interview/bytedance-interview-collect/official/zi-jie-ke-hu-duan-dou-yin-yi-er-san-mian-liang-jing.md)
     * [上海抖音客户端开发面经](interview/bytedance-interview-collect/official/shang-hai-dou-yin-ke-hu-duan-kai-fa-mian-jing.md)
@@ -482,7 +486,7 @@
     * [字节上海抖音客户端](interview/bytedance-interview-collect/official/zi-jie-shang-hai-dou-yin-ke-hu-duan.md)
     * [字节跳动客户端开发0基础 一面凉经](interview/bytedance-interview-collect/official/untitled.md)
 
-## 杂 <a id="other"></a>
+## 杂 <a href="#other" id="other"></a>
 
 * [Git](other/git.md)
 * [智力题](other/zhi-li-ti.md)
@@ -491,3 +495,8 @@
   * [MVC MVP MVVM](other/design-patterns/mvc-mvp-mvvm.md)
 * [简历](other/resume.md)
 
+## JAVASCRIPT
+
+* [简介](javascript/jian-jie.md)
+* [基础知识](javascript/ji-chu-zhi-shi.md)
+* [常见问题](javascript/chang-jian-wen-ti.md)
